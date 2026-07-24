@@ -1,0 +1,15 @@
+{
+  "name": "All Together Now 2026 — The Guide",
+  "short_name": "ATN 26",
+  "description": "A tailored day-by-day guide to All Together Now 2026 at Curraghmore.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c0b0f",
+  "theme_color": "#0c0b0f",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

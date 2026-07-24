@@ -1,0 +1,3186 @@
+[
+ {
+  "stage": "ATN Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785517200000,
+  "time": "17:00 - 18:00",
+  "artist": "Trinity Orchestra"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785519900000,
+  "end": 1785523500000,
+  "time": "18:45 - 19:45",
+  "artist": "Sexy Tadhg"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785527100000,
+  "end": 1785530700000,
+  "time": "20:45 - 21:45",
+  "artist": "Gurriers"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785534300000,
+  "end": 1785539700000,
+  "time": "22:45 - 00:15",
+  "artist": "Pulp"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785592800000,
+  "end": 1785596400000,
+  "time": "15:00 - 16:00",
+  "artist": "Sing Along Social"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785605400000,
+  "time": "17:30 - 18:30",
+  "artist": "Hot 8 Brass Band"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785608100000,
+  "end": 1785612600000,
+  "time": "19:15 - 20:30",
+  "artist": "Ezra Collective"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785615300000,
+  "end": 1785620700000,
+  "time": "21:15 - 22:45",
+  "artist": "The Mary Wallopers"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785623400000,
+  "end": 1785628800000,
+  "time": "23:30 - 01:00",
+  "artist": "KNEECAP"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785682800000,
+  "end": 1785687300000,
+  "time": "16:00 - 17:15",
+  "artist": "Soda Blonde"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785694500000,
+  "time": "18:00 - 19:15",
+  "artist": "Damien Dempsey"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785698100000,
+  "end": 1785701700000,
+  "time": "20:15 - 21:15",
+  "artist": "Self Esteem"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785704400000,
+  "end": 1785708900000,
+  "time": "22:00 - 23:15",
+  "artist": "Underworld"
+ },
+ {
+  "stage": "ATN Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785717000000,
+  "time": "00:00 - 01:30",
+  "artist": "Disclosure (DJ)"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Friday 31st July",
+  "start": 1785510900000,
+  "end": 1785514500000,
+  "time": "16:15 - 17:15",
+  "artist": "MOIO"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785520800000,
+  "time": "18:00 - 19:00",
+  "artist": "Rose Betts"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Friday 31st July",
+  "start": 1785523500000,
+  "end": 1785527100000,
+  "time": "19:45 - 20:45",
+  "artist": "Dry Cleaning"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Friday 31st July",
+  "start": 1785529800000,
+  "end": 1785534300000,
+  "time": "21:30 - 22:45",
+  "artist": "For Those I Love"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Friday 31st July",
+  "start": 1785539700000,
+  "end": 1785544200000,
+  "time": "00:15 - 01:30",
+  "artist": "Floating Points (Live)"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785582000000,
+  "end": 1785585600000,
+  "time": "12:00 - 13:00",
+  "artist": "Talks in the Tent: TBC"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785587400000,
+  "end": 1785591000000,
+  "time": "13:30 - 14:30",
+  "artist": "Muireann Bradley"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785598200000,
+  "time": "15:30 - 16:30",
+  "artist": "Christy Moore"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785600900000,
+  "end": 1785604500000,
+  "time": "17:15 - 18:15",
+  "artist": "David Keenan"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785606300000,
+  "end": 1785609900000,
+  "time": "18:45 - 19:45",
+  "artist": "Sprints"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785617100000,
+  "time": "20:30 - 21:45",
+  "artist": "Kae Tempest"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785618900000,
+  "end": 1785623400000,
+  "time": "22:15 - 23:30",
+  "artist": "Maribou State (Live)"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785636000000,
+  "time": "01:00 - 03:00",
+  "artist": "The Avalanches (DJ Set)"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "Talks in the Tent: John Cooper Clarke"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785682800000,
+  "end": 1785687300000,
+  "time": "16:00 - 17:15",
+  "artist": "Barrington Levy"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785688200000,
+  "end": 1785691800000,
+  "time": "17:30 - 18:30",
+  "artist": "Kate Nash"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785694500000,
+  "end": 1785699000000,
+  "time": "19:15 - 20:30",
+  "artist": "BIIRD"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785701700000,
+  "end": 1785706200000,
+  "time": "21:15 - 22:30",
+  "artist": "Chet Faker"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785708900000,
+  "end": 1785713400000,
+  "time": "23:15 - 00:30",
+  "artist": "Mogwai"
+ },
+ {
+  "stage": "Something Kind of Wonderful",
+  "day": "Sunday 2nd August",
+  "start": 1785717000000,
+  "end": 1785722400000,
+  "time": "01:30 - 03:00",
+  "artist": "King Kong Company"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785506400000,
+  "time": "14:00 - 15:00",
+  "artist": "For Nina"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785509100000,
+  "end": 1785512700000,
+  "time": "15:45 - 16:45",
+  "artist": "PVA"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785514500000,
+  "end": 1785518100000,
+  "time": "17:15 - 18:15",
+  "artist": "Jacob Alon"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785519900000,
+  "end": 1785523500000,
+  "time": "18:45 - 19:45",
+  "artist": "Cardinals"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785526200000,
+  "end": 1785529800000,
+  "time": "20:30 - 21:30",
+  "artist": "Friendly Fires"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785531600000,
+  "end": 1785535200000,
+  "time": "22:00 - 23:00",
+  "artist": "Br\u00f2geal"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785539700000,
+  "end": 1785546000000,
+  "time": "00:15 - 02:00",
+  "artist": "O'Flynn"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Friday 31st July",
+  "start": 1785546000000,
+  "end": 1785551400000,
+  "time": "02:00 - 03:30",
+  "artist": "Swimming Paul"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785592800000,
+  "time": "14:00 - 15:00",
+  "artist": "David Kitt"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785598200000,
+  "time": "15:30 - 16:30",
+  "artist": "KhakiKid"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785600000000,
+  "end": 1785603600000,
+  "time": "17:00 - 18:00",
+  "artist": "W.I.T.C.H."
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785605400000,
+  "end": 1785609000000,
+  "time": "18:30 - 19:30",
+  "artist": "Greentea Peng"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785622500000,
+  "time": "22:00 - 23:15",
+  "artist": "Gilla Band"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785625200000,
+  "end": 1785629700000,
+  "time": "00:00 - 01:15",
+  "artist": "Say She She"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Saturday 1st August",
+  "start": 1785630600000,
+  "end": 1785637800000,
+  "time": "01:30 - 03:30",
+  "artist": "Jyoty"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785679200000,
+  "end": 1785682800000,
+  "time": "15:00 - 16:00",
+  "artist": "Joshua Idehen"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785684600000,
+  "end": 1785688200000,
+  "time": "16:30 - 17:30",
+  "artist": "Getdown Services"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785693600000,
+  "time": "18:00 - 19:00",
+  "artist": "Moonchild Sanelly"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785695400000,
+  "end": 1785699900000,
+  "time": "19:30 - 20:45",
+  "artist": "Kean Kavanagh"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785701700000,
+  "end": 1785706200000,
+  "time": "21:15 - 22:30",
+  "artist": "Anna von Hausswolff"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785709800000,
+  "end": 1785715200000,
+  "time": "23:30 - 01:00",
+  "artist": "Weval (Live)"
+ },
+ {
+  "stage": "Road To Nowhere",
+  "day": "Sunday 2nd August",
+  "start": 1785717000000,
+  "end": 1785722400000,
+  "time": "01:30 - 03:00",
+  "artist": "The Dare (DJ Set)"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785503700000,
+  "end": 1785506400000,
+  "time": "14:15 - 15:00",
+  "artist": "Kapayja"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785508200000,
+  "end": 1785510900000,
+  "time": "15:30 - 16:15",
+  "artist": "Hank"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785512700000,
+  "end": 1785515400000,
+  "time": "16:45 - 17:30",
+  "artist": "My First Time"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785520800000,
+  "time": "18:00 - 19:00",
+  "artist": "Little Grandad"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785523500000,
+  "end": 1785526200000,
+  "time": "19:45 - 20:30",
+  "artist": "The New Eves"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Friday 31st July",
+  "start": 1785530700000,
+  "end": 1785534300000,
+  "time": "21:45 - 22:45",
+  "artist": "Black Nylon"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785585600000,
+  "end": 1785588300000,
+  "time": "13:00 - 13:45",
+  "artist": "Sheriff"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785592800000,
+  "time": "14:00 - 15:00",
+  "artist": "The Itch"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785597300000,
+  "time": "15:30 - 16:15",
+  "artist": "Sassy 009"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785599100000,
+  "end": 1785601800000,
+  "time": "16:45 - 17:30",
+  "artist": "The Orchestra (For Now)"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785607200000,
+  "time": "18:00 - 19:00",
+  "artist": "Sophia Stel"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785611700000,
+  "end": 1785616200000,
+  "time": "20:15 - 21:30",
+  "artist": "Byrnes Night"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Saturday 1st August",
+  "start": 1785618900000,
+  "end": 1785622500000,
+  "time": "22:15 - 23:15",
+  "artist": "Takuya Nakamura (Live)"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785672000000,
+  "end": 1785674700000,
+  "time": "13:00 - 13:45",
+  "artist": "Pippa Molony"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "Gently Tender"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785681000000,
+  "end": 1785683700000,
+  "time": "15:30 - 16:15",
+  "artist": "Alabaster DePlume"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785685500000,
+  "end": 1785688200000,
+  "time": "16:45 - 17:30",
+  "artist": "LEDBYHER"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785693600000,
+  "time": "18:00 - 19:00",
+  "artist": "RIP Magic"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785695400000,
+  "end": 1785699000000,
+  "time": "19:30 - 20:30",
+  "artist": "R\u00f3is"
+ },
+ {
+  "stage": "Flourish with District Music",
+  "day": "Sunday 2nd August",
+  "start": 1785700800000,
+  "end": 1785704400000,
+  "time": "21:00 - 22:00",
+  "artist": "Sell Everything"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Thursday 30th July",
+  "start": 1785431700000,
+  "end": 1785434400000,
+  "time": "18:15 - 19:00",
+  "artist": "Last Apollo"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Thursday 30th July",
+  "start": 1785436200000,
+  "end": 1785439800000,
+  "time": "19:30 - 20:30",
+  "artist": "Zaska"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Thursday 30th July",
+  "start": 1785441600000,
+  "end": 1785447000000,
+  "time": "21:00 - 22:30",
+  "artist": "Getdown Edits"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Thursday 30th July",
+  "start": 1785447000000,
+  "end": 1785454200000,
+  "time": "22:30 - 00:30",
+  "artist": "Annie Mac"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785506400000,
+  "time": "14:00 - 15:00",
+  "artist": "Mount Pyrus"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785508200000,
+  "end": 1785511800000,
+  "time": "15:30 - 16:30",
+  "artist": "Calum Agnew"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785517200000,
+  "time": "17:00 - 18:00",
+  "artist": "Denver Cuss"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785519000000,
+  "end": 1785522600000,
+  "time": "18:30 - 19:30",
+  "artist": "Prymary Colours"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785526200000,
+  "end": 1785533400000,
+  "time": "20:30 - 22:30",
+  "artist": "Kelly Anne Byrne 'Prince Tribute'"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785538800000,
+  "time": "22:30 - 00:00",
+  "artist": "Surka"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785544200000,
+  "time": "00:00 - 01:30",
+  "artist": "Sam Alfred"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Friday 31st July",
+  "start": 1785544200000,
+  "end": 1785551400000,
+  "time": "01:30 - 03:30",
+  "artist": "Kerri Chandler"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785583800000,
+  "end": 1785587400000,
+  "time": "12:30 - 13:30",
+  "artist": "Messages of Peace"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785592800000,
+  "time": "14:00 - 15:00",
+  "artist": "\u00c6 MAK"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785593700000,
+  "end": 1785597300000,
+  "time": "15:15 - 16:15",
+  "artist": "Softdrink Millionaire"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785598200000,
+  "end": 1785601800000,
+  "time": "16:30 - 17:30",
+  "artist": "Maykay"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785609000000,
+  "time": "18:00 - 19:30",
+  "artist": "Glasshouse presents: Bjork"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785610800000,
+  "end": 1785616200000,
+  "time": "20:00 - 21:30",
+  "artist": "Nialler9"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785619800000,
+  "end": 1785625200000,
+  "time": "22:30 - 00:00",
+  "artist": "David Jackson"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785625200000,
+  "end": 1785630600000,
+  "time": "00:00 - 01:30",
+  "artist": "Derv"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Saturday 1st August",
+  "start": 1785630600000,
+  "end": 1785637800000,
+  "time": "01:30 - 03:30",
+  "artist": "Mall Grab"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785670200000,
+  "end": 1785673800000,
+  "time": "12:30 - 13:30",
+  "artist": "Brunch on The bandstand"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "Avenue 68"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785681000000,
+  "end": 1785684600000,
+  "time": "15:30 - 16:30",
+  "artist": "Burt Bacharach by Paddy Hanna"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785686400000,
+  "end": 1785690900000,
+  "time": "17:00 - 18:15",
+  "artist": "Grooveline"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785693600000,
+  "end": 1785697200000,
+  "time": "19:00 - 20:00",
+  "artist": "Playback Presents: Stop Making Sense"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785699000000,
+  "end": 1785706200000,
+  "time": "20:30 - 22:30",
+  "artist": "Marcus O'Laoire"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785711600000,
+  "time": "22:30 - 00:00",
+  "artist": "Bing NZ"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785717000000,
+  "time": "00:00 - 01:30",
+  "artist": "Hot Chip (DJ Set)"
+ },
+ {
+  "stage": "The Temporary Bandstand",
+  "day": "Sunday 2nd August",
+  "start": 1785717000000,
+  "end": 1785722400000,
+  "time": "01:30 - 03:00",
+  "artist": "Special Guest"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Thursday 30th July",
+  "start": 1785438000000,
+  "end": 1785443400000,
+  "time": "20:00 - 21:30",
+  "artist": "Mercorn"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Thursday 30th July",
+  "start": 1785443400000,
+  "end": 1785448800000,
+  "time": "21:30 - 23:00",
+  "artist": "Bull Horris"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Thursday 30th July",
+  "start": 1785448800000,
+  "end": 1785454200000,
+  "time": "23:00 - 00:30",
+  "artist": "L\u00fanasa"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785511800000,
+  "end": 1785519000000,
+  "time": "16:30 - 18:30",
+  "artist": "\u00d3IR"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785519900000,
+  "end": 1785523500000,
+  "time": "18:45 - 19:45",
+  "artist": "Ahmed, With Love. & Friends"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785525300000,
+  "end": 1785528000000,
+  "time": "20:15 - 21:00",
+  "artist": "p\u00f4t-pot"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785529800000,
+  "end": 1785533400000,
+  "time": "21:30 - 22:30",
+  "artist": "MIKE"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785535200000,
+  "end": 1785540600000,
+  "time": "23:00 - 00:30",
+  "artist": "Rory Sweeney (Live)"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Friday 31st July",
+  "start": 1785540600000,
+  "end": 1785546000000,
+  "time": "00:30 - 02:00",
+  "artist": "Jamz Supernova"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785587400000,
+  "end": 1785591000000,
+  "time": "13:30 - 14:30",
+  "artist": "Mabfield Live Podcast with Maruja"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785592800000,
+  "end": 1785596400000,
+  "time": "15:00 - 16:00",
+  "artist": "Emporium DJs"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785597300000,
+  "end": 1785600000000,
+  "time": "16:15 - 17:00",
+  "artist": "Negro Impacto"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785600900000,
+  "end": 1785603600000,
+  "time": "17:15 - 18:00",
+  "artist": "Cushla"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785605400000,
+  "end": 1785608100000,
+  "time": "18:30 - 19:15",
+  "artist": "One Leg One Eye"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785609900000,
+  "end": 1785613500000,
+  "time": "19:45 - 20:45",
+  "artist": "Maruja"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785614400000,
+  "end": 1785617100000,
+  "time": "21:00 - 21:45",
+  "artist": "Pebbledash"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785623400000,
+  "end": 1785627000000,
+  "time": "23:30 - 00:30",
+  "artist": "Cromby"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Saturday 1st August",
+  "start": 1785627000000,
+  "end": 1785632400000,
+  "time": "00:30 - 02:00",
+  "artist": "Or:la"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "Mabfield Live Podcast"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785681900000,
+  "end": 1785684600000,
+  "time": "15:45 - 16:30",
+  "artist": "Flynn Johnson"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785685500000,
+  "end": 1785688200000,
+  "time": "16:45 - 17:30",
+  "artist": "Delivery Service"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785689100000,
+  "end": 1785691800000,
+  "time": "17:45 - 18:30",
+  "artist": "Monjola"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785693600000,
+  "end": 1785696300000,
+  "time": "19:00 - 19:45",
+  "artist": "SOAK"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785697200000,
+  "end": 1785699900000,
+  "time": "20:00 - 20:45",
+  "artist": "Freak Slug"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785702000000,
+  "end": 1785704400000,
+  "time": "21:20 - 22:00",
+  "artist": "Ms Dynamite"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785709800000,
+  "time": "22:30 - 23:30",
+  "artist": "Mango"
+ },
+ {
+  "stage": "The Circle by Jameson Music",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785718800000,
+  "time": "00:00 - 02:00",
+  "artist": "Anz b2b Jio"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Thursday 30th July",
+  "start": 1785439800000,
+  "end": 1785442500000,
+  "time": "20:30 - 21:15",
+  "artist": "Nathan Maher"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Thursday 30th July",
+  "start": 1785442500000,
+  "end": 1785446100000,
+  "time": "21:15 - 22:15",
+  "artist": "David Keenan"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Thursday 30th July",
+  "start": 1785446100000,
+  "end": 1785454200000,
+  "time": "22:15 - 00:30",
+  "artist": "Arcadia Residents"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785538800000,
+  "time": "22:30 - 00:00",
+  "artist": "Fio Fa"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785546000000,
+  "time": "00:00 - 02:00",
+  "artist": "Job Jobse"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Friday 31st July",
+  "start": 1785546000000,
+  "end": 1785551400000,
+  "time": "02:00 - 03:30",
+  "artist": "Surusinghe"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Saturday 1st August",
+  "start": 1785619800000,
+  "end": 1785628800000,
+  "time": "22:30 - 01:00",
+  "artist": "Dufi"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785634200000,
+  "time": "01:00 - 02:30",
+  "artist": "Joy Orbison"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Saturday 1st August",
+  "start": 1785634200000,
+  "end": 1785639600000,
+  "time": "02:30 - 04:00",
+  "artist": "Call Super"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785711600000,
+  "time": "22:30 - 00:00",
+  "artist": "Efa O'Neill"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785718800000,
+  "time": "00:00 - 02:00",
+  "artist": "Altern-8"
+ },
+ {
+  "stage": "Arcadia 'Afterburner'",
+  "day": "Sunday 2nd August",
+  "start": 1785718800000,
+  "end": 1785726000000,
+  "time": "02:00 - 04:00",
+  "artist": "Eats Everything"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Friday 31st July",
+  "start": 1785519000000,
+  "end": 1785524400000,
+  "time": "18:30 - 20:00",
+  "artist": "Mercorn"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Friday 31st July",
+  "start": 1785524400000,
+  "end": 1785529800000,
+  "time": "20:00 - 21:30",
+  "artist": "Peach"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Friday 31st July",
+  "start": 1785529800000,
+  "end": 1785537000000,
+  "time": "21:30 - 23:30",
+  "artist": "Floorplan"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Friday 31st July",
+  "start": 1785537000000,
+  "end": 1785542400000,
+  "time": "23:30 - 01:00",
+  "artist": "Anish Kumar"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Friday 31st July",
+  "start": 1785542400000,
+  "end": 1785547800000,
+  "time": "01:00 - 02:30",
+  "artist": "Sunil Sharpe x Kev Freeney Presents Spineless"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785601800000,
+  "time": "15:30 - 17:30",
+  "artist": "Sahana"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785607200000,
+  "time": "17:30 - 19:00",
+  "artist": "Away From Dave"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785607200000,
+  "end": 1785612600000,
+  "time": "19:00 - 20:30",
+  "artist": "Sophie McAlister"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785618000000,
+  "time": "20:30 - 22:00",
+  "artist": "Dan Shake"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785623400000,
+  "time": "22:00 - 23:30",
+  "artist": "Spray"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785623400000,
+  "end": 1785628800000,
+  "time": "23:30 - 01:00",
+  "artist": "EMA"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785634200000,
+  "time": "01:00 - 02:30",
+  "artist": "DJ Nobu"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785681000000,
+  "end": 1785688200000,
+  "time": "15:30 - 17:30",
+  "artist": "Matcha"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785688200000,
+  "end": 1785695400000,
+  "time": "17:30 - 19:30",
+  "artist": "DIEBYVEG"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785695400000,
+  "end": 1785699000000,
+  "time": "19:30 - 20:30",
+  "artist": "Soichi Terada (Live)"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785699000000,
+  "end": 1785706200000,
+  "time": "20:30 - 22:30",
+  "artist": "Gabrielle Kwarteng"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785711600000,
+  "time": "22:30 - 00:00",
+  "artist": "Sloucho"
+ },
+ {
+  "stage": "IMMERSE: AVA x Smirnoff",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785718800000,
+  "time": "00:00 - 02:00",
+  "artist": "Benwal"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785511800000,
+  "end": 1785515400000,
+  "time": "16:30 - 17:30",
+  "artist": "Jr Spesh"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785520800000,
+  "time": "18:00 - 19:00",
+  "artist": "Black Turf"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785522600000,
+  "end": 1785526200000,
+  "time": "19:30 - 20:30",
+  "artist": "Vaticanjail"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785528000000,
+  "end": 1785531600000,
+  "time": "21:00 - 22:00",
+  "artist": "God Knows"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785537000000,
+  "time": "22:30 - 23:30",
+  "artist": "Celaviedmai"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785544200000,
+  "time": "00:00 - 01:30",
+  "artist": "Lullahush"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Friday 31st July",
+  "start": 1785546000000,
+  "end": 1785551400000,
+  "time": "02:00 - 03:30",
+  "artist": "RITHIM"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785597300000,
+  "time": "15:30 - 16:15",
+  "artist": "Dora Gola"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785599100000,
+  "end": 1785601800000,
+  "time": "16:45 - 17:30",
+  "artist": "Kez"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785607200000,
+  "time": "18:00 - 19:00",
+  "artist": "Seamus Fogarty"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785609000000,
+  "end": 1785612600000,
+  "time": "19:30 - 20:30",
+  "artist": "Paahto & The Bull"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785614400000,
+  "end": 1785618000000,
+  "time": "21:00 - 22:00",
+  "artist": "Tr\u00e1 Ph\u00e1id\u00edn"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785620700000,
+  "end": 1785625200000,
+  "time": "22:45 - 00:00",
+  "artist": "BoolaBoom"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785627000000,
+  "end": 1785630600000,
+  "time": "00:30 - 01:30",
+  "artist": "Felispeaks"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Saturday 1st August",
+  "start": 1785632400000,
+  "end": 1785637800000,
+  "time": "02:00 - 03:30",
+  "artist": "Yankari Afrobeat Collective"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785681000000,
+  "end": 1785683700000,
+  "time": "15:30 - 16:15",
+  "artist": "AbbieLee"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785685500000,
+  "end": 1785688200000,
+  "time": "16:45 - 17:30",
+  "artist": "Molly Donnery"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785693600000,
+  "time": "18:00 - 19:00",
+  "artist": "The Calvinists"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785695400000,
+  "end": 1785699000000,
+  "time": "19:30 - 20:30",
+  "artist": "Roisin El Cherif"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785700800000,
+  "end": 1785704400000,
+  "time": "21:00 - 22:00",
+  "artist": "Qbanaa"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785709800000,
+  "time": "22:30 - 23:30",
+  "artist": "Tosh\u00edn"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785717000000,
+  "time": "00:00 - 01:30",
+  "artist": "Elikya"
+ },
+ {
+  "stage": "Global Roots: Main Stage",
+  "day": "Sunday 2nd August",
+  "start": 1785718800000,
+  "end": 1785724200000,
+  "time": "02:00 - 03:30",
+  "artist": "Donal Dineen & Guests"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785506400000,
+  "time": "14:00 - 15:00",
+  "artist": "DJ Chartini"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785506400000,
+  "end": 1785510000000,
+  "time": "15:00 - 16:00",
+  "artist": "Local Groove"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785510000000,
+  "end": 1785513600000,
+  "time": "16:00 - 17:00",
+  "artist": "Jacqui Kelleher"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785517200000,
+  "time": "17:00 - 18:00",
+  "artist": "Some Dance to Remember: Donal Dineen & Donal Scannell"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785520800000,
+  "time": "18:00 - 19:00",
+  "artist": "Anya Stafford"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785520800000,
+  "end": 1785524400000,
+  "time": "19:00 - 20:00",
+  "artist": "Aoife Nic Canna"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785524400000,
+  "end": 1785528000000,
+  "time": "20:00 - 21:00",
+  "artist": "C\u00e1it"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785528000000,
+  "end": 1785531600000,
+  "time": "21:00 - 22:00",
+  "artist": "Governess"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785531600000,
+  "end": 1785535200000,
+  "time": "22:00 - 23:00",
+  "artist": "Sally Cinnamon"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785535200000,
+  "end": 1785538800000,
+  "time": "23:00 - 00:00",
+  "artist": "Jonezy"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785544200000,
+  "time": "00:00 - 01:30",
+  "artist": "Ar Ais Ar\u00eds: Hannah Hession vs Rob Rua"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Friday 31st July",
+  "start": 1785544200000,
+  "end": 1785549600000,
+  "time": "01:30 - 03:00",
+  "artist": "Donal Dineen\u2019s Backstory with B+, Hewan Mulugeta & Guests"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785585600000,
+  "end": 1785587400000,
+  "time": "13:00 - 13:30",
+  "artist": "Niwar Ismat Issa (Live)"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785587400000,
+  "end": 1785591000000,
+  "time": "13:30 - 14:30",
+  "artist": "Some Dance to Forget: DD and Special Guests"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785591000000,
+  "end": 1785594600000,
+  "time": "14:30 - 15:30",
+  "artist": "Ali Daly"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785594600000,
+  "end": 1785598200000,
+  "time": "15:30 - 16:30",
+  "artist": "Ciara May"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785598200000,
+  "end": 1785601800000,
+  "time": "16:30 - 17:30",
+  "artist": "DJ Shaz"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785605400000,
+  "time": "17:30 - 18:30",
+  "artist": "Pa\u00edd\u00ed Cronin"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785605400000,
+  "end": 1785609000000,
+  "time": "18:30 - 19:30",
+  "artist": "t-woc (Live)"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785609000000,
+  "end": 1785612600000,
+  "time": "19:30 - 20:30",
+  "artist": "Hewan Mulugeta"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785616200000,
+  "time": "20:30 - 21:30",
+  "artist": "Mynameisjohn"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785616200000,
+  "end": 1785619800000,
+  "time": "21:30 - 22:30",
+  "artist": "DJ Repoman"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785619800000,
+  "end": 1785623400000,
+  "time": "22:30 - 23:30",
+  "artist": "B+"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785625200000,
+  "end": 1785628800000,
+  "time": "00:00 - 01:00",
+  "artist": "Vanishing Arcs (Live)"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785637800000,
+  "time": "01:00 - 03:30",
+  "artist": "Donal Dineen\u2019s Backstory with t-woc & Guests"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785670200000,
+  "end": 1785673800000,
+  "time": "12:30 - 13:30",
+  "artist": "Frawl"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785673800000,
+  "end": 1785677400000,
+  "time": "13:30 - 14:30",
+  "artist": "Johnny Carroll"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785677400000,
+  "end": 1785688200000,
+  "time": "14:30 - 17:30",
+  "artist": "Afrophoria - Collective Takeover"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785688200000,
+  "end": 1785691800000,
+  "time": "17:30 - 18:30",
+  "artist": "BIG CHEEKS"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785691800000,
+  "end": 1785702600000,
+  "time": "18:30 - 21:30",
+  "artist": "The Sweet Spot - Collective Takeover"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785702600000,
+  "end": 1785708000000,
+  "time": "21:30 - 23:00",
+  "artist": "Alba b2b K8olo (2muchbootyinthebooth)"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785708000000,
+  "end": 1785711600000,
+  "time": "23:00 - 00:00",
+  "artist": "Selky"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785717000000,
+  "time": "00:00 - 01:30",
+  "artist": "Ben Bix b2b Little O"
+ },
+ {
+  "stage": "Global Roots: Cambium",
+  "day": "Sunday 2nd August",
+  "start": 1785717000000,
+  "end": 1785722400000,
+  "time": "01:30 - 03:00",
+  "artist": "Mooncup b2b Roo Honeychild"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785434400000,
+  "end": 1785436500000,
+  "time": "19:00 - 19:35",
+  "artist": "Mantle"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785437700000,
+  "end": 1785439500000,
+  "time": "19:55 - 20:25",
+  "artist": "Bulbs"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785440700000,
+  "end": 1785443400000,
+  "time": "20:45 - 21:30",
+  "artist": "All Things Eve"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785444600000,
+  "end": 1785446400000,
+  "time": "21:50 - 22:20",
+  "artist": "Tessio"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785447600000,
+  "end": 1785450300000,
+  "time": "22:40 - 23:25",
+  "artist": "Niamh Bury"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Thursday 30th July",
+  "start": 1785451500000,
+  "end": 1785455100000,
+  "time": "23:45 - 00:45",
+  "artist": "Ailbhe Reddy"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785504600000,
+  "time": "14:00 - 14:30",
+  "artist": "Martello"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785505500000,
+  "end": 1785508200000,
+  "time": "14:45 - 15:30",
+  "artist": "Ben Reel"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785509100000,
+  "end": 1785511800000,
+  "time": "15:45 - 16:30",
+  "artist": "Ndidi O"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785519900000,
+  "time": "18:00 - 18:45",
+  "artist": "Raynor"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785520800000,
+  "end": 1785524400000,
+  "time": "19:00 - 20:00",
+  "artist": "Jodie Lyne"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785525300000,
+  "end": 1785528000000,
+  "time": "20:15 - 21:00",
+  "artist": "Politik"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785528900000,
+  "end": 1785532500000,
+  "time": "21:15 - 22:15",
+  "artist": "The Awning"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785536100000,
+  "time": "22:30 - 23:15",
+  "artist": "Harry Fennell"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785546000000,
+  "time": "00:00 - 02:00",
+  "artist": "Trad session: Gr\u00e1"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785591000000,
+  "time": "14:00 - 14:30",
+  "artist": "Barnburner"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785591900000,
+  "end": 1785594600000,
+  "time": "14:45 - 15:30",
+  "artist": "Becca Colley"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785595500000,
+  "end": 1785598200000,
+  "time": "15:45 - 16:30",
+  "artist": "Elishka Lane"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785599100000,
+  "end": 1785602700000,
+  "time": "16:45 - 17:45",
+  "artist": "Sun Studio Collective"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785606300000,
+  "time": "18:00 - 18:45",
+  "artist": "Dermot Henry"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785607200000,
+  "end": 1785610800000,
+  "time": "19:00 - 20:00",
+  "artist": "Lemoncello"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785611700000,
+  "end": 1785614400000,
+  "time": "20:15 - 21:00",
+  "artist": "Annika Kilkenny"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785615300000,
+  "end": 1785618900000,
+  "time": "21:15 - 22:15",
+  "artist": "KK Lewis"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785619800000,
+  "end": 1785623400000,
+  "time": "22:30 - 23:30",
+  "artist": "T.A. Narrative"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Saturday 1st August",
+  "start": 1785625200000,
+  "end": 1785632400000,
+  "time": "00:00 - 02:00",
+  "artist": "SexySession with SexyTadgh"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785677400000,
+  "time": "14:00 - 14:30",
+  "artist": "Cormac Leahy"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785678300000,
+  "end": 1785681000000,
+  "time": "14:45 - 15:30",
+  "artist": "Larabel"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785681900000,
+  "end": 1785684600000,
+  "time": "15:45 - 16:30",
+  "artist": "Rua R\u00ed"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785685500000,
+  "end": 1785689100000,
+  "time": "16:45 - 17:45",
+  "artist": "Bayviin"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785693600000,
+  "time": "18:00 - 19:00",
+  "artist": "Rois\u00edn Gowen"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785694500000,
+  "end": 1785697200000,
+  "time": "19:15 - 20:00",
+  "artist": "d_abdu"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785698100000,
+  "end": 1785700800000,
+  "time": "20:15 - 21:00",
+  "artist": "County Rocket"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785702600000,
+  "end": 1785705300000,
+  "time": "21:30 - 22:15",
+  "artist": "India Blue"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785708900000,
+  "time": "22:30 - 23:15",
+  "artist": "Heron Red"
+ },
+ {
+  "stage": "Hidden Sounds",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785718800000,
+  "time": "00:00 - 02:00",
+  "artist": "Trad Session: Tr\u00e1 Ph\u00e1id\u00edn"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785505500000,
+  "time": "14:00 - 14:45",
+  "artist": "DOG SWIM"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785507300000,
+  "end": 1785510000000,
+  "time": "15:15 - 16:00",
+  "artist": "Echo North Star"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785510900000,
+  "end": 1785513600000,
+  "time": "16:15 - 17:00",
+  "artist": "Cable Boy"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785514500000,
+  "end": 1785517200000,
+  "time": "17:15 - 18:00",
+  "artist": "BABYRAT"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785518100000,
+  "end": 1785520800000,
+  "time": "18:15 - 19:00",
+  "artist": "Shark School"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785521700000,
+  "end": 1785524400000,
+  "time": "19:15 - 20:00",
+  "artist": "George Houston"
+ },
+ {
+  "stage": "The Well",
+  "day": "Friday 31st July",
+  "start": 1785525300000,
+  "end": 1785528000000,
+  "time": "20:15 - 21:00",
+  "artist": "Ci\u00fanas"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785590700000,
+  "time": "14:00 - 14:25",
+  "artist": "Richie Bree"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785592200000,
+  "end": 1785593700000,
+  "time": "14:50 - 15:15",
+  "artist": "Simon Hennessey"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785593700000,
+  "end": 1785595200000,
+  "time": "15:15 - 15:40",
+  "artist": "Ross McCarney"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785595200000,
+  "end": 1785597000000,
+  "time": "15:40 - 16:10",
+  "artist": "Paddy McDonnell"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785597000000,
+  "end": 1785598500000,
+  "time": "16:10 - 16:35",
+  "artist": "Meg Reilly"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785598500000,
+  "end": 1785600000000,
+  "time": "16:35 - 17:00",
+  "artist": "Aoife Dunne"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785603600000,
+  "time": "17:30 - 18:00",
+  "artist": "Mike Rice"
+ },
+ {
+  "stage": "The Well",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785614400000,
+  "time": "18:00 - 21:00",
+  "artist": "The Wild Geeze - Comedy Cabaret"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785677100000,
+  "time": "14:00 - 14:25",
+  "artist": "Sadbh McLoughlin"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785677100000,
+  "end": 1785678600000,
+  "time": "14:25 - 14:50",
+  "artist": "Ryan Carrick"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785678600000,
+  "end": 1785680100000,
+  "time": "14:50 - 15:15",
+  "artist": "Aideen McQueen"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785680100000,
+  "end": 1785681600000,
+  "time": "15:15 - 15:40",
+  "artist": "Martin Angolo"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785686400000,
+  "end": 1785687900000,
+  "time": "17:00 - 17:25",
+  "artist": "Tony Cantwell"
+ },
+ {
+  "stage": "The Well",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785700800000,
+  "time": "18:00 - 21:00",
+  "artist": "The Wild Geeze - Comedy Cabaret"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Thursday 30th July",
+  "start": 1785438000000,
+  "end": 1785445200000,
+  "time": "20:00 - 22:00",
+  "artist": "Odhr\u00e1n & Hutchy"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Thursday 30th July",
+  "start": 1785445200000,
+  "end": 1785452400000,
+  "time": "22:00 - 00:00",
+  "artist": "Madonna Kebab"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785517200000,
+  "time": "17:00 - 18:00",
+  "artist": "D.O.T.S"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785520800000,
+  "end": 1785524400000,
+  "time": "19:00 - 20:00",
+  "artist": "Paradise Cabaret hosted by Patrick & Fred"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785524400000,
+  "end": 1785531600000,
+  "time": "20:00 - 22:00",
+  "artist": "A Man To Pet (DJ Set)"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785531600000,
+  "end": 1785533400000,
+  "time": "22:00 - 22:30",
+  "artist": "Paradise Cabaret hosted by Amantopet"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785540600000,
+  "time": "22:30 - 00:30",
+  "artist": "Dublin Disco All Dayer DJ's"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Friday 31st July",
+  "start": 1785540600000,
+  "end": 1785553200000,
+  "time": "00:30 - 04:00",
+  "artist": "Rahann"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785600000000,
+  "end": 1785601800000,
+  "time": "17:00 - 17:30",
+  "artist": "Paradise Cabaret hosted by Jane Norman"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785603600000,
+  "time": "17:30 - 18:00",
+  "artist": "Magz"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785606300000,
+  "time": "18:00 - 18:45",
+  "artist": "Paddy Steer"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785606300000,
+  "end": 1785609000000,
+  "time": "18:45 - 19:30",
+  "artist": "Magz"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785609000000,
+  "end": 1785612600000,
+  "time": "19:30 - 20:30",
+  "artist": "Paradise Cabaret hosted by Patrick & Fred"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785618000000,
+  "time": "20:30 - 22:00",
+  "artist": "DJ SexyT"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785619800000,
+  "time": "22:00 - 22:30",
+  "artist": "Paradise Cabaret hosted by Amantopet"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785619800000,
+  "end": 1785628800000,
+  "time": "22:30 - 01:00",
+  "artist": "Franz Scala"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785639600000,
+  "time": "01:00 - 04:00",
+  "artist": "Gaff E"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785668400000,
+  "end": 1785675600000,
+  "time": "12:00 - 14:00",
+  "artist": "Sonic Sermon with Odhr\u00e1n"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "M\u00e1s Amor\u2019s Sunday Service"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785679200000,
+  "end": 1785682800000,
+  "time": "15:00 - 16:00",
+  "artist": "DJ Transit b2b DJ Smallboy"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785682800000,
+  "end": 1785690000000,
+  "time": "16:00 - 18:00",
+  "artist": "Shrem"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785691800000,
+  "time": "18:00 - 18:30",
+  "artist": "Paradise Cabaret hosted by Goblins Goblins Goblins"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785691800000,
+  "end": 1785695400000,
+  "time": "18:30 - 19:30",
+  "artist": "Patrick De Vallette"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785695400000,
+  "end": 1785699000000,
+  "time": "19:30 - 20:30",
+  "artist": "S\u00c9AYONC\u00c9 HOCUS POKE-US"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785699000000,
+  "end": 1785704400000,
+  "time": "20:30 - 22:00",
+  "artist": "Cian Austin Jesus"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785704400000,
+  "end": 1785706200000,
+  "time": "22:00 - 22:30",
+  "artist": "Paradise Cabaret hosted by Amantopet"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785706200000,
+  "end": 1785715200000,
+  "time": "22:30 - 01:00",
+  "artist": "Tonie Walsh"
+ },
+ {
+  "stage": "Ping Pong Disco",
+  "day": "Sunday 2nd August",
+  "start": 1785715200000,
+  "end": 1785726000000,
+  "time": "01:00 - 04:00",
+  "artist": "Daniel Wang"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Thursday 30th July",
+  "start": 1785430800000,
+  "end": 1785441600000,
+  "time": "18:00 - 21:00",
+  "artist": "Corcra"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Thursday 30th July",
+  "start": 1785441600000,
+  "end": 1785454200000,
+  "time": "21:00 - 00:30",
+  "artist": "Justyna"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785492000000,
+  "end": 1785495600000,
+  "time": "11:00 - 12:00",
+  "artist": "The Bodhr\u00e1n Identity"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785495600000,
+  "end": 1785499200000,
+  "time": "12:00 - 13:00",
+  "artist": "Mahogany Gaspipes"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785499200000,
+  "end": 1785502800000,
+  "time": "13:00 - 14:00",
+  "artist": "CAOIMH\u00cdN"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785510000000,
+  "time": "14:00 - 16:00",
+  "artist": "Isp\u00edn\u00ed na h\u00c9ireann host the Citizen Ceili"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785510000000,
+  "end": 1785513600000,
+  "time": "16:00 - 17:00",
+  "artist": "Lonesome George"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785519000000,
+  "time": "17:00 - 18:30",
+  "artist": "The Wran"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785519000000,
+  "end": 1785522600000,
+  "time": "18:30 - 19:30",
+  "artist": "The Deadlians"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785522600000,
+  "end": 1785526200000,
+  "time": "19:30 - 20:30",
+  "artist": "The Last City Parade"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785526200000,
+  "end": 1785528000000,
+  "time": "20:30 - 21:00",
+  "artist": "VolkiD\u00e1na Presents: The Last Cult"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785528000000,
+  "end": 1785533400000,
+  "time": "21:00 - 22:30",
+  "artist": "Huartan"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785533400000,
+  "end": 1785538800000,
+  "time": "22:30 - 00:00",
+  "artist": "megaTRAD"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785553200000,
+  "time": "00:00 - 04:00",
+  "artist": "Trad Folkin'Raves feat Annie Craic"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785578400000,
+  "end": 1785585600000,
+  "time": "11:00 - 13:00",
+  "artist": "Earthman Bob's Guide to Raving"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785585600000,
+  "end": 1785591000000,
+  "time": "13:00 - 14:30",
+  "artist": "Colin Devine"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785591000000,
+  "end": 1785601800000,
+  "time": "14:30 - 17:30",
+  "artist": "The Last City All Ireland Cypher with Lil Skag, Ahmed with Love, Sugaboo, Beddyminaj, Gomie + Special Guests"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785601800000,
+  "end": 1785605400000,
+  "time": "17:30 - 18:30",
+  "artist": "Acid Granny Presents Schindler's Fist"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785605400000,
+  "end": 1785609000000,
+  "time": "18:30 - 19:30",
+  "artist": "Jinx Lennon"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785609000000,
+  "end": 1785612600000,
+  "time": "19:30 - 20:30",
+  "artist": "Ria Rua"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785616200000,
+  "time": "20:30 - 21:30",
+  "artist": "Bicurious"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785616200000,
+  "end": 1785618000000,
+  "time": "21:30 - 22:00",
+  "artist": "VolkiD\u00e1na Presents: The Last Cult"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785623400000,
+  "time": "22:00 - 23:30",
+  "artist": "THUMPER"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785623400000,
+  "end": 1785628800000,
+  "time": "23:30 - 01:00",
+  "artist": "Bedlam"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785639600000,
+  "time": "01:00 - 04:00",
+  "artist": "LOST at The Last City"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785664800000,
+  "end": 1785672000000,
+  "time": "11:00 - 13:00",
+  "artist": "The Last Chance Saloon with Western Girls x Fancy Dan"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785672000000,
+  "end": 1785675600000,
+  "time": "13:00 - 14:00",
+  "artist": "Sei Green"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785679200000,
+  "time": "14:00 - 15:00",
+  "artist": "The Reds"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785679200000,
+  "end": 1785686400000,
+  "time": "15:00 - 17:00",
+  "artist": "Dublin Country Club presents Wonky Tonk Social"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785686400000,
+  "end": 1785690000000,
+  "time": "17:00 - 18:00",
+  "artist": "I Draw Slow"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785693600000,
+  "time": "18:00 - 19:00",
+  "artist": "Daddee"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785693600000,
+  "end": 1785697200000,
+  "time": "19:00 - 20:00",
+  "artist": "Major Feen"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785697200000,
+  "end": 1785700800000,
+  "time": "20:00 - 21:00",
+  "artist": "Blue Tack & The Greenhorns"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785700800000,
+  "end": 1785702600000,
+  "time": "21:00 - 21:30",
+  "artist": "VolkiD\u00e1na Presents: The Last Cult"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785702600000,
+  "end": 1785708000000,
+  "time": "21:30 - 23:00",
+  "artist": "Acid Granny Presents Schindler's Fist"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785708000000,
+  "end": 1785715200000,
+  "time": "23:00 - 01:00",
+  "artist": "Ciarzy"
+ },
+ {
+  "stage": "The Last City",
+  "day": "Sunday 2nd August",
+  "start": 1785715200000,
+  "end": 1785726000000,
+  "time": "01:00 - 04:00",
+  "artist": "Winemoms"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Friday 31st July",
+  "start": 1785510000000,
+  "end": 1785517200000,
+  "time": "16:00 - 18:00",
+  "artist": "DJ Beks"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785524400000,
+  "time": "18:00 - 20:00",
+  "artist": "Kate Brennan Harding"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Friday 31st July",
+  "start": 1785526200000,
+  "end": 1785529800000,
+  "time": "20:30 - 21:30",
+  "artist": "TBL8 Brass"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Friday 31st July",
+  "start": 1785531600000,
+  "end": 1785538800000,
+  "time": "22:00 - 00:00",
+  "artist": "Winnie Ama"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Friday 31st July",
+  "start": 1785538800000,
+  "end": 1785546000000,
+  "time": "00:00 - 02:00",
+  "artist": "Collie"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Saturday 1st August",
+  "start": 1785598200000,
+  "end": 1785601800000,
+  "time": "16:30 - 17:30",
+  "artist": "Attention B\u00e9b\u00e9"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Saturday 1st August",
+  "start": 1785603600000,
+  "end": 1785610800000,
+  "time": "18:00 - 20:00",
+  "artist": "Forget Romance"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785617100000,
+  "time": "20:30 - 21:45",
+  "artist": "TBL8 Brass"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785625200000,
+  "time": "22:00 - 00:00",
+  "artist": "Graham Smyth"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Saturday 1st August",
+  "start": 1785625200000,
+  "end": 1785632400000,
+  "time": "00:00 - 02:00",
+  "artist": "Onai"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785680100000,
+  "end": 1785687300000,
+  "time": "15:15 - 17:15",
+  "artist": "Claire Beck's Sunday Revival"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785689100000,
+  "end": 1785692700000,
+  "time": "17:45 - 18:45",
+  "artist": "Anna's Number"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785694500000,
+  "end": 1785698100000,
+  "time": "19:15 - 20:15",
+  "artist": "TBL8 Brass"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785699000000,
+  "end": 1785704400000,
+  "time": "20:30 - 22:00",
+  "artist": "Stevie G"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785704400000,
+  "end": 1785711600000,
+  "time": "22:00 - 00:00",
+  "artist": "Bazza Ranks"
+ },
+ {
+  "stage": "Born Social by Schweppes",
+  "day": "Sunday 2nd August",
+  "start": 1785711600000,
+  "end": 1785718800000,
+  "time": "00:00 - 02:00",
+  "artist": "Shauna Dee"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Friday 31st July",
+  "start": 1785506400000,
+  "end": 1785509100000,
+  "time": "15:00 - 15:45",
+  "artist": "Sip Sip Hooray! Champagne Opening Party with Tara Deery and Sin\u00e9ad McCarthy"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Friday 31st July",
+  "start": 1785510000000,
+  "end": 1785512700000,
+  "time": "16:00 - 16:45",
+  "artist": "The D\u00e9ise, Decanted: A Sunny South East Showcase with Dungarvan Brewing, Eunice Power, Fat Tomato & more"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785516300000,
+  "time": "17:00 - 17:45",
+  "artist": "The Simpler Life? LIVE: The Renovation Rollercaster with James Kavanagh and William Murray"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785578400000,
+  "end": 1785581100000,
+  "time": "11:00 - 11:45",
+  "artist": "The Teddy Bears Picnic with Joanna Bourke Lawlor (family friendly)"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785582000000,
+  "end": 1785584700000,
+  "time": "12:00 - 12:45",
+  "artist": "Chocolate and Whiskey with Bean and Goose and Foxes Bow"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785585600000,
+  "end": 1785588300000,
+  "time": "13:00 - 13:45",
+  "artist": "Bia Duit LIVE with Ann Marie Duffin and Shaun Lavelle"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785589200000,
+  "end": 1785591900000,
+  "time": "14:00 - 14:45",
+  "artist": "An Ode to the Irish Chipper with Shamim de Br\u00fan, Melissa McCabe and Marcus O\u2019Laoire"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785592800000,
+  "end": 1785595500000,
+  "time": "15:00 - 15:45",
+  "artist": "I\u2019ll Have What She\u2019s Having: Iconic Rom Com Food and Drink with Hilary Quinn, Ali Dunworth, Louise McSharry, Jordan Mooney and Boatyard Distillery"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785596400000,
+  "end": 1785599100000,
+  "time": "16:00 - 16:45",
+  "artist": "Frying Pan or Fire: Hot Takes with Dee Laffan, Kevin Thornton, Eric Matthews, Paul Flynn, Karl Cooney, Jordan Mooney & more"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Saturday 1st August",
+  "start": 1785600000000,
+  "end": 1785602700000,
+  "time": "17:00 - 17:45",
+  "artist": "Whiskey on the Table with Ois\u00edn Davis"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785664800000,
+  "end": 1785667500000,
+  "time": "11:00 - 11:45",
+  "artist": "K Pop Demon Hunter Instant Noodles with Aoife McElwain (family friendly)"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785668400000,
+  "end": 1785671100000,
+  "time": "12:00 - 12:45",
+  "artist": "Bia agus Deoch: pop-up food & drink Gaeltacht with Ann N\u00ed Ch\u00edobh\u00e1in, D\u00e1ire \u00d3 L\u00faing & Siobhan N\u00ed Ghairbhith"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785672000000,
+  "end": 1785674700000,
+  "time": "13:00 - 13:45",
+  "artist": "Main Character Menus with Aishling Moore (Goldie), Sofie Rooney & Garret FitzGerald (Chimac) and Barry Wallace (Dash)"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785675600000,
+  "end": 1785678300000,
+  "time": "14:00 - 14:45",
+  "artist": "The New Irish Pour with Judith & Susan Boyle, Legacy Cider, Boatyard, Craft Cocktails, Foxes Bow, Karl Cooney & Fierce Mild"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785679200000,
+  "end": 1785681900000,
+  "time": "15:00 - 15:45",
+  "artist": "Taste Bud Time Machine: Food of the 80s and 90s with Erica Drum, Ciara Daly and guest chef JR Ryall"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785682800000,
+  "end": 1785685500000,
+  "time": "16:00 - 16:45",
+  "artist": "Both Sides of the Bar with Matt Smyth & Mike O'Connor (The Centre Cut Podcast) and Dave Taylor (The Sackville Lounge)"
+ },
+ {
+  "stage": "Theatre of Food",
+  "day": "Sunday 2nd August",
+  "start": 1785686400000,
+  "end": 1785689100000,
+  "time": "17:00 - 17:45",
+  "artist": "The Kitchen Press C\u00e9il\u00ed: A Celebration of Theatre of Food - Sally & John McKenna, Derry Clarke, Kevin Thornton, M\u00e1irt\u00edn Mac Con Iomaire, Se\u00e1neen Sullivan & more"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785502800000,
+  "end": 1785508200000,
+  "time": "14:00 - 15:30",
+  "artist": "The Reverend Tony Bones"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785508200000,
+  "end": 1785510000000,
+  "time": "15:30 - 16:00",
+  "artist": "KiiKO (Live)"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785510000000,
+  "end": 1785513600000,
+  "time": "16:00 - 17:00",
+  "artist": "Emmy Shigeta"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785513600000,
+  "end": 1785517200000,
+  "time": "17:00 - 18:00",
+  "artist": "DJ Yabi"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785517200000,
+  "end": 1785522600000,
+  "time": "18:00 - 19:30",
+  "artist": "BLKCNVS"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785522600000,
+  "end": 1785528000000,
+  "time": "19:30 - 21:00",
+  "artist": "Rhyzine"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785530400000,
+  "end": 1785534000000,
+  "time": "21:40 - 22:40",
+  "artist": "DJ Egg"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785534000000,
+  "end": 1785539700000,
+  "time": "22:40 - 00:15",
+  "artist": "Big Romance DJs"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Friday 31st July",
+  "start": 1785539700000,
+  "end": 1785547800000,
+  "time": "00:15 - 02:30",
+  "artist": "New Jackson"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785582000000,
+  "end": 1785592800000,
+  "time": "12:00 - 15:00",
+  "artist": "Colleen Cosmo Murphy"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785592800000,
+  "end": 1785600000000,
+  "time": "15:00 - 17:00",
+  "artist": "New Tropicalistas"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785600000000,
+  "end": 1785605400000,
+  "time": "17:00 - 18:30",
+  "artist": "Simon Merriman"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785605400000,
+  "end": 1785612600000,
+  "time": "18:30 - 20:30",
+  "artist": "Big Romance DJs"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785612600000,
+  "end": 1785618000000,
+  "time": "20:30 - 22:00",
+  "artist": "Ricky Chong"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785618000000,
+  "end": 1785623400000,
+  "time": "22:00 - 23:30",
+  "artist": "Moving Still"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785623400000,
+  "end": 1785628800000,
+  "time": "23:30 - 01:00",
+  "artist": "Governess"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Saturday 1st August",
+  "start": 1785628800000,
+  "end": 1785634200000,
+  "time": "01:00 - 02:30",
+  "artist": "DJ Deece"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785668400000,
+  "end": 1785672000000,
+  "time": "12:00 - 13:00",
+  "artist": "Organ Freeman (Live Jazz)"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785672000000,
+  "end": 1785679200000,
+  "time": "13:00 - 15:00",
+  "artist": "Shrem's Madonnathon"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785679200000,
+  "end": 1785684600000,
+  "time": "15:00 - 16:30",
+  "artist": "Breffni Cummiskey"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785684600000,
+  "end": 1785690000000,
+  "time": "16:30 - 18:00",
+  "artist": "Big Romance DJs"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785690000000,
+  "end": 1785697200000,
+  "time": "18:00 - 20:00",
+  "artist": "Prosumer"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785697200000,
+  "end": 1785704400000,
+  "time": "20:00 - 22:00",
+  "artist": "Special Guest"
+ },
+ {
+  "stage": "the-big-romance-dome-x-altos",
+  "day": "Sunday 2nd August",
+  "start": 1785704400000,
+  "end": 1785711600000,
+  "time": "22:00 - 00:00",
+  "artist": "Big Romance DJs"
+ }
+]
