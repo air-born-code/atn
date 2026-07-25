@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-25T22:13:30.197537+00:00",
+ "updated": "2026-07-25T23:16:20.366974+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 4,
+ "collected": 5,
  "items": [
   {
    "headline": "Delivery Service on the songs they have on repeat ahead of their The Circle By Jameson Music All Together Now ",
@@ -46,6 +46,14 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/podcast-soak-on-finding-joy-collaborating-with-friends-and-fred-again/"
+  },
+  {
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
