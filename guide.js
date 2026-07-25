@@ -339,6 +339,51 @@ function scoreRow(s) {
     '<div class="sconf">Live-form evidence: ' + CONF[s.cf || 0] + "</div></div>";
 }
 
+/* Sits above each day's scored section, so the numbers below it mean something. */
+function scoreExplainer() {
+  var w = function (lab, pct, what, eg) {
+    return '<div class="ew"><span class="ewl">' + lab + "</span>" +
+      '<span class="ewb"><i style="width:' + pct + '%"></i></span>' +
+      '<span class="ewp">' + pct + "%</span>" +
+      '<span class="ewd">' + what +
+      (eg ? '<span class="eeg">' + eg + "</span>" : "") + "</span></div>";
+  };
+  return '<details class="expl"><summary>' +
+    '<span class="etag">How the scores work</span>' +
+    '<span class="eform">0.35 fresh + 0.35 recent gigs + 0.20 best album + 0.10 bench, ' +
+    "+ legend bonus</span></summary>" +
+    '<div class="ebody">' +
+      w("Fresh", 35,
+        "Are they touring <b>new music</b> right now, or the back catalogue? Nothing to do with " +
+        "how old the act is &mdash; it's about whether they've put out a record recently and are " +
+        "out playing it. A 30-year-old band with a great new album scores higher than a young " +
+        "band with nothing out. It is <b>not</b> a judgement on quality: a low score means " +
+        "nostalgia set, not bad gig.",
+        "Maruja 9.5 &mdash; debut album, 2025 &middot; Pulp 8.5 &mdash; first record in 24 years, 2025 " +
+        "&middot; Gilla Band 6.5 &mdash; last album 2022 &middot; Barrington Levy 3.0 &mdash; no new " +
+        "record, touring the classics") +
+      w("Live now", 35,
+        "How good their gigs have actually <b>been</b> over roughly the last year, taken from " +
+        "published reviews rather than reputation.",
+        "Maruja and Ezra Collective 9.5 &middot; Barrington Levy 5.5 &mdash; 2025 shows drew mixed reports") +
+      w("Best album", 20, "Quality of their high-water mark, whenever it landed.",
+        "The Avalanches 9.5 &mdash; 'Since I Left You' still counts, 25 years on") +
+      w("Bench", 10,
+        "Depth across the whole catalogue &mdash; how much great material they could draw on. " +
+        "Kept deliberately light: it was letting veterans outrank bands playing the best shows " +
+        "of their lives.",
+        "Mogwai 9.0 &middot; Maruja 3.5 &mdash; brilliant, but one album deep") +
+      '<p class="enote"><b>Legend bonus</b> is added on top, but only where a genuinely ' +
+      'legendary concert can be named and dated &mdash; Pulp at Glastonbury in 1995, ' +
+      'Underworld at the 2012 Olympics. Tap any act to see theirs. No bonus is given on vibes.</p>' +
+      '<p class="enote"><b>Hour by hour</b> takes the best-scoring set that actually ' +
+      'occupies at least half of that hour, so a set clipping the hour by ten minutes ' +
+      "can't win it. Where two are within 0.3 it's a coin flip, and the Irish act gets it.</p>" +
+      '<p class="enote"><b>Live-form evidence</b> on each card tells you how solid the ' +
+      'number is: a cited written review, weaker audience reports, or reputation only.</p>' +
+    "</div></details>";
+}
+
 function renderHours() {
   var H = (window.ATN_HOURS || {})[S.day] || [];
   if (!H.length) return "";
@@ -424,7 +469,7 @@ var BUCKETS = ["Daytime", "Early evening", "Night", "Late / after midnight"];
 
 function renderPicks() {
   var p = PLANS[S.day];
-  var h = heroBlock(S.day) + renderHours();
+  var h = heroBlock(S.day) + scoreExplainer() + renderHours();
 
   if (p) {
     h += '<div class="plan"><div class="tag">The Game Plan</div><h2>' + esc(p.title) + "</h2><p>" +
@@ -764,6 +809,78 @@ document.addEventListener("click", function (e) {
     if (S.view === "plan") render();
     return;
   }
+});
+
+/* ---------------- global search, every day at once ---------------- */
+var DAYNAME = { thu: "Thursday 30 July", fri: "Friday 31 July",
+                sat: "Saturday 1 August", sun: "Sunday 2 August" };
+
+function mark(text, q) {
+  var i = text.toLowerCase().indexOf(q);
+  if (i < 0) return esc(text);
+  return esc(text.slice(0, i)) + "<mark>" + esc(text.slice(i, i + q.length)) +
+         "</mark>" + esc(text.slice(i + q.length));
+}
+
+function runSearch() {
+  var q = document.getElementById("sq").value.toLowerCase().trim();
+  var box = document.getElementById("sresults");
+
+  if (q.length < 2) {
+    box.innerHTML = '<div class="shint">Type at least two letters.<br><br>' +
+      'Searches every act and every stage across all four days &mdash; including ' +
+      'the ones that never made the picks.</div>';
+    return;
+  }
+
+  var hits = D.filter(function (s) {
+    return (s.a + " " + s.s).toLowerCase().indexOf(q) >= 0;
+  }).sort(function (a, b) { return a.st - b.st; });
+
+  if (!hits.length) {
+    box.innerHTML = '<div class="shint">Nothing matches &ldquo;' + esc(q) + '&rdquo;.</div>';
+    return;
+  }
+
+  var h = '<div class="scount">' + hits.length + " set" + (hits.length > 1 ? "s" : "") + "</div>";
+  var day = "";
+  hits.forEach(function (s) {
+    if (s.d !== day) {
+      day = s.d;
+      h += '<div class="sday">' + esc(DAYNAME[day] || day) + "</div>";
+    }
+    var id = idOf(s), on = !!S.stars[id];
+    h += '<div class="set" data-g="' + (s.g || "") + '"><div class="body">' +
+      '<div class="top"><span class="time">' + esc(s.t) + "</span>" +
+      (s.cs ? '<span class="badge b1">' + s.cs.toFixed(2) + "</span>" : "") + "</div>" +
+      "<h3>" + mark(s.a, q) + "</h3>" +
+      '<div class="stage">' + mark(s.s, q) + "</div>" +
+      (s.n ? '<div class="note">' + esc(s.n) + "</div>" : "") +
+      "</div>" +
+      '<button class="star ' + (on ? "on" : "") + '" data-id="' + esc(id) + '">' +
+      (on ? "★" : "☆") + "</button></div>";
+  });
+  box.innerHTML = h;
+}
+
+function openSearch() {
+  var o = document.getElementById("searchOverlay");
+  o.hidden = false;
+  runSearch();
+  var el = document.getElementById("sq");
+  el.focus();
+  el.select();
+}
+
+function closeSearch() {
+  document.getElementById("searchOverlay").hidden = true;
+}
+
+document.getElementById("searchBtn").addEventListener("click", openSearch);
+document.getElementById("sclose").addEventListener("click", closeSearch);
+document.getElementById("sq").addEventListener("input", runSearch);
+document.getElementById("sq").addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeSearch();
 });
 
 document.getElementById("refresh").addEventListener("click", function () {

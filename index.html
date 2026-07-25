@@ -57,6 +57,54 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
   border-radius:9px;padding:8px 9px}
 .legend b{color:var(--tx);font-weight:650;white-space:nowrap}
 
+/* ---------- global search ---------- */
+#searchOverlay{position:fixed;inset:0;z-index:80;background:var(--bg);
+  display:flex;flex-direction:column;padding-bottom:var(--safeb)}
+#searchOverlay[hidden]{display:none}
+.sbar{display:flex;gap:8px;padding:12px;border-bottom:1px solid var(--line);
+  padding-top:calc(12px + env(safe-area-inset-top,0px))}
+.sinput{flex:1;min-width:0;padding:12px 13px;border-radius:12px;background:var(--card);
+  border:1px solid var(--line);color:var(--tx);font-size:16px;-webkit-appearance:none}
+.sinput::placeholder{color:var(--dim2)}
+.sinput:focus{outline:none;border-color:var(--acc)}
+.sclose{flex:none;padding:0 14px;min-height:44px;border-radius:12px;background:var(--card2);
+  border:1px solid var(--line);font-size:13.5px;font-weight:650;color:var(--tx)}
+#sresults{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:12px}
+.shint{text-align:center;color:var(--dim2);font-size:13px;padding:40px 24px;line-height:1.6}
+.scount{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim2);
+  font-weight:700;margin:2px 2px 9px}
+.sday{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--acc);
+  font-weight:700;margin:14px 2px 8px}
+.sday:first-of-type{margin-top:0}
+mark{background:rgba(255,47,116,.3);color:var(--tx);border-radius:3px;padding:0 2px}
+
+/* ---------- score explainer ---------- */
+.expl{border-radius:14px;background:var(--card);border:1px solid var(--line);
+  margin-bottom:12px;overflow:hidden}
+.expl summary{padding:12px 13px;cursor:pointer;list-style:none;display:block}
+.expl summary::-webkit-details-marker{display:none}
+.expl summary::after{content:"▾";float:right;color:var(--dim2);font-size:12px;
+  margin-top:-16px;transition:transform .15s}
+.expl[open] summary::after{transform:rotate(180deg)}
+.etag{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--acc);font-weight:700;margin-bottom:4px}
+.eform{display:block;font-size:12px;color:var(--dim);line-height:1.5;
+  font-variant-numeric:tabular-nums;padding-right:16px}
+.ebody{padding:0 13px 13px}
+.ew{display:grid;grid-template-columns:74px 1fr 32px;gap:7px;align-items:center;
+  margin-bottom:9px}
+.ewl{font-size:11.5px;font-weight:700;color:var(--tx);white-space:nowrap}
+.ewb{height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.ewb i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#7c3aed)}
+.ewp{font-size:11px;color:var(--dim2);text-align:right;font-variant-numeric:tabular-nums}
+.ewd{grid-column:1/-1;font-size:11.5px;color:var(--dim);line-height:1.45;margin-top:-4px}
+.ewd b{color:var(--tx);font-weight:650}
+.eeg{display:block;font-size:10.5px;color:var(--dim2);line-height:1.5;margin-top:5px;
+  padding-left:8px;border-left:2px solid var(--line)}
+.enote{font-size:11.5px;color:var(--dim);line-height:1.5;margin:10px 0 0;
+  border-top:1px solid var(--line);padding-top:9px}
+.enote b{color:var(--tx);font-weight:650}
+
 /* ---------- hour by hour ---------- */
 .hr{display:flex;gap:11px;padding:9px 0;border-top:1px solid var(--line)}
 .hr .hrt{flex:none;width:82px;font-size:11.5px;font-weight:700;color:var(--acc);
@@ -273,11 +321,21 @@ nav button .cnt{position:absolute;transform:translate(14px,-4px);background:var(
       <div class="sub">Curraghmore · 30 Jul – 2 Aug</div>
     </div>
     <div class="spacer"></div>
+    <button class="iconbtn" id="searchBtn" title="Search all days" aria-label="Search">&#128269;</button>
     <button class="iconbtn" id="refresh" title="Check for updates">&#8635;</button>
   </div>
   <div class="days" id="days"></div>
   <div class="filters" id="filters"></div>
 </header>
+
+<div id="searchOverlay" hidden>
+  <div class="sbar">
+    <input id="sq" class="sinput" type="search" placeholder="Search all 398 sets…"
+           autocomplete="off" autocorrect="off" spellcheck="false">
+    <button id="sclose" class="sclose">Close</button>
+  </div>
+  <div id="sresults"></div>
+</div>
 
 <div id="nowbar" hidden></div>
 <main id="main"></main>
