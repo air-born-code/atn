@@ -271,3 +271,8 @@ EXCLUDE = {
     "Joshua Idehen", "Christy Moore", "The Mary Wallopers",
 }
 
+
+
+STAGE_NAMES = {
+    "the-big-romance-dome-x-altos": "Big Romance Dome x Altos",
+}

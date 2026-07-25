@@ -1,118 +1,26 @@
 #!/usr/bin/env python3
 """The committee.
 
-Four judges score every curated act on three axes, the scores are cross-referenced
-against the recent-live-review evidence gathered in curate.py, and every genuine
-timeslot clash is resolved into a verdict.
+Scores every curated act (see scoring.py for the model), consolidates to a single
+number, then walks each festival day hour by hour and names the best gig on site
+in every one of those hours.
 
 Outputs:
-  acts.csv        the scoring database, one row per act (open it in Numbers/Excel)
-  clashes.csv     every overlapping pair of curated picks, with the verdict
+  acts.csv        one row per act — the scoring database
+  hours.csv       hour-by-hour verdict for each day
   committee.json  consumed by curate.py -> data.js -> the app
 
 Run before curate.py:   python3 committee.py && python3 curate.py
 """
-import json, csv, itertools
+import json, csv, datetime
 
-# ---------------------------------------------------------------- the judges
-# Each weights the three axes differently. The composite is the mean of all four,
-# which stops any single perspective dominating.
-JUDGES = [
-    # name,             heritage, legend, recent, irish_bonus
-    ("The Archivist",       0.50,   0.30,   0.20,  0.0),
-    ("The Headliner",       0.20,   0.50,   0.30,  0.0),
-    ("The Gig-Goer",        0.20,   0.20,   0.60,  0.0),
-    ("The Local",           0.30,   0.25,   0.45,  0.4),
-]
+from scoring import JUDGES, SCORES, LEGEND, DEFAULT
+import curate_tables as T
 
-# ---------------------------------------------------------------- the evidence
-# heritage  = depth of catalogue and influence
-# legend    = status / "would you regret missing this"
-# recent    = evidence of live form over the last year
-# conf      = confidence in the `recent` figure:
-#             2 = cited written review, 1 = aggregate/audience reports, 0 = reputation only
-SCORES = {
-# artist:                      (heritage, legend, recent, conf)
-"Pulp":                            (9.5, 9.5, 9.0, 2),
-"Underworld":                      (9.0, 9.0, 9.0, 2),
-"Mogwai":                          (9.0, 8.5, 8.5, 2),
-"Disclosure (DJ)":                 (7.0, 7.5, 6.5, 0),
-"Barrington Levy":                 (9.0, 8.5, 5.5, 1),
-"Ezra Collective":                 (6.5, 7.0, 9.5, 2),
-"Gilla Band":                      (7.5, 7.0, 9.5, 2),
-"Maruja":                          (4.5, 5.0, 9.5, 2),
-"W.I.T.C.H.":                      (8.5, 7.5, 8.5, 2),
-"Hot 8 Brass Band":                (7.0, 7.0, 7.5, 0),
-"Sprints":                         (4.0, 5.0, 9.0, 2),
-"THUMPER":                         (4.0, 4.5, 9.0, 2),
-"Self Esteem":                     (5.5, 6.5, 9.0, 2),
-"Kate Nash":                       (6.0, 6.0, 7.0, 1),
-"Anna von Hausswolff":             (6.5, 6.5, 9.0, 2),
-"Chet Faker":                      (5.5, 5.5, 6.5, 0),
-"Soda Blonde":                     (3.5, 4.0, 6.0, 0),
-"Damien Dempsey":                  (7.0, 7.5, 7.0, 0),
-"King Kong Company":               (4.5, 6.0, 7.5, 0),
-"Hot Chip (DJ Set)":               (7.5, 7.5, 7.5, 0),
-"Altern-8":                        (7.5, 7.0, 7.0, 0),
-"Soichi Terada (Live)":            (7.5, 7.0, 9.0, 1),
-"Talks in the Tent: John Cooper Clarke": (8.5, 8.5, 9.0, 2),
-"Floating Points (Live)":          (7.0, 7.5, 9.5, 2),
-"Friendly Fires":                  (6.0, 6.0, 7.5, 1),
-"Floorplan":                       (8.0, 7.5, 7.5, 0),
-"Kerri Chandler":                  (9.0, 8.5, 8.0, 1),
-"Rahann":                          (7.5, 6.5, 8.0, 2),
-"Gurriers":                        (3.5, 4.5, 8.5, 2),
-"Dry Cleaning":                    (5.5, 5.5, 8.0, 1),
-"Cardinals":                       (2.5, 3.0, 6.0, 0),
-"Maribou State (Live)":            (6.0, 6.0, 8.5, 2),
-"The Avalanches (DJ Set)":         (8.5, 8.0, 6.0, 0),
-"Mall Grab":                       (5.0, 6.0, 8.5, 2),
-"Joy Orbison":                     (7.0, 7.0, 7.5, 0),
-"Greentea Peng":                   (5.0, 5.5, 8.5, 2),
-"Moonchild Sanelly":               (5.0, 5.5, 9.0, 2),
-"Bicurious":                       (3.0, 3.5, 6.0, 0),
-"Call Super":                      (6.0, 6.0, 7.0, 0),
-"DJ Nobu":                         (7.0, 7.0, 7.5, 0),
-"Or:la":                           (4.5, 5.0, 7.0, 0),
-"Jyoty":                           (4.0, 5.5, 7.5, 0),
-"Say She She":                     (4.0, 4.5, 7.0, 0),
-"Muireann Bradley":                (3.0, 4.0, 8.0, 0),
-"David Kitt":                      (5.5, 5.0, 6.5, 0),
-"KhakiKid":                        (2.5, 3.0, 6.0, 0),
-"Ms Dynamite":                     (7.0, 7.0, 6.5, 0),
-"SOAK":                            (4.5, 5.0, 6.5, 0),
-"Getdown Services":                (3.0, 3.5, 6.5, 0),
-"Alabaster DePlume":               (4.5, 5.0, 7.5, 0),
-"Prosumer":                        (6.5, 6.0, 7.0, 0),
-"Eats Everything":                 (5.5, 6.0, 6.5, 0),
-"The Dare (DJ Set)":               (3.5, 5.0, 6.5, 0),
-"Weval (Live)":                    (4.5, 4.5, 6.5, 0),
-"Colleen Cosmo Murphy":            (6.5, 6.0, 7.0, 0),
-"Trinity Orchestra":               (3.0, 4.0, 6.5, 0),
-"PVA":                             (3.0, 3.5, 6.5, 0),
-"Brògeal":                         (2.5, 3.0, 6.0, 0),
-"Jacob Alon":                      (2.0, 3.0, 6.5, 0),
-"Job Jobse":                       (5.0, 5.5, 7.0, 0),
-"O'Flynn":                         (4.5, 4.5, 6.5, 0),
-"New Jackson":                     (4.5, 4.5, 6.5, 0),
-"Sunil Sharpe x Kev Freeney Presents Spineless": (6.0, 5.5, 7.0, 0),
-"Jamz Supernova":                  (4.0, 4.5, 6.5, 0),
-"Anish Kumar":                     (3.5, 4.0, 6.5, 0),
-"Sam Alfred":                      (2.5, 3.0, 6.0, 0),
-"Lullahush":                       (3.0, 3.5, 6.5, 0),
-"Dan Shake":                       (4.5, 4.5, 6.5, 0),
-"Cromby":                          (4.0, 4.0, 6.5, 0),
-"Moving Still":                    (4.0, 4.0, 6.5, 0),
-"BIIRD":                           (2.5, 3.5, 6.0, 0),
-"Kean Kavanagh":                   (3.0, 3.5, 6.0, 0),
-"Bazza Ranks":                     (3.0, 3.5, 6.0, 0),
-"Sing Along Social":               (2.0, 3.5, 6.5, 0),
-"The Wild Geeze - Comedy Cabaret": (2.0, 3.0, 6.0, 0),
-"Playback Presents: Stop Making Sense": (3.0, 4.5, 6.5, 0),
-"Say She She ":                    (4.0, 4.5, 7.0, 0),
-}
+DAY_KEY = {"Thursday 30th July": "thu", "Friday 31st July": "fri",
+           "Saturday 1st August": "sat", "Sunday 2nd August": "sun"}
+DAYS = ("fri", "sat", "sun")
 
-# Irish (or Irish-based) acts — used only as a tiebreaker by The Local.
 IRISH = {
 "Gilla Band", "Sprints", "THUMPER", "Gurriers", "Cardinals", "Bicurious",
 "King Kong Company", "Soda Blonde", "Damien Dempsey", "David Kitt", "KhakiKid",
@@ -122,100 +30,122 @@ IRISH = {
 "Sing Along Social", "The Wild Geeze - Comedy Cabaret",
 }
 
-DEFAULT = (3.0, 3.5, 6.0, 0)   # tier-3 acts with no specific evidence
 
-
-def judge_scores(artist):
-    h, l, r, conf = SCORES.get(artist, DEFAULT)
+def score(artist):
+    peak, bench, recent, conf = SCORES.get(artist, DEFAULT)
+    base = (peak + bench + recent) / 3.0          # the equal three-way split
+    bonus, what, when = LEGEND.get(artist, (0.0, "", ""))
     irish = artist in IRISH
-    out = {}
-    for name, wh, wl, wr, wi in JUDGES:
-        s = h * wh + l * wl + r * wr
+
+    views = {}
+    for name, wp, wb, wr, wi in JUDGES:
+        v = peak * wp + bench * wb + recent * wr
         if irish:
-            s += wi
-        out[name] = round(min(s, 10.0), 2)
-    return out, h, l, r, conf, irish
+            v += wi
+        views[name] = round(v, 2)
+
+    spread = round(max(views.values()) - min(views.values()), 2)
+    return {
+        "peak": peak, "bench": bench, "recent": recent, "conf": conf,
+        "base": round(base, 2), "bonus": bonus,
+        "composite": round(base + bonus, 2),
+        "legend_what": what, "legend_when": when,
+        "irish": int(irish), "spread": spread,
+        **{"j_" + n.replace("The ", "").lower().replace("-", ""): v for n, v in views.items()},
+    }
 
 
 def main():
     raw = json.load(open("_schedule_raw.json"))
-    import curate_tables as T   # PICKS / LIVE, shared with curate.py
-
-    DAY = {"Thursday 30th July": "thu", "Friday 31st July": "fri",
-           "Saturday 1st August": "sat", "Sunday 2nd August": "sun"}
 
     acts, seen = [], set()
     for r in raw:
         a = r["artist"]
-        if a not in T.PICKS or a in T.EXCLUDE or a in seen:
+        day = DAY_KEY[r["day"]]
+        if a not in T.PICKS or a in T.EXCLUDE or day not in DAYS or (a, day) in seen:
             continue
-        seen.add(a)
-        js, h, l, rec, conf, irish = judge_scores(a)
-        composite = round(sum(js.values()) / len(js), 2)
+        seen.add((a, day))
         lv, lu, ls = T.LIVE.get(a, ("", "", ""))
-        acts.append({
-            "artist": a, "day": DAY[r["day"]], "stage": r["stage"],
-            "time": r["time"], "start": r["start"], "end": r["end"],
-            "tier": T.PICKS[a][0], "genre": T.PICKS[a][1], "irish": int(irish),
-            "heritage": h, "legend": l, "recent": rec, "confidence": conf,
-            "composite": composite, "evidence_src": ls, "evidence_url": lu,
-            **{k.replace("The ", "j_").lower(): v for k, v in js.items()},
-        })
+        stage = T.STAGE_NAMES.get(r["stage"], r["stage"])
+        row = {"artist": a, "day": day, "stage": stage, "time": r["time"],
+               "start": r["start"], "end": r["end"],
+               "tier": T.PICKS[a][0], "genre": T.PICKS[a][1]}
+        row.update(score(a))
+        row["evidence_src"] = ls
+        row["evidence_url"] = lu
+        acts.append(row)
 
     acts.sort(key=lambda x: -x["composite"])
     with open("acts.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(acts[0].keys()))
-        w.writeheader()
-        w.writerows(acts)
+        w.writeheader(); w.writerows(acts)
 
-    # ---- resolve every genuine clash between curated picks on the same day
-    clashes, verdicts = [], {}
-    for day in ("fri", "sat", "sun"):
-        day_acts = [a for a in acts if a["day"] == day and a["tier"] <= 2]
-        for x, y in itertools.combinations(day_acts, 2):
-            if x["start"] < y["end"] and y["start"] < x["end"]:
-                gap = round(abs(x["composite"] - y["composite"]), 2)
-                win, lose = (x, y) if x["composite"] >= y["composite"] else (y, x)
-                reason = "clear on the scores"
-                if gap < 0.30:
-                    if win["irish"] != lose["irish"]:
-                        if lose["irish"]:
-                            win, lose = lose, win
-                        reason = "too close to call — Irish tiebreak"
+    # ---- hour by hour, who wins the site
+    hours, by_hour = [], {}
+    for day in DAYS:
+        day_acts = [a for a in acts if a["day"] == day]
+        if not day_acts:
+            continue
+        lo = min(a["start"] for a in day_acts)
+        hi = max(a["end"] for a in day_acts)
+        t = lo - (lo % 3600000)
+        while t < hi:
+            nxt = t + 3600000
+            on = [a for a in day_acts if a["start"] < nxt and a["end"] > t]
+            if on:
+                on.sort(key=lambda x: -x["composite"])
+                win = on[0]
+                ups = on[1:4]
+                gap = round(win["composite"] - ups[0]["composite"], 2) if ups else None
+                # a genuine coin flip goes to the Irish act
+                note = ""
+                if ups and gap is not None and gap < 0.30:
+                    tied = [x for x in on if win["composite"] - x["composite"] < 0.30]
+                    irish_tied = [x for x in tied if x["irish"]]
+                    if irish_tied and not win["irish"]:
+                        win = irish_tied[0]
+                        ups = [x for x in on if x is not win][:3]
+                        note = "too close to call — Irish tiebreak"
                     else:
-                        reason = "effectively a coin flip"
-                clashes.append({
-                    "day": day, "a": x["artist"], "a_score": x["composite"],
-                    "b": y["artist"], "b_score": y["composite"],
-                    "gap": gap, "verdict": win["artist"], "reason": reason,
+                        note = "close call"
+                label = datetime.datetime.fromtimestamp(t / 1000).strftime("%H:%M")
+                rec = {"day": day, "hour": label,
+                       "winner": win["artist"], "stage": win["stage"],
+                       "time": win["time"], "score": win["composite"],
+                       "gap": gap if gap is not None else "",
+                       "note": note,
+                       "runners_up": " / ".join("%s (%.2f)" % (u["artist"], u["composite"])
+                                                for u in ups)}
+                hours.append(rec)
+                by_hour.setdefault(day, []).append({
+                    "h": label, "w": win["artist"], "s": win["stage"],
+                    "t": win["time"], "sc": win["composite"], "n": note,
+                    "r": [{"a": u["artist"], "sc": u["composite"]} for u in ups],
                 })
-                key = day + "|" + win["artist"]
-                verdicts.setdefault(key, []).append(lose["artist"])
+            t = nxt
 
-    clashes.sort(key=lambda c: (c["day"], c["gap"]))
-    with open("clashes.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=list(clashes[0].keys()))
-        w.writeheader()
-        w.writerows(clashes)
+    with open("hours.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(hours[0].keys()))
+        w.writeheader(); w.writerows(hours)
 
     json.dump({
         "judges": [j[0] for j in JUDGES],
+        "model": "composite = (best album + bench strength + recent concerts) / 3 + legend bonus",
         "scores": {a["artist"]: {
-            "c": a["composite"], "h": a["heritage"], "l": a["legend"],
-            "r": a["recent"], "cf": a["confidence"], "ir": a["irish"],
-            "j": {k: a[k] for k in a if k.startswith("j_")},
+            "c": a["composite"], "b": a["base"], "bn": a["bonus"],
+            "p": a["peak"], "bs": a["bench"], "r": a["recent"], "cf": a["conf"],
+            "ir": a["irish"], "sp": a["spread"],
+            "lw": a["legend_what"], "ln": a["legend_when"],
         } for a in acts},
-        "clashes": clashes,
-        "beats": verdicts,
+        "hours": by_hour,
     }, open("committee.json", "w"), indent=1)
 
-    print("acts.csv        %d acts scored" % len(acts))
-    print("clashes.csv     %d overlapping pairs resolved" % len(clashes))
-    print("top 8 composite:")
-    for a in acts[:8]:
-        print("   %-42s %.2f  (h%.1f l%.1f r%.1f conf%d)" %
-              (a["artist"], a["composite"], a["heritage"], a["legend"],
-               a["recent"], a["confidence"]))
+    print("acts.csv   %d acts scored" % len(acts))
+    print("hours.csv  %d hourly verdicts" % len(hours))
+    print("\ntop 10 consolidated:")
+    for a in acts[:10]:
+        star = (" +%.1f legend" % a["bonus"]) if a["bonus"] else ""
+        print("   %-40s %5.2f  (base %.2f%s)" % (a["artist"][:40], a["composite"], a["base"], star))
 
 
 if __name__ == "__main__":

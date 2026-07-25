@@ -5,4107 +5,2708 @@
   "The Gig-Goer",
   "The Local"
  ],
+ "model": "composite = (best album + bench strength + recent concerts) / 3 + legend bonus",
  "scores": {
   "Pulp": {
-   "c": 9.3,
-   "h": 9.5,
-   "l": 9.5,
+   "c": 11.5,
+   "b": 9.0,
+   "bn": 2.5,
+   "p": 9.5,
+   "bs": 8.5,
    "r": 9.0,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 9.4,
-    "j_headliner": 9.35,
-    "j_gig-goer": 9.2,
-    "j_local": 9.27
-   }
+   "sp": 0.17,
+   "lw": "Glastonbury, Pyramid Stage \u2014 stepped in for The Stone Roses at a week's notice after John Squire broke his collarbone. Widely rated one of the greatest sets in the festival's history.",
+   "ln": "24 June 1995"
   },
   "Underworld": {
-   "c": 9.0,
-   "h": 9.0,
-   "l": 9.0,
+   "c": 11.03,
+   "b": 8.83,
+   "bn": 2.2,
+   "p": 9.0,
+   "bs": 8.5,
    "r": 9.0,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 9.0,
-    "j_headliner": 9.0,
-    "j_gig-goer": 9.0,
-    "j_local": 9.0
-   }
+   "sp": 0.15,
+   "lw": "London Olympics Opening Ceremony \u2014 Rick Smith was musical director for Danny Boyle's ceremony, and 'Caliban's Dream' played as the cauldron was lit.",
+   "ln": "27 July 2012"
   },
   "Talks in the Tent: John Cooper Clarke": {
-   "c": 8.69,
-   "h": 8.5,
-   "l": 8.5,
+   "c": 10.17,
+   "b": 8.17,
+   "bn": 2.0,
+   "p": 8.5,
+   "bs": 7.0,
    "r": 9.0,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 8.6,
-    "j_headliner": 8.65,
-    "j_gig-goer": 8.8,
-    "j_local": 8.72
-   }
+   "sp": 0.65,
+   "lw": "Opened for the Sex Pistols and Buzzcocks at the height of punk \u2014 including 45 minutes holding a 2,000-strong Buzzcocks crowd at Leeds University Refectory. He was also in the room for the Pistols' Lesser Free Trade Hall gig in 1976.",
+   "ln": "18 March 1978"
   },
   "Mogwai": {
-   "c": 8.65,
-   "h": 9.0,
-   "l": 8.5,
+   "c": 10.17,
+   "b": 8.67,
+   "bn": 1.5,
+   "p": 8.5,
+   "bs": 9.0,
    "r": 8.5,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 8.75,
-    "j_headliner": 8.6,
-    "j_gig-goer": 8.6,
-    "j_local": 8.65
-   }
+   "sp": 0.15,
+   "lw": "No single canonical night \u2014 instead a documented reputation as one of the loudest live bands on earth, built on 'Like Herod' and 'Mogwai Fear Satan'. Braithwaite openly tells audiences to wear earplugs.",
+   "ln": "ongoing since the late 1990s"
   },
   "Kerri Chandler": {
-   "c": 8.46,
-   "h": 9.0,
-   "l": 8.5,
+   "c": 9.83,
+   "b": 8.33,
+   "bn": 1.5,
+   "p": 8.5,
+   "bs": 8.5,
    "r": 8.0,
    "cf": 1,
    "ir": 0,
-   "j": {
-    "j_archivist": 8.65,
-    "j_headliner": 8.45,
-    "j_gig-goer": 8.3,
-    "j_local": 8.42
-   }
-  },
-  "Gilla Band": {
-   "c": 8.22,
-   "h": 7.5,
-   "l": 7.0,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 1,
-   "j": {
-    "j_archivist": 7.75,
-    "j_headliner": 7.85,
-    "j_gig-goer": 8.6,
-    "j_local": 8.68
-   }
+   "sp": 0.2,
+   "lw": "His reel-to-reel shows \u2014 mixing live off four tape machines, a nod to watching Frankie Knuckles work \u2014 most visibly at the Roundhouse in London.",
+   "ln": "2022"
   },
   "W.I.T.C.H.": {
-   "c": 8.19,
-   "h": 8.5,
-   "l": 7.5,
+   "c": 9.67,
+   "b": 8.17,
+   "bn": 1.5,
+   "p": 8.5,
+   "bs": 7.5,
    "r": 8.5,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 8.2,
-    "j_headliner": 8.0,
-    "j_gig-goer": 8.3,
-    "j_local": 8.25
-   }
-  },
-  "Floating Points (Live)": {
-   "c": 8.12,
-   "h": 7.0,
-   "l": 7.5,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.65,
-    "j_headliner": 8.0,
-    "j_gig-goer": 8.6,
-    "j_local": 8.25
-   }
-  },
-  "Soichi Terada (Live)": {
-   "c": 7.93,
-   "h": 7.5,
-   "l": 7.0,
-   "r": 9.0,
-   "cf": 1,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.65,
-    "j_headliner": 7.7,
-    "j_gig-goer": 8.3,
-    "j_local": 8.05
-   }
-  },
-  "Ezra Collective": {
-   "c": 7.82,
-   "h": 6.5,
-   "l": 7.0,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.25,
-    "j_headliner": 7.65,
-    "j_gig-goer": 8.4,
-    "j_local": 7.98
-   }
-  },
-  "Floorplan": {
-   "c": 7.65,
-   "h": 8.0,
-   "l": 7.5,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.75,
-    "j_headliner": 7.6,
-    "j_gig-goer": 7.6,
-    "j_local": 7.65
-   }
-  },
-  "Hot Chip (DJ Set)": {
-   "c": 7.5,
-   "h": 7.5,
-   "l": 7.5,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.5,
-    "j_headliner": 7.5,
-    "j_gig-goer": 7.5,
-    "j_local": 7.5
-   }
+   "sp": 0.3,
+   "lw": "Pioneered Zamrock in 1970s Zambia, then reunited and returned to touring after roughly four decades away.",
+   "ln": "1970s, reunited 2010s"
   },
   "Barrington Levy": {
-   "c": 7.49,
-   "h": 9.0,
-   "l": 8.5,
+   "c": 9.33,
+   "b": 7.33,
+   "bn": 2.0,
+   "p": 8.5,
+   "bs": 8.0,
    "r": 5.5,
    "cf": 1,
    "ir": 0,
-   "j": {
-    "j_archivist": 8.15,
-    "j_headliner": 7.7,
-    "j_gig-goer": 6.8,
-    "j_local": 7.3
-   }
+   "sp": 1.05,
+   "lw": "Reggae Sunsplash, Jamaica \u2014 the performances that made his name and cemented his standing in reggae. He went on playing Sunsplash through to 1995.",
+   "ln": "1980 and 1981"
   },
-  "Anna von Hausswolff": {
-   "c": 7.47,
-   "h": 6.5,
-   "l": 6.5,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.0,
-    "j_headliner": 7.25,
-    "j_gig-goer": 8.0,
-    "j_local": 7.62
-   }
-  },
-  "The Avalanches (DJ Set)": {
-   "c": 7.38,
-   "h": 8.5,
-   "l": 8.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.85,
-    "j_headliner": 7.5,
-    "j_gig-goer": 6.9,
-    "j_local": 7.25
-   }
-  },
-  "Damien Dempsey": {
-   "c": 7.26,
-   "h": 7.0,
-   "l": 7.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 7.15,
-    "j_headliner": 7.25,
-    "j_gig-goer": 7.1,
-    "j_local": 7.53
-   }
-  },
-  "Hot 8 Brass Band": {
-   "c": 7.19,
-   "h": 7.0,
-   "l": 7.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.1,
-    "j_headliner": 7.15,
-    "j_gig-goer": 7.3,
-    "j_local": 7.22
-   }
-  },
-  "Joy Orbison": {
-   "c": 7.19,
-   "h": 7.0,
-   "l": 7.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.1,
-    "j_headliner": 7.15,
-    "j_gig-goer": 7.3,
-    "j_local": 7.22
-   }
-  },
-  "DJ Nobu": {
-   "c": 7.19,
-   "h": 7.0,
-   "l": 7.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.1,
-    "j_headliner": 7.15,
-    "j_gig-goer": 7.3,
-    "j_local": 7.22
-   }
-  },
-  "Self Esteem": {
-   "c": 7.17,
-   "h": 5.5,
-   "l": 6.5,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.5,
-    "j_headliner": 7.05,
-    "j_gig-goer": 7.8,
-    "j_local": 7.32
-   }
-  },
-  "Altern-8": {
-   "c": 7.15,
-   "h": 7.5,
-   "l": 7.0,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.25,
-    "j_headliner": 7.1,
-    "j_gig-goer": 7.1,
-    "j_local": 7.15
-   }
-  },
-  "Maribou State (Live)": {
-   "c": 6.97,
-   "h": 6.0,
-   "l": 6.0,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.5,
-    "j_headliner": 6.75,
-    "j_gig-goer": 7.5,
-    "j_local": 7.12
-   }
-  },
-  "Disclosure (DJ)": {
-   "c": 6.96,
-   "h": 7.0,
-   "l": 7.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 7.05,
-    "j_headliner": 7.1,
-    "j_gig-goer": 6.8,
-    "j_local": 6.9
-   }
-  },
-  "Ms Dynamite": {
-   "c": 6.81,
-   "h": 7.0,
-   "l": 7.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.9,
-    "j_headliner": 6.85,
-    "j_gig-goer": 6.7,
-    "j_local": 6.78
-   }
-  },
-  "Moonchild Sanelly": {
-   "c": 6.71,
-   "h": 5.0,
-   "l": 5.5,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 5.95,
-    "j_headliner": 6.45,
-    "j_gig-goer": 7.5,
-    "j_local": 6.92
-   }
-  },
-  "Mall Grab": {
-   "c": 6.67,
-   "h": 5.0,
-   "l": 6.0,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.0,
-    "j_headliner": 6.55,
-    "j_gig-goer": 7.3,
-    "j_local": 6.83
-   }
-  },
-  "Maruja": {
-   "c": 6.59,
-   "h": 4.5,
-   "l": 5.0,
+  "Ezra Collective": {
+   "c": 9.27,
+   "b": 7.67,
+   "bn": 1.6,
+   "p": 7.5,
+   "bs": 6.0,
    "r": 9.5,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 5.65,
-    "j_headliner": 6.25,
-    "j_gig-goer": 7.6,
-    "j_local": 6.88
-   }
+   "sp": 1.24,
+   "lw": "First jazz act ever to win the Mercury Prize, for 'Where I'm Meant To Be', at the Eventim Apollo. An award rather than a gig, but it changed their standing.",
+   "ln": "7 September 2023"
   },
-  "Friendly Fires": {
-   "c": 6.58,
-   "h": 6.0,
-   "l": 6.0,
+  "The Avalanches (DJ Set)": {
+   "c": 8.37,
+   "b": 7.17,
+   "bn": 1.2,
+   "p": 9.5,
+   "bs": 6.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.88,
+   "lw": "'Since I Left You' is one of the most celebrated sample records ever made, though no single legendary live night stands out \u2014 they toured it rarely.",
+   "ln": "2000"
+  },
+  "Floorplan": {
+   "c": 8.37,
+   "b": 7.17,
+   "bn": 1.2,
+   "p": 7.5,
+   "bs": 6.5,
    "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.3,
+   "lw": "Robert Hood is a founder of Underground Resistance and one of the architects of minimal Detroit techno; Floorplan is his gospel-house project.",
+   "ln": "UR from 1989"
+  },
+  "Hot 8 Brass Band": {
+   "c": 8.3,
+   "b": 7.0,
+   "bn": 1.3,
+   "p": 7.0,
+   "bs": 6.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.35,
+   "lw": "After Hurricane Katrina scattered the band, they regrouped and toured the US to support displaced New Orleanians. Featured in Spike Lee's 'When the Levees Broke'.",
+   "ln": "2005\u201306"
+  },
+  "Altern-8": {
+   "c": 8.3,
+   "b": 6.5,
+   "bn": 1.8,
+   "p": 7.0,
+   "bs": 5.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.45,
+   "lw": "The Activ-8 rave \u2014 performed at 2am from the back of an articulated lorry in a club car park, in chemical warfare suits. Also the Shelley's car park set.",
+   "ln": "1991"
+  },
+  "Gilla Band": {
+   "c": 8.17,
+   "b": 8.17,
+   "bn": 0.0,
+   "p": 8.0,
+   "bs": 7.0,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 1,
+   "sp": 0.91,
+   "lw": "",
+   "ln": ""
+  },
+  "Floating Points (Live)": {
+   "c": 8.0,
+   "b": 8.0,
+   "bn": 0.0,
+   "p": 8.0,
+   "bs": 6.5,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.05,
+   "lw": "",
+   "ln": ""
+  },
+  "Soichi Terada (Live)": {
+   "c": 7.83,
+   "b": 7.83,
+   "bn": 0.0,
+   "p": 8.0,
+   "bs": 6.5,
+   "r": 9.0,
    "cf": 1,
    "ir": 0,
-   "j": {
-    "j_archivist": 6.3,
-    "j_headliner": 6.45,
-    "j_gig-goer": 6.9,
-    "j_local": 6.67
-   }
+   "sp": 0.85,
+   "lw": "",
+   "ln": ""
   },
-  "Colleen Cosmo Murphy": {
-   "c": 6.54,
-   "h": 6.5,
-   "l": 6.0,
-   "r": 7.0,
+  "Anna von Hausswolff": {
+   "c": 7.67,
+   "b": 7.67,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 6.5,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 0.9,
+   "lw": "",
+   "ln": ""
+  },
+  "Hot Chip (DJ Set)": {
+   "c": 7.67,
+   "b": 7.67,
+   "bn": 0.0,
+   "p": 8.0,
+   "bs": 7.5,
+   "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 6.45,
-    "j_headliner": 6.4,
-    "j_gig-goer": 6.7,
-    "j_local": 6.6
-   }
+   "sp": 0.12,
+   "lw": "",
+   "ln": ""
   },
-  "Prosumer": {
-   "c": 6.54,
-   "h": 6.5,
-   "l": 6.0,
+  "Self Esteem": {
+   "c": 7.33,
+   "b": 7.33,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 5.5,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.21,
+   "lw": "",
+   "ln": ""
+  },
+  "Damien Dempsey": {
+   "c": 7.0,
+   "b": 7.0,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 6.5,
    "r": 7.0,
    "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.45,
-    "j_headliner": 6.4,
-    "j_gig-goer": 6.7,
-    "j_local": 6.6
-   }
+   "ir": 1,
+   "sp": 0.5,
+   "lw": "",
+   "ln": ""
   },
-  "Greentea Peng": {
-   "c": 6.51,
-   "h": 5.0,
-   "l": 5.5,
+  "Maribou State (Live)": {
+   "c": 7.0,
+   "b": 7.0,
+   "bn": 0.0,
+   "p": 7.0,
+   "bs": 5.5,
    "r": 8.5,
    "cf": 2,
    "ir": 0,
-   "j": {
-    "j_archivist": 5.85,
-    "j_headliner": 6.3,
-    "j_gig-goer": 7.2,
-    "j_local": 6.7
-   }
+   "sp": 1.05,
+   "lw": "",
+   "ln": ""
+  },
+  "Joy Orbison": {
+   "c": 7.0,
+   "b": 7.0,
+   "bn": 0.0,
+   "p": 7.0,
+   "bs": 6.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.35,
+   "lw": "",
+   "ln": ""
   },
   "Dry Cleaning": {
-   "c": 6.47,
-   "h": 5.5,
-   "l": 5.5,
+   "c": 6.83,
+   "b": 6.83,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 5.0,
    "r": 8.0,
    "cf": 1,
    "ir": 0,
-   "j": {
-    "j_archivist": 6.0,
-    "j_headliner": 6.25,
-    "j_gig-goer": 7.0,
-    "j_local": 6.62
-   }
+   "sp": 0.95,
+   "lw": "",
+   "ln": ""
+  },
+  "Moonchild Sanelly": {
+   "c": 6.83,
+   "b": 6.83,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 5.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.45,
+   "lw": "",
+   "ln": ""
+  },
+  "DJ Nobu": {
+   "c": 6.83,
+   "b": 6.83,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 6.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.4,
+   "lw": "",
+   "ln": ""
+  },
+  "Disclosure (DJ)": {
+   "c": 6.67,
+   "b": 6.67,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 6.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.25,
+   "lw": "",
+   "ln": ""
+  },
+  "Friendly Fires": {
+   "c": 6.67,
+   "b": 6.67,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 5.0,
+   "r": 7.5,
+   "cf": 1,
+   "ir": 0,
+   "sp": 0.74,
+   "lw": "",
+   "ln": ""
+  },
+  "Greentea Peng": {
+   "c": 6.67,
+   "b": 6.67,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 5.0,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.25,
+   "lw": "",
+   "ln": ""
+  },
+  "Alabaster DePlume": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 5.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.7,
+   "lw": "",
+   "ln": ""
+  },
+  "Mall Grab": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 5.0,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.31,
+   "lw": "",
+   "ln": ""
+  },
+  "Ms Dynamite": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 7.5,
+   "bs": 5.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.35,
+   "lw": "",
+   "ln": ""
+  },
+  "Call Super": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 6.0,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.35,
+   "lw": "",
+   "ln": ""
+  },
+  "Colleen Cosmo Murphy": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 6.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.29,
+   "lw": "",
+   "ln": ""
+  },
+  "Prosumer": {
+   "c": 6.5,
+   "b": 6.5,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 6.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.29,
+   "lw": "",
+   "ln": ""
+  },
+  "Sprints": {
+   "c": 6.33,
+   "b": 6.33,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 4.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 1,
+   "sp": 1.8,
+   "lw": "",
+   "ln": ""
   },
   "Kate Nash": {
-   "c": 6.39,
-   "h": 6.0,
-   "l": 6.0,
+   "c": 6.33,
+   "b": 6.33,
+   "bn": 0.0,
+   "p": 7.0,
+   "bs": 5.0,
    "r": 7.0,
    "cf": 1,
    "ir": 0,
-   "j": {
-    "j_archivist": 6.2,
-    "j_headliner": 6.3,
-    "j_gig-goer": 6.6,
-    "j_local": 6.45
-   }
+   "sp": 0.6,
+   "lw": "",
+   "ln": ""
   },
-  "Call Super": {
-   "c": 6.39,
-   "h": 6.0,
-   "l": 6.0,
-   "r": 7.0,
+  "David Kitt": {
+   "c": 6.33,
+   "b": 6.33,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 6.0,
+   "r": 6.5,
    "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 6.2,
-    "j_headliner": 6.3,
-    "j_gig-goer": 6.6,
-    "j_local": 6.45
-   }
-  },
-  "Sprints": {
-   "c": 6.35,
-   "h": 4.0,
-   "l": 5.0,
-   "r": 9.0,
-   "cf": 2,
    "ir": 1,
-   "j": {
-    "j_archivist": 5.3,
-    "j_headliner": 6.0,
-    "j_gig-goer": 7.2,
-    "j_local": 6.9
-   }
+   "sp": 0.5,
+   "lw": "",
+   "ln": ""
+  },
+  "Maruja": {
+   "c": 6.33,
+   "b": 6.33,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 3.5,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 2.15,
+   "lw": "",
+   "ln": ""
   },
   "Sunil Sharpe x Kev Freeney Presents Spineless": {
-   "c": 6.33,
-   "h": 6.0,
-   "l": 5.5,
+   "c": 6.17,
+   "b": 6.17,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 6.0,
    "r": 7.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 6.05,
-    "j_headliner": 6.05,
-    "j_gig-goer": 6.5,
-    "j_local": 6.72
-   }
-  },
-  "King Kong Company": {
-   "c": 6.23,
-   "h": 4.5,
-   "l": 6.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 5.55,
-    "j_headliner": 6.15,
-    "j_gig-goer": 6.6,
-    "j_local": 6.62
-   }
+   "sp": 0.62,
+   "lw": "",
+   "ln": ""
   },
   "THUMPER": {
-   "c": 6.2,
-   "h": 4.0,
-   "l": 4.5,
+   "c": 6.17,
+   "b": 6.17,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 4.0,
    "r": 9.0,
    "cf": 2,
    "ir": 1,
-   "j": {
-    "j_archivist": 5.15,
-    "j_headliner": 5.75,
-    "j_gig-goer": 7.1,
-    "j_local": 6.78
-   }
-  },
-  "Eats Everything": {
-   "c": 6.04,
-   "h": 5.5,
-   "l": 6.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 5.85,
-    "j_headliner": 6.05,
-    "j_gig-goer": 6.2,
-    "j_local": 6.08
-   }
-  },
-  "Job Jobse": {
-   "c": 5.93,
-   "h": 5.0,
-   "l": 5.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 5.55,
-    "j_headliner": 5.85,
-    "j_gig-goer": 6.3,
-    "j_local": 6.03
-   }
-  },
-  "Chet Faker": {
-   "c": 5.89,
-   "h": 5.5,
-   "l": 5.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 5.7,
-    "j_headliner": 5.8,
-    "j_gig-goer": 6.1,
-    "j_local": 5.95
-   }
+   "sp": 1.85,
+   "lw": "",
+   "ln": ""
   },
   "Gurriers": {
-   "c": 5.85,
-   "h": 3.5,
-   "l": 4.5,
+   "c": 6.0,
+   "b": 6.0,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 3.0,
    "r": 8.5,
    "cf": 2,
    "ir": 1,
-   "j": {
-    "j_archivist": 4.8,
-    "j_headliner": 5.5,
-    "j_gig-goer": 6.7,
-    "j_local": 6.4
-   }
+   "sp": 1.86,
+   "lw": "",
+   "ln": ""
   },
-  "David Kitt": {
-   "c": 5.83,
-   "h": 5.5,
-   "l": 5.0,
+  "Chet Faker": {
+   "c": 6.0,
+   "b": 6.0,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 5.0,
    "r": 6.5,
    "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 5.55,
-    "j_headliner": 5.55,
-    "j_gig-goer": 6.0,
-    "j_local": 6.23
-   }
-  },
-  "Jyoty": {
-   "c": 5.83,
-   "h": 4.0,
-   "l": 5.5,
-   "r": 7.5,
-   "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 5.15,
-    "j_headliner": 5.8,
-    "j_gig-goer": 6.4,
-    "j_local": 5.95
-   }
-  },
-  "Alabaster DePlume": {
-   "c": 5.82,
-   "h": 4.5,
-   "l": 5.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 5.25,
-    "j_headliner": 5.65,
-    "j_gig-goer": 6.4,
-    "j_local": 5.97
-   }
-  },
-  "Or:la": {
-   "c": 5.72,
-   "h": 4.5,
-   "l": 5.0,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 5.15,
-    "j_headliner": 5.5,
-    "j_gig-goer": 6.1,
-    "j_local": 6.15
-   }
+   "sp": 0.45,
+   "lw": "",
+   "ln": ""
   },
   "SOAK": {
-   "c": 5.53,
-   "h": 4.5,
-   "l": 5.0,
+   "c": 6.0,
+   "b": 6.0,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 5.0,
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 5.05,
-    "j_headliner": 5.35,
-    "j_gig-goer": 5.8,
-    "j_local": 5.93
-   }
+   "sp": 0.7,
+   "lw": "",
+   "ln": ""
   },
-  "New Jackson": {
-   "c": 5.38,
-   "h": 4.5,
-   "l": 4.5,
-   "r": 6.5,
+  "King Kong Company": {
+   "c": 5.83,
+   "b": 5.83,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 7.5,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 4.9,
-    "j_headliner": 5.1,
-    "j_gig-goer": 5.7,
-    "j_local": 5.8
-   }
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Job Jobse": {
+   "c": 5.83,
+   "b": 5.83,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 5.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.66,
+   "lw": "",
+   "ln": ""
+  },
+  "Eats Everything": {
+   "c": 5.83,
+   "b": 5.83,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 5.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.4,
+   "lw": "",
+   "ln": ""
   },
   "Muireann Bradley": {
-   "c": 5.35,
-   "h": 3.0,
-   "l": 4.0,
+   "c": 5.67,
+   "b": 5.67,
+   "bn": 0.0,
+   "p": 6.5,
+   "bs": 2.5,
    "r": 8.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 4.3,
-    "j_headliner": 5.0,
-    "j_gig-goer": 6.2,
-    "j_local": 5.9
-   }
+   "sp": 1.8,
+   "lw": "",
+   "ln": ""
   },
   "Say She She": {
-   "c": 5.32,
-   "h": 4.0,
-   "l": 4.5,
+   "c": 5.67,
+   "b": 5.67,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 4.0,
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 4.75,
-    "j_headliner": 5.15,
-    "j_gig-goer": 5.9,
-    "j_local": 5.47
-   }
-  },
-  "O'Flynn": {
-   "c": 5.28,
-   "h": 4.5,
-   "l": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 4.9,
-    "j_headliner": 5.1,
-    "j_gig-goer": 5.7,
-    "j_local": 5.4
-   }
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
   },
   "Weval (Live)": {
-   "c": 5.28,
-   "h": 4.5,
-   "l": 4.5,
+   "c": 5.67,
+   "b": 5.67,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 4.5,
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 4.9,
-    "j_headliner": 5.1,
-    "j_gig-goer": 5.7,
-    "j_local": 5.4
-   }
+   "sp": 0.65,
+   "lw": "",
+   "ln": ""
+  },
+  "Or:la": {
+   "c": 5.67,
+   "b": 5.67,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.91,
+   "lw": "",
+   "ln": ""
+  },
+  "New Jackson": {
+   "c": 5.67,
+   "b": 5.67,
+   "bn": 0.0,
+   "p": 6.0,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.8,
+   "lw": "",
+   "ln": ""
+  },
+  "O'Flynn": {
+   "c": 5.5,
+   "b": 5.5,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.7,
+   "lw": "",
+   "ln": ""
+  },
+  "Jyoty": {
+   "c": 5.5,
+   "b": 5.5,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 4.0,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.3,
+   "lw": "",
+   "ln": ""
   },
   "Dan Shake": {
-   "c": 5.28,
-   "h": 4.5,
-   "l": 4.5,
+   "c": 5.5,
+   "b": 5.5,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 4.5,
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 4.9,
-    "j_headliner": 5.1,
-    "j_gig-goer": 5.7,
-    "j_local": 5.4
-   }
-  },
-  "The Dare (DJ Set)": {
-   "c": 5.13,
-   "h": 3.5,
-   "l": 5.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 4.55,
-    "j_headliner": 5.15,
-    "j_gig-goer": 5.6,
-    "j_local": 5.22
-   }
+   "sp": 0.7,
+   "lw": "",
+   "ln": ""
   },
   "Jamz Supernova": {
-   "c": 5.12,
-   "h": 4.0,
-   "l": 4.5,
+   "c": 5.17,
+   "b": 5.17,
+   "bn": 0.0,
+   "p": 4.5,
+   "bs": 4.5,
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 4.65,
-    "j_headliner": 5.0,
-    "j_gig-goer": 5.6,
-    "j_local": 5.25
-   }
-  },
-  "Cromby": {
-   "c": 5.07,
-   "h": 4.0,
-   "l": 4.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 4.5,
-    "j_headliner": 4.75,
-    "j_gig-goer": 5.5,
-    "j_local": 5.53
-   }
+   "sp": 0.8,
+   "lw": "",
+   "ln": ""
   },
   "Moving Still": {
-   "c": 5.07,
-   "h": 4.0,
-   "l": 4.0,
+   "c": 5.17,
+   "b": 5.17,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 4.0,
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 4.5,
-    "j_headliner": 4.75,
-    "j_gig-goer": 5.5,
-    "j_local": 5.53
-   }
+   "sp": 0.91,
+   "lw": "",
+   "ln": ""
+  },
+  "PVA": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
+  },
+  "Getdown Services": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
+  },
+  "The Dare (DJ Set)": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
+  },
+  "Cromby": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 4.5,
+   "bs": 4.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.95,
+   "lw": "",
+   "ln": ""
+  },
+  "Anish Kumar": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 3.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.05,
+   "lw": "",
+   "ln": ""
+  },
+  "Lullahush": {
+   "c": 5.0,
+   "b": 5.0,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
+  },
+  "Soda Blonde": {
+   "c": 4.83,
+   "b": 4.83,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 3.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.9,
+   "lw": "",
+   "ln": ""
+  },
+  "Kean Kavanagh": {
+   "c": 4.83,
+   "b": 4.83,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
   },
   "Playback Presents: Stop Making Sense": {
    "c": 4.83,
-   "h": 3.0,
-   "l": 4.5,
+   "b": 4.83,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 3.0,
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "j": {
-    "j_archivist": 4.15,
-    "j_headliner": 4.8,
-    "j_gig-goer": 5.4,
-    "j_local": 4.95
-   }
-  },
-  "Anish Kumar": {
-   "c": 4.82,
-   "h": 3.5,
-   "l": 4.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 4.25,
-    "j_headliner": 4.65,
-    "j_gig-goer": 5.4,
-    "j_local": 4.97
-   }
-  },
-  "Trinity Orchestra": {
-   "c": 4.77,
-   "h": 3.0,
-   "l": 4.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 4.0,
-    "j_headliner": 4.55,
-    "j_gig-goer": 5.3,
-    "j_local": 5.23
-   }
-  },
-  "Soda Blonde": {
-   "c": 4.72,
-   "h": 3.5,
-   "l": 4.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 4.15,
-    "j_headliner": 4.5,
-    "j_gig-goer": 5.1,
-    "j_local": 5.15
-   }
-  },
-  "Lullahush": {
-   "c": 4.61,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 3.85,
-    "j_headliner": 4.3,
-    "j_gig-goer": 5.2,
-    "j_local": 5.1
-   }
-  },
-  "PVA": {
-   "c": 4.51,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.85,
-    "j_headliner": 4.3,
-    "j_gig-goer": 5.2,
-    "j_local": 4.7
-   }
-  },
-  "Getdown Services": {
-   "c": 4.51,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.85,
-    "j_headliner": 4.3,
-    "j_gig-goer": 5.2,
-    "j_local": 4.7
-   }
-  },
-  "Kean Kavanagh": {
-   "c": 4.42,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.88
-   }
+   "sp": 1.21,
+   "lw": "",
+   "ln": ""
   },
   "Bicurious": {
-   "c": 4.42,
-   "h": 3.0,
-   "l": 3.5,
+   "c": 4.83,
+   "b": 4.83,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 3.0,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.88
-   }
-  },
-  "Bazza Ranks": {
-   "c": 4.42,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.88
-   }
-  },
-  "Sexy Tadhg": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Rose Betts": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "David Keenan": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Swimming Paul": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Hank": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "The New Eves": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Black Nylon": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "The Itch": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Sassy 009": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Takuya Nakamura (Live)": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Gently Tender": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "R\u00f3is": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Sell Everything": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Zaska": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Getdown Edits": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Annie Mac": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Kelly Anne Byrne 'Prince Tribute'": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "\u00c6 MAK": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Maykay": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Glasshouse presents: Bjork": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Nialler9": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Burt Bacharach by Paddy Hanna": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Grooveline": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Marcus O'Laoire": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Bull Horris": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "L\u00fanasa": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "MIKE": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Rory Sweeney (Live)": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "One Leg One Eye": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Monjola": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Freak Slug": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Mango": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Anz b2b Jio": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Surusinghe": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Peach": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Spray": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "EMA": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Gabrielle Kwarteng": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Sloucho": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Seamus Fogarty": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Tr\u00e1 Ph\u00e1id\u00edn": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Felispeaks": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Yankari Afrobeat Collective": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "The Calvinists": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Qbanaa": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Tosh\u00edn": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Elikya": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Governess": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Mantle": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "All Things Eve": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Niamh Bury": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Ailbhe Reddy": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "The Awning": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Sun Studio Collective": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Tony Cantwell": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Madonna Kebab": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Dublin Disco All Dayer DJ's": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Franz Scala": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Gaff E": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Daniel Wang": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Corcra": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Justyna": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Huartan": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "megaTRAD": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Trad Folkin'Raves feat Annie Craic": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Acid Granny Presents Schindler's Fist": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Ria Rua": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Bedlam": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "LOST at The Last City": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "I Draw Slow": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Winemoms": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Stevie G": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "DJ Deece": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Organ Freeman (Live Jazz)": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Shrem's Madonnathon": {
-   "c": 4.32,
-   "h": 3.0,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "j": {
-    "j_archivist": 3.75,
-    "j_headliner": 4.15,
-    "j_gig-goer": 4.9,
-    "j_local": 4.47
-   }
-  },
-  "Sing Along Social": {
-   "c": 4.31,
-   "h": 2.0,
-   "l": 3.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 3.35,
-    "j_headliner": 4.1,
-    "j_gig-goer": 5.0,
-    "j_local": 4.8
-   }
-  },
-  "BIIRD": {
-   "c": 4.27,
-   "h": 2.5,
-   "l": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "j": {
-    "j_archivist": 3.5,
-    "j_headliner": 4.05,
-    "j_gig-goer": 4.8,
-    "j_local": 4.73
-   }
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
   },
   "Jacob Alon": {
-   "c": 4.16,
-   "h": 2.0,
-   "l": 3.0,
+   "c": 4.67,
+   "b": 4.67,
+   "bn": 0.0,
+   "p": 5.5,
+   "bs": 2.0,
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.2,
-    "j_headliner": 3.85,
-    "j_gig-goer": 4.9,
-    "j_local": 4.68
-   }
+   "sp": 1.46,
+   "lw": "",
+   "ln": ""
   },
-  "Cardinals": {
-   "c": 4.11,
-   "h": 2.5,
-   "l": 3.0,
+  "Bazza Ranks": {
+   "c": 4.67,
+   "b": 4.67,
+   "bn": 0.0,
+   "p": 4.5,
+   "bs": 3.5,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.35,
-    "j_headliner": 3.8,
-    "j_gig-goer": 4.7,
-    "j_local": 4.6
-   }
+   "sp": 0.91,
+   "lw": "",
+   "ln": ""
+  },
+  "Trinity Orchestra": {
+   "c": 4.5,
+   "b": 4.5,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.31,
+   "lw": "",
+   "ln": ""
+  },
+  "BIIRD": {
+   "c": 4.5,
+   "b": 4.5,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 2.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
   },
   "Br\u00f2geal": {
-   "c": 4.11,
-   "h": 2.5,
-   "l": 3.0,
+   "c": 4.5,
+   "b": 4.5,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 2.5,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.35,
-    "j_headliner": 3.8,
-    "j_gig-goer": 4.7,
-    "j_local": 4.6
-   }
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
   },
   "KhakiKid": {
-   "c": 4.11,
-   "h": 2.5,
-   "l": 3.0,
+   "c": 4.5,
+   "b": 4.5,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 2.5,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.35,
-    "j_headliner": 3.8,
-    "j_gig-goer": 4.7,
-    "j_local": 4.6
-   }
+   "sp": 1.16,
+   "lw": "",
+   "ln": ""
+  },
+  "Sexy Tadhg": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Rose Betts": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "David Keenan": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Cardinals": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 5.0,
+   "bs": 2.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.3,
+   "lw": "",
+   "ln": ""
+  },
+  "Swimming Paul": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Hank": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "The New Eves": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Black Nylon": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "The Itch": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Sassy 009": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Takuya Nakamura (Live)": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Gently Tender": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "R\u00f3is": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Sell Everything": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Kelly Anne Byrne 'Prince Tribute'": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "\u00c6 MAK": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Maykay": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Glasshouse presents: Bjork": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Nialler9": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Burt Bacharach by Paddy Hanna": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Grooveline": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Marcus O'Laoire": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "MIKE": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Rory Sweeney (Live)": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "One Leg One Eye": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Monjola": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Freak Slug": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Mango": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Anz b2b Jio": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Surusinghe": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Peach": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Spray": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "EMA": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Gabrielle Kwarteng": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Sloucho": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Seamus Fogarty": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Tr\u00e1 Ph\u00e1id\u00edn": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Felispeaks": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Yankari Afrobeat Collective": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "The Calvinists": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Qbanaa": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Tosh\u00edn": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Elikya": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Governess": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "The Awning": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Sun Studio Collective": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Tony Cantwell": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Dublin Disco All Dayer DJ's": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Franz Scala": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Gaff E": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Daniel Wang": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Huartan": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "megaTRAD": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Trad Folkin'Raves feat Annie Craic": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Acid Granny Presents Schindler's Fist": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Ria Rua": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Bedlam": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "LOST at The Last City": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "I Draw Slow": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Winemoms": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Stevie G": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "DJ Deece": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Organ Freeman (Live Jazz)": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
+  },
+  "Shrem's Madonnathon": {
+   "c": 4.33,
+   "b": 4.33,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "",
+   "ln": ""
   },
   "Sam Alfred": {
-   "c": 4.11,
-   "h": 2.5,
-   "l": 3.0,
+   "c": 4.17,
+   "b": 4.17,
+   "bn": 0.0,
+   "p": 4.0,
+   "bs": 2.5,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.35,
-    "j_headliner": 3.8,
-    "j_gig-goer": 4.7,
-    "j_local": 4.6
-   }
+   "sp": 1.25,
+   "lw": "",
+   "ln": ""
+  },
+  "Sing Along Social": {
+   "c": 3.83,
+   "b": 3.83,
+   "bn": 0.0,
+   "p": 3.0,
+   "bs": 2.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.71,
+   "lw": "",
+   "ln": ""
   },
   "The Wild Geeze - Comedy Cabaret": {
-   "c": 3.96,
-   "h": 2.0,
-   "l": 3.0,
+   "c": 3.83,
+   "b": 3.83,
+   "bn": 0.0,
+   "p": 3.5,
+   "bs": 2.0,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "j": {
-    "j_archivist": 3.1,
-    "j_headliner": 3.7,
-    "j_gig-goer": 4.6,
-    "j_local": 4.45
-   }
+   "sp": 1.45,
+   "lw": "",
+   "ln": ""
   }
  },
- "clashes": [
-  {
-   "day": "fri",
-   "a": "New Jackson",
-   "a_score": 5.38,
-   "b": "O'Flynn",
-   "b_score": 5.28,
-   "gap": 0.1,
-   "verdict": "New Jackson",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "fri",
-   "a": "Friendly Fires",
-   "a_score": 6.58,
-   "b": "Dry Cleaning",
-   "b_score": 6.47,
-   "gap": 0.11,
-   "verdict": "Friendly Fires",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "fri",
-   "a": "O'Flynn",
-   "a_score": 5.28,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 0.16,
-   "verdict": "O'Flynn",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "fri",
-   "a": "Anish Kumar",
-   "a_score": 4.82,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 0.21,
-   "verdict": "Lullahush",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "fri",
-   "a": "New Jackson",
-   "a_score": 5.38,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 0.26,
-   "verdict": "New Jackson",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "fri",
-   "a": "Jamz Supernova",
-   "a_score": 5.12,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 0.3,
-   "verdict": "Jamz Supernova",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "Job Jobse",
-   "b_score": 5.93,
-   "gap": 0.4,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "O'Flynn",
-   "a_score": 5.28,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 0.46,
-   "verdict": "O'Flynn",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Lullahush",
-   "a_score": 4.61,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 0.5,
-   "verdict": "Lullahush",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Jamz Supernova",
-   "a_score": 5.12,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 0.51,
-   "verdict": "Jamz Supernova",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "New Jackson",
-   "b_score": 5.38,
-   "gap": 0.55,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "New Jackson",
-   "a_score": 5.38,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 0.56,
-   "verdict": "New Jackson",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Trinity Orchestra",
-   "a_score": 4.77,
-   "b": "Jacob Alon",
-   "b_score": 4.16,
-   "gap": 0.61,
-   "verdict": "Trinity Orchestra",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "O'Flynn",
-   "b_score": 5.28,
-   "gap": 0.65,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "O'Flynn",
-   "a_score": 5.28,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 0.67,
-   "verdict": "O'Flynn",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Anish Kumar",
-   "a_score": 4.82,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 0.71,
-   "verdict": "Anish Kumar",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Friendly Fires",
-   "a_score": 6.58,
-   "b": "Gurriers",
-   "b_score": 5.85,
-   "gap": 0.73,
-   "verdict": "Friendly Fires",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "New Jackson",
-   "a_score": 5.38,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 0.77,
-   "verdict": "New Jackson",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 0.81,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "New Jackson",
-   "b_score": 5.38,
-   "gap": 0.95,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Jamz Supernova",
-   "a_score": 5.12,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 1.01,
-   "verdict": "Jamz Supernova",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "O'Flynn",
-   "b_score": 5.28,
-   "gap": 1.05,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 1.11,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "O'Flynn",
-   "a_score": 5.28,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 1.17,
-   "verdict": "O'Flynn",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 1.21,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "New Jackson",
-   "a_score": 5.38,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 1.27,
-   "verdict": "New Jackson",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 1.32,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Floorplan",
-   "b_score": 7.65,
-   "gap": 1.65,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 1.72,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "b_score": 6.33,
-   "gap": 1.79,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floorplan",
-   "a_score": 7.65,
-   "b": "Gurriers",
-   "b_score": 5.85,
-   "gap": 1.8,
-   "verdict": "Floorplan",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Job Jobse",
-   "a_score": 5.93,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 1.82,
-   "verdict": "Job Jobse",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Kerri Chandler",
-   "a_score": 8.46,
-   "b": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "b_score": 6.33,
-   "gap": 2.13,
-   "verdict": "Kerri Chandler",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Job Jobse",
-   "b_score": 5.93,
-   "gap": 2.19,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "a_score": 6.33,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 2.22,
-   "verdict": "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Kerri Chandler",
-   "a_score": 8.46,
-   "b": "Job Jobse",
-   "b_score": 5.93,
-   "gap": 2.53,
-   "verdict": "Kerri Chandler",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "New Jackson",
-   "b_score": 5.38,
-   "gap": 2.74,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "O'Flynn",
-   "b_score": 5.28,
-   "gap": 2.84,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 3.0,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Kerri Chandler",
-   "a_score": 8.46,
-   "b": "New Jackson",
-   "b_score": 5.38,
-   "gap": 3.08,
-   "verdict": "Kerri Chandler",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Kerri Chandler",
-   "a_score": 8.46,
-   "b": "O'Flynn",
-   "b_score": 5.28,
-   "gap": 3.18,
-   "verdict": "Kerri Chandler",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 3.3,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Kerri Chandler",
-   "a_score": 8.46,
-   "b": "Jamz Supernova",
-   "b_score": 5.12,
-   "gap": 3.34,
-   "verdict": "Kerri Chandler",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Job Jobse",
-   "b_score": 5.93,
-   "gap": 3.37,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 3.51,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floorplan",
-   "a_score": 7.65,
-   "b": "Br\u00f2geal",
-   "b_score": 4.11,
-   "gap": 3.54,
-   "verdict": "Floorplan",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Floating Points (Live)",
-   "a_score": 8.12,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 4.01,
-   "verdict": "Floating Points (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Anish Kumar",
-   "b_score": 4.82,
-   "gap": 4.48,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Lullahush",
-   "b_score": 4.61,
-   "gap": 4.69,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Br\u00f2geal",
-   "b_score": 4.11,
-   "gap": 5.19,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "fri",
-   "a": "Pulp",
-   "a_score": 9.3,
-   "b": "Sam Alfred",
-   "b_score": 4.11,
-   "gap": 5.19,
-   "verdict": "Pulp",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Joy Orbison",
-   "a_score": 7.19,
-   "b": "DJ Nobu",
-   "b_score": 7.19,
-   "gap": 0.0,
-   "verdict": "Joy Orbison",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sat",
-   "a": "Jyoty",
-   "a_score": 5.83,
-   "b": "Or:la",
-   "b_score": 5.72,
-   "gap": 0.11,
-   "verdict": "Or:la",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sat",
-   "a": "Greentea Peng",
-   "a_score": 6.51,
-   "b": "Sprints",
-   "b_score": 6.35,
-   "gap": 0.16,
-   "verdict": "Sprints",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Joy Orbison",
-   "b_score": 7.19,
-   "gap": 0.19,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "DJ Nobu",
-   "b_score": 7.19,
-   "gap": 0.19,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sat",
-   "a": "Say She She",
-   "a_score": 5.32,
-   "b": "Cromby",
-   "b_score": 5.07,
-   "gap": 0.25,
-   "verdict": "Cromby",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sat",
-   "a": "Mall Grab",
-   "a_score": 6.67,
-   "b": "Call Super",
-   "b_score": 6.39,
-   "gap": 0.28,
-   "verdict": "Mall Grab",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sat",
-   "a": "David Keenan",
-   "a_score": 4.32,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 0.36,
-   "verdict": "David Keenan",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Or:la",
-   "a_score": 5.72,
-   "b": "Say She She",
-   "b_score": 5.32,
-   "gap": 0.4,
-   "verdict": "Or:la",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Bicurious",
-   "a_score": 4.42,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 0.46,
-   "verdict": "Bicurious",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "David Kitt",
-   "a_score": 5.83,
-   "b": "Muireann Bradley",
-   "b_score": 5.35,
-   "gap": 0.48,
-   "verdict": "David Kitt",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Joy Orbison",
-   "a_score": 7.19,
-   "b": "Mall Grab",
-   "b_score": 6.67,
-   "gap": 0.52,
-   "verdict": "Joy Orbison",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "DJ Nobu",
-   "a_score": 7.19,
-   "b": "Mall Grab",
-   "b_score": 6.67,
-   "gap": 0.52,
-   "verdict": "DJ Nobu",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Call Super",
-   "a_score": 6.39,
-   "b": "Jyoty",
-   "b_score": 5.83,
-   "gap": 0.56,
-   "verdict": "Call Super",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Mall Grab",
-   "b_score": 6.67,
-   "gap": 0.71,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Colleen Cosmo Murphy",
-   "a_score": 6.54,
-   "b": "David Kitt",
-   "b_score": 5.83,
-   "gap": 0.71,
-   "verdict": "Colleen Cosmo Murphy",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Maribou State (Live)",
-   "a_score": 6.97,
-   "b": "THUMPER",
-   "b_score": 6.2,
-   "gap": 0.77,
-   "verdict": "Maribou State (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Mall Grab",
-   "a_score": 6.67,
-   "b": "Jyoty",
-   "b_score": 5.83,
-   "gap": 0.84,
-   "verdict": "Mall Grab",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Dan Shake",
-   "a_score": 5.28,
-   "b": "Bicurious",
-   "b_score": 4.42,
-   "gap": 0.86,
-   "verdict": "Dan Shake",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Mall Grab",
-   "a_score": 6.67,
-   "b": "Or:la",
-   "b_score": 5.72,
-   "gap": 0.95,
-   "verdict": "Mall Grab",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Call Super",
-   "b_score": 6.39,
-   "gap": 0.99,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "W.I.T.C.H.",
-   "a_score": 8.19,
-   "b": "Hot 8 Brass Band",
-   "b_score": 7.19,
-   "gap": 1.0,
-   "verdict": "W.I.T.C.H.",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "THUMPER",
-   "a_score": 6.2,
-   "b": "Moving Still",
-   "b_score": 5.07,
-   "gap": 1.13,
-   "verdict": "THUMPER",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Colleen Cosmo Murphy",
-   "a_score": 6.54,
-   "b": "Muireann Bradley",
-   "b_score": 5.35,
-   "gap": 1.19,
-   "verdict": "Colleen Cosmo Murphy",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Ezra Collective",
-   "a_score": 7.82,
-   "b": "Maruja",
-   "b_score": 6.59,
-   "gap": 1.23,
-   "verdict": "Ezra Collective",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Gilla Band",
-   "a_score": 8.22,
-   "b": "Maribou State (Live)",
-   "b_score": 6.97,
-   "gap": 1.25,
-   "verdict": "Gilla Band",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Ezra Collective",
-   "a_score": 7.82,
-   "b": "Greentea Peng",
-   "b_score": 6.51,
-   "gap": 1.31,
-   "verdict": "Ezra Collective",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Maruja",
-   "a_score": 6.59,
-   "b": "Dan Shake",
-   "b_score": 5.28,
-   "gap": 1.31,
-   "verdict": "Maruja",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Dan Shake",
-   "a_score": 5.28,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 1.32,
-   "verdict": "Dan Shake",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Joy Orbison",
-   "a_score": 7.19,
-   "b": "Jyoty",
-   "b_score": 5.83,
-   "gap": 1.36,
-   "verdict": "Joy Orbison",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "DJ Nobu",
-   "a_score": 7.19,
-   "b": "Jyoty",
-   "b_score": 5.83,
-   "gap": 1.36,
-   "verdict": "DJ Nobu",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Ezra Collective",
-   "a_score": 7.82,
-   "b": "Sprints",
-   "b_score": 6.35,
-   "gap": 1.47,
-   "verdict": "Ezra Collective",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Joy Orbison",
-   "a_score": 7.19,
-   "b": "Or:la",
-   "b_score": 5.72,
-   "gap": 1.47,
-   "verdict": "Joy Orbison",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "DJ Nobu",
-   "a_score": 7.19,
-   "b": "Or:la",
-   "b_score": 5.72,
-   "gap": 1.47,
-   "verdict": "DJ Nobu",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Jyoty",
-   "b_score": 5.83,
-   "gap": 1.55,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Or:la",
-   "b_score": 5.72,
-   "gap": 1.66,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Joy Orbison",
-   "a_score": 7.19,
-   "b": "Say She She",
-   "b_score": 5.32,
-   "gap": 1.87,
-   "verdict": "Joy Orbison",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "DJ Nobu",
-   "a_score": 7.19,
-   "b": "Say She She",
-   "b_score": 5.32,
-   "gap": 1.87,
-   "verdict": "DJ Nobu",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Maribou State (Live)",
-   "a_score": 6.97,
-   "b": "Moving Still",
-   "b_score": 5.07,
-   "gap": 1.9,
-   "verdict": "Maribou State (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Gilla Band",
-   "a_score": 8.22,
-   "b": "THUMPER",
-   "b_score": 6.2,
-   "gap": 2.02,
-   "verdict": "Gilla Band",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "The Avalanches (DJ Set)",
-   "a_score": 7.38,
-   "b": "Say She She",
-   "b_score": 5.32,
-   "gap": 2.06,
-   "verdict": "The Avalanches (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Maruja",
-   "a_score": 6.59,
-   "b": "Bicurious",
-   "b_score": 4.42,
-   "gap": 2.17,
-   "verdict": "Maruja",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Sprints",
-   "a_score": 6.35,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 2.39,
-   "verdict": "Sprints",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Greentea Peng",
-   "a_score": 6.51,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 2.55,
-   "verdict": "Greentea Peng",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Maruja",
-   "a_score": 6.59,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 2.63,
-   "verdict": "Maruja",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Hot 8 Brass Band",
-   "a_score": 7.19,
-   "b": "David Keenan",
-   "b_score": 4.32,
-   "gap": 2.87,
-   "verdict": "Hot 8 Brass Band",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Gilla Band",
-   "a_score": 8.22,
-   "b": "Moving Still",
-   "b_score": 5.07,
-   "gap": 3.15,
-   "verdict": "Gilla Band",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Hot 8 Brass Band",
-   "a_score": 7.19,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 3.23,
-   "verdict": "Hot 8 Brass Band",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "Ezra Collective",
-   "a_score": 7.82,
-   "b": "The Wild Geeze - Comedy Cabaret",
-   "b_score": 3.96,
-   "gap": 3.86,
-   "verdict": "Ezra Collective",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sat",
-   "a": "W.I.T.C.H.",
-   "a_score": 8.19,
-   "b": "David Keenan",
-   "b_score": 4.32,
-   "gap": 3.87,
-   "verdict": "W.I.T.C.H.",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Kean Kavanagh",
-   "a_score": 4.42,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 0.1,
-   "verdict": "Kean Kavanagh",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sun",
-   "a": "Bazza Ranks",
-   "a_score": 4.42,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 0.1,
-   "verdict": "Bazza Ranks",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sun",
-   "a": "Prosumer",
-   "a_score": 6.54,
-   "b": "Kate Nash",
-   "b_score": 6.39,
-   "gap": 0.15,
-   "verdict": "Prosumer",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sun",
-   "a": "Kean Kavanagh",
-   "a_score": 4.42,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 0.15,
-   "verdict": "Kean Kavanagh",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sun",
-   "a": "Moonchild Sanelly",
-   "a_score": 6.71,
-   "b": "Prosumer",
-   "b_score": 6.54,
-   "gap": 0.17,
-   "verdict": "Moonchild Sanelly",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sun",
-   "a": "Altern-8",
-   "a_score": 7.15,
-   "b": "Disclosure (DJ)",
-   "b_score": 6.96,
-   "gap": 0.19,
-   "verdict": "Altern-8",
-   "reason": "effectively a coin flip"
-  },
-  {
-   "day": "sun",
-   "a": "King Kong Company",
-   "a_score": 6.23,
-   "b": "Eats Everything",
-   "b_score": 6.04,
-   "gap": 0.19,
-   "verdict": "King Kong Company",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sun",
-   "a": "Soda Blonde",
-   "a_score": 4.72,
-   "b": "Getdown Services",
-   "b_score": 4.51,
-   "gap": 0.21,
-   "verdict": "Soda Blonde",
-   "reason": "too close to call \u2014 Irish tiebreak"
-  },
-  {
-   "day": "sun",
-   "a": "Moonchild Sanelly",
-   "a_score": 6.71,
-   "b": "Kate Nash",
-   "b_score": 6.39,
-   "gap": 0.32,
-   "verdict": "Moonchild Sanelly",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Hot Chip (DJ Set)",
-   "a_score": 7.5,
-   "b": "Altern-8",
-   "b_score": 7.15,
-   "gap": 0.35,
-   "verdict": "Hot Chip (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Playback Presents: Stop Making Sense",
-   "a_score": 4.83,
-   "b": "Kean Kavanagh",
-   "b_score": 4.42,
-   "gap": 0.41,
-   "verdict": "Playback Presents: Stop Making Sense",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Hot Chip (DJ Set)",
-   "a_score": 7.5,
-   "b": "Disclosure (DJ)",
-   "b_score": 6.96,
-   "gap": 0.54,
-   "verdict": "Hot Chip (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Damien Dempsey",
-   "a_score": 7.26,
-   "b": "Moonchild Sanelly",
-   "b_score": 6.71,
-   "gap": 0.55,
-   "verdict": "Damien Dempsey",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Playback Presents: Stop Making Sense",
-   "a_score": 4.83,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 0.56,
-   "verdict": "Playback Presents: Stop Making Sense",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Anna von Hausswolff",
-   "a_score": 7.47,
-   "b": "Ms Dynamite",
-   "b_score": 6.81,
-   "gap": 0.66,
-   "verdict": "Anna von Hausswolff",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "SOAK",
-   "a_score": 5.53,
-   "b": "Playback Presents: Stop Making Sense",
-   "b_score": 4.83,
-   "gap": 0.7,
-   "verdict": "SOAK",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Damien Dempsey",
-   "a_score": 7.26,
-   "b": "Prosumer",
-   "b_score": 6.54,
-   "gap": 0.72,
-   "verdict": "Damien Dempsey",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "Self Esteem",
-   "b_score": 7.17,
-   "gap": 0.76,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "The Dare (DJ Set)",
-   "a_score": 5.13,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 0.81,
-   "verdict": "The Dare (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Weval (Live)",
-   "a_score": 5.28,
-   "b": "Bazza Ranks",
-   "b_score": 4.42,
-   "gap": 0.86,
-   "verdict": "Weval (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Damien Dempsey",
-   "a_score": 7.26,
-   "b": "Kate Nash",
-   "b_score": 6.39,
-   "gap": 0.87,
-   "verdict": "Damien Dempsey",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Eats Everything",
-   "a_score": 6.04,
-   "b": "The Dare (DJ Set)",
-   "b_score": 5.13,
-   "gap": 0.91,
-   "verdict": "Eats Everything",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Altern-8",
-   "a_score": 7.15,
-   "b": "King Kong Company",
-   "b_score": 6.23,
-   "gap": 0.92,
-   "verdict": "Altern-8",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Ms Dynamite",
-   "a_score": 6.81,
-   "b": "Chet Faker",
-   "b_score": 5.89,
-   "gap": 0.92,
-   "verdict": "Ms Dynamite",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Weval (Live)",
-   "a_score": 5.28,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 0.96,
-   "verdict": "Weval (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Prosumer",
-   "a_score": 6.54,
-   "b": "SOAK",
-   "b_score": 5.53,
-   "gap": 1.01,
-   "verdict": "Prosumer",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "King Kong Company",
-   "a_score": 6.23,
-   "b": "The Dare (DJ Set)",
-   "b_score": 5.13,
-   "gap": 1.1,
-   "verdict": "King Kong Company",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Alabaster DePlume",
-   "a_score": 5.82,
-   "b": "Soda Blonde",
-   "b_score": 4.72,
-   "gap": 1.1,
-   "verdict": "Alabaster DePlume",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "SOAK",
-   "a_score": 5.53,
-   "b": "Kean Kavanagh",
-   "b_score": 4.42,
-   "gap": 1.11,
-   "verdict": "SOAK",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Hot Chip (DJ Set)",
-   "b_score": 7.5,
-   "gap": 1.15,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "SOAK",
-   "a_score": 5.53,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 1.26,
-   "verdict": "SOAK",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "Prosumer",
-   "b_score": 6.54,
-   "gap": 1.39,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Chet Faker",
-   "a_score": 5.89,
-   "b": "Bazza Ranks",
-   "b_score": 4.42,
-   "gap": 1.47,
-   "verdict": "Chet Faker",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Altern-8",
-   "b_score": 7.15,
-   "gap": 1.5,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Underworld",
-   "a_score": 9.0,
-   "b": "Anna von Hausswolff",
-   "b_score": 7.47,
-   "gap": 1.53,
-   "verdict": "Underworld",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Chet Faker",
-   "a_score": 5.89,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 1.57,
-   "verdict": "Chet Faker",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Anna von Hausswolff",
-   "a_score": 7.47,
-   "b": "Chet Faker",
-   "b_score": 5.89,
-   "gap": 1.58,
-   "verdict": "Anna von Hausswolff",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Barrington Levy",
-   "a_score": 7.49,
-   "b": "Alabaster DePlume",
-   "b_score": 5.82,
-   "gap": 1.67,
-   "verdict": "Barrington Levy",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Disclosure (DJ)",
-   "a_score": 6.96,
-   "b": "Weval (Live)",
-   "b_score": 5.28,
-   "gap": 1.68,
-   "verdict": "Disclosure (DJ)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Disclosure (DJ)",
-   "b_score": 6.96,
-   "gap": 1.69,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Prosumer",
-   "a_score": 6.54,
-   "b": "Playback Presents: Stop Making Sense",
-   "b_score": 4.83,
-   "gap": 1.71,
-   "verdict": "Prosumer",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Damien Dempsey",
-   "a_score": 7.26,
-   "b": "SOAK",
-   "b_score": 5.53,
-   "gap": 1.73,
-   "verdict": "Damien Dempsey",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Altern-8",
-   "a_score": 7.15,
-   "b": "Weval (Live)",
-   "b_score": 5.28,
-   "gap": 1.87,
-   "verdict": "Altern-8",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "King Kong Company",
-   "a_score": 6.23,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 1.91,
-   "verdict": "King Kong Company",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Altern-8",
-   "a_score": 7.15,
-   "b": "The Dare (DJ Set)",
-   "b_score": 5.13,
-   "gap": 2.02,
-   "verdict": "Altern-8",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Prosumer",
-   "a_score": 6.54,
-   "b": "Kean Kavanagh",
-   "b_score": 4.42,
-   "gap": 2.12,
-   "verdict": "Prosumer",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Hot Chip (DJ Set)",
-   "a_score": 7.5,
-   "b": "Weval (Live)",
-   "b_score": 5.28,
-   "gap": 2.22,
-   "verdict": "Hot Chip (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Prosumer",
-   "a_score": 6.54,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 2.27,
-   "verdict": "Prosumer",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "SOAK",
-   "b_score": 5.53,
-   "gap": 2.4,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Damien Dempsey",
-   "a_score": 7.26,
-   "b": "Playback Presents: Stop Making Sense",
-   "b_score": 4.83,
-   "gap": 2.43,
-   "verdict": "Damien Dempsey",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Ms Dynamite",
-   "a_score": 6.81,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 2.49,
-   "verdict": "Ms Dynamite",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Disclosure (DJ)",
-   "a_score": 6.96,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 2.64,
-   "verdict": "Disclosure (DJ)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Self Esteem",
-   "a_score": 7.17,
-   "b": "Kean Kavanagh",
-   "b_score": 4.42,
-   "gap": 2.75,
-   "verdict": "Self Esteem",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Barrington Levy",
-   "a_score": 7.49,
-   "b": "Soda Blonde",
-   "b_score": 4.72,
-   "gap": 2.77,
-   "verdict": "Barrington Levy",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Altern-8",
-   "a_score": 7.15,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 2.83,
-   "verdict": "Altern-8",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Self Esteem",
-   "a_score": 7.17,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 2.85,
-   "verdict": "Self Esteem",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Self Esteem",
-   "a_score": 7.17,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 2.9,
-   "verdict": "Self Esteem",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Barrington Levy",
-   "a_score": 7.49,
-   "b": "Getdown Services",
-   "b_score": 4.51,
-   "gap": 2.98,
-   "verdict": "Barrington Levy",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Anna von Hausswolff",
-   "a_score": 7.47,
-   "b": "Bazza Ranks",
-   "b_score": 4.42,
-   "gap": 3.05,
-   "verdict": "Anna von Hausswolff",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "Playback Presents: Stop Making Sense",
-   "b_score": 4.83,
-   "gap": 3.1,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Underworld",
-   "a_score": 9.0,
-   "b": "Chet Faker",
-   "b_score": 5.89,
-   "gap": 3.11,
-   "verdict": "Underworld",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Anna von Hausswolff",
-   "a_score": 7.47,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 3.15,
-   "verdict": "Anna von Hausswolff",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Hot Chip (DJ Set)",
-   "a_score": 7.5,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 3.18,
-   "verdict": "Hot Chip (DJ Set)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Weval (Live)",
-   "b_score": 5.28,
-   "gap": 3.37,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "Kean Kavanagh",
-   "b_score": 4.42,
-   "gap": 3.51,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Soichi Terada (Live)",
-   "a_score": 7.93,
-   "b": "BIIRD",
-   "b_score": 4.27,
-   "gap": 3.66,
-   "verdict": "Soichi Terada (Live)",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Bazza Ranks",
-   "b_score": 4.42,
-   "gap": 4.23,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Mogwai",
-   "a_score": 8.65,
-   "b": "Anz b2b Jio",
-   "b_score": 4.32,
-   "gap": 4.33,
-   "verdict": "Mogwai",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Underworld",
-   "a_score": 9.0,
-   "b": "Bazza Ranks",
-   "b_score": 4.42,
-   "gap": 4.58,
-   "verdict": "Underworld",
-   "reason": "clear on the scores"
-  },
-  {
-   "day": "sun",
-   "a": "Underworld",
-   "a_score": 9.0,
-   "b": "Gabrielle Kwarteng",
-   "b_score": 4.32,
-   "gap": 4.68,
-   "verdict": "Underworld",
-   "reason": "clear on the scores"
-  }
- ],
- "beats": {
-  "fri|Pulp": [
-   "Floorplan",
-   "Job Jobse",
-   "Anish Kumar",
-   "Lullahush",
-   "Br\u00f2geal",
-   "Sam Alfred"
+ "hours": {
+  "fri": [
+   {
+    "h": "15:00",
+    "w": "PVA",
+    "s": "Road To Nowhere",
+    "t": "15:45 - 16:45",
+    "sc": 5.0,
+    "n": "",
+    "r": [
+     {
+      "a": "Hank",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "16:00",
+    "w": "PVA",
+    "s": "Road To Nowhere",
+    "t": "15:45 - 16:45",
+    "sc": 5.0,
+    "n": "",
+    "r": [
+     {
+      "a": "Hank",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "17:00",
+    "w": "Jacob Alon",
+    "s": "Road To Nowhere",
+    "t": "17:15 - 18:15",
+    "sc": 4.67,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Trinity Orchestra",
+      "sc": 4.5
+     }
+    ]
+   },
+   {
+    "h": "18:00",
+    "w": "Jacob Alon",
+    "s": "Road To Nowhere",
+    "t": "17:15 - 18:15",
+    "sc": 4.67,
+    "n": "",
+    "r": [
+     {
+      "a": "Sexy Tadhg",
+      "sc": 4.33
+     },
+     {
+      "a": "Rose Betts",
+      "sc": 4.33
+     },
+     {
+      "a": "Cardinals",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "19:00",
+    "w": "Dry Cleaning",
+    "s": "Something Kind of Wonderful",
+    "t": "19:45 - 20:45",
+    "sc": 6.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Sexy Tadhg",
+      "sc": 4.33
+     },
+     {
+      "a": "Cardinals",
+      "sc": 4.33
+     },
+     {
+      "a": "The New Eves",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "20:00",
+    "w": "Dry Cleaning",
+    "s": "Something Kind of Wonderful",
+    "t": "19:45 - 20:45",
+    "sc": 6.83,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Friendly Fires",
+      "sc": 6.67
+     },
+     {
+      "a": "Gurriers",
+      "sc": 6.0
+     },
+     {
+      "a": "The New Eves",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "21:00",
+    "w": "Floorplan",
+    "s": "IMMERSE: AVA x Smirnoff",
+    "t": "21:30 - 23:30",
+    "sc": 8.37,
+    "n": "",
+    "r": [
+     {
+      "a": "Friendly Fires",
+      "sc": 6.67
+     },
+     {
+      "a": "Gurriers",
+      "sc": 6.0
+     },
+     {
+      "a": "Black Nylon",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "22:00",
+    "w": "Pulp",
+    "s": "ATN Main Stage",
+    "t": "22:45 - 00:15",
+    "sc": 11.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Floorplan",
+      "sc": 8.37
+     },
+     {
+      "a": "Br\u00f2geal",
+      "sc": 4.5
+     },
+     {
+      "a": "Black Nylon",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "23:00",
+    "w": "Pulp",
+    "s": "ATN Main Stage",
+    "t": "22:45 - 00:15",
+    "sc": 11.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Floorplan",
+      "sc": 8.37
+     },
+     {
+      "a": "Anish Kumar",
+      "sc": 5.0
+     },
+     {
+      "a": "Rory Sweeney (Live)",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "00:00",
+    "w": "Pulp",
+    "s": "ATN Main Stage",
+    "t": "22:45 - 00:15",
+    "sc": 11.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Floating Points (Live)",
+      "sc": 8.0
+     },
+     {
+      "a": "Job Jobse",
+      "sc": 5.83
+     },
+     {
+      "a": "New Jackson",
+      "sc": 5.67
+     }
+    ]
+   },
+   {
+    "h": "01:00",
+    "w": "Kerri Chandler",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 9.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Floating Points (Live)",
+      "sc": 8.0
+     },
+     {
+      "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
+      "sc": 6.17
+     },
+     {
+      "a": "Job Jobse",
+      "sc": 5.83
+     }
+    ]
+   },
+   {
+    "h": "02:00",
+    "w": "Kerri Chandler",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 9.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
+      "sc": 6.17
+     },
+     {
+      "a": "New Jackson",
+      "sc": 5.67
+     },
+     {
+      "a": "Swimming Paul",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "03:00",
+    "w": "Kerri Chandler",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 9.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Swimming Paul",
+      "sc": 4.33
+     },
+     {
+      "a": "Surusinghe",
+      "sc": 4.33
+     },
+     {
+      "a": "Trad Folkin'Raves feat Annie Craic",
+      "sc": 4.33
+     }
+    ]
+   }
   ],
-  "fri|Kerri Chandler": [
-   "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "Job Jobse",
-   "New Jackson",
-   "O'Flynn",
-   "Jamz Supernova"
+  "sat": [
+   {
+    "h": "12:00",
+    "w": "Colleen Cosmo Murphy",
+    "s": "Big Romance Dome x Altos",
+    "t": "12:00 - 15:00",
+    "sc": 6.5,
+    "n": "",
+    "r": []
+   },
+   {
+    "h": "13:00",
+    "w": "Colleen Cosmo Murphy",
+    "s": "Big Romance Dome x Altos",
+    "t": "12:00 - 15:00",
+    "sc": 6.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Muireann Bradley",
+      "sc": 5.67
+     }
+    ]
+   },
+   {
+    "h": "14:00",
+    "w": "David Kitt",
+    "s": "Road To Nowhere",
+    "t": "14:00 - 15:00",
+    "sc": 6.33,
+    "n": "too close to call \u2014 Irish tiebreak",
+    "r": [
+     {
+      "a": "Colleen Cosmo Murphy",
+      "sc": 6.5
+     },
+     {
+      "a": "Muireann Bradley",
+      "sc": 5.67
+     },
+     {
+      "a": "The Itch",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "15:00",
+    "w": "KhakiKid",
+    "s": "Road To Nowhere",
+    "t": "15:30 - 16:30",
+    "sc": 4.5,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Sassy 009",
+      "sc": 4.33
+     },
+     {
+      "a": "Sing Along Social",
+      "sc": 3.83
+     }
+    ]
+   },
+   {
+    "h": "16:00",
+    "w": "KhakiKid",
+    "s": "Road To Nowhere",
+    "t": "15:30 - 16:30",
+    "sc": 4.5,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Sassy 009",
+      "sc": 4.33
+     },
+     {
+      "a": "Maykay",
+      "sc": 4.33
+     },
+     {
+      "a": "Sun Studio Collective",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "17:00",
+    "w": "W.I.T.C.H.",
+    "s": "Road To Nowhere",
+    "t": "17:00 - 18:00",
+    "sc": 9.67,
+    "n": "",
+    "r": [
+     {
+      "a": "Hot 8 Brass Band",
+      "sc": 8.3
+     },
+     {
+      "a": "David Keenan",
+      "sc": 4.33
+     },
+     {
+      "a": "Maykay",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "18:00",
+    "w": "Hot 8 Brass Band",
+    "s": "ATN Main Stage",
+    "t": "17:30 - 18:30",
+    "sc": 8.3,
+    "n": "",
+    "r": [
+     {
+      "a": "Greentea Peng",
+      "sc": 6.67
+     },
+     {
+      "a": "Sprints",
+      "sc": 6.33
+     },
+     {
+      "a": "David Keenan",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "19:00",
+    "w": "Ezra Collective",
+    "s": "ATN Main Stage",
+    "t": "19:15 - 20:30",
+    "sc": 9.27,
+    "n": "",
+    "r": [
+     {
+      "a": "Greentea Peng",
+      "sc": 6.67
+     },
+     {
+      "a": "Sprints",
+      "sc": 6.33
+     },
+     {
+      "a": "Maruja",
+      "sc": 6.33
+     }
+    ]
+   },
+   {
+    "h": "20:00",
+    "w": "Ezra Collective",
+    "s": "ATN Main Stage",
+    "t": "19:15 - 20:30",
+    "sc": 9.27,
+    "n": "",
+    "r": [
+     {
+      "a": "Maruja",
+      "sc": 6.33
+     },
+     {
+      "a": "Dan Shake",
+      "sc": 5.5
+     },
+     {
+      "a": "Bicurious",
+      "sc": 4.83
+     }
+    ]
+   },
+   {
+    "h": "21:00",
+    "w": "Dan Shake",
+    "s": "IMMERSE: AVA x Smirnoff",
+    "t": "20:30 - 22:00",
+    "sc": 5.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Bicurious",
+      "sc": 4.83
+     },
+     {
+      "a": "Nialler9",
+      "sc": 4.33
+     },
+     {
+      "a": "Tr\u00e1 Ph\u00e1id\u00edn",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "22:00",
+    "w": "Gilla Band",
+    "s": "Road To Nowhere",
+    "t": "22:00 - 23:15",
+    "sc": 8.17,
+    "n": "",
+    "r": [
+     {
+      "a": "Maribou State (Live)",
+      "sc": 7.0
+     },
+     {
+      "a": "THUMPER",
+      "sc": 6.17
+     },
+     {
+      "a": "Moving Still",
+      "sc": 5.17
+     }
+    ]
+   },
+   {
+    "h": "23:00",
+    "w": "Gilla Band",
+    "s": "Road To Nowhere",
+    "t": "22:00 - 23:15",
+    "sc": 8.17,
+    "n": "",
+    "r": [
+     {
+      "a": "Maribou State (Live)",
+      "sc": 7.0
+     },
+     {
+      "a": "THUMPER",
+      "sc": 6.17
+     },
+     {
+      "a": "Moving Still",
+      "sc": 5.17
+     }
+    ]
+   },
+   {
+    "h": "00:00",
+    "w": "Or:la",
+    "s": "The Circle by Jameson Music",
+    "t": "00:30 - 02:00",
+    "sc": 5.67,
+    "n": "too close to call \u2014 Irish tiebreak",
+    "r": [
+     {
+      "a": "Say She She",
+      "sc": 5.67
+     },
+     {
+      "a": "Cromby",
+      "sc": 5.0
+     },
+     {
+      "a": "EMA",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "01:00",
+    "w": "The Avalanches (DJ Set)",
+    "s": "Something Kind of Wonderful",
+    "t": "01:00 - 03:00",
+    "sc": 8.37,
+    "n": "",
+    "r": [
+     {
+      "a": "Joy Orbison",
+      "sc": 7.0
+     },
+     {
+      "a": "DJ Nobu",
+      "sc": 6.83
+     },
+     {
+      "a": "Mall Grab",
+      "sc": 6.5
+     }
+    ]
+   },
+   {
+    "h": "02:00",
+    "w": "The Avalanches (DJ Set)",
+    "s": "Something Kind of Wonderful",
+    "t": "01:00 - 03:00",
+    "sc": 8.37,
+    "n": "",
+    "r": [
+     {
+      "a": "Joy Orbison",
+      "sc": 7.0
+     },
+     {
+      "a": "DJ Nobu",
+      "sc": 6.83
+     },
+     {
+      "a": "Mall Grab",
+      "sc": 6.5
+     }
+    ]
+   },
+   {
+    "h": "03:00",
+    "w": "Mall Grab",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 6.5,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Call Super",
+      "sc": 6.5
+     },
+     {
+      "a": "Jyoty",
+      "sc": 5.5
+     },
+     {
+      "a": "Yankari Afrobeat Collective",
+      "sc": 4.33
+     }
+    ]
+   }
   ],
-  "fri|Floating Points (Live)": [
-   "Sunil Sharpe x Kev Freeney Presents Spineless",
-   "Job Jobse",
-   "New Jackson",
-   "O'Flynn",
-   "Jamz Supernova",
-   "Anish Kumar",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|Floorplan": [
-   "Gurriers",
-   "Br\u00f2geal"
-  ],
-  "fri|Friendly Fires": [
-   "Dry Cleaning",
-   "Gurriers"
-  ],
-  "fri|Sunil Sharpe x Kev Freeney Presents Spineless": [
-   "Job Jobse",
-   "New Jackson",
-   "O'Flynn",
-   "Jamz Supernova",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|Job Jobse": [
-   "New Jackson",
-   "O'Flynn",
-   "Jamz Supernova",
-   "Anish Kumar",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|New Jackson": [
-   "O'Flynn",
-   "Jamz Supernova",
-   "Anish Kumar",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|O'Flynn": [
-   "Jamz Supernova",
-   "Anish Kumar",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|Jamz Supernova": [
-   "Anish Kumar",
-   "Lullahush",
-   "Sam Alfred"
-  ],
-  "fri|Lullahush": [
-   "Anish Kumar",
-   "Sam Alfred"
-  ],
-  "fri|Anish Kumar": [
-   "Sam Alfred"
-  ],
-  "fri|Trinity Orchestra": [
-   "Jacob Alon"
-  ],
-  "sat|Gilla Band": [
-   "Maribou State (Live)",
-   "THUMPER",
-   "Moving Still"
-  ],
-  "sat|W.I.T.C.H.": [
-   "Hot 8 Brass Band",
-   "David Keenan"
-  ],
-  "sat|Ezra Collective": [
-   "Maruja",
-   "Greentea Peng",
-   "Sprints",
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|The Avalanches (DJ Set)": [
-   "Joy Orbison",
-   "DJ Nobu",
-   "Mall Grab",
-   "Call Super",
-   "Jyoty",
-   "Or:la",
-   "Say She She"
-  ],
-  "sat|Hot 8 Brass Band": [
-   "David Keenan",
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|Joy Orbison": [
-   "DJ Nobu",
-   "Mall Grab",
-   "Jyoty",
-   "Or:la",
-   "Say She She"
-  ],
-  "sat|DJ Nobu": [
-   "Mall Grab",
-   "Jyoty",
-   "Or:la",
-   "Say She She"
-  ],
-  "sat|Maribou State (Live)": [
-   "THUMPER",
-   "Moving Still"
-  ],
-  "sat|Mall Grab": [
-   "Call Super",
-   "Jyoty",
-   "Or:la"
-  ],
-  "sat|Maruja": [
-   "Dan Shake",
-   "Bicurious",
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|Colleen Cosmo Murphy": [
-   "David Kitt",
-   "Muireann Bradley"
-  ],
-  "sat|Sprints": [
-   "Greentea Peng",
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|Greentea Peng": [
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|Call Super": [
-   "Jyoty"
-  ],
-  "sat|THUMPER": [
-   "Moving Still"
-  ],
-  "sat|David Kitt": [
-   "Muireann Bradley"
-  ],
-  "sat|Or:la": [
-   "Jyoty",
-   "Say She She"
-  ],
-  "sat|Cromby": [
-   "Say She She"
-  ],
-  "sat|Dan Shake": [
-   "Bicurious",
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|Bicurious": [
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sat|David Keenan": [
-   "The Wild Geeze - Comedy Cabaret"
-  ],
-  "sun|Underworld": [
-   "Anna von Hausswolff",
-   "Chet Faker",
-   "Bazza Ranks",
-   "Gabrielle Kwarteng"
-  ],
-  "sun|Mogwai": [
-   "Hot Chip (DJ Set)",
-   "Altern-8",
-   "Disclosure (DJ)",
-   "Weval (Live)",
-   "Bazza Ranks",
-   "Anz b2b Jio"
-  ],
-  "sun|Soichi Terada (Live)": [
-   "Self Esteem",
-   "Prosumer",
-   "SOAK",
-   "Playback Presents: Stop Making Sense",
-   "Kean Kavanagh",
-   "BIIRD"
-  ],
-  "sun|Hot Chip (DJ Set)": [
-   "Altern-8",
-   "Disclosure (DJ)",
-   "Weval (Live)",
-   "Anz b2b Jio"
-  ],
-  "sun|Barrington Levy": [
-   "Alabaster DePlume",
-   "Soda Blonde",
-   "Getdown Services"
-  ],
-  "sun|Anna von Hausswolff": [
-   "Ms Dynamite",
-   "Chet Faker",
-   "Bazza Ranks",
-   "Gabrielle Kwarteng"
-  ],
-  "sun|Damien Dempsey": [
-   "Moonchild Sanelly",
-   "Prosumer",
-   "Kate Nash",
-   "SOAK",
-   "Playback Presents: Stop Making Sense"
-  ],
-  "sun|Self Esteem": [
-   "Kean Kavanagh",
-   "Gabrielle Kwarteng",
-   "BIIRD"
-  ],
-  "sun|Altern-8": [
-   "Disclosure (DJ)",
-   "King Kong Company",
-   "Weval (Live)",
-   "The Dare (DJ Set)",
-   "Anz b2b Jio"
-  ],
-  "sun|Disclosure (DJ)": [
-   "Weval (Live)",
-   "Anz b2b Jio"
-  ],
-  "sun|Ms Dynamite": [
-   "Chet Faker",
-   "Gabrielle Kwarteng"
-  ],
-  "sun|Moonchild Sanelly": [
-   "Prosumer",
-   "Kate Nash"
-  ],
-  "sun|Prosumer": [
-   "Kate Nash",
-   "SOAK",
-   "Playback Presents: Stop Making Sense",
-   "Kean Kavanagh",
-   "BIIRD"
-  ],
-  "sun|King Kong Company": [
-   "Eats Everything",
-   "The Dare (DJ Set)",
-   "Anz b2b Jio"
-  ],
-  "sun|Eats Everything": [
-   "The Dare (DJ Set)"
-  ],
-  "sun|Chet Faker": [
-   "Bazza Ranks",
-   "Gabrielle Kwarteng"
-  ],
-  "sun|Alabaster DePlume": [
-   "Soda Blonde"
-  ],
-  "sun|SOAK": [
-   "Playback Presents: Stop Making Sense",
-   "Kean Kavanagh",
-   "BIIRD"
-  ],
-  "sun|Weval (Live)": [
-   "Bazza Ranks",
-   "Anz b2b Jio"
-  ],
-  "sun|The Dare (DJ Set)": [
-   "Anz b2b Jio"
-  ],
-  "sun|Playback Presents: Stop Making Sense": [
-   "Kean Kavanagh",
-   "BIIRD"
-  ],
-  "sun|Soda Blonde": [
-   "Getdown Services"
-  ],
-  "sun|Kean Kavanagh": [
-   "Gabrielle Kwarteng",
-   "BIIRD"
-  ],
-  "sun|Bazza Ranks": [
-   "Gabrielle Kwarteng"
+  "sun": [
+   {
+    "h": "12:00",
+    "w": "Organ Freeman (Live Jazz)",
+    "s": "Big Romance Dome x Altos",
+    "t": "12:00 - 13:00",
+    "sc": 4.33,
+    "n": "",
+    "r": []
+   },
+   {
+    "h": "13:00",
+    "w": "Shrem's Madonnathon",
+    "s": "Big Romance Dome x Altos",
+    "t": "13:00 - 15:00",
+    "sc": 4.33,
+    "n": "",
+    "r": []
+   },
+   {
+    "h": "14:00",
+    "w": "Talks in the Tent: John Cooper Clarke",
+    "s": "Something Kind of Wonderful",
+    "t": "14:00 - 15:00",
+    "sc": 10.17,
+    "n": "",
+    "r": [
+     {
+      "a": "Gently Tender",
+      "sc": 4.33
+     },
+     {
+      "a": "Shrem's Madonnathon",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "15:00",
+    "w": "Alabaster DePlume",
+    "s": "Flourish with District Music",
+    "t": "15:30 - 16:15",
+    "sc": 6.5,
+    "n": "",
+    "r": [
+     {
+      "a": "Burt Bacharach by Paddy Hanna",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "16:00",
+    "w": "Barrington Levy",
+    "s": "Something Kind of Wonderful",
+    "t": "16:00 - 17:15",
+    "sc": 9.33,
+    "n": "",
+    "r": [
+     {
+      "a": "Alabaster DePlume",
+      "sc": 6.5
+     },
+     {
+      "a": "Getdown Services",
+      "sc": 5.0
+     },
+     {
+      "a": "Soda Blonde",
+      "sc": 4.83
+     }
+    ]
+   },
+   {
+    "h": "17:00",
+    "w": "Barrington Levy",
+    "s": "Something Kind of Wonderful",
+    "t": "16:00 - 17:15",
+    "sc": 9.33,
+    "n": "",
+    "r": [
+     {
+      "a": "Kate Nash",
+      "sc": 6.33
+     },
+     {
+      "a": "Getdown Services",
+      "sc": 5.0
+     },
+     {
+      "a": "Soda Blonde",
+      "sc": 4.83
+     }
+    ]
+   },
+   {
+    "h": "18:00",
+    "w": "Damien Dempsey",
+    "s": "ATN Main Stage",
+    "t": "18:00 - 19:15",
+    "sc": 7.0,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Moonchild Sanelly",
+      "sc": 6.83
+     },
+     {
+      "a": "Prosumer",
+      "sc": 6.5
+     },
+     {
+      "a": "Kate Nash",
+      "sc": 6.33
+     }
+    ]
+   },
+   {
+    "h": "19:00",
+    "w": "Soichi Terada (Live)",
+    "s": "IMMERSE: AVA x Smirnoff",
+    "t": "19:30 - 20:30",
+    "sc": 7.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Damien Dempsey",
+      "sc": 7.0
+     },
+     {
+      "a": "Prosumer",
+      "sc": 6.5
+     },
+     {
+      "a": "SOAK",
+      "sc": 6.0
+     }
+    ]
+   },
+   {
+    "h": "20:00",
+    "w": "Soichi Terada (Live)",
+    "s": "IMMERSE: AVA x Smirnoff",
+    "t": "19:30 - 20:30",
+    "sc": 7.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Self Esteem",
+      "sc": 7.33
+     },
+     {
+      "a": "Kean Kavanagh",
+      "sc": 4.83
+     },
+     {
+      "a": "BIIRD",
+      "sc": 4.5
+     }
+    ]
+   },
+   {
+    "h": "21:00",
+    "w": "Anna von Hausswolff",
+    "s": "Road To Nowhere",
+    "t": "21:15 - 22:30",
+    "sc": 7.67,
+    "n": "",
+    "r": [
+     {
+      "a": "Self Esteem",
+      "sc": 7.33
+     },
+     {
+      "a": "Ms Dynamite",
+      "sc": 6.5
+     },
+     {
+      "a": "Chet Faker",
+      "sc": 6.0
+     }
+    ]
+   },
+   {
+    "h": "22:00",
+    "w": "Underworld",
+    "s": "ATN Main Stage",
+    "t": "22:00 - 23:15",
+    "sc": 11.03,
+    "n": "",
+    "r": [
+     {
+      "a": "Anna von Hausswolff",
+      "sc": 7.67
+     },
+     {
+      "a": "Chet Faker",
+      "sc": 6.0
+     },
+     {
+      "a": "Bazza Ranks",
+      "sc": 4.67
+     }
+    ]
+   },
+   {
+    "h": "23:00",
+    "w": "Underworld",
+    "s": "ATN Main Stage",
+    "t": "22:00 - 23:15",
+    "sc": 11.03,
+    "n": "",
+    "r": [
+     {
+      "a": "Mogwai",
+      "sc": 10.17
+     },
+     {
+      "a": "Weval (Live)",
+      "sc": 5.67
+     },
+     {
+      "a": "Bazza Ranks",
+      "sc": 4.67
+     }
+    ]
+   },
+   {
+    "h": "00:00",
+    "w": "Mogwai",
+    "s": "Something Kind of Wonderful",
+    "t": "23:15 - 00:30",
+    "sc": 10.17,
+    "n": "",
+    "r": [
+     {
+      "a": "Altern-8",
+      "sc": 8.3
+     },
+     {
+      "a": "Hot Chip (DJ Set)",
+      "sc": 7.67
+     },
+     {
+      "a": "Disclosure (DJ)",
+      "sc": 6.67
+     }
+    ]
+   },
+   {
+    "h": "01:00",
+    "w": "Altern-8",
+    "s": "Arcadia 'Afterburner'",
+    "t": "00:00 - 02:00",
+    "sc": 8.3,
+    "n": "",
+    "r": [
+     {
+      "a": "Hot Chip (DJ Set)",
+      "sc": 7.67
+     },
+     {
+      "a": "Disclosure (DJ)",
+      "sc": 6.67
+     },
+     {
+      "a": "King Kong Company",
+      "sc": 5.83
+     }
+    ]
+   },
+   {
+    "h": "02:00",
+    "w": "King Kong Company",
+    "s": "Something Kind of Wonderful",
+    "t": "01:30 - 03:00",
+    "sc": 5.83,
+    "n": "close call",
+    "r": [
+     {
+      "a": "Eats Everything",
+      "sc": 5.83
+     },
+     {
+      "a": "The Dare (DJ Set)",
+      "sc": 5.0
+     },
+     {
+      "a": "Daniel Wang",
+      "sc": 4.33
+     }
+    ]
+   },
+   {
+    "h": "03:00",
+    "w": "Eats Everything",
+    "s": "Arcadia 'Afterburner'",
+    "t": "02:00 - 04:00",
+    "sc": 5.83,
+    "n": "",
+    "r": [
+     {
+      "a": "Daniel Wang",
+      "sc": 4.33
+     },
+     {
+      "a": "Winemoms",
+      "sc": 4.33
+     }
+    ]
+   }
   ]
  }
 }

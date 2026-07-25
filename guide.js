@@ -327,12 +327,52 @@ function scoreRow(s) {
   return '<div class="score"><div class="shead">' +
     '<span class="slab">Committee score</span>' +
     '<span class="snum">' + s.cs.toFixed(2) + "</span></div>" +
-    bar("Heritage", s.ch) + bar("Legend", s.cl) + bar("Live now", s.cr) +
-    '<div class="sconf">Live-form evidence: ' + CONF[s.cf || 0] +
-    (s.bt && s.bt.length
-      ? " &middot; beats " + esc(s.bt.slice(0, 3).join(", ")) +
-        (s.bt.length > 3 ? " +" + (s.bt.length - 3) : "") + " in its slot"
-      : "") + "</div></div>";
+    bar("Best album", s.cp) + bar("Bench", s.cd) + bar("Live now", s.cr) +
+    '<div class="smath">' + s.cb.toFixed(2) + " base" +
+      (s.cn ? ' <span class="bonus">+' + s.cn.toFixed(1) + " legend</span>" : "") +
+    "</div>" +
+    (s.lw ? '<div class="legend"><span class="llab">Legendary gig</span>' +
+            esc(s.lw) + ' <b>' + esc(s.ln) + "</b></div>" : "") +
+    '<div class="sconf">Live-form evidence: ' + CONF[s.cf || 0] + "</div></div>";
+}
+
+function renderHours() {
+  var H = (window.ATN_HOURS || {})[S.day] || [];
+  if (!H.length) return "";
+  /* Collapse runs of consecutive hours won by the same act into one row. */
+  var rows = [];
+  H.forEach(function (r) {
+    var prev = rows[rows.length - 1];
+    if (prev && prev.w === r.w) { prev.last = r.h; return; }
+    rows.push({ h: r.h, last: "", w: r.w, s: r.s, t: r.t, sc: r.sc, n: r.n, r: r.r });
+  });
+  rows.forEach(function (r) {
+    if (r.last) {
+      var endHr = (parseInt(r.last, 10) + 1) % 24;
+      r.h = r.h + "–" + (endHr < 10 ? "0" : "") + endHr + ":00";
+    }
+  });
+
+  var h = "";
+  rows.forEach(function (r) {
+    h += '<div class="hr"><div class="hrt">' + esc(r.h) + "</div>" +
+      '<div class="hrb"><b>' + esc(r.w) + '</b> <span class="hrs">' +
+      esc(r.sc.toFixed(2)) + "</span>" +
+      '<span class="hrw">' + esc(r.t) + " &middot; " + esc(r.s) + "</span>" +
+      (r.n ? '<span class="hrn">' + esc(r.n) + "</span>" : "") +
+      (r.r && r.r.length
+        ? '<span class="hru">then ' + r.r.map(function (u) {
+            return esc(u.a) + " (" + u.sc.toFixed(2) + ")";
+          }).join(", ") + "</span>"
+        : "") +
+      "</div></div>";
+  });
+
+  return '<div class="plan"><div class="tag">Hour by hour</div>' +
+    "<h2>The committee's call, every hour</h2>" +
+    "<p>The best gig on site in each hour of the day, on the consolidated score. " +
+    "Where two are within 0.3 of each other it's treated as a coin flip and goes " +
+    "to the Irish act.</p>" + h + "</div>";
 }
 
 function listenRow(s) {
@@ -381,7 +421,7 @@ var BUCKETS = ["Daytime", "Early evening", "Night", "Late / after midnight"];
 
 function renderPicks() {
   var p = PLANS[S.day];
-  var h = heroBlock(S.day);
+  var h = heroBlock(S.day) + renderHours();
 
   if (p) {
     h += '<div class="plan"><div class="tag">The Game Plan</div><h2>' + esc(p.title) + "</h2><p>" +
