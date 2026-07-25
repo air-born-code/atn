@@ -17,20 +17,45 @@
 tops up a score rather than deciding it, and only awarded where a genuinely
 legendary concert can be named and dated. If we can't name it, it's zero.
 
-Four judges then weight the same axes differently. They don't set the headline
-number; their spread is reported as a consensus check.
+Three judges then weight the same axes differently. They don't set the headline
+number; their spread is reported as a consensus check, and where they disagree
+sharply that's usually the interesting acts.
+
+The judges are ROLES, not real people. Each stands for a different kind of
+musical expertise — the studio ear, the dancefloor ear, the live-sound ear —
+so a score isn't one taste pretending to be objective. They are deliberately
+not modelled on named critics or musicians: inventing verdicts and attributing
+them to real people would be putting words in their mouths.
 """
 
 # The headline weights. fresh + recent = 70% of the base score.
 W_FRESH, W_RECENT, W_PEAK, W_BENCH = 0.35, 0.35, 0.20, 0.10
 
-# name,            fresh, recent, peak, bench, irish_bonus
+# The committee — a hip-hop ear, a rock ear and a punk ear. name, fresh, recent,
+# peak, bench, blurb.
+#
+# These are ROLES, deliberately not real named producers or musicians. Inventing
+# a score and attaching a real person's name to it would be putting words in
+# their mouth, on a page that gets shared.
 JUDGES = [
-    ("The Archivist",  0.15, 0.25, 0.30, 0.30, 0.0),
-    ("The Headliner",  0.25, 0.30, 0.35, 0.10, 0.0),
-    ("The Gig-Goer",   0.40, 0.45, 0.10, 0.05, 0.0),
-    ("The Local",      0.40, 0.35, 0.15, 0.10, 0.4),
+    ("The Beatmaker", 0.15, 0.20, 0.40, 0.25,
+     "The hip-hop ear. Grew up on records, not gigs — judges an act on the strength "
+     "of what they actually made: production, arrangement, whether the catalogue "
+     "runs deep enough to pull a set from. Will take a flawed great over a hot newcomer."),
+    ("The Lifer", 0.20, 0.55, 0.15, 0.10,
+     "The rock ear. Thirty years of shows from side-of-stage, and only trusts what "
+     "survives a field — PA, stagecraft, daylight, a crowd half of whom wandered in. "
+     "The only one who reads the festival-form table."),
+    ("The Punk", 0.50, 0.35, 0.10, 0.05,
+     "The punk ear. Openly hostile to coasting: doesn't care what you did in 1995, "
+     "cares whether you've got something out now and whether you mean it tonight. "
+     "Rates urgency over polish and legacy barely counts."),
 ]
+
+# Only The Lifer reads the festival-form table — that's the whole reason they're
+# on the committee. Applied on top of their weighted score.
+FEST_ADJUSTMENT = {"built": 0.6, "proven": 0.3, "caution": -0.6, "unknown": 0.0, "": 0.0}
+ROAD_HAND = "The Lifer"
 
 # How fresh their current material is. Default 6.0 where not listed.
 # High = a strong record in the last year or two and actively touring it.

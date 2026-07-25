@@ -40,15 +40,26 @@ Underworld's Olympic ceremony, Barrington Levy at Reggae Sunsplash, John Cooper
 Clarke opening for the Pistols. If we can't name one, the bonus is zero. No
 bonus is handed out on vibes.
 
-Four judges then weight the same three axes differently, as a consensus check.
-They don't set the headline number; their spread is reported alongside it:
+The committee is three ears with different expertise, weighting the same four
+axes differently, so a score isn't one taste pretending to be objective:
 
-| Judge | Fresh | Recent | Best album | Bench | Irish bonus |
+| Judge | Fresh | Live | Album | Bench | The ear |
 | --- | --- | --- | --- | --- | --- |
-| The Archivist | 0.15 | 0.25 | 0.30 | 0.30 | — |
-| The Headliner | 0.25 | 0.30 | 0.35 | 0.10 | — |
-| The Gig-Goer | 0.40 | 0.45 | 0.10 | 0.05 | — |
-| The Local | 0.40 | 0.35 | 0.15 | 0.10 | +0.4 |
+| The Beatmaker | 15% | 20% | 40% | 25% | hip-hop — judges the records and the catalogue |
+| The Lifer | 20% | 55% | 15% | 10% | rock — thirty years side-of-stage; only trusts what survives a field |
+| The Punk | 50% | 35% | 10% | 5% | punk — urgency over polish, legacy barely counts |
+
+The Lifer is the only one who reads the festival-form table, docking acts whose
+show needs a room a field can't give it.
+
+**They are roles, not real people.** No real producer or musician is named or
+modelled, because inventing a verdict and attaching someone's actual name to it
+would be putting words in their mouth on a page that gets shared.
+
+Where they split hardest is where the interesting acts are — Barrington Levy
+scores Beatmaker 6.95 / Lifer 5.10 / Punk 4.68 (great records, nothing new), and
+Maruja is almost exactly inverted. Any act with a spread over 1.5 shows a
+**They disagree** badge on its detail sheet.
 
 Each act carries a **confidence** figure for its recent score: `2` = cited written
 review, `1` = aggregate or audience reports, `0` = reputation only. The app shows

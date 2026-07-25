@@ -15,7 +15,8 @@ Run before curate.py:   python3 committee.py && python3 curate.py
 import json, csv, datetime
 
 from scoring import (JUDGES, SCORES, LEGEND, DEFAULT, FRESH, FRESH_DEFAULT,
-                     W_FRESH, W_RECENT, W_PEAK, W_BENCH)
+                     W_FRESH, W_RECENT, W_PEAK, W_BENCH,
+                     FEST_ADJUSTMENT, ROAD_HAND)
 import curate_tables as T
 
 DAY_KEY = {"Thursday 30th July": "thu", "Friday 31st July": "fri",
@@ -38,13 +39,15 @@ def score(artist):
     base = fresh * W_FRESH + recent * W_RECENT + peak * W_PEAK + bench * W_BENCH
     bonus, what, when = LEGEND.get(artist, (0.0, "", ""))
     irish = artist in IRISH
+    fest_verdict = T.FEST.get(artist, ("", ""))[0]
 
     views = {}
-    for name, wf, wr, wp, wb, wi in JUDGES:
+    for name, wf, wr, wp, wb, _blurb in JUDGES:
         v = fresh * wf + recent * wr + peak * wp + bench * wb
-        if irish:
-            v += wi
-        views[name] = round(v, 2)
+        # The live-sound ear is the only one who docks an act for not travelling.
+        if name == ROAD_HAND:
+            v += FEST_ADJUSTMENT.get(fest_verdict, 0.0)
+        views[name] = round(max(0.0, min(v, 10.0)), 2)
 
     spread = round(max(views.values()) - min(views.values()), 2)
     return {
@@ -52,8 +55,10 @@ def score(artist):
         "base": round(base, 2), "bonus": bonus,
         "composite": round(base + bonus, 2),
         "legend_what": what, "legend_when": when,
+        "fest": fest_verdict,
         "irish": int(irish), "spread": spread,
-        **{"j_" + n.replace("The ", "").lower().replace("-", ""): v for n, v in views.items()},
+        **{"j_" + n.replace("The ", "").lower().replace(" ", "_"): v
+           for n, v in views.items()},
     }
 
 
@@ -139,13 +144,16 @@ def main():
         w.writeheader(); w.writerows(hours)
 
     json.dump({
-        "judges": [j[0] for j in JUDGES],
+        "judges": [{"name": j[0], "blurb": j[5],
+                    "w": {"fresh": j[1], "recent": j[2], "album": j[3], "bench": j[4]}}
+                   for j in JUDGES],
         "model": "composite = 0.35 fresh + 0.35 recent gigs + 0.20 best album + 0.10 bench, + legend bonus",
         "scores": {a["artist"]: {
             "c": a["composite"], "b": a["base"], "bn": a["bonus"],
             "f": a["fresh"], "p": a["peak"], "bs": a["bench"], "r": a["recent"], "cf": a["conf"],
             "ir": a["irish"], "sp": a["spread"],
             "lw": a["legend_what"], "ln": a["legend_when"],
+            "jv": {k[2:]: a[k] for k in a if k.startswith("j_")},
         } for a in acts},
         "hours": by_hour,
     }, open("committee.json", "w"), indent=1)

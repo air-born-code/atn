@@ -147,7 +147,8 @@ function heroBlock(day) {
     rows += '<div class="t3row">' +
       '<div class="t3n">' + (i + 1) + "</div>" +
       '<div class="t3b">' +
-        "<b>" + esc(s.a) + '</b><span class="t3sc">' + s.cs.toFixed(2) + "</span>" +
+        '<b class="actlink" data-act="' + esc(s.a) + '" data-day="' + esc(day) +
+          '">' + esc(s.a) + '</b><span class="t3sc">' + s.cs.toFixed(2) + "</span>" +
         '<span class="t3w">' + esc(s.t) + " &middot; " + esc(s.s) + "</span>" +
         (s.lv ? '<span class="t3r">' + esc(s.lv) + "</span>" : "") +
         (s.lu ? '<a class="t3l" href="' + s.lu + '" target="_blank" rel="noopener">' +
@@ -345,6 +346,51 @@ function scoreRow(s) {
     '<div class="sconf">Live-form evidence: ' + CONF[s.cf || 0] + "</div></div>";
 }
 
+var JKEY = { "The Beatmaker": "beatmaker", "The Lifer": "lifer", "The Punk": "punk" };
+
+function judgeBlock() {
+  var J = window.ATN_JUDGES || [];
+  if (!J.length) return "";
+  var h = '<p class="enote"><b>Who\'s on the committee</b> &mdash; three different ears, ' +
+          'weighting the same four axes differently, so a score isn\'t one taste ' +
+          'pretending to be objective. They\'re roles, not real people.</p>';
+  J.forEach(function (j) {
+    var w = j.w || {};
+    h += '<div class="judge"><b>' + esc(j.name) + "</b>" +
+      '<span class="jw">fresh ' + Math.round(w.fresh * 100) + "% &middot; live " +
+      Math.round(w.recent * 100) + "% &middot; album " + Math.round(w.album * 100) +
+      "% &middot; bench " + Math.round(w.bench * 100) + "%</span>" +
+      "<span class=\"jb\">" + esc(j.blurb) + "</span></div>";
+  });
+  h += '<p class="enote">The Lifer is the only one who reads the festival-form ' +
+       'table, docking acts whose show needs a room a field can\'t give it.</p>';
+  return h;
+}
+
+function judgeRow(s) {
+  var J = window.ATN_JUDGES || [], jv = s.jv || {};
+  if (!J.length || !Object.keys(jv).length) return "";
+  var vals = J.map(function (j) { return jv[JKEY[j.name]]; }).filter(function (v) { return v != null; });
+  if (!vals.length) return "";
+  var hi = Math.max.apply(null, vals), lo = Math.min.apply(null, vals);
+
+  var h = '<div class="jsplit"><div class="jshead">How the three saw it' +
+    (s.jd >= 1.5 ? ' <span class="jsplitbadge">They disagree</span>' : "") + "</div>";
+  J.forEach(function (j) {
+    var v = jv[JKEY[j.name]];
+    if (v == null) return;
+    h += '<div class="jrow"><span class="jn">' + esc(j.name.replace("The ", "")) + "</span>" +
+      '<span class="jbar"><i style="width:' + (v * 10) + '%"></i></span>' +
+      '<span class="jvv' + (v === hi ? " hi" : v === lo ? " lo" : "") + '">' +
+      v.toFixed(2) + "</span></div>";
+  });
+  if (s.jd >= 1.5) {
+    h += '<div class="jnote">A spread of ' + s.jd.toFixed(2) +
+         " — worth knowing which ear you trust here.</div>";
+  }
+  return h + "</div>";
+}
+
 /* Sits above each day's scored section, so the numbers below it mean something. */
 function scoreExplainer() {
   var w = function (lab, pct, what, eg) {
@@ -387,6 +433,7 @@ function scoreExplainer() {
       "can't win it. Where two are within 0.3 it's a coin flip, and the Irish act gets it.</p>" +
       '<p class="enote"><b>Live-form evidence</b> on each card tells you how solid the ' +
       'number is: a cited written review, weaker audience reports, or reputation only.</p>' +
+      judgeBlock() +
     "</div></details>";
 }
 
@@ -442,13 +489,15 @@ function renderHours() {
 
     if (mine) {
       h += '<span class="hrmine">Your pick</span>' +
-        "<b>" + esc(mine) + "</b>" +
+        '<b class="actlink" data-act="' + esc(mine) + '" data-day="' + esc(S.day) +
+          '">' + esc(mine) + "</b>" +
         '<span class="hrw">' + (chosen ? esc(chosen.t) + " &middot; " + esc(chosen.s) : "") + "</span>" +
         (mine !== r.w
           ? '<span class="hru">Committee had ' + esc(r.w) + " (" + r.sc.toFixed(2) + ")</span>"
           : '<span class="hru">Agrees with the committee</span>');
     } else {
-      h += "<b>" + esc(r.w) + '</b> <span class="hrs">' + esc(r.sc.toFixed(2)) + "</span>" +
+      h += '<b class="actlink" data-act="' + esc(r.w) + '" data-day="' + esc(S.day) +
+        '">' + esc(r.w) + '</b> <span class="hrs">' + esc(r.sc.toFixed(2)) + "</span>" +
         '<span class="hrw">' + esc(r.t) + " &middot; " + esc(r.s) + "</span>" +
         (r.n ? '<span class="hrn">' + esc(r.n) + "</span>" : "");
     }
@@ -458,7 +507,9 @@ function renderHours() {
 
     if (open) {
       var cands = candidatesForHour(S.day, r);
-      h += '<div class="hropts">';
+      h += '<div class="hropts"><div class="hropthead">Pick who you\'re seeing at ' +
+        esc(r.h.split("\u2013")[0]) + ". It saves on this phone and replaces the " +
+        "committee's suggestion for this hour.</div>";
       cands.forEach(function (c) {
         h += '<button class="hropt' + (c.a === mine ? " on" : "") + '" data-hour="' +
           esc(key) + '" data-act="' + esc(c.a) + '">' +
@@ -1005,7 +1056,8 @@ function renderNow() {
   bar.hidden = false;
 }
 
-function render() {
+function render(keepScroll) {
+  var _y = window.scrollY;
   document.querySelectorAll("#days .day").forEach(function (b) {
     b.classList.toggle("on", b.dataset.d === S.day);
   });
@@ -1032,7 +1084,7 @@ function render() {
   else renderInfo();
 
   renderNow();
-  window.scrollTo(0, 0);
+  window.scrollTo(0, keepScroll ? _y : 0);
 }
 
 /* ---------------- wiring ---------------- */
@@ -1049,10 +1101,17 @@ document.getElementById("filters").innerHTML = GENRES.map(function (g) {
 document.addEventListener("click", function (e) {
   if (e.target.closest("#dclose")) return closeAct();
 
+  var al = e.target.closest(".actlink");
+  if (al) {
+    e.preventDefault();
+    var s2 = setFor(al.dataset.act, al.dataset.day || S.day);
+    if (s2) return openAct(idOf(s2));
+  }
+
   var hp = e.target.closest(".hrpick");
   if (hp) {
     S.openHour = S.openHour === hp.dataset.hour ? "" : hp.dataset.hour;
-    return render();
+    return render(true);
   }
 
   var ho = e.target.closest(".hropt");
@@ -1060,7 +1119,7 @@ document.addEventListener("click", function (e) {
     S.hourPicks[ho.dataset.hour] = ho.dataset.act;
     save("atn_hourpicks", S.hourPicks);
     S.openHour = "";
-    return render();
+    return render(true);
   }
 
   var hc = e.target.closest(".hroptclear");
@@ -1068,7 +1127,7 @@ document.addEventListener("click", function (e) {
     delete S.hourPicks[hc.dataset.hour];
     save("atn_hourpicks", S.hourPicks);
     S.openHour = "";
-    return render();
+    return render(true);
   }
 
   if (e.target.closest("#sharePlan")) return sharePlan();
@@ -1190,7 +1249,7 @@ function openAct(id) {
 
   if (s.cs) {
     h += '<div class="dsec"><h4>Committee score &mdash; ' + s.cs.toFixed(2) + "</h4>" +
-         scoreRow(s) + "</div>";
+         scoreRow(s) + judgeRow(s) + "</div>";
   }
 
   h += '<div class="dsec"><h4>Listen</h4>' + listenRow(s) + "</div>";
