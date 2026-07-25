@@ -143,3 +143,21 @@ still publishes.
 Every source is wrapped so one dead endpoint can't take the run down, and the tab shows
 per-source health — a thin feed reads as *quiet*, not *broken*. The app caches the last
 copy in `localStorage`, so the tab still works with no signal.
+
+## Hourly picks and per-phone individualisation
+
+There are no accounts. Each phone keeps its own state in `localStorage`:
+
+- **`atn_who`** — a name for the phone. Purely cosmetic, but it labels shared plans
+  so the group can tell whose is whose.
+- **`atn_hourpicks`** — one chosen act per hour (`"sat|22:00": "THUMPER"`). Set from
+  the **Choose this hour** button on the hour-by-hour list. Once chosen it sticks, and
+  the committee's suggestion stays visible underneath so you can see where you
+  disagreed.
+- **`atn_stars`**, **`atn_notes`**, **`atn_latest`** — shortlist, notes, cached feed.
+
+Because `localStorage` is per-device, everyone naturally gets their own plan — which
+is what you want most of the time. To put the group on the *same* plan, **Share my
+plan** encodes the picks into a link (`#plan=<base64>`) that can be pasted into
+WhatsApp. Opening it asks before overwriting, so nobody loses their own picks by
+tapping a link. No server, no accounts, and it survives being forwarded.

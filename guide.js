@@ -274,6 +274,9 @@ var S = {
   view: "picks",
   genre: "all",
   q: "",
+  who: load("atn_who", ""),               // whose phone this is — no login, just a local name
+  hourPicks: load("atn_hourpicks", {}),   // per-hour choices, saved on this phone
+  openHour: "",                           // which hour's chooser is expanded
   mapStage: "",
   mapZone: "",
   stars: load("atn_stars", {}),
@@ -384,6 +387,28 @@ function scoreExplainer() {
     "</div></details>";
 }
 
+function setFor(artist, day) {
+  for (var i = 0; i < D.length; i++) if (D[i].a === artist && D[i].d === day) return D[i];
+  return null;
+}
+
+/* Everything actually playable in that hour — not just the committee's shortlist,
+   so you can pick the thing you want rather than the thing that scored well. */
+function candidatesForHour(day, row) {
+  var start = parseInt(row.h, 10);
+  var pool = D.filter(function (s) {
+    if (s.d !== day || !s.tr) return false;
+    var hh = new Date(s.st).getHours(), he = new Date(s.en).getHours();
+    var span = (he - hh + 24) % 24;
+    for (var k = 0; k <= span; k++) if ((hh + k) % 24 === start) return true;
+    return false;
+  });
+  var seen = {}, out = [];
+  pool.forEach(function (s) { if (!seen[s.a]) { seen[s.a] = 1; out.push(s); } });
+  out.sort(function (a, b) { return (b.cs || 0) - (a.cs || 0); });
+  return out.slice(0, 8);
+}
+
 function renderHours() {
   var H = (window.ATN_HOURS || {})[S.day] || [];
   if (!H.length) return "";
@@ -403,17 +428,48 @@ function renderHours() {
 
   var h = "";
   rows.forEach(function (r) {
-    h += '<div class="hr"><div class="hrt">' + esc(r.h) + "</div>" +
-      '<div class="hrb"><b>' + esc(r.w) + '</b> <span class="hrs">' +
-      esc(r.sc.toFixed(2)) + "</span>" +
-      '<span class="hrw">' + esc(r.t) + " &middot; " + esc(r.s) + "</span>" +
-      (r.n ? '<span class="hrn">' + esc(r.n) + "</span>" : "") +
-      (r.r && r.r.length
-        ? '<span class="hru">then ' + r.r.map(function (u) {
-            return esc(u.a) + " (" + u.sc.toFixed(2) + ")";
-          }).join(", ") + "</span>"
-        : "") +
-      "</div></div>";
+    var key = S.day + "|" + r.h;
+    var mine = S.hourPicks[key];
+    var open = S.openHour === key;
+    var chosen = mine ? setFor(mine, S.day) : null;
+
+    h += '<div class="hr' + (mine ? " picked" : "") + '" data-hour="' + esc(key) + '">' +
+      '<div class="hrt">' + esc(r.h) + "</div>" +
+      '<div class="hrb">';
+
+    if (mine) {
+      h += '<span class="hrmine">Your pick</span>' +
+        "<b>" + esc(mine) + "</b>" +
+        '<span class="hrw">' + (chosen ? esc(chosen.t) + " &middot; " + esc(chosen.s) : "") + "</span>" +
+        (mine !== r.w
+          ? '<span class="hru">Committee had ' + esc(r.w) + " (" + r.sc.toFixed(2) + ")</span>"
+          : '<span class="hru">Agrees with the committee</span>');
+    } else {
+      h += "<b>" + esc(r.w) + '</b> <span class="hrs">' + esc(r.sc.toFixed(2)) + "</span>" +
+        '<span class="hrw">' + esc(r.t) + " &middot; " + esc(r.s) + "</span>" +
+        (r.n ? '<span class="hrn">' + esc(r.n) + "</span>" : "");
+    }
+
+    h += '<button class="hrpick" data-hour="' + esc(key) + '">' +
+         (open ? "Close" : (mine ? "Change" : "Choose this hour")) + "</button>";
+
+    if (open) {
+      var cands = candidatesForHour(S.day, r);
+      h += '<div class="hropts">';
+      cands.forEach(function (c) {
+        h += '<button class="hropt' + (c.a === mine ? " on" : "") + '" data-hour="' +
+          esc(key) + '" data-act="' + esc(c.a) + '">' +
+          "<b>" + esc(c.a) + "</b>" +
+          (c.cs ? '<span class="hos">' + c.cs.toFixed(2) + "</span>" : "") +
+          '<span class="how">' + esc(c.t) + " &middot; " + esc(c.s) + "</span></button>";
+      });
+      if (mine) {
+        h += '<button class="hroptclear" data-hour="' + esc(key) + '">Clear this hour</button>';
+      }
+      h += "</div>";
+    }
+
+    h += "</div></div>";
   });
 
   return '<div class="plan"><div class="tag">Hour by hour</div>' +
@@ -548,10 +604,107 @@ function wireSearch() {
   });
 }
 
+/* ---------------- sharing picks between phones ----------------
+   localStorage is per-device, so everyone's picks are their own. To get the
+   group onto the same plan we encode the picks into a link they can paste into
+   WhatsApp — no server, no accounts, and it survives being forwarded. */
+function sharePlan() {
+  var payload = { w: S.who, p: S.hourPicks, s: Object.keys(S.stars) };
+  var code;
+  try {
+    code = btoa(unescape(encodeURIComponent(JSON.stringify(payload))))
+      .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  } catch (e) { return alert("Couldn't build a share link."); }
+
+  var url = location.origin + location.pathname + "#plan=" + code;
+  var msg = (S.who ? S.who + "'s" : "My") +
+    " ATN plan — open this and it'll load onto your phone:\n" + url;
+
+  if (navigator.share) {
+    navigator.share({ title: "My ATN 2026 plan", text: msg }).catch(function () {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(
+      function () { alert("Share link copied. Paste it into the group chat."); },
+      function () { prompt("Copy this link:", url); }
+    );
+  } else {
+    prompt("Copy this link:", url);
+  }
+}
+
+function importPlan() {
+  var m = /[#&]plan=([A-Za-z0-9\-_]+)/.exec(location.hash);
+  if (!m) return;
+  var picks, stars, from;
+  try {
+    var b = m[1].replace(/-/g, "+").replace(/_/g, "/");
+    var data = JSON.parse(decodeURIComponent(escape(atob(b))));
+    picks = data.p || {}; stars = data.s || []; from = data.w || "";
+  } catch (e) {
+    history.replaceState(null, "", location.pathname);
+    return;
+  }
+
+  var nPicks = Object.keys(picks).length;
+  var mine = Object.keys(S.hourPicks).length;
+  var ok = confirm(
+    "Load " + (from ? from + "'s" : "a shared") + " plan?\n\n" + nPicks +
+    " hourly picks and " + stars.length + " starred sets.\n\n" +
+    (mine ? "This replaces the " + mine + " picks already on this phone." : "")
+  );
+
+  history.replaceState(null, "", location.pathname);
+  if (!ok) return;
+
+  S.hourPicks = picks;
+  S.stars = {};
+  stars.forEach(function (k) { S.stars[k] = true; });
+  save("atn_hourpicks", S.hourPicks);
+  save("atn_stars", S.stars);
+}
+
 function renderPlan() {
   var mine = D.filter(function (s) { return S.stars[idOf(s)]; });
 
-  var h = "";
+  var h = '<div class="plan"><div class="tag">This phone</div>' +
+    "<h2>" + (S.who ? esc(S.who) + "'s guide" : "Whose phone is this?") + "</h2>" +
+    "<p>There are no accounts and nothing leaves your phone. Putting a name on it just " +
+    "labels the plans you share, so the group can tell whose is whose.</p>" +
+    '<input class="whoin" id="whoin" placeholder="Your name" value="' + esc(S.who) +
+    '" maxlength="24"></div>';
+
+  /* Hourly picks, grouped by day */
+  var pk = Object.keys(S.hourPicks);
+  if (pk.length) {
+    h += '<div class="plan"><div class="tag">Your hour-by-hour</div>' +
+         "<h2>" + pk.length + " hour" + (pk.length > 1 ? "s" : "") + " locked in</h2>" +
+         "<p>Saved on this phone. Everyone in the group keeps their own — " +
+         "use the share link below to put someone else on your plan.</p>";
+    DAYS.forEach(function (d) {
+      var keys = pk.filter(function (k) { return k.indexOf(d.k + "|") === 0; })
+                   .sort(function (a, b) {
+                     return parseInt(a.split("|")[1], 10) - parseInt(b.split("|")[1], 10);
+                   });
+      if (!keys.length) return;
+      h += '<div class="leg"><div class="lt">' + d.n + '</div><div class="lb">';
+      keys.forEach(function (k) {
+        var act = S.hourPicks[k], s = setFor(act, d.k);
+        h += "<b>" + esc(k.split("|")[1]) + "</b> &mdash; " + esc(act) +
+             (s ? '<em>' + esc(s.t) + " &middot; " + esc(s.s) + "</em>" : "") ;
+      });
+      h += "</div></div>";
+    });
+    h += '<div class="planbtns">' +
+         '<button class="pbtn primary" id="sharePlan">Share my plan</button>' +
+         '<button class="pbtn" id="clearPlan">Clear picks</button></div></div>';
+  } else {
+    h += '<div class="plan"><div class="tag">Your hour-by-hour</div>' +
+         "<h2>No hours locked in yet</h2><p>On the Picks tab, each hour of the " +
+         "hour-by-hour list has a <b>Choose this hour</b> button. Pick the act you " +
+         "actually want and it sticks &mdash; the committee's suggestion stays " +
+         "visible underneath so you can see where you disagreed.</p></div>";
+  }
+
   if (!mine.length) {
     h += '<div class="empty"><div class="big">☆</div><p>Tap the star on any set to build your own plan.<br><br>' +
          'Clashes get flagged automatically.</p></div>';
@@ -581,6 +734,15 @@ function renderPlan() {
   main.innerHTML = h;
   var nt = document.getElementById("nt");
   nt.addEventListener("input", function () { S.notes = nt.value; save("atn_notes", S.notes); });
+
+  var wi = document.getElementById("whoin");
+  if (wi) {
+    wi.addEventListener("input", function () {
+      S.who = wi.value.trim(); save("atn_who", S.who);
+    });
+    /* re-render on blur, not per keystroke, so the caret isn't yanked mid-word */
+    wi.addEventListener("change", function () { render(); });
+  }
 }
 
 function mapDiagram() {
@@ -884,6 +1046,36 @@ document.getElementById("filters").innerHTML = GENRES.map(function (g) {
 document.addEventListener("click", function (e) {
   if (e.target.closest("#dclose")) return closeAct();
 
+  var hp = e.target.closest(".hrpick");
+  if (hp) {
+    S.openHour = S.openHour === hp.dataset.hour ? "" : hp.dataset.hour;
+    return render();
+  }
+
+  var ho = e.target.closest(".hropt");
+  if (ho) {
+    S.hourPicks[ho.dataset.hour] = ho.dataset.act;
+    save("atn_hourpicks", S.hourPicks);
+    S.openHour = "";
+    return render();
+  }
+
+  var hc = e.target.closest(".hroptclear");
+  if (hc) {
+    delete S.hourPicks[hc.dataset.hour];
+    save("atn_hourpicks", S.hourPicks);
+    S.openHour = "";
+    return render();
+  }
+
+  if (e.target.closest("#sharePlan")) return sharePlan();
+  if (e.target.closest("#clearPlan")) {
+    if (confirm("Clear every hourly pick on this phone?")) {
+      S.hourPicks = {}; save("atn_hourpicks", S.hourPicks); render();
+    }
+    return;
+  }
+
   var sl = e.target.closest(".stagelink");
   if (sl) {
     e.preventDefault();
@@ -1107,6 +1299,7 @@ document.getElementById("refresh").addEventListener("click", function () {
 });
 
 /* Seed from the last saved copy so the tab is never blank offline, then refresh. */
+importPlan();
 LATEST = load("atn_latest", null);
 updateLatestBadge();
 loadLatest();

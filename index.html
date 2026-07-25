@@ -151,6 +151,34 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
 .sday:first-of-type{margin-top:0}
 mark{background:rgba(255,47,116,.3);color:var(--tx);border-radius:3px;padding:0 2px}
 
+/* ---------- hourly picks ---------- */
+.hr.picked{background:rgba(255,47,116,.06);border-radius:10px;
+  margin:0 -6px;padding-left:6px;padding-right:6px}
+.hrmine{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.08em;
+  text-transform:uppercase;background:var(--acc);color:#fff;border-radius:5px;
+  padding:2px 6px;margin-bottom:4px}
+.hrpick{display:block;margin-top:7px;min-height:36px;padding:0 12px;border-radius:9px;
+  background:var(--card2);border:1px solid var(--line);font-size:12px;font-weight:650;
+  color:var(--tx)}
+.hropts{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+.hropt{display:block;width:100%;text-align:left;min-height:44px;padding:8px 10px;
+  border-radius:10px;background:var(--card2);border:1px solid var(--line);
+  margin-bottom:6px;color:var(--tx)}
+.hropt.on{border-color:var(--acc);background:rgba(255,47,116,.16)}
+.hropt b{font-size:13.5px;font-weight:650}
+.hropt .hos{font-size:10.5px;font-weight:800;color:var(--acc);margin-left:6px;
+  font-variant-numeric:tabular-nums}
+.hropt .how{display:block;font-size:11px;color:var(--dim2);margin-top:2px}
+.hroptclear{display:block;width:100%;min-height:38px;border-radius:9px;
+  background:transparent;border:1px dashed var(--line);color:var(--dim);font-size:12px}
+.planbtns{display:flex;gap:8px;margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.pbtn{flex:1;min-height:44px;border-radius:11px;background:var(--card2);
+  border:1px solid var(--line);font-size:13.5px;font-weight:650;color:var(--tx)}
+.pbtn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.whoin{width:100%;margin-top:10px;padding:12px 13px;border-radius:11px;
+  background:var(--card2);border:1px solid var(--line);color:var(--tx);font:inherit;font-size:16px}
+.whoin:focus{outline:none;border-color:var(--acc)}
+
 /* ---------- score explainer ---------- */
 .expl{border-radius:14px;background:var(--card);border:1px solid var(--line);
   margin-bottom:12px;overflow:hidden}
