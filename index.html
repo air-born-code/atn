@@ -37,7 +37,30 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
 .brand .sub{font-size:11px;color:var(--dim2);letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
 .brand .logo{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--acc),#7c3aed);display:grid;place-items:center;font-size:13px;font-weight:800;flex:none}
 .brand .spacer{flex:1}
-.iconbtn{width:36px;height:36px;border-radius:10px;background:var(--card2);display:grid;place-items:center;font-size:15px}
+.iconbtn{width:40px;height:40px;border-radius:11px;background:var(--card2);display:grid;place-items:center;font-size:16px}
+
+/* ---------- committee score ---------- */
+.score{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+.shead{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.slab{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim2);font-weight:700}
+.snum{font-size:15px;font-weight:800;color:var(--acc);font-variant-numeric:tabular-nums}
+.sb{display:flex;align-items:center;gap:7px;margin-bottom:3px}
+.sbl{font-size:10.5px;color:var(--dim2);width:56px;flex:none}
+.sbt{flex:1;height:4px;border-radius:2px;background:var(--line);overflow:hidden}
+.sbt i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#7c3aed)}
+.sbv{font-size:10.5px;color:var(--dim);width:22px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
+.sconf{font-size:10.5px;color:var(--dim2);margin-top:6px;line-height:1.45}
+
+/* ---------- listen links ---------- */
+.listen{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.listen a{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:5px 10px;
+  border-radius:9px;background:var(--card2);border:1px solid var(--line);
+  font-size:11.5px;font-weight:650;color:var(--tx);text-decoration:none}
+.listen a .pd{width:7px;height:7px;border-radius:50%;flex:none}
+.listen a.yt .pd{background:#ff0033}
+.listen a.sp .pd{background:#1db954}
+.listen a.am .pd{background:#fa2d48}
+.listen .sng{font-size:11.5px;color:var(--dim2);align-self:center;font-style:italic}
 
 .days{display:flex;gap:6px;padding:2px 12px 10px;overflow-x:auto;scrollbar-width:none}
 .days::-webkit-scrollbar{display:none}
@@ -49,7 +72,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
 /* ---------- filters ---------- */
 .filters{display:flex;gap:6px;padding:0 12px 10px;overflow-x:auto;scrollbar-width:none}
 .filters::-webkit-scrollbar{display:none}
-.chip{flex:none;padding:6px 11px;border-radius:20px;background:var(--card);border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--dim);white-space:nowrap;display:flex;align-items:center;gap:6px}
+.chip{flex:none;min-height:40px;padding:6px 13px;border-radius:20px;background:var(--card);border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--dim);white-space:nowrap;display:flex;align-items:center;gap:6px}
 .chip .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
 .chip.on{color:#000;border-color:transparent}
 .chip.on[data-g=all]{background:var(--tx)}
@@ -121,11 +144,55 @@ nav button{max-width:165px}
   border-top:1px solid rgba(255,255,255,.14);padding-top:9px}
 .pin .pnote b{color:var(--tx);font-weight:650}
 
+/* ---------- top 3 ---------- */
+.t3{border-radius:16px;padding:15px;margin-bottom:14px;
+  background:linear-gradient(135deg,rgba(255,47,116,.16),rgba(124,58,237,.16));
+  border:1px solid rgba(255,47,116,.4)}
+.t3row{display:flex;gap:11px;padding:11px 0;border-top:1px solid rgba(255,255,255,.13)}
+.t3row:first-of-type{border-top:none;padding-top:4px}
+.t3n{flex:none;width:23px;height:23px;border-radius:50%;background:var(--acc);color:#fff;
+  font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:2px}
+.t3b{flex:1;min-width:0}
+.t3b b{font-size:16px;font-weight:700;display:block;line-height:1.25}
+.t3w{display:block;font-size:12px;color:var(--dim);margin-top:2px}
+.t3r{display:block;font-size:12.5px;color:var(--tx);opacity:.88;margin-top:6px;line-height:1.5}
+.t3l{display:inline-block;font-size:11.5px;font-weight:650;margin-top:6px;text-decoration:none}
+
+/* ---------- live review ---------- */
+.live{font-size:12.5px;color:var(--dim);margin-top:7px;line-height:1.5;
+  border-top:1px solid var(--line);padding-top:7px}
+.llab{display:block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim2);font-weight:700;margin-bottom:3px}
+.live a{font-weight:650;white-space:nowrap}
+
+/* ---------- map ---------- */
+.stagelink{color:inherit;text-decoration:none;border-bottom:1px dotted var(--dim2);
+  display:inline-block;padding:8px 1px;line-height:1.3}
+.zonecard{border-radius:14px;background:var(--card);border:1px solid var(--line);
+  padding:14px;margin-bottom:10px}
+.zonecard h3{font-size:15px;margin-bottom:3px}
+.zonecard .zt{font-size:12px;color:var(--dim);line-height:1.5;margin-bottom:9px}
+.zonecard .zs{display:flex;flex-wrap:wrap;gap:5px}
+.zonecard .zs span{font-size:11.5px;background:var(--card2);border:1px solid var(--line);
+  padding:3px 8px;border-radius:14px;color:var(--tx)}
+.zonecard.hit{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.walk{display:flex;align-items:baseline;gap:9px;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.walk:first-of-type{border-top:none}
+.walk .wm{flex:none;font-weight:700;color:var(--acc);font-variant-numeric:tabular-nums;width:52px}
+.walk .wl{flex:1;color:var(--dim);line-height:1.45}
+.walk .wl b{color:var(--tx);font-weight:600}
+.mapdiag{width:100%;height:auto;display:block;margin:2px 0 4px;overflow:visible}
+.mapdiag text{font-family:inherit}
+
 /* ---------- plan / narrative ---------- */
 .plan{border-radius:16px;background:var(--card);border:1px solid var(--line);padding:15px;margin-bottom:14px}
 .plan h2{font-size:17px;margin-bottom:3px}
 .plan .tag{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:7px}
 .plan p{font-size:13.5px;color:var(--dim);margin:0 0 12px;line-height:1.55}
+.walknote{font-size:12.5px;color:var(--dim);line-height:1.55;background:var(--card2);
+  border:1px solid var(--line);border-radius:11px;padding:11px 12px;margin:0 0 13px}
+.walknote b{color:var(--tx);font-weight:650}
+.walknote em{font-style:italic}
 .leg{display:flex;gap:11px;padding:9px 0;border-top:1px solid var(--line)}
 .leg .lt{font-size:11.5px;font-weight:700;color:var(--acc);font-variant-numeric:tabular-nums;flex:none;width:52px;padding-top:1px}
 .leg .lb{flex:1;font-size:13.5px;line-height:1.5}
@@ -194,7 +261,8 @@ nav button .cnt{position:absolute;transform:translate(14px,-4px);background:var(
 <nav>
   <button data-v="picks" class="on"><span class="ni">&#9733;</span>Picks</button>
   <button data-v="sched"><span class="ni">&#9636;</span>Full</button>
-  <button data-v="plan"><span class="ni">&#9873;</span>My Plan<span class="cnt" id="cnt" hidden>0</span></button>
+  <button data-v="map"><span class="ni">&#9906;</span>Map</button>
+  <button data-v="plan"><span class="ni">&#9873;</span>Plan<span class="cnt" id="cnt" hidden>0</span></button>
   <button data-v="info"><span class="ni">&#9432;</span>Info</button>
 </nav>
 
