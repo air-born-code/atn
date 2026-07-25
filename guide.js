@@ -30,7 +30,7 @@ fri: {
     { t: "17:00", b: "<b>Trinity Orchestra</b> — Main Stage<em>Orchestra playing a full pop/dance album live. Big, daft, and the best way to open the main stage.</em>" },
     { t: "18:45", b: "<b>Cardinals</b> — Road To Nowhere<em>Cork guitar band with widescreen tunes, rising fast. Stay on this stage.</em>" },
     { t: "19:45", b: "<b>Dry Cleaning</b> — Something Kind of Wonderful<em>Deadpan spoken vocals over brilliantly angular guitars. Squarely your thing.</em>" },
-    { clash: 1, t: "20:30", b: "<span class='clashtag'>Clash</span><b>Friendly Fires (20:30, Road To Nowhere) vs Gurriers (20:45, Main Stage)</b><em>You can have both, and they're four minutes apart inside the arena: Friendly Fires 20:30–21:10 for 'Paris' and 'Blue Cassette', then over to the Main Stage for the back half of Gurriers — which leaves you already in position for Pulp. If you're forced to pick just one, the committee says <b>Friendly Fires</b> (6.06 to 5.33) — the gap is too wide for the Irish tiebreak to kick in, and they're simply the more proven festival act. Gurriers are the better band for your taste, though, and they're on right before Pulp anyway.</em>" },
+    { clash: 1, t: "20:30", b: "<span class='clashtag'>Clash</span><b>Friendly Fires (20:30, Road To Nowhere) vs Gurriers (20:45, Main Stage)</b><em>You can have both, and they're four minutes apart inside the arena: Friendly Fires 20:30–21:10 for 'Paris' and 'Blue Cassette', then over to the Main Stage for the back half of Gurriers — which leaves you already in position for Pulp. If you're forced to pick just one, take <b>Friendly Fires</b> — 6.67 to 6.00, too wide a gap for the Irish tiebreak, and a far deeper catalogue to draw a festival set from. Gurriers are the better band for your taste and they're on right before Pulp anyway, so in practice you get both.</em>" },
     { t: "21:30", b: "<b>Hold the main stage.</b> If you'd rather not wait, <b>Floorplan</b> starts 21:30 at IMMERSE — Robert Hood's gospel-house project, genuinely joyous — and you can peel off at 22:35.<em>Don't cut it fine. Pulp will pull the biggest crowd of the weekend.</em>" },
     { t: "22:45", b: "<b>PULP</b> — Main Stage<em>First festival headline in 15 years. Jarvis, the hits, a field full of people losing it. Non-negotiable. This is the set of the weekend.</em>" },
     { t: "00:15", b: "<b>Floating Points (Live)</b> — Something Kind of Wonderful<em>Live, not a DJ set. Builds from ambient into full euphoria. The single best thing to do straight after Pulp.</em>" },
@@ -43,7 +43,7 @@ fri: {
 sat: {
   title: "Saturday — The heavy day",
   intro: "Saturday is where the loud stuff lives. Zamrock, New Orleans brass, noise-rock and the two heaviest sets of the weekend all land between 5pm and midnight, then a world-class late-night bill. It's also the most clash-dense day on the bill — three of them matter.",
-  walk: "<b>Walking: this is the expensive day.</b> The bill keeps pulling you between the Main Arena and the Woods — Maruja, Bicurious and THUMPER are all in the trees, roughly 10 minutes each way and uphill coming back. If you want to keep the mileage down, pick <em>one</em> Woods trip and commit to it: go out at 19:45 for Maruja, stay for Bicurious at 20:30, then decide between THUMPER and walking back for Gilla Band. Doing arena–woods–arena–woods costs you the best part of an hour on your feet.",
+  walk: "<b>Walking: this is the expensive day.</b> The bill keeps pulling you between the Main Arena and the Woods — Maruja, Bicurious and THUMPER are all in the trees, roughly 10 minutes each way and uphill coming back. The committee's top three today — W.I.T.C.H., Ezra Collective and The Avalanches — are all inside the arena, so following the scores also happens to be the low-mileage route. If you do want the Woods, make it <em>one</em> trip: out at 19:45 for Maruja, stay for Bicurious at 20:30, then walk back for Gilla Band. Doing arena–woods–arena–woods costs you the best part of an hour on your feet.",
   legs: [
     { t: "12:00", b: "<b>Colleen Cosmo Murphy</b> — Big Romance Dome, till 15:00<em>Three hours of proper disco. Comfortably the best thing on site before mid-afternoon.</em>" },
     { t: "13:30", b: "<b>Muireann Bradley</b> — Something Kind of Wonderful<em>Teenage Donegal fingerpicker playing 1920s country blues. Jaw-dropping, and over before you know it.</em>" },
@@ -51,7 +51,7 @@ sat: {
     { t: "15:30", b: "<b>KhakiKid</b> — Road To Nowhere<em>Dublin hip hop with a genuinely funny streak.</em>" },
     { clash: 1, t: "17:00", b: "<span class='clashtag'>Clash</span><b>W.I.T.C.H. (17:00, Road To Nowhere) vs Hot 8 Brass Band (17:30, Main Stage)</b><em>Both are brilliant and both are short. The call: W.I.T.C.H. 17:00–17:35 for the Zambian psych-rock fuzz, then over to the Main Stage for the bulk of Hot 8. New Orleans brass with a sub-bass tuba — impossible to stand still to.</em>" },
     { clash: 1, t: "18:30", b: "<span class='clashtag'>Coin flip &rarr; Sprints</span><b>Greentea Peng (18:30, Road To Nowhere) vs Sprints (18:45, Something Kind of Wonderful)</b><em>Genuinely too close to call on merit — so it goes to the Irish act. <b>Sprints</b>, relentless Dublin punk, fresh off a sold-out Vicar Street homecoming. Greentea Peng is the psychedelic dub-and-reggae option if you'd rather sit in the sun, and both stages are in the arena so the group can split and regroup at 20:00 for nothing.</em>" },
-    { clash: 1, t: "19:45", b: "<span class='clashtag'>Committee: Ezra 7.82 &ndash; 6.59 Maruja</span><b>Maruja (19:45, The Circle) vs Ezra Collective (19:15, Main Stage)</b><em>The committee gives this to <b>Ezra Collective</b> by a clear margin — they carry more heritage and legend weight, and their recent live evidence is about as strong as it gets (outstanding across 32 reviews). <b>But</b> the scores rate general quality, not your taste. Maruja is the heaviest thing on the entire bill, sax-driven noise-rock that collapses into doom, and it's the set your rock/metal head will regret missing. Ezra also saves you the 10-minute walk to the woods. Score says Ezra; heart says Maruja.</em>" },
+    { clash: 1, t: "19:15", b: "<span class='clashtag'>Verdict: Ezra Collective</span><b>Ezra Collective (19:15, Main Stage) &mdash; 9.27</b><em>Go to Ezra. It isn't close: 9.27 against Maruja's 6.33. Mercury-winning, the first jazz act ever to take the prize, outstanding across 32 live reviews, and it's on the main stage so it costs you no walking. Maruja is the heavier band and the better fit for your taste, but they're 15th on the day and they'd cost you a 10-minute climb to the woods and back. If your group splits, send the metal heads to Maruja &mdash; but the call is Ezra.</em>" },
     { t: "20:30", b: "<b>Bicurious</b> — The Last City<em>Irish math-rock duo. Absurdly heavy for two people. Good bridge into the night.</em>" },
     { clash: 1, t: "22:00", b: "<span class='clashtag'>Best hour of the weekend</span><b>Gilla Band (22:00, Road To Nowhere) vs THUMPER (22:00, The Last City) vs Maribou State Live (22:15, Something Kind of Wonderful)</b><em>The call: <b>Gilla Band</b>. Ireland's greatest noise band, physically overwhelming, a wall of broken electronics and screaming — and they play rarely. THUMPER (two drummers, huge noise-pop hooks) will take the roof off The Last City. Maribou State's full live band is the gorgeous option if you want something more expansive.</em>" },
     { t: "23:30", b: "<b>Cromby</b> (The Circle) or <b>Moving Still</b> (Big Romance Dome, 22:00)<em>Belfast house, or Irish-Saudi DJ mixing SWANA sounds into house. Good places to be while the main stage does its thing.</em>" },
@@ -123,28 +123,31 @@ function pinCard() {
   "</div>";
 }
 
-/* The three to build the day around. Sunday's hero is King Kong Company instead. */
-var TOP3 = {
-  fri: ["Pulp", "Gurriers", "Floating Points (Live)"],
-  sat: ["Maruja", "Gilla Band", "Ezra Collective"]
-};
+/* The three to build the day around — taken straight off the consolidated score
+   rather than hand-picked, so this can never drift out of step with the
+   hour-by-hour verdicts below it. Sunday's hero is King Kong Company instead. */
+function top3(day) {
+  var seen = {}, list = [];
+  D.forEach(function (s) {
+    if (s.d !== day || !s.tr || !s.cs || seen[s.a]) return;
+    seen[s.a] = 1;
+    list.push(s);
+  });
+  list.sort(function (a, b) { return b.cs - a.cs; });
+  return list.slice(0, 3);
+}
 
 function heroBlock(day) {
   if (day === "sun") return pinCard();
-  var names = TOP3[day];
-  if (!names) return "";
+  var picks = top3(day);
+  if (!picks.length) return "";
 
   var rows = "";
-  names.forEach(function (n, i) {
-    var s = null;
-    for (var j = 0; j < D.length; j++) {
-      if (D[j].a === n && D[j].d === day) { s = D[j]; break; }
-    }
-    if (!s) return;
+  picks.forEach(function (s, i) {
     rows += '<div class="t3row">' +
       '<div class="t3n">' + (i + 1) + "</div>" +
       '<div class="t3b">' +
-        "<b>" + esc(s.a) + "</b>" +
+        "<b>" + esc(s.a) + '</b><span class="t3sc">' + s.cs.toFixed(2) + "</span>" +
         '<span class="t3w">' + esc(s.t) + " &middot; " + esc(s.s) + "</span>" +
         (s.lv ? '<span class="t3r">' + esc(s.lv) + "</span>" : "") +
         (s.lu ? '<a class="t3l" href="' + s.lu + '" target="_blank" rel="noopener">' +
