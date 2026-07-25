@@ -1023,26 +1023,75 @@ function renderInfo() {
   main.innerHTML = h;
 }
 
+function until(ms) {
+  var mins = Math.round(ms / 60000);
+  if (mins < 60) return "in " + mins + " min";
+  var hrs = mins / 60;
+  if (hrs < 24) return "in " + Math.floor(hrs) + " hr";
+  return "in " + Math.round(hrs / 24) + " days";
+}
+
 function renderNow() {
   var bar = document.getElementById("nowbar"), now = Date.now();
-  var on = D.filter(function (s) { return s.st <= now && s.en > now && s.tr > 0; })
-            .sort(function (a, b) { return a.tr - b.tr; }).slice(0, 3);
-  var next = D.filter(function (s) { return s.st > now && s.tr === 1; })
-              .sort(function (a, b) { return a.st - b.st; })[0];
+  var days = DAYS.map(function (d) { return d.k; });
 
-  if (!on.length && !next) { bar.hidden = true; return; }
+  /* Only the days he's actually there. Thursday is excluded everywhere else in
+     the app, so it must not leak in here either. */
+  var mine = D.filter(function (s) { return days.indexOf(s.d) >= 0 && s.tr > 0; });
+  if (!mine.length) { bar.hidden = true; return; }
 
-  var h = '<div class="lab"><span class="pulse"></span>' + (on.length ? "On now" : "Coming up") + "</div>";
-  on.forEach(function (s) {
-    h += '<div class="row"><b>' + esc(s.a) + "</b> <span>&middot; " + esc(s.s) +
-         " &middot; till " + esc(s.t.split(" - ")[1]) + "</span></div>";
-  });
-  if (next && !on.length) {
-    h += '<div class="row"><b>' + esc(next.a) + "</b> <span>&middot; " + esc(next.s) +
-         " &middot; " + esc(next.t) + "</span></div>";
+  var on = mine.filter(function (s) { return s.st <= now && s.en > now; })
+               .sort(function (a, b) { return a.tr - b.tr || b.cs - a.cs; });
+
+  /* Before the gates open, don't imply anything is imminent — count down instead. */
+  var firstStart = Math.min.apply(null, mine.map(function (s) { return s.st; }));
+  if (!on.length && now < firstStart) {
+    bar.innerHTML = '<div class="lab"><span class="pulse"></span>Not started yet</div>' +
+      '<div class="row"><b>Friday 31 July</b> <span>&middot; music from ' +
+      esc(new Date(firstStart).toTimeString().slice(0, 5)) + " &middot; " +
+      esc(until(firstStart - now)) + "</span></div>";
+    bar.hidden = false;
+    return;
   }
+
+  var lastEnd = Math.max.apply(null, mine.map(function (s) { return s.en; }));
+  if (!on.length && now > lastEnd) {
+    bar.innerHTML = '<div class="lab">That\'s your lot</div>' +
+      '<div class="row"><span>All three days are done. Get home safe.</span></div>';
+    bar.hidden = false;
+    return;
+  }
+
+  var h = "";
+  if (on.length) {
+    /* If he's already chosen this hour, that's what he wants to see. */
+    var hourKey = null, nowHr = new Date(now).getHours();
+    for (var k in S.hourPicks) {
+      var parts = k.split("|");
+      if (parts[0] === on[0].d && parseInt(parts[1], 10) === nowHr) hourKey = k;
+    }
+    var picked = hourKey ? on.filter(function (s) { return s.a === S.hourPicks[hourKey]; })[0] : null;
+    var lead = picked || on[0];
+
+    h += '<div class="lab"><span class="pulse"></span>' +
+         (picked ? "Your pick, on now" : "On now") + "</div>";
+    h += '<div class="row"><b>' + esc(lead.a) + "</b> <span>&middot; " + esc(lead.s) +
+         " &middot; till " + esc(lead.t.split(" - ")[1]) + "</span></div>";
+
+    on.filter(function (s) { return s !== lead; }).slice(0, 2).forEach(function (s) {
+      h += '<div class="row"><span>Also: ' + esc(s.a) + " &middot; " + esc(s.s) + "</span></div>";
+    });
+  }
+
+  var next = mine.filter(function (s) { return s.st > now && s.tr === 1; })
+                 .sort(function (a, b) { return a.st - b.st; })[0];
+  if (next) {
+    h += '<div class="row"><span>Next big one: <b>' + esc(next.a) + "</b> &middot; " +
+         esc(next.t.split(" - ")[0]) + " &middot; " + esc(until(next.st - now)) + "</span></div>";
+  }
+
   bar.innerHTML = h;
-  bar.hidden = false;
+  bar.hidden = !h;
 }
 
 function render(keepScroll) {
