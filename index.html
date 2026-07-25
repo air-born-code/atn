@@ -105,6 +105,22 @@ nav button{max-width:165px}
 .star:active{transform:scale(.88)}
 .star.on{background:rgba(255,47,116,.2)}
 
+/* ---------- pinned set ---------- */
+.pin{position:relative;border-radius:16px;padding:15px;margin-bottom:14px;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,47,116,.22),rgba(124,58,237,.22));
+  border:1px solid rgba(255,47,116,.5)}
+.pin .ptag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);
+  font-weight:800;display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.pin h2{font-size:21px;line-height:1.15;margin-bottom:5px}
+.pin .pwhen{font-size:13.5px;font-weight:650;color:var(--tx)}
+.pin .pwhen span{color:var(--dim);font-weight:400}
+.pin .pcd{display:inline-block;margin-top:9px;padding:5px 10px;border-radius:20px;
+  background:rgba(0,0,0,.35);font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.pin .pcd.live{background:var(--acc);color:#fff}
+.pin .pnote{font-size:13px;color:var(--dim);margin-top:10px;line-height:1.5;
+  border-top:1px solid rgba(255,255,255,.14);padding-top:9px}
+.pin .pnote b{color:var(--tx);font-weight:650}
+
 /* ---------- plan / narrative ---------- */
 .plan{border-radius:16px;background:var(--card);border:1px solid var(--line);padding:15px;margin-bottom:14px}
 .plan h2{font-size:17px;margin-bottom:3px}

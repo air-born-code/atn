@@ -88,11 +88,50 @@ sun: {
     { t: "22:00", b: "<b>UNDERWORLD</b> — Main Stage<em>Third time at ATN and they still turn a field into a rave. 'Born Slippy' outdoors on a Sunday night is the peak moment of the festival. Non-negotiable.</em>" },
     { clash: 1, t: "23:15", b: "<span class='clashtag'>The big decision</span><b>Mogwai (23:15, Something Kind of Wonderful) vs Disclosure DJ (00:00, Main Stage)</b><em>Mogwai are Scottish post-rock at crushing volume — the loudest set on site and the closest thing to metal all weekend. They start as Underworld finishes, so you can walk straight over. Mogwai ends 00:30, which still leaves you an hour of Disclosure on the main stage. That's the route: <b>Underworld → Mogwai → last hour of Disclosure</b>. Best of all three.</em>" },
     { t: "00:00", b: "<b>If you skip Mogwai:</b> <b>Hot Chip (DJ Set)</b> (Bandstand) or <b>Altern-8</b> (Arcadia) for original 1991 rave — dust masks, hoovers, breakbeats.<em>Weval play live at Road To Nowhere at 23:30 if you want something melodic.</em>" },
-    { t: "01:30", b: "<b>King Kong Company</b> — Something Kind of Wonderful, till 03:00<em>Waterford's own, on home turf, closing the weekend. Live electronic mayhem — this will be the most unhinged room at the festival. Finish here.</em>" },
+    { clash: 1, t: "01:30", b: "<span class='clashtag'>Alarm</span><b>KING KONG COMPANY</b> — Something Kind of Wonderful, till 03:00<em>Waterford's own, on home turf, closing the weekend. Live electronic mayhem, and the most unhinged room at the festival. This is the one you came for &mdash; <b>set a phone alarm for 01:00</b>, because after three days it is a very easy set to sleep through. Everything else on Sunday night should bend around this.</em>" },
     { t: "02:00", b: "<b>Or:</b> <b>Eats Everything</b> closes Arcadia until 4am, and <b>Winemoms</b> hold The Last City until 4am.<em>Whatever you do, don't go to bed at midnight on the last night.</em>" }
   ]
 }
 };
+
+/* ---------------- the one you must not miss ---------------- */
+var PIN = {
+  artist: "King Kong Company",
+  why: "<b>Your one non-negotiable.</b> Last set of the weekend, and the easiest one on the bill to " +
+       "sleep through — it starts at half one in the morning on the final night. " +
+       "<b>Set a phone alarm for 01:00 on Sunday night</b> and make sure someone in the group has one too."
+};
+
+function pinnedSet() {
+  for (var i = 0; i < D.length; i++) if (D[i].a === PIN.artist) return D[i];
+  return null;
+}
+
+function countdown(s) {
+  var now = Date.now();
+  if (now >= s.st && now < s.en) return { t: "● ON NOW", live: true };
+  if (now >= s.en) return null;
+  var mins = Math.round((s.st - now) / 60000);
+  if (mins < 60) return { t: "Starts in " + mins + " min" };
+  var hrs = mins / 60;
+  if (hrs < 24) return { t: "Starts in " + Math.floor(hrs) + " hr" };
+  return { t: "In " + Math.floor(hrs / 24) + " days" };
+}
+
+function pinCard() {
+  var s = pinnedSet();
+  if (!s) return "";
+  var cd = countdown(s);
+  if (!cd) return ""; // over — stop nagging
+  var dayName = { thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun" }[s.d];
+  return '<div class="pin">' +
+    '<div class="ptag"><span class="pulse"></span>Don\'t miss this</div>' +
+    "<h2>" + esc(s.a) + "</h2>" +
+    '<div class="pwhen">' + dayName + " " + esc(s.t) + " <span>&middot; " + esc(s.s) + "</span></div>" +
+    '<div class="pcd' + (cd.live ? " live" : "") + '">' + esc(cd.t) + "</div>" +
+    '<div class="pnote">' + PIN.why + "</div>" +
+  "</div>";
+}
 
 /* ---------------- links & essentials ---------------- */
 var LINKS = [
@@ -152,6 +191,21 @@ var S = {
   notes: load("atn_notes", "")
 };
 
+/* Pre-star the pinned set once, so it's in My Plan from the very first open. */
+(function seedStars() {
+  try {
+    if (localStorage.getItem("atn_seeded")) return;
+    for (var i = 0; i < D.length; i++) {
+      if (D[i].a === "King Kong Company") {
+        S.stars[D[i].a + "|" + D[i].st] = true;
+        save("atn_stars", S.stars);
+        break;
+      }
+    }
+    localStorage.setItem("atn_seeded", "1");
+  } catch (e) {}
+})();
+
 function load(k, dflt) {
   try { var v = localStorage.getItem(k); return v === null ? dflt : JSON.parse(v); }
   catch (e) { return dflt; }
@@ -201,7 +255,7 @@ var BUCKETS = ["Daytime", "Early evening", "Night", "Late / after midnight"];
 
 function renderPicks() {
   var p = PLANS[S.day];
-  var h = "";
+  var h = pinCard();
 
   if (p) {
     h += '<div class="plan"><div class="tag">The Game Plan</div><h2>' + esc(p.title) + "</h2><p>" +
