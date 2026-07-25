@@ -64,7 +64,7 @@ PICKS = {
 # ---------------- SATURDAY ----------------
 "Maruja":               (1, "rock",   "The heaviest thing on the entire bill. Sax-driven noise-rock that goes full doom. If you want something genuinely punishing, this is it."),
 "Gilla Band":           (1, "rock",   "Ireland's greatest noise band. Physically overwhelming live — a wall of broken electronics and screaming. Unmissable."),
-"W.I.T.C.H.":           (1, "global", "Zambian psych-rock legends, back after 40 years. Fuzzed-out guitars and afro-rock grooves. A total joy."),
+"W.I.T.C.H.":           (1, "global", "Zambian psych-rock legends, back after 40 years. Fuzzed-out guitars and afro-rock grooves. If Arc De Soleil's afternoon set was your favourite thing last year, this is the 2026 version of it — guitar-led psychedelic groove band, mid-size stage, sunshine slot. A total joy."),
 "Hot 8 Brass Band":     (1, "global", "New Orleans brass with a sub-bass tuba. Impossible not to move. Perfect early evening main stage."),
 "Ezra Collective":      (1, "global", "Mercury-winning London jazz that plays like a carnival. One of the best live bands on earth right now."),
 "Sprints":              (1, "rock",   "Dublin punk, absolutely relentless. Karla Chubb is a proper frontperson."),
