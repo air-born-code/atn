@@ -1,7 +1,51 @@
 {
- "updated": "2026-07-25T21:10:07.603111+00:00",
- "method": "not yet run \u2014 the scheduled job populates this",
- "sources": {},
- "collected": 0,
- "items": []
+ "updated": "2026-07-25T22:13:30.197537+00:00",
+ "method": "keyword fallback (no API key set)",
+ "sources": {
+  "rss:Nialler9": "ok (4 relevant of 20)",
+  "rss:Hot Press": "ok (0 relevant of 25)",
+  "rss:WLR FM": "ok (0 relevant of 20)",
+  "rss:The Thin Air": "failed: HTTPError",
+  "bluesky": "failed: HTTPError",
+  "reddit": "failed (often IP-blocked): HTTPError",
+  "watch:ATN lineup": "ok",
+  "watch:ATN info": "ok",
+  "watch:ATN news": "ok",
+  "watch:Clashfinder": "ok"
+ },
+ "collected": 4,
+ "items": [
+  {
+   "headline": "Delivery Service on the songs they have on repeat ahead of their The Circle By Jameson Music All Together Now ",
+   "summary": "Delivery Service are a Dublin four-piece who trade in scrappy, melodic alternative rock, taking their cues from riot grrrl acts like Bikini Kill and Le Tigre and the fuzzier, more melodic side of the 90s in The Breeders and The Sundays. ]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/delivery-service-on-the-songs-they-have-on-repeat-ahead-of-their-the-circle-by-jameson-music-all-together-now-set/"
+  },
+  {
+   "headline": "The Big Romance Dome x Altos 300-capacity dome for All Together Now",
+   "summary": "The dome brings Colleen “Cosmo” Murphy, New Jackson and Prosumer to the festival this August bank holiday weekend,…]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/the-big-romance-dome-x-altos-300-capacity-dome-for-all-together-now/"
+  },
+  {
+   "headline": "10 acts to see at The Circle by Jameson Music at All Together Now",
+   "summary": "All Together Now returns to Curraghmore Estate, Co. Waterford for its seventh chapter from Thursday July 30th to…]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/10-acts-to-see-at-the-circle-by-jameson-music-at-all-together-now/"
+  },
+  {
+   "headline": "Podcast: SOAK on finding joy, collaborating with friends and Fred Again..",
+   "summary": "The Derry artist SOAK joins me to discuss \"remodelled everything for joy, \" ahead of their The Circle by Jameson Music show at All Together Now.]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/podcast-soak-on-finding-joy-collaborating-with-friends-and-fred-again/"
+  }
+ ]
 }
