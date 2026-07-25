@@ -8,15 +8,6 @@ var DAYS = [
   { k: "sat", n: "Sat", d: "1 Aug" },
   { k: "sun", n: "Sun", d: "2 Aug" }
 ];
-var GENRES = [
-  { k: "all",    n: "Everything" },
-  { k: "rock",   n: "Rock / Punk / Heavy" },
-  { k: "indie",  n: "Indie" },
-  { k: "dj",     n: "DJs / Electronic" },
-  { k: "global", n: "Reggae / Global" },
-  { k: "trad",   n: "Trad / Folk" },
-  { k: "other",  n: "Comedy / Other" }
-];
 
 /* ---------------- the game plans ---------------- */
 var PLANS = {
@@ -273,7 +264,6 @@ var ESSENTIALS = [
 var S = {
   day: pickDay(),
   view: "picks",
-  genre: "all",
   q: "",
   who: load("atn_who", ""),               // whose phone this is — no login, just a local name
   hourPicks: load("atn_hourpicks", {}),   // per-hour choices, saved on this phone
@@ -594,7 +584,7 @@ function renderPicks() {
   }
 
   var list = D.filter(function (s) {
-    return s.d === S.day && s.tr > 0 && (S.genre === "all" || s.g === S.genre);
+    return s.d === S.day && s.tr > 0;
   });
 
   if (!list.length) {
@@ -621,7 +611,6 @@ function renderSched() {
   var q = S.q.toLowerCase().trim();
   var list = D.filter(function (s) {
     if (s.d !== S.day) return false;
-    if (S.genre !== "all" && s.g !== S.genre) return false;
     if (q && (s.a + " " + s.s).toLowerCase().indexOf(q) < 0) return false;
     return true;
   });
@@ -1061,16 +1050,12 @@ function render(keepScroll) {
   document.querySelectorAll("#days .day").forEach(function (b) {
     b.classList.toggle("on", b.dataset.d === S.day);
   });
-  document.querySelectorAll(".chip").forEach(function (c) {
-    c.classList.toggle("on", c.dataset.g === S.genre);
-  });
   document.querySelectorAll("nav button").forEach(function (b) {
     b.classList.toggle("on", b.dataset.v === S.view);
   });
 
   var showDayBits = S.view === "picks" || S.view === "sched";
   document.getElementById("days").style.display = showDayBits ? "" : "none";
-  document.getElementById("filters").style.display = showDayBits ? "" : "none";
 
   var n = Object.keys(S.stars).filter(function (k) { return S.stars[k]; }).length;
   var cnt = document.getElementById("cnt");
@@ -1093,10 +1078,6 @@ document.getElementById("days").innerHTML = DAYS.map(function (d) {
          '<span class="dnum">' + d.d + "</span></button>";
 }).join("");
 
-document.getElementById("filters").innerHTML = GENRES.map(function (g) {
-  return '<button class="chip" data-g="' + g.k + '">' +
-         (g.k === "all" ? "" : '<span class="dot"></span>') + g.n + "</button>";
-}).join("");
 
 document.addEventListener("click", function (e) {
   if (e.target.closest("#dclose")) return closeAct();
@@ -1163,9 +1144,6 @@ document.addEventListener("click", function (e) {
 
   var d = e.target.closest("#days .day");
   if (d) { S.day = d.dataset.d; return render(); }
-
-  var c = e.target.closest(".chip");
-  if (c) { S.genre = c.dataset.g; return render(); }
 
   var n = e.target.closest("nav button");
   if (n) {

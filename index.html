@@ -262,20 +262,6 @@ mark{background:rgba(255,47,116,.3);color:var(--tx);border-radius:3px;padding:0 
 .day.on{background:var(--tx);color:#000;border-color:var(--tx)}
 .day.on .dnum{color:#555}
 
-/* ---------- filters ---------- */
-.filters{display:flex;gap:6px;padding:0 12px 10px;overflow-x:auto;scrollbar-width:none}
-.filters::-webkit-scrollbar{display:none}
-.chip{flex:none;min-height:40px;padding:6px 13px;border-radius:20px;background:var(--card);border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--dim);white-space:nowrap;display:flex;align-items:center;gap:6px}
-.chip .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
-.chip.on{color:#000;border-color:transparent}
-.chip.on[data-g=all]{background:var(--tx)}
-.chip.on[data-g=rock]{background:var(--rock)}
-.chip.on[data-g=indie]{background:var(--indie)}
-.chip.on[data-g=dj]{background:var(--dj);color:#fff}
-.chip.on[data-g=global]{background:var(--global)}
-.chip.on[data-g=trad]{background:var(--trad)}
-.chip.on[data-g=other]{background:var(--other)}
-
 /* ---------- now bar ---------- */
 #nowbar{margin:10px 12px 0;padding:11px 13px;border-radius:14px;background:linear-gradient(135deg,rgba(255,47,116,.16),rgba(124,58,237,.16));border:1px solid rgba(255,47,116,.35)}
 #nowbar .lab{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700;display:flex;align-items:center;gap:6px}
@@ -287,7 +273,7 @@ mark{background:rgba(255,47,116,.3);color:var(--tx);border-radius:3px;padding:0 
 
 /* ---------- layout ---------- */
 main{padding:14px 12px 24px}
-.brand,.days,.filters{max-width:660px;margin-left:auto;margin-right:auto}
+.brand,.days{max-width:660px;margin-left:auto;margin-right:auto}
 main{max-width:660px;margin-left:auto;margin-right:auto}
 #nowbar{max-width:636px;margin-left:auto;margin-right:auto}
 nav{justify-content:center}
@@ -452,7 +438,6 @@ nav button .cnt{position:absolute;transform:translate(14px,-4px);background:var(
     <button class="iconbtn" id="refresh" title="Check for updates">&#8635;</button>
   </div>
   <div class="days" id="days"></div>
-  <div class="filters" id="filters"></div>
 </header>
 
 <div id="searchOverlay" hidden>
