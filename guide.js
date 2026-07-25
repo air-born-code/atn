@@ -684,6 +684,114 @@ function renderMap() {
   main.innerHTML = h;
 }
 
+/* ---------------- latest: rumours and changes from the socials ---------------- */
+var LATEST = null, LATEST_STATE = "idle";
+
+var CONFTXT = {
+  confirmed: "Official, or an established publication",
+  reported: "A named outlet, but not the festival itself",
+  rumour: "Unverified chatter — could easily be wrong"
+};
+
+function ageLabel(iso) {
+  var mins = Math.floor((Date.now() - new Date(iso).getTime()) / 60000);
+  if (mins < 0 || isNaN(mins)) return { t: "just now", c: "fresh" };
+  if (mins < 60) return { t: mins + " min ago", c: mins < 90 ? "fresh" : "stale" };
+  var hrs = Math.floor(mins / 60);
+  if (hrs < 24) return { t: hrs + " hr ago", c: hrs < 3 ? "stale" : "old" };
+  return { t: Math.floor(hrs / 24) + " days ago", c: "old" };
+}
+
+function loadLatest() {
+  LATEST_STATE = "loading";
+  fetch("latest.json?cb=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function (d) {
+      LATEST = d; LATEST_STATE = "ok";
+      try { localStorage.setItem("atn_latest", JSON.stringify(d)); } catch (e) {}
+      if (S.view === "latest") render();
+      updateLatestBadge();
+    })
+    .catch(function () {
+      /* offline at the festival is the normal case — fall back to the last copy */
+      var cached = load("atn_latest", null);
+      LATEST = cached;
+      LATEST_STATE = cached ? "cached" : "failed";
+      if (S.view === "latest") render();
+      updateLatestBadge();
+    });
+}
+
+function updateLatestBadge() {
+  var el = document.getElementById("lcnt");
+  if (!el) return;
+  var n = (LATEST && LATEST.items) ? LATEST.items.length : 0;
+  el.hidden = !n; el.textContent = n;
+}
+
+function renderLatest() {
+  var h = "";
+
+  if (LATEST_STATE === "loading" && !LATEST) {
+    main.innerHTML = '<div class="empty"><div class="big">◉</div><p>Checking for updates…</p></div>';
+    return;
+  }
+  if (!LATEST) {
+    main.innerHTML = '<div class="empty"><div class="big">◉</div><p>Couldn\'t reach the feed, ' +
+      'and nothing is saved on this phone yet.<br><br>Open this tab once while you have ' +
+      'signal and it\'ll keep the last copy for offline.</p></div>';
+    return;
+  }
+
+  var age = ageLabel(LATEST.updated);
+  h += '<div class="lhead"><span class="lage ' + age.c + '">Updated ' + esc(age.t) + "</span>" +
+    "<h3>What's going round</h3>" +
+    "<p>Scanned automatically every half hour during the festival — festival RSS, Bluesky, " +
+    "Reddit, and the official pages, with the noise stripped out. " +
+    (LATEST_STATE === "cached" ? "<b>You're offline — this is the last copy saved on your phone.</b> " : "") +
+    "Treat anything marked <b>rumour</b> as exactly that.</p></div>";
+
+  if (!LATEST.items || !LATEST.items.length) {
+    h += '<div class="empty"><div class="big">🤷</div><p>Nothing worth flagging right now.' +
+      "<br><br>That's usually good news — it means no stage changes, no travel problems, " +
+      "and no rumours solid enough to repeat.</p></div>";
+  } else {
+    LATEST.items.forEach(function (i) {
+      var c = ["confirmed", "reported", "rumour"].indexOf(i.confidence) >= 0 ? i.confidence : "rumour";
+      h += '<div class="litem ' + c + '">' +
+        '<span class="lconf ' + c + '">' + esc(c) + "</span>" +
+        "<h4>" + esc(i.headline) + "</h4>" +
+        "<p>" + esc(i.summary) + "</p>" +
+        (c === "rumour"
+          ? '<div class="lwarn">Unverified. Don\'t cross the site for this on its own — ' +
+            "check the stage board or ATN's own channels first.</div>"
+          : "") +
+        '<div class="lmeta"><span>' + esc(i.source) + " &middot; " + esc(CONFTXT[c]) + "</span>" +
+        (i.url ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">Source &nearr;</a>' : "") +
+        "</div></div>";
+    });
+  }
+
+  /* Source health — so a thin feed reads as "quiet" not "broken". */
+  var src = LATEST.sources || {}, keys = Object.keys(src);
+  if (keys.length) {
+    h += '<div class="lhead"><h3>Where this came from</h3><div class="lsrc">';
+    keys.sort().forEach(function (k) {
+      var bad = /fail/i.test(src[k]);
+      h += "<div><b>" + esc(k) + "</b> — <span class=\"" + (bad ? "bad" : "") + "\">" +
+           esc(src[k]) + "</span></div>";
+    });
+    h += "<div style='margin-top:7px'>Scanned " + (LATEST.collected || 0) +
+         " items, " + esc(LATEST.method || "") + ".</div></div></div>";
+  }
+
+  h += '<div class="warn">Instagram and TikTok can\'t be read without a logged-in ' +
+       'session, so the liveliest rumours never reach this feed. ATN\'s own Instagram ' +
+       'is still the fastest official channel &mdash; the link is on the Info tab.</div>';
+
+  main.innerHTML = h;
+}
+
 function renderInfo() {
   var h = "";
   ESSENTIALS.forEach(function (b) {
@@ -753,6 +861,7 @@ function render() {
 
   if (S.view === "picks") renderPicks();
   else if (S.view === "sched") renderSched();
+  else if (S.view === "latest") renderLatest();
   else if (S.view === "map") renderMap();
   else if (S.view === "plan") renderPlan();
   else renderInfo();
@@ -807,6 +916,7 @@ document.addEventListener("click", function (e) {
   var n = e.target.closest("nav button");
   if (n) {
     if (n.dataset.v === "map") { S.mapStage = ""; S.mapZone = ""; }
+    if (n.dataset.v === "latest" && LATEST_STATE !== "loading") loadLatest();
     S.view = n.dataset.v;
     return render();
   }
@@ -995,6 +1105,12 @@ document.getElementById("refresh").addEventListener("click", function () {
     }).then(function () { location.reload(true); });
   } else { location.reload(true); }
 });
+
+/* Seed from the last saved copy so the tab is never blank offline, then refresh. */
+LATEST = load("atn_latest", null);
+updateLatestBadge();
+loadLatest();
+setInterval(function () { if (navigator.onLine !== false) loadLatest(); }, 15 * 60000);
 
 setInterval(renderNow, 60000);
 render();

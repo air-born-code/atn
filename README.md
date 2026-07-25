@@ -110,3 +110,36 @@ Run locally with `node serve.mjs` and open <http://localhost:8123>.
 Stage times come from the published lineup and the community Clashfinder for
 ATN 2026. Sets get moved — always sanity-check against the official ATN app or
 the stage boards on the day.
+
+## The Latest tab
+
+A GitHub Actions cron job scans for festival chatter and publishes `latest.json`,
+which the app fetches. **It runs on GitHub's servers, so it keeps working with your
+laptop shut** — every 30 minutes during festival week, hourly in the run-up, plus a
+manual trigger from the Actions tab.
+
+```
+scripts/collect.py  →  raw_items.json  →  scripts/parse.py  →  latest.json  →  the app
+```
+
+**Sources.** RSS (Nialler9, Hot Press, WLR, The Thin Air), Bluesky's public search API
+(no auth needed), Reddit's public JSON (often IP-blocked from datacentres — treated as
+best-effort), and hash-diffing ATN's own lineup/info/news pages plus the Clashfinder.
+That last one is the highest-value signal: a stage-time change matters more than any
+rumour.
+
+**Instagram and TikTok are not included and can't be.** Both require a logged-in
+session and block datacentre IPs, so an unattended job can't read them — which is
+awkward, because that's where most festival rumours live. ATN's own Instagram stays
+the fastest official channel; it's linked on the Info tab.
+
+**AI triage.** `parse.py` sends the batch to Claude, which keeps only items that would
+change what you actually do — secret sets, schedule changes, travel, weather — and
+rates each `confirmed` / `reported` / `rumour`. Rumours render with an explicit
+"don't cross the site for this" warning. Set `ANTHROPIC_API_KEY` in the repo's
+**Settings → Secrets → Actions**; without it the job falls back to a keyword pass and
+still publishes.
+
+Every source is wrapped so one dead endpoint can't take the run down, and the tab shows
+per-source health — a thin feed reads as *quiet*, not *broken*. The app caches the last
+copy in `localStorage`, so the tab still works with no signal.
