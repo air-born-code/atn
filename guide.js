@@ -325,15 +325,18 @@ var CONF = ["reputation only", "audience / aggregate reports", "cited written re
 
 function scoreRow(s) {
   if (!s.cs) return "";
-  var bar = function (lab, v) {
-    return '<div class="sb"><span class="sbl">' + lab + "</span>" +
+  var bar = function (lab, hint, v) {
+    return '<div class="sb"><span class="sbl">' + lab + "<i>" + hint + "</i></span>" +
       '<span class="sbt"><i style="width:' + (v * 10) + '%"></i></span>' +
       '<span class="sbv">' + v.toFixed(1) + "</span></div>";
   };
   return '<div class="score"><div class="shead">' +
     '<span class="slab">Committee score</span>' +
     '<span class="snum">' + s.cs.toFixed(2) + "</span></div>" +
-    bar("Fresh", s.cx) + bar("Live now", s.cr) + bar("Best album", s.cp) + bar("Bench", s.cd) +
+    bar("Fresh", "touring new music?", s.cx) +
+    bar("Live now", "gigs this past year", s.cr) +
+    bar("Best album", "their peak", s.cp) +
+    bar("Bench", "catalogue depth", s.cd) +
     '<div class="smath">' + s.cb.toFixed(2) + " base" +
       (s.cn ? ' <span class="bonus">+' + s.cn.toFixed(1) + " legend</span>" : "") +
     "</div>" +
