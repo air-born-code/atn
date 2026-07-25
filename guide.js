@@ -346,12 +346,12 @@ function scoreRow(s) {
     '<div class="sconf">Live-form evidence: ' + CONF[s.cf || 0] + "</div></div>";
 }
 
-var JKEY = { "The Beatmaker": "beatmaker", "The Lifer": "lifer", "The Punk": "punk" };
+var JKEY = { "The Beatmaker": "beatmaker", "The Lifer": "lifer", "The Punk": "punk", "The Selector": "selector" };
 
 function judgeBlock() {
   var J = window.ATN_JUDGES || [];
   if (!J.length) return "";
-  var h = '<p class="enote"><b>Who\'s on the committee</b> &mdash; three different ears, ' +
+  var h = '<p class="enote"><b>Who\'s on the committee</b> &mdash; four different ears, ' +
           'weighting the same four axes differently, so a score isn\'t one taste ' +
           'pretending to be objective. They\'re roles, not real people.</p>';
   J.forEach(function (j) {
@@ -374,7 +374,7 @@ function judgeRow(s) {
   if (!vals.length) return "";
   var hi = Math.max.apply(null, vals), lo = Math.min.apply(null, vals);
 
-  var h = '<div class="jsplit"><div class="jshead">How the three saw it' +
+  var h = '<div class="jsplit"><div class="jshead">How the committee saw it' +
     (s.jd >= 1.5 ? ' <span class="jsplitbadge">They disagree</span>' : "") + "</div>";
   J.forEach(function (j) {
     var v = jv[JKEY[j.name]];

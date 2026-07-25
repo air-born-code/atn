@@ -16,7 +16,7 @@ import json, csv, datetime
 
 from scoring import (JUDGES, SCORES, LEGEND, DEFAULT, FRESH, FRESH_DEFAULT,
                      W_FRESH, W_RECENT, W_PEAK, W_BENCH,
-                     FEST_ADJUSTMENT, ROAD_HAND)
+                     FEST_ADJUSTMENT, ROAD_HAND, SELECTOR, SELECTOR_GENRE_BONUS)
 import curate_tables as T
 
 DAY_KEY = {"Thursday 30th July": "thu", "Friday 31st July": "fri",
@@ -33,7 +33,7 @@ IRISH = {
 }
 
 
-def score(artist):
+def score(artist, genre=""):
     peak, bench, recent, conf = SCORES.get(artist, DEFAULT)
     fresh = FRESH.get(artist, FRESH_DEFAULT)
     base = fresh * W_FRESH + recent * W_RECENT + peak * W_PEAK + bench * W_BENCH
@@ -47,6 +47,8 @@ def score(artist):
         # The live-sound ear is the only one who docks an act for not travelling.
         if name == ROAD_HAND:
             v += FEST_ADJUSTMENT.get(fest_verdict, 0.0)
+        if name == SELECTOR:
+            v += SELECTOR_GENRE_BONUS.get(genre, 0.0)
         views[name] = round(max(0.0, min(v, 10.0)), 2)
 
     spread = round(max(views.values()) - min(views.values()), 2)
@@ -77,7 +79,7 @@ def main():
         row = {"artist": a, "day": day, "stage": stage, "time": r["time"],
                "start": r["start"], "end": r["end"],
                "tier": T.PICKS[a][0], "genre": T.PICKS[a][1]}
-        row.update(score(a))
+        row.update(score(a, T.PICKS[a][1]))
         row["evidence_src"] = ls
         row["evidence_url"] = lu
         acts.append(row)

@@ -29,6 +29,16 @@
     "album": 0.1,
     "bench": 0.05
    }
+  },
+  {
+   "name": "The Selector",
+   "blurb": "The dance ear \u2014 a booth lifer who has closed more rooms than they can count. Judges by the floor: does a set build, does it read a crowd, does it land at 2am. Values a deep record bag over a hot single, and knows the DJ and electronic bill better than anyone else here.",
+   "w": {
+    "fresh": 0.2,
+    "recent": 0.5,
+    "album": 0.1,
+    "bench": 0.2
+   }
   }
  ],
  "model": "composite = 0.35 fresh + 0.35 recent gigs + 0.20 best album + 0.10 bench, + legend bonus",
@@ -49,7 +59,8 @@
    "jv": {
     "beatmaker": 9.0,
     "lifer": 9.53,
-    "punk": 8.78
+    "punk": 8.78,
+    "selector": 8.85
    }
   },
   "Underworld": {
@@ -68,7 +79,8 @@
    "jv": {
     "beatmaker": 8.65,
     "lifer": 9.25,
-    "punk": 8.23
+    "punk": 8.23,
+    "selector": 9.1
    }
   },
   "Mogwai": {
@@ -87,7 +99,8 @@
    "jv": {
     "beatmaker": 8.62,
     "lifer": 7.95,
-    "punk": 8.52
+    "punk": 8.52,
+    "selector": 8.6
    }
   },
   "Ezra Collective": {
@@ -106,7 +119,8 @@
    "jv": {
     "beatmaker": 7.67,
     "lifer": 9.25,
-    "punk": 8.62
+    "punk": 8.62,
+    "selector": 8.4
    }
   },
   "Talks in the Tent: John Cooper Clarke": {
@@ -125,7 +139,8 @@
    "jv": {
     "beatmaker": 7.85,
     "lifer": 8.43,
-    "punk": 7.35
+    "punk": 7.35,
+    "selector": 7.95
    }
   },
   "W.I.T.C.H.": {
@@ -144,7 +159,8 @@
    "jv": {
     "beatmaker": 8.03,
     "lifer": 8.4,
-    "punk": 7.7
+    "punk": 7.7,
+    "selector": 8.0
    }
   },
   "Floating Points (Live)": {
@@ -157,13 +173,14 @@
    "r": 9.5,
    "cf": 2,
    "ir": 0,
-   "sp": 0.7,
+   "sp": 1.05,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 8.0,
     "lifer": 8.18,
-    "punk": 8.7
+    "punk": 8.7,
+    "selector": 9.05
    }
   },
   "Anna von Hausswolff": {
@@ -182,7 +199,8 @@
    "jv": {
     "beatmaker": 7.78,
     "lifer": 7.93,
-    "punk": 8.72
+    "punk": 8.72,
+    "selector": 8.35
    }
   },
   "Self Esteem": {
@@ -201,7 +219,8 @@
    "jv": {
     "beatmaker": 7.53,
     "lifer": 7.83,
-    "punk": 8.68
+    "punk": 8.68,
+    "selector": 8.15
    }
   },
   "Maruja": {
@@ -220,7 +239,8 @@
    "jv": {
     "beatmaker": 6.6,
     "lifer": 8.68,
-    "punk": 8.85
+    "punk": 8.85,
+    "selector": 7.95
    }
   },
   "Hot 8 Brass Band": {
@@ -239,7 +259,8 @@
    "jv": {
     "beatmaker": 7.12,
     "lifer": 8.03,
-    "punk": 7.65
+    "punk": 7.65,
+    "selector": 7.35
    }
   },
   "Maribou State (Live)": {
@@ -258,7 +279,8 @@
    "jv": {
     "beatmaker": 7.22,
     "lifer": 8.38,
-    "punk": 8.45
+    "punk": 8.45,
+    "selector": 8.35
    }
   },
   "Sprints": {
@@ -277,7 +299,8 @@
    "jv": {
     "beatmaker": 6.62,
     "lifer": 8.75,
-    "punk": 8.7
+    "punk": 8.7,
+    "selector": 7.8
    }
   },
   "Kerri Chandler": {
@@ -290,13 +313,14 @@
    "r": 8.0,
    "cf": 1,
    "ir": 0,
-   "sp": 1.12,
+   "sp": 1.32,
    "lw": "His reel-to-reel shows \u2014 mixing live off four tape machines, a nod to watching Frankie Knuckles work \u2014 most visibly at the Roundhouse in London.",
    "ln": "2022",
    "jv": {
     "beatmaker": 7.95,
     "lifer": 7.92,
-    "punk": 6.83
+    "punk": 6.83,
+    "selector": 8.15
    }
   },
   "Greentea Peng": {
@@ -315,7 +339,8 @@
    "jv": {
     "beatmaker": 6.9,
     "lifer": 8.25,
-    "punk": 8.38
+    "punk": 8.38,
+    "selector": 7.7
    }
   },
   "Moonchild Sanelly": {
@@ -334,7 +359,8 @@
    "jv": {
     "beatmaker": 6.93,
     "lifer": 8.72,
-    "punk": 8.3
+    "punk": 8.3,
+    "selector": 7.85
    }
   },
   "Gilla Band": {
@@ -347,13 +373,14 @@
    "r": 9.5,
    "cf": 2,
    "ir": 1,
-   "sp": 0.11,
+   "sp": 0.53,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 7.83,
     "lifer": 7.83,
-    "punk": 7.72
+    "punk": 7.72,
+    "selector": 8.25
    }
   },
   "THUMPER": {
@@ -372,7 +399,8 @@
    "jv": {
     "beatmaker": 6.35,
     "lifer": 8.58,
-    "punk": 8.4
+    "punk": 8.4,
+    "selector": 7.65
    }
   },
   "Dry Cleaning": {
@@ -391,7 +419,8 @@
    "jv": {
     "beatmaker": 7.12,
     "lifer": 7.73,
-    "punk": 8.05
+    "punk": 8.05,
+    "selector": 7.45
    }
   },
   "Gurriers": {
@@ -410,7 +439,8 @@
    "jv": {
     "beatmaker": 6.4,
     "lifer": 8.05,
-    "punk": 8.28
+    "punk": 8.28,
+    "selector": 7.3
    }
   },
   "Soichi Terada (Live)": {
@@ -429,7 +459,8 @@
    "jv": {
     "beatmaker": 7.53,
     "lifer": 8.6,
-    "punk": 7.28
+    "punk": 7.28,
+    "selector": 8.3
    }
   },
   "Muireann Bradley": {
@@ -448,7 +479,8 @@
    "jv": {
     "beatmaker": 6.1,
     "lifer": 7.33,
-    "punk": 7.83
+    "punk": 7.83,
+    "selector": 6.85
    }
   },
   "Floorplan": {
@@ -461,13 +493,14 @@
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.55,
+   "sp": 0.95,
    "lw": "Robert Hood is a founder of Underground Resistance and one of the architects of minimal Detroit techno; Floorplan is his gospel-house project.",
    "ln": "UR from 1989",
    "jv": {
     "beatmaker": 6.95,
     "lifer": 7.0,
-    "punk": 6.45
+    "punk": 6.45,
+    "selector": 7.4
    }
   },
   "Mall Grab": {
@@ -486,7 +519,8 @@
    "jv": {
     "beatmaker": 6.4,
     "lifer": 7.78,
-    "punk": 7.32
+    "punk": 7.32,
+    "selector": 7.75
    }
   },
   "Alabaster DePlume": {
@@ -505,7 +539,8 @@
    "jv": {
     "beatmaker": 6.6,
     "lifer": 7.15,
-    "punk": 7.3
+    "punk": 7.3,
+    "selector": 7.0
    }
   },
   "Hot Chip (DJ Set)": {
@@ -518,13 +553,14 @@
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.67,
+   "sp": 0.95,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 7.47,
     "lifer": 7.28,
-    "punk": 6.8
+    "punk": 6.8,
+    "selector": 7.75
    }
   },
   "Kate Nash": {
@@ -543,7 +579,8 @@
    "jv": {
     "beatmaker": 6.58,
     "lifer": 6.9,
-    "punk": 7.15
+    "punk": 7.15,
+    "selector": 6.7
    }
   },
   "Disclosure (DJ)": {
@@ -556,13 +593,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.15,
+   "sp": 0.4,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.85,
     "lifer": 6.7,
-    "punk": 6.83
+    "punk": 6.83,
+    "selector": 7.1
    }
   },
   "The Avalanches (DJ Set)": {
@@ -581,7 +619,8 @@
    "jv": {
     "beatmaker": 7.18,
     "lifer": 6.22,
-    "punk": 5.6
+    "punk": 5.6,
+    "selector": 6.55
    }
   },
   "Joy Orbison": {
@@ -594,13 +633,14 @@
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.38,
+   "sp": 0.8,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.83,
     "lifer": 7.03,
-    "punk": 6.65
+    "punk": 6.65,
+    "selector": 7.45
    }
   },
   "Friendly Fires": {
@@ -619,7 +659,8 @@
    "jv": {
     "beatmaker": 6.65,
     "lifer": 6.95,
-    "punk": 6.62
+    "punk": 6.62,
+    "selector": 6.7
    }
   },
   "Say She She": {
@@ -638,7 +679,8 @@
    "jv": {
     "beatmaker": 5.93,
     "lifer": 6.65,
-    "punk": 7.0
+    "punk": 7.0,
+    "selector": 6.4
    }
   },
   "DJ Nobu": {
@@ -651,13 +693,14 @@
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.35,
+   "sp": 0.8,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.62,
     "lifer": 6.95,
-    "punk": 6.6
+    "punk": 6.6,
+    "selector": 7.4
    }
   },
   "King Kong Company": {
@@ -676,7 +719,8 @@
    "jv": {
     "beatmaker": 5.88,
     "lifer": 7.4,
-    "punk": 6.9
+    "punk": 6.9,
+    "selector": 7.1
    }
   },
   "Jacob Alon": {
@@ -695,7 +739,8 @@
    "jv": {
     "beatmaker": 5.28,
     "lifer": 6.3,
-    "punk": 7.17
+    "punk": 7.17,
+    "selector": 5.9
    }
   },
   "SOAK": {
@@ -714,7 +759,8 @@
    "jv": {
     "beatmaker": 6.2,
     "lifer": 6.45,
-    "punk": 6.68
+    "punk": 6.68,
+    "selector": 6.3
    }
   },
   "Barrington Levy": {
@@ -733,7 +779,8 @@
    "jv": {
     "beatmaker": 6.95,
     "lifer": 5.1,
-    "punk": 4.68
+    "punk": 4.68,
+    "selector": 5.8
    }
   },
   "Getdown Services": {
@@ -752,7 +799,8 @@
    "jv": {
     "beatmaker": 5.45,
     "lifer": 6.3,
-    "punk": 6.98
+    "punk": 6.98,
+    "selector": 6.0
    }
   },
   "Call Super": {
@@ -765,13 +813,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 0.22,
+   "sp": 0.65,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.4,
     "lifer": 6.62,
-    "punk": 6.4
+    "punk": 6.4,
+    "selector": 7.05
    }
   },
   "Damien Dempsey": {
@@ -790,7 +839,8 @@
    "jv": {
     "beatmaker": 6.78,
     "lifer": 6.63,
-    "punk": 6.02
+    "punk": 6.02,
+    "selector": 6.55
    }
   },
   "Altern-8": {
@@ -803,13 +853,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.13,
+   "sp": 1.48,
    "lw": "The Activ-8 rave \u2014 performed at 2am from the back of an articulated lorry in a club car park, in chemical warfare suits. Also the Shelley's car park set.",
    "ln": "1991",
    "jv": {
     "beatmaker": 6.03,
     "lifer": 6.05,
-    "punk": 4.92
+    "punk": 4.92,
+    "selector": 6.4
    }
   },
   "PVA": {
@@ -828,7 +879,8 @@
    "jv": {
     "beatmaker": 5.38,
     "lifer": 6.2,
-    "punk": 6.73
+    "punk": 6.73,
+    "selector": 5.9
    }
   },
   "David Kitt": {
@@ -847,7 +899,8 @@
    "jv": {
     "beatmaker": 6.3,
     "lifer": 6.35,
-    "punk": 6.23
+    "punk": 6.23,
+    "selector": 6.3
    }
   },
   "Cardinals": {
@@ -866,7 +919,8 @@
    "jv": {
     "beatmaker": 4.97,
     "lifer": 5.95,
-    "punk": 6.95
+    "punk": 6.95,
+    "selector": 5.6
    }
   },
   "Sunil Sharpe x Kev Freeney Presents Spineless": {
@@ -879,13 +933,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 1,
-   "sp": 0.48,
+   "sp": 0.95,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.0,
     "lifer": 6.48,
-    "punk": 6.3
+    "punk": 6.3,
+    "selector": 6.95
    }
   },
   "Colleen Cosmo Murphy": {
@@ -898,13 +953,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 0.38,
+   "sp": 0.88,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.25,
     "lifer": 6.5,
-    "punk": 6.12
+    "punk": 6.12,
+    "selector": 7.0
    }
   },
   "Prosumer": {
@@ -917,13 +973,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 0.38,
+   "sp": 0.88,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 6.25,
     "lifer": 6.5,
-    "punk": 6.12
+    "punk": 6.12,
+    "selector": 7.0
    }
   },
   "Chet Faker": {
@@ -942,7 +999,8 @@
    "jv": {
     "beatmaker": 6.05,
     "lifer": 6.25,
-    "punk": 6.18
+    "punk": 6.18,
+    "selector": 6.1
    }
   },
   "Jyoty": {
@@ -955,13 +1013,14 @@
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 1.08,
+   "sp": 1.35,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.4,
     "lifer": 6.48,
-    "punk": 6.33
+    "punk": 6.33,
+    "selector": 6.75
    }
   },
   "Or:la": {
@@ -974,13 +1033,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 1,
-   "sp": 0.71,
+   "sp": 1.03,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.62,
     "lifer": 6.33,
-    "punk": 6.22
+    "punk": 6.22,
+    "selector": 6.65
    }
   },
   "Job Jobse": {
@@ -993,13 +1053,14 @@
    "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 0.68,
+   "sp": 1.13,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.67,
     "lifer": 6.35,
-    "punk": 6.22
+    "punk": 6.22,
+    "selector": 6.8
    }
   },
   "Weval (Live)": {
@@ -1012,13 +1073,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.4,
+   "sp": 0.72,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.73,
     "lifer": 6.13,
-    "punk": 6.1
+    "punk": 6.1,
+    "selector": 6.45
    }
   },
   "New Jackson": {
@@ -1031,13 +1093,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "sp": 0.4,
+   "sp": 0.72,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.73,
     "lifer": 6.13,
-    "punk": 6.1
+    "punk": 6.1,
+    "selector": 6.45
    }
   },
   "Eats Everything": {
@@ -1050,13 +1113,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.37,
+   "sp": 0.82,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.78,
     "lifer": 6.15,
-    "punk": 6.1
+    "punk": 6.1,
+    "selector": 6.6
    }
   },
   "Bicurious": {
@@ -1075,7 +1139,8 @@
    "jv": {
     "beatmaker": 5.2,
     "lifer": 5.83,
-    "punk": 6.3
+    "punk": 6.3,
+    "selector": 5.55
    }
   },
   "O'Flynn": {
@@ -1088,13 +1153,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.52,
+   "sp": 0.87,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.53,
     "lifer": 6.05,
-    "punk": 6.05
+    "punk": 6.05,
+    "selector": 6.4
    }
   },
   "Dan Shake": {
@@ -1107,13 +1173,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.52,
+   "sp": 0.87,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.53,
     "lifer": 6.05,
-    "punk": 6.05
+    "punk": 6.05,
+    "selector": 6.4
    }
   },
   "Moving Still": {
@@ -1126,13 +1193,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "sp": 0.78,
+   "sp": 1.05,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.2,
     "lifer": 5.93,
-    "punk": 5.98
+    "punk": 5.98,
+    "selector": 6.25
    }
   },
   "The Dare (DJ Set)": {
@@ -1145,13 +1213,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.83,
+   "sp": 0.95,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.15,
     "lifer": 5.9,
-    "punk": 5.98
+    "punk": 5.98,
+    "selector": 6.1
    }
   },
   "Lullahush": {
@@ -1170,7 +1239,8 @@
    "jv": {
     "beatmaker": 5.15,
     "lifer": 5.9,
-    "punk": 5.98
+    "punk": 5.98,
+    "selector": 5.6
    }
   },
   "Jamz Supernova": {
@@ -1183,13 +1253,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.83,
+   "sp": 1.18,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.12,
     "lifer": 5.9,
-    "punk": 5.95
+    "punk": 5.95,
+    "selector": 6.3
    }
   },
   "Anish Kumar": {
@@ -1202,13 +1273,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.87,
+   "sp": 1.07,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.08,
     "lifer": 5.88,
-    "punk": 5.95
+    "punk": 5.95,
+    "selector": 6.15
    }
   },
   "Cromby": {
@@ -1221,13 +1293,14 @@
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "sp": 0.93,
+   "sp": 1.2,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 5.0,
     "lifer": 5.85,
-    "punk": 5.93
+    "punk": 5.93,
+    "selector": 6.2
    }
   },
   "Kean Kavanagh": {
@@ -1246,7 +1319,8 @@
    "jv": {
     "beatmaker": 5.05,
     "lifer": 5.62,
-    "punk": 5.8
+    "punk": 5.8,
+    "selector": 5.35
    }
   },
   "Soda Blonde": {
@@ -1265,7 +1339,8 @@
    "jv": {
     "beatmaker": 4.97,
     "lifer": 5.6,
-    "punk": 5.77
+    "punk": 5.77,
+    "selector": 5.4
    }
   },
   "Ms Dynamite": {
@@ -1284,7 +1359,8 @@
    "jv": {
     "beatmaker": 6.2,
     "lifer": 5.95,
-    "punk": 5.05
+    "punk": 5.05,
+    "selector": 5.8
    }
   },
   "BIIRD": {
@@ -1303,7 +1379,8 @@
    "jv": {
     "beatmaker": 4.72,
     "lifer": 5.5,
-    "punk": 5.72
+    "punk": 5.72,
+    "selector": 5.2
    }
   },
   "Br\u00f2geal": {
@@ -1322,7 +1399,8 @@
    "jv": {
     "beatmaker": 4.72,
     "lifer": 5.5,
-    "punk": 5.72
+    "punk": 5.72,
+    "selector": 5.2
    }
   },
   "KhakiKid": {
@@ -1341,7 +1419,8 @@
    "jv": {
     "beatmaker": 4.72,
     "lifer": 5.5,
-    "punk": 5.72
+    "punk": 5.72,
+    "selector": 5.2
    }
   },
   "Bazza Ranks": {
@@ -1360,7 +1439,8 @@
    "jv": {
     "beatmaker": 4.78,
     "lifer": 5.52,
-    "punk": 5.72
+    "punk": 5.72,
+    "selector": 5.35
    }
   },
   "Sexy Tadhg": {
@@ -1379,7 +1459,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Rose Betts": {
@@ -1398,7 +1479,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "David Keenan": {
@@ -1417,7 +1499,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Swimming Paul": {
@@ -1430,13 +1513,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Hank": {
@@ -1455,7 +1539,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "The New Eves": {
@@ -1474,7 +1559,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Black Nylon": {
@@ -1493,7 +1579,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "The Itch": {
@@ -1512,7 +1599,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Sassy 009": {
@@ -1531,7 +1619,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Takuya Nakamura (Live)": {
@@ -1544,13 +1633,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Gently Tender": {
@@ -1569,7 +1659,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "R\u00f3is": {
@@ -1588,7 +1679,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Sell Everything": {
@@ -1607,7 +1699,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Kelly Anne Byrne 'Prince Tribute'": {
@@ -1626,7 +1719,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "\u00c6 MAK": {
@@ -1645,7 +1739,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Maykay": {
@@ -1664,7 +1759,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Glasshouse presents: Bjork": {
@@ -1683,7 +1779,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Nialler9": {
@@ -1696,13 +1793,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Burt Bacharach by Paddy Hanna": {
@@ -1721,7 +1819,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Grooveline": {
@@ -1734,13 +1833,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Marcus O'Laoire": {
@@ -1753,13 +1853,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "MIKE": {
@@ -1778,7 +1879,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Rory Sweeney (Live)": {
@@ -1791,13 +1893,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "One Leg One Eye": {
@@ -1816,7 +1919,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Monjola": {
@@ -1835,7 +1939,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Freak Slug": {
@@ -1854,7 +1959,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Mango": {
@@ -1873,7 +1979,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Anz b2b Jio": {
@@ -1886,13 +1993,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Surusinghe": {
@@ -1905,13 +2013,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Peach": {
@@ -1924,13 +2033,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Spray": {
@@ -1943,13 +2053,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "EMA": {
@@ -1962,13 +2073,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Gabrielle Kwarteng": {
@@ -1981,13 +2093,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Sloucho": {
@@ -2000,13 +2113,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Seamus Fogarty": {
@@ -2025,7 +2139,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Tr\u00e1 Ph\u00e1id\u00edn": {
@@ -2044,7 +2159,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Felispeaks": {
@@ -2063,7 +2179,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Yankari Afrobeat Collective": {
@@ -2082,7 +2199,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "The Calvinists": {
@@ -2101,7 +2219,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Qbanaa": {
@@ -2120,7 +2239,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Tosh\u00edn": {
@@ -2139,7 +2259,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Elikya": {
@@ -2158,7 +2279,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Governess": {
@@ -2171,13 +2293,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "The Awning": {
@@ -2196,7 +2319,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Sun Studio Collective": {
@@ -2215,7 +2339,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Tony Cantwell": {
@@ -2234,7 +2359,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Dublin Disco All Dayer DJ's": {
@@ -2247,13 +2373,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Franz Scala": {
@@ -2266,13 +2393,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Gaff E": {
@@ -2285,13 +2413,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Daniel Wang": {
@@ -2304,13 +2433,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Huartan": {
@@ -2329,7 +2459,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "megaTRAD": {
@@ -2348,7 +2479,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Trad Folkin'Raves feat Annie Craic": {
@@ -2367,7 +2499,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Acid Granny Presents Schindler's Fist": {
@@ -2386,7 +2519,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Ria Rua": {
@@ -2405,7 +2539,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Bedlam": {
@@ -2418,13 +2553,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "LOST at The Last City": {
@@ -2437,13 +2573,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "I Draw Slow": {
@@ -2462,7 +2599,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Winemoms": {
@@ -2475,13 +2613,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Stevie G": {
@@ -2494,13 +2633,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "DJ Deece": {
@@ -2513,13 +2653,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Organ Freeman (Live Jazz)": {
@@ -2538,7 +2679,8 @@
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.2
    }
   },
   "Shrem's Madonnathon": {
@@ -2551,13 +2693,14 @@
    "r": 6.0,
    "cf": 0,
    "ir": 0,
-   "sp": 1.2,
+   "sp": 1.25,
    "lw": "",
    "ln": "",
    "jv": {
     "beatmaker": 4.45,
     "lifer": 5.4,
-    "punk": 5.65
+    "punk": 5.65,
+    "selector": 5.7
    }
   },
   "Sam Alfred": {
@@ -2576,7 +2719,8 @@
    "jv": {
     "beatmaker": 4.33,
     "lifer": 5.35,
-    "punk": 5.62
+    "punk": 5.62,
+    "selector": 5.6
    }
   },
   "Trinity Orchestra": {
@@ -2595,7 +2739,8 @@
    "jv": {
     "beatmaker": 4.4,
     "lifer": 5.47,
-    "punk": 5.33
+    "punk": 5.33,
+    "selector": 5.25
    }
   },
   "The Wild Geeze - Comedy Cabaret": {
@@ -2614,7 +2759,8 @@
    "jv": {
     "beatmaker": 4.0,
     "lifer": 5.23,
-    "punk": 5.55
+    "punk": 5.55,
+    "selector": 4.95
    }
   },
   "Playback Presents: Stop Making Sense": {
@@ -2633,7 +2779,8 @@
    "jv": {
     "beatmaker": 4.65,
     "lifer": 5.42,
-    "punk": 4.93
+    "punk": 4.93,
+    "selector": 5.15
    }
   },
   "Sing Along Social": {
@@ -2652,7 +2799,8 @@
    "jv": {
     "beatmaker": 3.75,
     "lifer": 5.23,
-    "punk": 5.17
+    "punk": 5.17,
+    "selector": 4.95
    }
   }
  },

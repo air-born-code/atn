@@ -40,7 +40,7 @@ Underworld's Olympic ceremony, Barrington Levy at Reggae Sunsplash, John Cooper
 Clarke opening for the Pistols. If we can't name one, the bonus is zero. No
 bonus is handed out on vibes.
 
-The committee is three ears with different expertise, weighting the same four
+The committee is four ears with different expertise, weighting the same four
 axes differently, so a score isn't one taste pretending to be objective:
 
 | Judge | Fresh | Live | Album | Bench | The ear |
@@ -48,9 +48,13 @@ axes differently, so a score isn't one taste pretending to be objective:
 | The Beatmaker | 15% | 20% | 40% | 25% | hip-hop — judges the records and the catalogue |
 | The Lifer | 20% | 55% | 15% | 10% | rock — thirty years side-of-stage; only trusts what survives a field |
 | The Punk | 50% | 35% | 10% | 5% | punk — urgency over polish, legacy barely counts |
+| The Selector | 20% | 50% | 10% | 20% | dance — a booth lifer; judges by the floor, deep bag over hot single |
 
-The Lifer is the only one who reads the festival-form table, docking acts whose
-show needs a room a field can't give it.
+Two judges carry a specialism the others don't: **The Lifer** is the only one who
+reads the festival-form table, docking acts whose show needs a room a field can't
+give it; **The Selector** gets extra weight on DJ and electronic acts, because
+that's the half of the bill they actually know. It shows — on Kerri Chandler the
+Selector is highest at 8.15 and the Punk lowest at 6.83; on Sprints that inverts.
 
 **They are roles, not real people.** No real producer or musician is named or
 modelled, because inventing a verdict and attaching someone's actual name to it

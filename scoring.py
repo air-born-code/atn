@@ -50,12 +50,22 @@ JUDGES = [
      "The punk ear. Openly hostile to coasting: doesn't care what you did in 1995, "
      "cares whether you've got something out now and whether you mean it tonight. "
      "Rates urgency over polish and legacy barely counts."),
+    ("The Selector", 0.20, 0.50, 0.10, 0.20,
+     "The dance ear — a booth lifer who has closed more rooms than they can count. "
+     "Judges by the floor: does a set build, does it read a crowd, does it land at "
+     "2am. Values a deep record bag over a hot single, and knows the DJ and "
+     "electronic bill better than anyone else here."),
 ]
 
 # Only The Lifer reads the festival-form table — that's the whole reason they're
 # on the committee. Applied on top of their weighted score.
 FEST_ADJUSTMENT = {"built": 0.6, "proven": 0.3, "caution": -0.6, "unknown": 0.0, "": 0.0}
 ROAD_HAND = "The Lifer"
+
+# The Selector knows the dance bill best, so their read on a DJ or electronic act
+# carries more weight than a generalist's.
+SELECTOR = "The Selector"
+SELECTOR_GENRE_BONUS = {"dj": 0.5}
 
 # How fresh their current material is. Default 6.0 where not listed.
 # High = a strong record in the last year or two and actively touring it.
