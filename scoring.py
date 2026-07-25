@@ -1,31 +1,90 @@
 #!/usr/bin/env python3
-"""The scoring model.
+"""The scoring model — tuned for fresh material over legacy.
 
-Headline score is an equal three-way split:
-
-    base = (peak + bench + recent) / 3
+    base      = 0.35*fresh + 0.35*recent + 0.20*peak + 0.10*bench
     composite = base + legend_bonus
 
-  peak   quality of their best album — the high-water mark
-  bench  total bench strength — depth across the whole catalogue
+  fresh  how current and vital their material is right now — a strong album in
+         the last year or two scores high, a heritage act coasting on the back
+         catalogue scores low. Weighted joint-heaviest by design.
   recent quality of concerts over roughly the last year
+  peak   quality of their best album — the high-water mark
+  bench  depth across the whole catalogue. Deliberately the lightest weight:
+         it was previously letting veterans with deep discographies outrank
+         bands playing the best shows of their lives right now.
 
-`legend_bonus` is additive on top, and is only awarded where there is a
-genuinely legendary concert (or equivalent moment) to point at. If we can name it,
-it's in LEGEND with the year. If we can't, the bonus is zero — no bonus is handed
-out on vibes.
+`legend_bonus` is additive, halved from the earlier model so that legacy
+tops up a score rather than deciding it, and only awarded where a genuinely
+legendary concert can be named and dated. If we can't name it, it's zero.
 
-Four judges then weight the same three axes differently. They don't set the
-headline number; their spread is reported as a consensus check.
+Four judges then weight the same axes differently. They don't set the headline
+number; their spread is reported as a consensus check.
 """
 
-# name,            peak, bench, recent, irish_bonus
+# The headline weights. fresh + recent = 70% of the base score.
+W_FRESH, W_RECENT, W_PEAK, W_BENCH = 0.35, 0.35, 0.20, 0.10
+
+# name,            fresh, recent, peak, bench, irish_bonus
 JUDGES = [
-    ("The Archivist",  0.30, 0.45, 0.25, 0.0),
-    ("The Headliner",  0.45, 0.25, 0.30, 0.0),
-    ("The Gig-Goer",   0.20, 0.15, 0.65, 0.0),
-    ("The Local",      0.30, 0.25, 0.45, 0.4),
+    ("The Archivist",  0.15, 0.25, 0.30, 0.30, 0.0),
+    ("The Headliner",  0.25, 0.30, 0.35, 0.10, 0.0),
+    ("The Gig-Goer",   0.40, 0.45, 0.10, 0.05, 0.0),
+    ("The Local",      0.40, 0.35, 0.15, 0.10, 0.4),
 ]
+
+# How fresh their current material is. Default 6.0 where not listed.
+# High = a strong record in the last year or two and actively touring it.
+FRESH = {
+"Maruja": 9.5,                  # Pain To Power, 2025 — debut album
+"Sprints": 9.5,                 # All That Is Over, 2025
+"Gurriers": 9.0,                # Come And See, 2024
+"THUMPER": 9.0,                 # second-album era, 2025–26
+"Self Esteem": 9.0,             # A Complicated Woman, 2025
+"Anna von Hausswolff": 9.0,     # Iconoclasts, 2025
+"Maribou State (Live)": 9.0,    # Hallucinating Love, 2025
+"Greentea Peng": 9.0,           # TELL DEM IT'S SUNNY, 2025
+"Mogwai": 8.5,                  # The Bad Fire, Jan 2025
+"Pulp": 8.5,                    # More, 2025 — first in 24 years
+"Moonchild Sanelly": 8.5,       # Full Moon, 2025
+"Dry Cleaning": 8.5,            # Secret Love
+"Floating Points (Live)": 8.5,  # Cascade, 2024
+"Ezra Collective": 8.5,         # Dance, No One's Watching, 2024
+"Cardinals": 8.5,               # debut, 2025
+"Muireann Bradley": 8.5,
+"Hot 8 Brass Band": 8.0,        # Big Tuba, Feb 2025
+"Getdown Services": 8.0,
+"Underworld": 7.5,              # Strawberry Hotel, 2024
+"Kate Nash": 7.5,               # 9 Sad Symphonies, 2024
+"PVA": 7.5,
+"W.I.T.C.H.": 7.0,              # Sogolo, 2023
+"Mall Grab": 7.0,
+"Disclosure (DJ)": 7.0,
+"King Kong Company": 7.0,
+"Bicurious": 7.0,
+"SOAK": 7.0,
+"Gilla Band": 6.5,              # Most Normal, 2022
+"Jacob Alon": 8.5,
+"Alabaster DePlume": 7.5,
+"Say She She": 7.5,
+"Soichi Terada (Live)": 6.0,
+"Hot Chip (DJ Set)": 6.0,
+"Talks in the Tent: John Cooper Clarke": 6.0,
+"Kerri Chandler": 5.5,          # Spaces and Places, 2022
+"Floorplan": 5.5,
+"The Avalanches (DJ Set)": 4.5, # last album 2020
+"Damien Dempsey": 5.0,
+"Altern-8": 3.0,                # a legacy rave act, and that's the point
+"Barrington Levy": 3.0,         # no recent record — touring the back catalogue
+"Ms Dynamite": 3.5,
+"Chet Faker": 6.0,
+"Colleen Cosmo Murphy": 5.5,
+"Prosumer": 5.5,
+"Rahann": 5.5,
+"Trinity Orchestra": 5.0,
+"Playback Presents: Stop Making Sense": 4.0,
+"Sing Along Social": 5.0,
+}
+FRESH_DEFAULT = 6.0
 
 # conf: 2 = cited written review, 1 = aggregate/audience reports, 0 = reputation only
 # artist: (peak, bench, recent, conf)
@@ -112,47 +171,47 @@ SCORES = {
 # legendary concert (or equivalent moment) can be named and dated.
 # artist: (bonus, what it was, when)
 LEGEND = {
-"Pulp": (2.5,
+"Pulp": (1.25,
   "Glastonbury, Pyramid Stage — stepped in for The Stone Roses at a week's notice "
   "after John Squire broke his collarbone. Widely rated one of the greatest sets in "
   "the festival's history.", "24 June 1995"),
-"Underworld": (2.2,
+"Underworld": (1.1,
   "London Olympics Opening Ceremony — Rick Smith was musical director for Danny "
   "Boyle's ceremony, and 'Caliban's Dream' played as the cauldron was lit.",
   "27 July 2012"),
-"Barrington Levy": (2.0,
+"Barrington Levy": (1.0,
   "Reggae Sunsplash, Jamaica — the performances that made his name and cemented his "
   "standing in reggae. He went on playing Sunsplash through to 1995.", "1980 and 1981"),
-"Talks in the Tent: John Cooper Clarke": (2.0,
+"Talks in the Tent: John Cooper Clarke": (1.0,
   "Opened for the Sex Pistols and Buzzcocks at the height of punk — including 45 "
   "minutes holding a 2,000-strong Buzzcocks crowd at Leeds University Refectory. He "
   "was also in the room for the Pistols' Lesser Free Trade Hall gig in 1976.",
   "18 March 1978"),
-"Altern-8": (1.8,
+"Altern-8": (0.9,
   "The Activ-8 rave — performed at 2am from the back of an articulated lorry in a "
   "club car park, in chemical warfare suits. Also the Shelley's car park set.", "1991"),
-"Ezra Collective": (1.6,
+"Ezra Collective": (0.8,
   "First jazz act ever to win the Mercury Prize, for 'Where I'm Meant To Be', at the "
   "Eventim Apollo. An award rather than a gig, but it changed their standing.",
   "7 September 2023"),
-"Mogwai": (1.5,
+"Mogwai": (0.75,
   "No single canonical night — instead a documented reputation as one of the loudest "
   "live bands on earth, built on 'Like Herod' and 'Mogwai Fear Satan'. Braithwaite "
   "openly tells audiences to wear earplugs.", "ongoing since the late 1990s"),
-"Kerri Chandler": (1.5,
+"Kerri Chandler": (0.75,
   "His reel-to-reel shows — mixing live off four tape machines, a nod to watching "
   "Frankie Knuckles work — most visibly at the Roundhouse in London.", "2022"),
-"W.I.T.C.H.": (1.5,
+"W.I.T.C.H.": (0.75,
   "Pioneered Zamrock in 1970s Zambia, then reunited and returned to touring after "
   "roughly four decades away.", "1970s, reunited 2010s"),
-"Hot 8 Brass Band": (1.3,
+"Hot 8 Brass Band": (0.65,
   "After Hurricane Katrina scattered the band, they regrouped and toured the US to "
   "support displaced New Orleanians. Featured in Spike Lee's 'When the Levees Broke'.",
   "2005–06"),
-"The Avalanches (DJ Set)": (1.2,
+"The Avalanches (DJ Set)": (0.6,
   "'Since I Left You' is one of the most celebrated sample records ever made, though "
   "no single legendary live night stands out — they toured it rarely.", "2000"),
-"Floorplan": (1.2,
+"Floorplan": (0.6,
   "Robert Hood is a founder of Underground Resistance and one of the architects of "
   "minimal Detroit techno; Floorplan is his gospel-house project.", "UR from 1989"),
 }

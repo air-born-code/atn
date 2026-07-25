@@ -36,6 +36,7 @@ for r in raw:
         "cs": cs.get("c", 0),          # consolidated composite (base + legend bonus)
         "cb": cs.get("b", 0),          # base, the equal three-way split
         "cn": cs.get("bn", 0),         # legend bonus
+        "cx": cs.get("f", 0),          # freshness of current material
         "cp": cs.get("p", 0),          # best album
         "cd": cs.get("bs", 0),         # bench strength
         "cr": cs.get("r", 0),          # recent concerts

@@ -14,7 +14,8 @@ Run before curate.py:   python3 committee.py && python3 curate.py
 """
 import json, csv, datetime
 
-from scoring import JUDGES, SCORES, LEGEND, DEFAULT
+from scoring import (JUDGES, SCORES, LEGEND, DEFAULT, FRESH, FRESH_DEFAULT,
+                     W_FRESH, W_RECENT, W_PEAK, W_BENCH)
 import curate_tables as T
 
 DAY_KEY = {"Thursday 30th July": "thu", "Friday 31st July": "fri",
@@ -33,20 +34,21 @@ IRISH = {
 
 def score(artist):
     peak, bench, recent, conf = SCORES.get(artist, DEFAULT)
-    base = (peak + bench + recent) / 3.0          # the equal three-way split
+    fresh = FRESH.get(artist, FRESH_DEFAULT)
+    base = fresh * W_FRESH + recent * W_RECENT + peak * W_PEAK + bench * W_BENCH
     bonus, what, when = LEGEND.get(artist, (0.0, "", ""))
     irish = artist in IRISH
 
     views = {}
-    for name, wp, wb, wr, wi in JUDGES:
-        v = peak * wp + bench * wb + recent * wr
+    for name, wf, wr, wp, wb, wi in JUDGES:
+        v = fresh * wf + recent * wr + peak * wp + bench * wb
         if irish:
             v += wi
         views[name] = round(v, 2)
 
     spread = round(max(views.values()) - min(views.values()), 2)
     return {
-        "peak": peak, "bench": bench, "recent": recent, "conf": conf,
+        "fresh": fresh, "peak": peak, "bench": bench, "recent": recent, "conf": conf,
         "base": round(base, 2), "bonus": bonus,
         "composite": round(base + bonus, 2),
         "legend_what": what, "legend_when": when,
@@ -130,10 +132,10 @@ def main():
 
     json.dump({
         "judges": [j[0] for j in JUDGES],
-        "model": "composite = (best album + bench strength + recent concerts) / 3 + legend bonus",
+        "model": "composite = 0.35 fresh + 0.35 recent gigs + 0.20 best album + 0.10 bench, + legend bonus",
         "scores": {a["artist"]: {
             "c": a["composite"], "b": a["base"], "bn": a["bonus"],
-            "p": a["peak"], "bs": a["bench"], "r": a["recent"], "cf": a["conf"],
+            "f": a["fresh"], "p": a["peak"], "bs": a["bench"], "r": a["recent"], "cf": a["conf"],
             "ir": a["irish"], "sp": a["spread"],
             "lw": a["legend_what"], "ln": a["legend_when"],
         } for a in acts},

@@ -5,12 +5,13 @@
   "The Gig-Goer",
   "The Local"
  ],
- "model": "composite = (best album + bench strength + recent concerts) / 3 + legend bonus",
+ "model": "composite = 0.35 fresh + 0.35 recent gigs + 0.20 best album + 0.10 bench, + legend bonus",
  "scores": {
   "Pulp": {
-   "c": 11.5,
-   "b": 9.0,
-   "bn": 2.5,
+   "c": 10.12,
+   "b": 8.88,
+   "bn": 1.25,
+   "f": 8.5,
    "p": 9.5,
    "bs": 8.5,
    "r": 9.0,
@@ -21,113 +22,304 @@
    "ln": "24 June 1995"
   },
   "Underworld": {
-   "c": 11.03,
-   "b": 8.83,
-   "bn": 2.2,
+   "c": 9.53,
+   "b": 8.43,
+   "bn": 1.1,
+   "f": 7.5,
    "p": 9.0,
    "bs": 8.5,
    "r": 9.0,
    "cf": 2,
    "ir": 0,
-   "sp": 0.15,
+   "sp": 0.27,
    "lw": "London Olympics Opening Ceremony \u2014 Rick Smith was musical director for Danny Boyle's ceremony, and 'Caliban's Dream' played as the cauldron was lit.",
    "ln": "27 July 2012"
   },
-  "Talks in the Tent: John Cooper Clarke": {
-   "c": 10.17,
-   "b": 8.17,
-   "bn": 2.0,
-   "p": 8.5,
-   "bs": 7.0,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "sp": 0.65,
-   "lw": "Opened for the Sex Pistols and Buzzcocks at the height of punk \u2014 including 45 minutes holding a 2,000-strong Buzzcocks crowd at Leeds University Refectory. He was also in the room for the Pistols' Lesser Free Trade Hall gig in 1976.",
-   "ln": "18 March 1978"
-  },
   "Mogwai": {
-   "c": 10.17,
-   "b": 8.67,
-   "bn": 1.5,
+   "c": 9.3,
+   "b": 8.55,
+   "bn": 0.75,
+   "f": 8.5,
    "p": 8.5,
    "bs": 9.0,
    "r": 8.5,
    "cf": 2,
    "ir": 0,
-   "sp": 0.15,
+   "sp": 0.12,
    "lw": "No single canonical night \u2014 instead a documented reputation as one of the loudest live bands on earth, built on 'Like Herod' and 'Mogwai Fear Satan'. Braithwaite openly tells audiences to wear earplugs.",
    "ln": "ongoing since the late 1990s"
   },
-  "Kerri Chandler": {
-   "c": 9.83,
-   "b": 8.33,
-   "bn": 1.5,
-   "p": 8.5,
-   "bs": 8.5,
-   "r": 8.0,
-   "cf": 1,
-   "ir": 0,
-   "sp": 0.2,
-   "lw": "His reel-to-reel shows \u2014 mixing live off four tape machines, a nod to watching Frankie Knuckles work \u2014 most visibly at the Roundhouse in London.",
-   "ln": "2022"
-  },
-  "W.I.T.C.H.": {
-   "c": 9.67,
-   "b": 8.17,
-   "bn": 1.5,
-   "p": 8.5,
-   "bs": 7.5,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 0.3,
-   "lw": "Pioneered Zamrock in 1970s Zambia, then reunited and returned to touring after roughly four decades away.",
-   "ln": "1970s, reunited 2010s"
-  },
-  "Barrington Levy": {
-   "c": 9.33,
-   "b": 7.33,
-   "bn": 2.0,
-   "p": 8.5,
-   "bs": 8.0,
-   "r": 5.5,
-   "cf": 1,
-   "ir": 0,
-   "sp": 1.05,
-   "lw": "Reggae Sunsplash, Jamaica \u2014 the performances that made his name and cemented his standing in reggae. He went on playing Sunsplash through to 1995.",
-   "ln": "1980 and 1981"
-  },
   "Ezra Collective": {
-   "c": 9.27,
-   "b": 7.67,
-   "bn": 1.6,
+   "c": 9.2,
+   "b": 8.4,
+   "bn": 0.8,
+   "f": 8.5,
    "p": 7.5,
    "bs": 6.0,
    "r": 9.5,
    "cf": 2,
    "ir": 0,
-   "sp": 1.24,
+   "sp": 1.03,
    "lw": "First jazz act ever to win the Mercury Prize, for 'Where I'm Meant To Be', at the Eventim Apollo. An award rather than a gig, but it changed their standing.",
    "ln": "7 September 2023"
   },
-  "The Avalanches (DJ Set)": {
-   "c": 8.37,
-   "b": 7.17,
-   "bn": 1.2,
-   "p": 9.5,
-   "bs": 6.0,
-   "r": 6.0,
+  "Talks in the Tent: John Cooper Clarke": {
+   "c": 8.65,
+   "b": 7.65,
+   "bn": 1.0,
+   "f": 6.0,
+   "p": 8.5,
+   "bs": 7.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 0.34,
+   "lw": "Opened for the Sex Pistols and Buzzcocks at the height of punk \u2014 including 45 minutes holding a 2,000-strong Buzzcocks crowd at Leeds University Refectory. He was also in the room for the Pistols' Lesser Free Trade Hall gig in 1976.",
+   "ln": "18 March 1978"
+  },
+  "W.I.T.C.H.": {
+   "c": 8.62,
+   "b": 7.87,
+   "bn": 0.75,
+   "f": 7.0,
+   "p": 8.5,
+   "bs": 7.5,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 0.22,
+   "lw": "Pioneered Zamrock in 1970s Zambia, then reunited and returned to touring after roughly four decades away.",
+   "ln": "1970s, reunited 2010s"
+  },
+  "Floating Points (Live)": {
+   "c": 8.55,
+   "b": 8.55,
+   "bn": 0.0,
+   "f": 8.5,
+   "p": 8.0,
+   "bs": 6.5,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 0.8,
+   "lw": "",
+   "ln": ""
+  },
+  "Anna von Hausswolff": {
+   "c": 8.45,
+   "b": 8.45,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 7.5,
+   "bs": 6.5,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 0.92,
+   "lw": "",
+   "ln": ""
+  },
+  "Self Esteem": {
+   "c": 8.35,
+   "b": 8.35,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 7.5,
+   "bs": 5.5,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.18,
+   "lw": "",
+   "ln": ""
+  },
+  "Maruja": {
+   "c": 8.2,
+   "b": 8.2,
+   "bn": 0.0,
+   "f": 9.5,
+   "p": 6.0,
+   "bs": 3.5,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 2.2,
+   "lw": "",
+   "ln": ""
+  },
+  "Hot 8 Brass Band": {
+   "c": 8.12,
+   "b": 7.48,
+   "bn": 0.65,
+   "f": 8.0,
+   "p": 7.0,
+   "bs": 6.5,
+   "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.88,
-   "lw": "'Since I Left You' is one of the most celebrated sample records ever made, though no single legendary live night stands out \u2014 they toured it rarely.",
-   "ln": "2000"
+   "sp": 0.47,
+   "lw": "After Hurricane Katrina scattered the band, they regrouped and toured the US to support displaced New Orleanians. Featured in Spike Lee's 'When the Levees Broke'.",
+   "ln": "2005\u201306"
+  },
+  "Maribou State (Live)": {
+   "c": 8.08,
+   "b": 8.08,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 7.0,
+   "bs": 5.5,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.18,
+   "lw": "",
+   "ln": ""
+  },
+  "Sprints": {
+   "c": 8.07,
+   "b": 8.07,
+   "bn": 0.0,
+   "f": 9.5,
+   "p": 6.0,
+   "bs": 4.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 1,
+   "sp": 1.98,
+   "lw": "",
+   "ln": ""
+  },
+  "Kerri Chandler": {
+   "c": 8.03,
+   "b": 7.28,
+   "bn": 0.75,
+   "f": 5.5,
+   "p": 8.5,
+   "bs": 8.5,
+   "r": 8.0,
+   "cf": 1,
+   "ir": 0,
+   "sp": 0.84,
+   "lw": "His reel-to-reel shows \u2014 mixing live off four tape machines, a nod to watching Frankie Knuckles work \u2014 most visibly at the Roundhouse in London.",
+   "ln": "2022"
+  },
+  "Greentea Peng": {
+   "c": 7.92,
+   "b": 7.92,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 6.5,
+   "bs": 5.0,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.41,
+   "lw": "",
+   "ln": ""
+  },
+  "Moonchild Sanelly": {
+   "c": 7.92,
+   "b": 7.92,
+   "bn": 0.0,
+   "f": 8.5,
+   "p": 6.5,
+   "bs": 5.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.38,
+   "lw": "",
+   "ln": ""
+  },
+  "Gilla Band": {
+   "c": 7.9,
+   "b": 7.9,
+   "bn": 0.0,
+   "f": 6.5,
+   "p": 8.0,
+   "bs": 7.0,
+   "r": 9.5,
+   "cf": 2,
+   "ir": 1,
+   "sp": 0.37,
+   "lw": "",
+   "ln": ""
+  },
+  "THUMPER": {
+   "c": 7.8,
+   "b": 7.8,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 5.5,
+   "bs": 4.0,
+   "r": 9.0,
+   "cf": 2,
+   "ir": 1,
+   "sp": 1.95,
+   "lw": "",
+   "ln": ""
+  },
+  "Dry Cleaning": {
+   "c": 7.77,
+   "b": 7.77,
+   "bn": 0.0,
+   "f": 8.5,
+   "p": 7.5,
+   "bs": 5.0,
+   "r": 8.0,
+   "cf": 1,
+   "ir": 0,
+   "sp": 0.97,
+   "lw": "",
+   "ln": ""
+  },
+  "Gurriers": {
+   "c": 7.72,
+   "b": 7.72,
+   "bn": 0.0,
+   "f": 9.0,
+   "p": 6.5,
+   "bs": 3.0,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 1,
+   "sp": 1.93,
+   "lw": "",
+   "ln": ""
+  },
+  "Soichi Terada (Live)": {
+   "c": 7.5,
+   "b": 7.5,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 8.0,
+   "bs": 6.5,
+   "r": 9.0,
+   "cf": 1,
+   "ir": 0,
+   "sp": 0.25,
+   "lw": "",
+   "ln": ""
+  },
+  "Muireann Bradley": {
+   "c": 7.32,
+   "b": 7.32,
+   "bn": 0.0,
+   "f": 8.5,
+   "p": 6.5,
+   "bs": 2.5,
+   "r": 8.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.86,
+   "lw": "",
+   "ln": ""
   },
   "Floorplan": {
-   "c": 8.37,
-   "b": 7.17,
-   "bn": 1.2,
+   "c": 7.3,
+   "b": 6.7,
+   "bn": 0.6,
+   "f": 5.5,
    "p": 7.5,
    "bs": 6.5,
    "r": 7.5,
@@ -137,90 +329,97 @@
    "lw": "Robert Hood is a founder of Underground Resistance and one of the architects of minimal Detroit techno; Floorplan is his gospel-house project.",
    "ln": "UR from 1989"
   },
-  "Hot 8 Brass Band": {
-   "c": 8.3,
-   "b": 7.0,
-   "bn": 1.3,
-   "p": 7.0,
-   "bs": 6.5,
+  "Mall Grab": {
+   "c": 7.12,
+   "b": 7.12,
+   "bn": 0.0,
+   "f": 7.0,
+   "p": 6.0,
+   "bs": 5.0,
+   "r": 8.5,
+   "cf": 2,
+   "ir": 0,
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
+  },
+  "Alabaster DePlume": {
+   "c": 7.1,
+   "b": 7.1,
+   "bn": 0.0,
+   "f": 7.5,
+   "p": 6.5,
+   "bs": 5.5,
    "r": 7.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.35,
-   "lw": "After Hurricane Katrina scattered the band, they regrouped and toured the US to support displaced New Orleanians. Featured in Spike Lee's 'When the Levees Broke'.",
-   "ln": "2005\u201306"
-  },
-  "Altern-8": {
-   "c": 8.3,
-   "b": 6.5,
-   "bn": 1.8,
-   "p": 7.0,
-   "bs": 5.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.45,
-   "lw": "The Activ-8 rave \u2014 performed at 2am from the back of an articulated lorry in a club car park, in chemical warfare suits. Also the Shelley's car park set.",
-   "ln": "1991"
-  },
-  "Gilla Band": {
-   "c": 8.17,
-   "b": 8.17,
-   "bn": 0.0,
-   "p": 8.0,
-   "bs": 7.0,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 1,
-   "sp": 0.91,
-   "lw": "",
-   "ln": ""
-  },
-  "Floating Points (Live)": {
-   "c": 8.0,
-   "b": 8.0,
-   "bn": 0.0,
-   "p": 8.0,
-   "bs": 6.5,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 1.05,
-   "lw": "",
-   "ln": ""
-  },
-  "Soichi Terada (Live)": {
-   "c": 7.83,
-   "b": 7.83,
-   "bn": 0.0,
-   "p": 8.0,
-   "bs": 6.5,
-   "r": 9.0,
-   "cf": 1,
-   "ir": 0,
-   "sp": 0.85,
-   "lw": "",
-   "ln": ""
-  },
-  "Anna von Hausswolff": {
-   "c": 7.67,
-   "b": 7.67,
-   "bn": 0.0,
-   "p": 7.5,
-   "bs": 6.5,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "sp": 0.9,
+   "sp": 0.7,
    "lw": "",
    "ln": ""
   },
   "Hot Chip (DJ Set)": {
-   "c": 7.67,
-   "b": 7.67,
+   "c": 7.07,
+   "b": 7.07,
    "bn": 0.0,
+   "f": 6.0,
    "p": 8.0,
    "bs": 7.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.47,
+   "lw": "",
+   "ln": ""
+  },
+  "Kate Nash": {
+   "c": 6.97,
+   "b": 6.97,
+   "bn": 0.0,
+   "f": 7.5,
+   "p": 7.0,
+   "bs": 5.0,
+   "r": 7.0,
+   "cf": 1,
+   "ir": 0,
+   "sp": 0.63,
+   "lw": "",
+   "ln": ""
+  },
+  "Disclosure (DJ)": {
+   "c": 6.82,
+   "b": 6.82,
+   "bn": 0.0,
+   "f": 7.0,
+   "p": 7.5,
+   "bs": 6.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.21,
+   "lw": "",
+   "ln": ""
+  },
+  "The Avalanches (DJ Set)": {
+   "c": 6.78,
+   "b": 6.18,
+   "bn": 0.6,
+   "f": 4.5,
+   "p": 9.5,
+   "bs": 6.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.1,
+   "lw": "'Since I Left You' is one of the most celebrated sample records ever made, though no single legendary live night stands out \u2014 they toured it rarely.",
+   "ln": "2000"
+  },
+  "Joy Orbison": {
+   "c": 6.78,
+   "b": 6.78,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 7.0,
+   "bs": 6.5,
    "r": 7.5,
    "cf": 0,
    "ir": 0,
@@ -228,1545 +427,516 @@
    "lw": "",
    "ln": ""
   },
-  "Self Esteem": {
-   "c": 7.33,
-   "b": 7.33,
+  "Friendly Fires": {
+   "c": 6.72,
+   "b": 6.72,
    "bn": 0.0,
+   "f": 6.0,
    "p": 7.5,
-   "bs": 5.5,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 0,
-   "sp": 1.21,
-   "lw": "",
-   "ln": ""
-  },
-  "Damien Dempsey": {
-   "c": 7.0,
-   "b": 7.0,
-   "bn": 0.0,
-   "p": 7.5,
-   "bs": 6.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.5,
-   "lw": "",
-   "ln": ""
-  },
-  "Maribou State (Live)": {
-   "c": 7.0,
-   "b": 7.0,
-   "bn": 0.0,
-   "p": 7.0,
-   "bs": 5.5,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 1.05,
-   "lw": "",
-   "ln": ""
-  },
-  "Joy Orbison": {
-   "c": 7.0,
-   "b": 7.0,
-   "bn": 0.0,
-   "p": 7.0,
-   "bs": 6.5,
+   "bs": 5.0,
    "r": 7.5,
-   "cf": 0,
+   "cf": 1,
    "ir": 0,
    "sp": 0.35,
    "lw": "",
    "ln": ""
   },
-  "Dry Cleaning": {
-   "c": 6.83,
-   "b": 6.83,
+  "Say She She": {
+   "c": 6.67,
+   "b": 6.67,
    "bn": 0.0,
-   "p": 7.5,
-   "bs": 5.0,
-   "r": 8.0,
-   "cf": 1,
+   "f": 7.5,
+   "p": 6.0,
+   "bs": 4.0,
+   "r": 7.0,
+   "cf": 0,
    "ir": 0,
-   "sp": 0.95,
+   "sp": 1.07,
    "lw": "",
    "ln": ""
   },
-  "Moonchild Sanelly": {
-   "c": 6.83,
-   "b": 6.83,
+  "DJ Nobu": {
+   "c": 6.67,
+   "b": 6.67,
    "bn": 0.0,
+   "f": 6.0,
+   "p": 6.5,
+   "bs": 6.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.1,
+   "lw": "",
+   "ln": ""
+  },
+  "King Kong Company": {
+   "c": 6.62,
+   "b": 6.62,
+   "bn": 0.0,
+   "f": 7.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.18,
+   "lw": "",
+   "ln": ""
+  },
+  "Jacob Alon": {
+   "c": 6.55,
+   "b": 6.55,
+   "bn": 0.0,
+   "f": 8.5,
+   "p": 5.5,
+   "bs": 2.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.95,
+   "lw": "",
+   "ln": ""
+  },
+  "SOAK": {
+   "c": 6.52,
+   "b": 6.52,
+   "bn": 0.0,
+   "f": 7.0,
    "p": 6.5,
    "bs": 5.0,
-   "r": 9.0,
-   "cf": 2,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.83,
+   "lw": "",
+   "ln": ""
+  },
+  "Barrington Levy": {
+   "c": 6.47,
+   "b": 5.47,
+   "bn": 1.0,
+   "f": 3.0,
+   "p": 8.5,
+   "bs": 8.0,
+   "r": 5.5,
+   "cf": 1,
+   "ir": 0,
+   "sp": 1.85,
+   "lw": "Reggae Sunsplash, Jamaica \u2014 the performances that made his name and cemented his standing in reggae. He went on playing Sunsplash through to 1995.",
+   "ln": "1980 and 1981"
+  },
+  "Getdown Services": {
+   "c": 6.47,
+   "b": 6.47,
+   "bn": 0.0,
+   "f": 8.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
    "ir": 0,
    "sp": 1.45,
    "lw": "",
    "ln": ""
   },
-  "DJ Nobu": {
-   "c": 6.83,
-   "b": 6.83,
+  "Call Super": {
+   "c": 6.45,
+   "b": 6.45,
    "bn": 0.0,
+   "f": 6.0,
    "p": 6.5,
-   "bs": 6.5,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.4,
-   "lw": "",
-   "ln": ""
-  },
-  "Disclosure (DJ)": {
-   "c": 6.67,
-   "b": 6.67,
-   "bn": 0.0,
-   "p": 7.5,
    "bs": 6.0,
-   "r": 6.5,
+   "r": 7.0,
    "cf": 0,
    "ir": 0,
-   "sp": 0.25,
+   "sp": 0.1,
    "lw": "",
    "ln": ""
   },
-  "Friendly Fires": {
-   "c": 6.67,
-   "b": 6.67,
+  "Damien Dempsey": {
+   "c": 6.35,
+   "b": 6.35,
    "bn": 0.0,
+   "f": 5.0,
    "p": 7.5,
-   "bs": 5.0,
-   "r": 7.5,
-   "cf": 1,
-   "ir": 0,
-   "sp": 0.74,
+   "bs": 6.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.47,
    "lw": "",
    "ln": ""
   },
-  "Greentea Peng": {
-   "c": 6.67,
-   "b": 6.67,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 5.0,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 1.25,
-   "lw": "",
-   "ln": ""
-  },
-  "Alabaster DePlume": {
-   "c": 6.5,
-   "b": 6.5,
-   "bn": 0.0,
-   "p": 6.5,
+  "Altern-8": {
+   "c": 6.35,
+   "b": 5.45,
+   "bn": 0.9,
+   "f": 3.0,
+   "p": 7.0,
    "bs": 5.5,
-   "r": 7.5,
+   "r": 7.0,
    "cf": 0,
    "ir": 0,
    "sp": 0.7,
-   "lw": "",
-   "ln": ""
+   "lw": "The Activ-8 rave \u2014 performed at 2am from the back of an articulated lorry in a club car park, in chemical warfare suits. Also the Shelley's car park set.",
+   "ln": "1991"
   },
-  "Mall Grab": {
-   "c": 6.5,
-   "b": 6.5,
+  "PVA": {
+   "c": 6.3,
+   "b": 6.3,
    "bn": 0.0,
-   "p": 6.0,
-   "bs": 5.0,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 1.31,
-   "lw": "",
-   "ln": ""
-  },
-  "Ms Dynamite": {
-   "c": 6.5,
-   "b": 6.5,
-   "bn": 0.0,
-   "p": 7.5,
-   "bs": 5.5,
+   "f": 7.5,
+   "p": 5.5,
+   "bs": 3.0,
    "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 0.35,
-   "lw": "",
-   "ln": ""
-  },
-  "Call Super": {
-   "c": 6.5,
-   "b": 6.5,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 6.0,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.35,
-   "lw": "",
-   "ln": ""
-  },
-  "Colleen Cosmo Murphy": {
-   "c": 6.5,
-   "b": 6.5,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 6.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.29,
-   "lw": "",
-   "ln": ""
-  },
-  "Prosumer": {
-   "c": 6.5,
-   "b": 6.5,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 6.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.29,
-   "lw": "",
-   "ln": ""
-  },
-  "Sprints": {
-   "c": 6.33,
-   "b": 6.33,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 4.0,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 1,
-   "sp": 1.8,
-   "lw": "",
-   "ln": ""
-  },
-  "Kate Nash": {
-   "c": 6.33,
-   "b": 6.33,
-   "bn": 0.0,
-   "p": 7.0,
-   "bs": 5.0,
-   "r": 7.0,
-   "cf": 1,
-   "ir": 0,
-   "sp": 0.6,
+   "sp": 1.33,
    "lw": "",
    "ln": ""
   },
   "David Kitt": {
-   "c": 6.33,
-   "b": 6.33,
+   "c": 6.28,
+   "b": 6.28,
    "bn": 0.0,
+   "f": 6.0,
    "p": 6.5,
    "bs": 6.0,
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "sp": 0.5,
-   "lw": "",
-   "ln": ""
-  },
-  "Maruja": {
-   "c": 6.33,
-   "b": 6.33,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 3.5,
-   "r": 9.5,
-   "cf": 2,
-   "ir": 0,
-   "sp": 2.15,
-   "lw": "",
-   "ln": ""
-  },
-  "Sunil Sharpe x Kev Freeney Presents Spineless": {
-   "c": 6.17,
-   "b": 6.17,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 6.0,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.62,
-   "lw": "",
-   "ln": ""
-  },
-  "THUMPER": {
-   "c": 6.17,
-   "b": 6.17,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 4.0,
-   "r": 9.0,
-   "cf": 2,
-   "ir": 1,
-   "sp": 1.85,
-   "lw": "",
-   "ln": ""
-  },
-  "Gurriers": {
-   "c": 6.0,
-   "b": 6.0,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 3.0,
-   "r": 8.5,
-   "cf": 2,
-   "ir": 1,
-   "sp": 1.86,
-   "lw": "",
-   "ln": ""
-  },
-  "Chet Faker": {
-   "c": 6.0,
-   "b": 6.0,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 5.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.45,
-   "lw": "",
-   "ln": ""
-  },
-  "SOAK": {
-   "c": 6.0,
-   "b": 6.0,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 5.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.7,
-   "lw": "",
-   "ln": ""
-  },
-  "King Kong Company": {
-   "c": 5.83,
-   "b": 5.83,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 4.5,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Job Jobse": {
-   "c": 5.83,
-   "b": 5.83,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 5.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.66,
-   "lw": "",
-   "ln": ""
-  },
-  "Eats Everything": {
-   "c": 5.83,
-   "b": 5.83,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 5.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.4,
-   "lw": "",
-   "ln": ""
-  },
-  "Muireann Bradley": {
-   "c": 5.67,
-   "b": 5.67,
-   "bn": 0.0,
-   "p": 6.5,
-   "bs": 2.5,
-   "r": 8.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.8,
-   "lw": "",
-   "ln": ""
-  },
-  "Say She She": {
-   "c": 5.67,
-   "b": 5.67,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 4.0,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.0,
-   "lw": "",
-   "ln": ""
-  },
-  "Weval (Live)": {
-   "c": 5.67,
-   "b": 5.67,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.65,
-   "lw": "",
-   "ln": ""
-  },
-  "Or:la": {
-   "c": 5.67,
-   "b": 5.67,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 4.5,
-   "r": 7.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.91,
-   "lw": "",
-   "ln": ""
-  },
-  "New Jackson": {
-   "c": 5.67,
-   "b": 5.67,
-   "bn": 0.0,
-   "p": 6.0,
-   "bs": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.8,
-   "lw": "",
-   "ln": ""
-  },
-  "O'Flynn": {
-   "c": 5.5,
-   "b": 5.5,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.7,
-   "lw": "",
-   "ln": ""
-  },
-  "Jyoty": {
-   "c": 5.5,
-   "b": 5.5,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 4.0,
-   "r": 7.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.3,
-   "lw": "",
-   "ln": ""
-  },
-  "Dan Shake": {
-   "c": 5.5,
-   "b": 5.5,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.7,
-   "lw": "",
-   "ln": ""
-  },
-  "Jamz Supernova": {
-   "c": 5.17,
-   "b": 5.17,
-   "bn": 0.0,
-   "p": 4.5,
-   "bs": 4.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 0.8,
-   "lw": "",
-   "ln": ""
-  },
-  "Moving Still": {
-   "c": 5.17,
-   "b": 5.17,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 4.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.91,
-   "lw": "",
-   "ln": ""
-  },
-  "PVA": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "Getdown Services": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "The Dare (DJ Set)": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "Cromby": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 4.5,
-   "bs": 4.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.95,
-   "lw": "",
-   "ln": ""
-  },
-  "Anish Kumar": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 3.5,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.05,
-   "lw": "",
-   "ln": ""
-  },
-  "Lullahush": {
-   "c": 5.0,
-   "b": 5.0,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "Soda Blonde": {
-   "c": 4.83,
-   "b": 4.83,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.9,
-   "lw": "",
-   "ln": ""
-  },
-  "Kean Kavanagh": {
-   "c": 4.83,
-   "b": 4.83,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.0,
-   "lw": "",
-   "ln": ""
-  },
-  "Playback Presents: Stop Making Sense": {
-   "c": 4.83,
-   "b": 4.83,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.21,
-   "lw": "",
-   "ln": ""
-  },
-  "Bicurious": {
-   "c": 4.83,
-   "b": 4.83,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.0,
-   "lw": "",
-   "ln": ""
-  },
-  "Jacob Alon": {
-   "c": 4.67,
-   "b": 4.67,
-   "bn": 0.0,
-   "p": 5.5,
-   "bs": 2.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.46,
-   "lw": "",
-   "ln": ""
-  },
-  "Bazza Ranks": {
-   "c": 4.67,
-   "b": 4.67,
-   "bn": 0.0,
-   "p": 4.5,
-   "bs": 3.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 0.91,
-   "lw": "",
-   "ln": ""
-  },
-  "Trinity Orchestra": {
-   "c": 4.5,
-   "b": 4.5,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.5,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.31,
-   "lw": "",
-   "ln": ""
-  },
-  "BIIRD": {
-   "c": 4.5,
-   "b": 4.5,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 2.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "Br\u00f2geal": {
-   "c": 4.5,
-   "b": 4.5,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 2.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "KhakiKid": {
-   "c": 4.5,
-   "b": 4.5,
-   "bn": 0.0,
-   "p": 5.0,
-   "bs": 2.5,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 1,
-   "sp": 1.16,
-   "lw": "",
-   "ln": ""
-  },
-  "Sexy Tadhg": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Rose Betts": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "David Keenan": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
+   "sp": 0.38,
    "lw": "",
    "ln": ""
   },
   "Cardinals": {
-   "c": 4.33,
-   "b": 4.33,
+   "c": 6.27,
+   "b": 6.27,
    "bn": 0.0,
+   "f": 8.5,
    "p": 5.0,
    "bs": 2.0,
    "r": 6.0,
    "cf": 0,
    "ir": 1,
-   "sp": 1.3,
+   "sp": 1.97,
    "lw": "",
    "ln": ""
   },
-  "Swimming Paul": {
-   "c": 4.33,
-   "b": 4.33,
+  "Sunil Sharpe x Kev Freeney Presents Spineless": {
+   "c": 6.25,
+   "b": 6.25,
    "bn": 0.0,
-   "p": 4.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 6.0,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.58,
+   "lw": "",
+   "ln": ""
+  },
+  "Colleen Cosmo Murphy": {
+   "c": 6.23,
+   "b": 6.23,
+   "bn": 0.0,
+   "f": 5.5,
+   "p": 6.0,
+   "bs": 6.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.13,
+   "lw": "",
+   "ln": ""
+  },
+  "Prosumer": {
+   "c": 6.23,
+   "b": 6.23,
+   "bn": 0.0,
+   "f": 5.5,
+   "p": 6.0,
+   "bs": 6.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.13,
+   "lw": "",
+   "ln": ""
+  },
+  "Chet Faker": {
+   "c": 6.17,
+   "b": 6.17,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 6.5,
+   "bs": 5.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.26,
+   "lw": "",
+   "ln": ""
+  },
+  "Jyoty": {
+   "c": 6.12,
+   "b": 6.12,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 4.0,
+   "r": 7.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
+  },
+  "Or:la": {
+   "c": 6.1,
+   "b": 6.1,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.88,
+   "lw": "",
+   "ln": ""
+  },
+  "Job Jobse": {
+   "c": 6.1,
+   "b": 6.1,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 5.5,
+   "r": 7.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.53,
+   "lw": "",
+   "ln": ""
+  },
+  "Weval (Live)": {
+   "c": 6.03,
+   "b": 6.03,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 6.0,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.48,
+   "lw": "",
+   "ln": ""
+  },
+  "New Jackson": {
+   "c": 6.03,
+   "b": 6.03,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 6.0,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 0.76,
+   "lw": "",
+   "ln": ""
+  },
+  "Eats Everything": {
+   "c": 6.02,
+   "b": 6.02,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 5.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.33,
+   "lw": "",
+   "ln": ""
+  },
+  "Bicurious": {
+   "c": 5.95,
+   "b": 5.95,
+   "bn": 0.0,
+   "f": 7.0,
+   "p": 5.5,
    "bs": 3.0,
    "r": 6.0,
    "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
+   "ir": 1,
+   "sp": 1.33,
    "lw": "",
    "ln": ""
   },
-  "Hank": {
-   "c": 4.33,
-   "b": 4.33,
+  "O'Flynn": {
+   "c": 5.92,
+   "b": 5.92,
    "bn": 0.0,
-   "p": 4.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.58,
+   "lw": "",
+   "ln": ""
+  },
+  "Dan Shake": {
+   "c": 5.92,
+   "b": 5.92,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.58,
+   "lw": "",
+   "ln": ""
+  },
+  "Moving Still": {
+   "c": 5.78,
+   "b": 5.78,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 4.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.0,
+   "lw": "",
+   "ln": ""
+  },
+  "The Dare (DJ Set)": {
+   "c": 5.77,
+   "b": 5.77,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.96,
+   "lw": "",
+   "ln": ""
+  },
+  "Lullahush": {
+   "c": 5.77,
+   "b": 5.77,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.13,
+   "lw": "",
+   "ln": ""
+  },
+  "Jamz Supernova": {
+   "c": 5.73,
+   "b": 5.73,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.5,
+   "bs": 4.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.78,
+   "lw": "",
+   "ln": ""
+  },
+  "Anish Kumar": {
+   "c": 5.72,
+   "b": 5.72,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 3.5,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.92,
+   "lw": "",
+   "ln": ""
+  },
+  "Cromby": {
+   "c": 5.68,
+   "b": 5.68,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.5,
+   "bs": 4.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.07,
+   "lw": "",
+   "ln": ""
+  },
+  "Kean Kavanagh": {
+   "c": 5.6,
+   "b": 5.6,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.5,
    "bs": 3.0,
    "r": 6.0,
    "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
+   "ir": 1,
+   "sp": 1.08,
    "lw": "",
    "ln": ""
   },
-  "The New Eves": {
-   "c": 4.33,
-   "b": 4.33,
+  "Soda Blonde": {
+   "c": 5.55,
+   "b": 5.55,
    "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 3.5,
    "r": 6.0,
    "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
+   "ir": 1,
+   "sp": 1.05,
    "lw": "",
    "ln": ""
   },
-  "Black Nylon": {
-   "c": 4.33,
-   "b": 4.33,
+  "Ms Dynamite": {
+   "c": 5.55,
+   "b": 5.55,
    "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
+   "f": 3.5,
+   "p": 7.5,
+   "bs": 5.5,
+   "r": 6.5,
    "cf": 0,
    "ir": 0,
-   "sp": 1.1,
+   "sp": 0.7,
    "lw": "",
    "ln": ""
   },
-  "The Itch": {
-   "c": 4.33,
-   "b": 4.33,
+  "BIIRD": {
+   "c": 5.45,
+   "b": 5.45,
    "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Sassy 009": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Takuya Nakamura (Live)": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Gently Tender": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "R\u00f3is": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Sell Everything": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Kelly Anne Byrne 'Prince Tribute'": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "\u00c6 MAK": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Maykay": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Glasshouse presents: Bjork": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Nialler9": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Burt Bacharach by Paddy Hanna": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Grooveline": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Marcus O'Laoire": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "MIKE": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Rory Sweeney (Live)": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "One Leg One Eye": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Monjola": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Freak Slug": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Mango": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Anz b2b Jio": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Surusinghe": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Peach": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Spray": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "EMA": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Gabrielle Kwarteng": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Sloucho": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Seamus Fogarty": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Tr\u00e1 Ph\u00e1id\u00edn": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Felispeaks": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Yankari Afrobeat Collective": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "The Calvinists": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Qbanaa": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Tosh\u00edn": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Elikya": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Governess": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "The Awning": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Sun Studio Collective": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Tony Cantwell": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Dublin Disco All Dayer DJ's": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Franz Scala": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Gaff E": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Daniel Wang": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Huartan": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "megaTRAD": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Trad Folkin'Raves feat Annie Craic": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Acid Granny Presents Schindler's Fist": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Ria Rua": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Bedlam": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "LOST at The Last City": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "I Draw Slow": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Winemoms": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Stevie G": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "DJ Deece": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Organ Freeman (Live Jazz)": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Shrem's Madonnathon": {
-   "c": 4.33,
-   "b": 4.33,
-   "bn": 0.0,
-   "p": 4.0,
-   "bs": 3.0,
-   "r": 6.0,
-   "cf": 0,
-   "ir": 0,
-   "sp": 1.1,
-   "lw": "",
-   "ln": ""
-  },
-  "Sam Alfred": {
-   "c": 4.17,
-   "b": 4.17,
-   "bn": 0.0,
-   "p": 4.0,
+   "f": 6.0,
+   "p": 5.0,
    "bs": 2.5,
    "r": 6.0,
    "cf": 0,
@@ -1775,26 +945,994 @@
    "lw": "",
    "ln": ""
   },
-  "Sing Along Social": {
-   "c": 3.83,
-   "b": 3.83,
+  "Br\u00f2geal": {
+   "c": 5.45,
+   "b": 5.45,
    "bn": 0.0,
-   "p": 3.0,
-   "bs": 2.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 2.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.25,
+   "lw": "",
+   "ln": ""
+  },
+  "KhakiKid": {
+   "c": 5.45,
+   "b": 5.45,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 5.0,
+   "bs": 2.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.25,
+   "lw": "",
+   "ln": ""
+  },
+  "Bazza Ranks": {
+   "c": 5.45,
+   "b": 5.45,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.5,
+   "bs": 3.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.12,
+   "lw": "",
+   "ln": ""
+  },
+  "Sexy Tadhg": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Rose Betts": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "David Keenan": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Swimming Paul": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Hank": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "The New Eves": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Black Nylon": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "The Itch": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Sassy 009": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Takuya Nakamura (Live)": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Gently Tender": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "R\u00f3is": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Sell Everything": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Kelly Anne Byrne 'Prince Tribute'": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "\u00c6 MAK": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Maykay": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Glasshouse presents: Bjork": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Nialler9": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Burt Bacharach by Paddy Hanna": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Grooveline": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Marcus O'Laoire": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "MIKE": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Rory Sweeney (Live)": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "One Leg One Eye": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Monjola": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Freak Slug": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Mango": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Anz b2b Jio": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Surusinghe": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Peach": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Spray": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "EMA": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Gabrielle Kwarteng": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Sloucho": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Seamus Fogarty": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Tr\u00e1 Ph\u00e1id\u00edn": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Felispeaks": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Yankari Afrobeat Collective": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "The Calvinists": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Qbanaa": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Tosh\u00edn": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Elikya": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Governess": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "The Awning": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Sun Studio Collective": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Tony Cantwell": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Dublin Disco All Dayer DJ's": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Franz Scala": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Gaff E": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Daniel Wang": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Huartan": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "megaTRAD": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Trad Folkin'Raves feat Annie Craic": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Acid Granny Presents Schindler's Fist": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Ria Rua": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Bedlam": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "LOST at The Last City": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "I Draw Slow": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Winemoms": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Stevie G": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "DJ Deece": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Organ Freeman (Live Jazz)": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Shrem's Madonnathon": {
+   "c": 5.3,
+   "b": 5.3,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 3.0,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 0,
+   "sp": 1.15,
+   "lw": "",
+   "ln": ""
+  },
+  "Sam Alfred": {
+   "c": 5.25,
+   "b": 5.25,
+   "bn": 0.0,
+   "f": 6.0,
+   "p": 4.0,
+   "bs": 2.5,
+   "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.4,
+   "lw": "",
+   "ln": ""
+  },
+  "Trinity Orchestra": {
+   "c": 5.12,
+   "b": 5.12,
+   "bn": 0.0,
+   "f": 5.0,
+   "p": 4.0,
+   "bs": 3.0,
    "r": 6.5,
    "cf": 0,
    "ir": 1,
-   "sp": 1.71,
+   "sp": 1.11,
    "lw": "",
    "ln": ""
   },
   "The Wild Geeze - Comedy Cabaret": {
-   "c": 3.83,
-   "b": 3.83,
+   "c": 5.1,
+   "b": 5.1,
    "bn": 0.0,
+   "f": 6.0,
    "p": 3.5,
    "bs": 2.0,
    "r": 6.0,
+   "cf": 0,
+   "ir": 1,
+   "sp": 1.58,
+   "lw": "",
+   "ln": ""
+  },
+  "Playback Presents: Stop Making Sense": {
+   "c": 4.97,
+   "b": 4.97,
+   "bn": 0.0,
+   "f": 4.0,
+   "p": 5.0,
+   "bs": 3.0,
+   "r": 6.5,
+   "cf": 0,
+   "ir": 0,
+   "sp": 0.56,
+   "lw": "",
+   "ln": ""
+  },
+  "Sing Along Social": {
+   "c": 4.83,
+   "b": 4.83,
+   "bn": 0.0,
+   "f": 5.0,
+   "p": 3.0,
+   "bs": 2.0,
+   "r": 6.5,
    "cf": 0,
    "ir": 1,
    "sp": 1.45,
@@ -1809,12 +1947,12 @@
     "w": "PVA",
     "s": "Road To Nowhere",
     "t": "15:45 - 16:45",
-    "sc": 5.0,
+    "sc": 6.3,
     "n": "",
     "r": [
      {
       "a": "Hank",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1823,12 +1961,12 @@
     "w": "PVA",
     "s": "Road To Nowhere",
     "t": "15:45 - 16:45",
-    "sc": 5.0,
+    "sc": 6.3,
     "n": "",
     "r": [
      {
       "a": "Hank",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1837,12 +1975,12 @@
     "w": "Jacob Alon",
     "s": "Road To Nowhere",
     "t": "17:15 - 18:15",
-    "sc": 4.67,
-    "n": "close call",
+    "sc": 6.55,
+    "n": "",
     "r": [
      {
       "a": "Trinity Orchestra",
-      "sc": 4.5
+      "sc": 5.12
      }
     ]
    },
@@ -1851,20 +1989,20 @@
     "w": "Jacob Alon",
     "s": "Road To Nowhere",
     "t": "17:15 - 18:15",
-    "sc": 4.67,
-    "n": "",
+    "sc": 6.55,
+    "n": "close call",
     "r": [
      {
+      "a": "Cardinals",
+      "sc": 6.27
+     },
+     {
       "a": "Sexy Tadhg",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Rose Betts",
-      "sc": 4.33
-     },
-     {
-      "a": "Cardinals",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1873,64 +2011,64 @@
     "w": "Dry Cleaning",
     "s": "Something Kind of Wonderful",
     "t": "19:45 - 20:45",
-    "sc": 6.83,
+    "sc": 7.77,
     "n": "",
     "r": [
      {
-      "a": "Sexy Tadhg",
-      "sc": 4.33
+      "a": "Cardinals",
+      "sc": 6.27
      },
      {
-      "a": "Cardinals",
-      "sc": 4.33
+      "a": "Sexy Tadhg",
+      "sc": 5.3
      },
      {
       "a": "The New Eves",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
    {
     "h": "20:00",
-    "w": "Dry Cleaning",
-    "s": "Something Kind of Wonderful",
-    "t": "19:45 - 20:45",
-    "sc": 6.83,
-    "n": "close call",
+    "w": "Gurriers",
+    "s": "ATN Main Stage",
+    "t": "20:45 - 21:45",
+    "sc": 7.72,
+    "n": "too close to call \u2014 Irish tiebreak",
     "r": [
      {
-      "a": "Friendly Fires",
-      "sc": 6.67
+      "a": "Dry Cleaning",
+      "sc": 7.77
      },
      {
-      "a": "Gurriers",
-      "sc": 6.0
+      "a": "Friendly Fires",
+      "sc": 6.72
      },
      {
       "a": "The New Eves",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
    {
     "h": "21:00",
-    "w": "Floorplan",
-    "s": "IMMERSE: AVA x Smirnoff",
-    "t": "21:30 - 23:30",
-    "sc": 8.37,
+    "w": "Gurriers",
+    "s": "ATN Main Stage",
+    "t": "20:45 - 21:45",
+    "sc": 7.72,
     "n": "",
     "r": [
      {
-      "a": "Friendly Fires",
-      "sc": 6.67
+      "a": "Floorplan",
+      "sc": 7.3
      },
      {
-      "a": "Gurriers",
-      "sc": 6.0
+      "a": "Friendly Fires",
+      "sc": 6.72
      },
      {
       "a": "Black Nylon",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1939,20 +2077,20 @@
     "w": "Pulp",
     "s": "ATN Main Stage",
     "t": "22:45 - 00:15",
-    "sc": 11.5,
+    "sc": 10.12,
     "n": "",
     "r": [
      {
       "a": "Floorplan",
-      "sc": 8.37
+      "sc": 7.3
      },
      {
       "a": "Br\u00f2geal",
-      "sc": 4.5
+      "sc": 5.45
      },
      {
       "a": "Black Nylon",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1961,20 +2099,20 @@
     "w": "Pulp",
     "s": "ATN Main Stage",
     "t": "22:45 - 00:15",
-    "sc": 11.5,
+    "sc": 10.12,
     "n": "",
     "r": [
      {
       "a": "Floorplan",
-      "sc": 8.37
+      "sc": 7.3
      },
      {
       "a": "Anish Kumar",
-      "sc": 5.0
+      "sc": 5.72
      },
      {
       "a": "Rory Sweeney (Live)",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -1983,42 +2121,42 @@
     "w": "Pulp",
     "s": "ATN Main Stage",
     "t": "22:45 - 00:15",
-    "sc": 11.5,
+    "sc": 10.12,
     "n": "",
     "r": [
      {
       "a": "Floating Points (Live)",
-      "sc": 8.0
+      "sc": 8.55
      },
      {
       "a": "Job Jobse",
-      "sc": 5.83
+      "sc": 6.1
      },
      {
       "a": "New Jackson",
-      "sc": 5.67
+      "sc": 6.03
      }
     ]
    },
    {
     "h": "01:00",
-    "w": "Kerri Chandler",
-    "s": "The Temporary Bandstand",
-    "t": "01:30 - 03:30",
-    "sc": 9.83,
+    "w": "Floating Points (Live)",
+    "s": "Something Kind of Wonderful",
+    "t": "00:15 - 01:30",
+    "sc": 8.55,
     "n": "",
     "r": [
      {
-      "a": "Floating Points (Live)",
-      "sc": 8.0
+      "a": "Kerri Chandler",
+      "sc": 8.03
      },
      {
       "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-      "sc": 6.17
+      "sc": 6.25
      },
      {
       "a": "Job Jobse",
-      "sc": 5.83
+      "sc": 6.1
      }
     ]
    },
@@ -2027,20 +2165,20 @@
     "w": "Kerri Chandler",
     "s": "The Temporary Bandstand",
     "t": "01:30 - 03:30",
-    "sc": 9.83,
+    "sc": 8.03,
     "n": "",
     "r": [
      {
       "a": "Sunil Sharpe x Kev Freeney Presents Spineless",
-      "sc": 6.17
+      "sc": 6.25
      },
      {
       "a": "New Jackson",
-      "sc": 5.67
+      "sc": 6.03
      },
      {
       "a": "Swimming Paul",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2049,20 +2187,20 @@
     "w": "Kerri Chandler",
     "s": "The Temporary Bandstand",
     "t": "01:30 - 03:30",
-    "sc": 9.83,
+    "sc": 8.03,
     "n": "",
     "r": [
      {
       "a": "Swimming Paul",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Surusinghe",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Trad Folkin'Raves feat Annie Craic",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    }
@@ -2073,43 +2211,43 @@
     "w": "Colleen Cosmo Murphy",
     "s": "Big Romance Dome x Altos",
     "t": "12:00 - 15:00",
-    "sc": 6.5,
+    "sc": 6.23,
     "n": "",
     "r": []
    },
    {
     "h": "13:00",
-    "w": "Colleen Cosmo Murphy",
-    "s": "Big Romance Dome x Altos",
-    "t": "12:00 - 15:00",
-    "sc": 6.5,
+    "w": "Muireann Bradley",
+    "s": "Something Kind of Wonderful",
+    "t": "13:30 - 14:30",
+    "sc": 7.32,
     "n": "",
     "r": [
      {
-      "a": "Muireann Bradley",
-      "sc": 5.67
+      "a": "Colleen Cosmo Murphy",
+      "sc": 6.23
      }
     ]
    },
    {
     "h": "14:00",
-    "w": "David Kitt",
-    "s": "Road To Nowhere",
-    "t": "14:00 - 15:00",
-    "sc": 6.33,
-    "n": "too close to call \u2014 Irish tiebreak",
+    "w": "Muireann Bradley",
+    "s": "Something Kind of Wonderful",
+    "t": "13:30 - 14:30",
+    "sc": 7.32,
+    "n": "",
     "r": [
      {
-      "a": "Colleen Cosmo Murphy",
-      "sc": 6.5
+      "a": "David Kitt",
+      "sc": 6.28
      },
      {
-      "a": "Muireann Bradley",
-      "sc": 5.67
+      "a": "Colleen Cosmo Murphy",
+      "sc": 6.23
      },
      {
       "a": "The Itch",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2118,16 +2256,16 @@
     "w": "KhakiKid",
     "s": "Road To Nowhere",
     "t": "15:30 - 16:30",
-    "sc": 4.5,
+    "sc": 5.45,
     "n": "close call",
     "r": [
      {
       "a": "Sassy 009",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Sing Along Social",
-      "sc": 3.83
+      "sc": 4.83
      }
     ]
    },
@@ -2136,20 +2274,20 @@
     "w": "KhakiKid",
     "s": "Road To Nowhere",
     "t": "15:30 - 16:30",
-    "sc": 4.5,
+    "sc": 5.45,
     "n": "close call",
     "r": [
      {
       "a": "Sassy 009",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Maykay",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Sun Studio Collective",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2158,42 +2296,42 @@
     "w": "W.I.T.C.H.",
     "s": "Road To Nowhere",
     "t": "17:00 - 18:00",
-    "sc": 9.67,
+    "sc": 8.62,
     "n": "",
     "r": [
      {
       "a": "Hot 8 Brass Band",
-      "sc": 8.3
+      "sc": 8.12
      },
      {
       "a": "David Keenan",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Maykay",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
    {
     "h": "18:00",
-    "w": "Hot 8 Brass Band",
-    "s": "ATN Main Stage",
-    "t": "17:30 - 18:30",
-    "sc": 8.3,
-    "n": "",
+    "w": "Sprints",
+    "s": "Something Kind of Wonderful",
+    "t": "18:45 - 19:45",
+    "sc": 8.07,
+    "n": "too close to call \u2014 Irish tiebreak",
     "r": [
      {
-      "a": "Greentea Peng",
-      "sc": 6.67
+      "a": "Hot 8 Brass Band",
+      "sc": 8.12
      },
      {
-      "a": "Sprints",
-      "sc": 6.33
+      "a": "Greentea Peng",
+      "sc": 7.92
      },
      {
       "a": "David Keenan",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2202,20 +2340,20 @@
     "w": "Ezra Collective",
     "s": "ATN Main Stage",
     "t": "19:15 - 20:30",
-    "sc": 9.27,
+    "sc": 9.2,
     "n": "",
     "r": [
      {
-      "a": "Greentea Peng",
-      "sc": 6.67
+      "a": "Maruja",
+      "sc": 8.2
      },
      {
       "a": "Sprints",
-      "sc": 6.33
+      "sc": 8.07
      },
      {
-      "a": "Maruja",
-      "sc": 6.33
+      "a": "Greentea Peng",
+      "sc": 7.92
      }
     ]
    },
@@ -2224,42 +2362,42 @@
     "w": "Ezra Collective",
     "s": "ATN Main Stage",
     "t": "19:15 - 20:30",
-    "sc": 9.27,
+    "sc": 9.2,
     "n": "",
     "r": [
      {
       "a": "Maruja",
-      "sc": 6.33
-     },
-     {
-      "a": "Dan Shake",
-      "sc": 5.5
+      "sc": 8.2
      },
      {
       "a": "Bicurious",
-      "sc": 4.83
+      "sc": 5.95
+     },
+     {
+      "a": "Dan Shake",
+      "sc": 5.92
      }
     ]
    },
    {
     "h": "21:00",
-    "w": "Dan Shake",
-    "s": "IMMERSE: AVA x Smirnoff",
-    "t": "20:30 - 22:00",
-    "sc": 5.5,
-    "n": "",
+    "w": "Bicurious",
+    "s": "The Last City",
+    "t": "20:30 - 21:30",
+    "sc": 5.95,
+    "n": "close call",
     "r": [
      {
-      "a": "Bicurious",
-      "sc": 4.83
+      "a": "Dan Shake",
+      "sc": 5.92
      },
      {
       "a": "Nialler9",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Tr\u00e1 Ph\u00e1id\u00edn",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2268,20 +2406,20 @@
     "w": "Gilla Band",
     "s": "Road To Nowhere",
     "t": "22:00 - 23:15",
-    "sc": 8.17,
-    "n": "",
+    "sc": 7.9,
+    "n": "too close to call \u2014 Irish tiebreak",
     "r": [
      {
       "a": "Maribou State (Live)",
-      "sc": 7.0
+      "sc": 8.08
      },
      {
       "a": "THUMPER",
-      "sc": 6.17
+      "sc": 7.8
      },
      {
       "a": "Moving Still",
-      "sc": 5.17
+      "sc": 5.78
      }
     ]
    },
@@ -2290,86 +2428,86 @@
     "w": "Gilla Band",
     "s": "Road To Nowhere",
     "t": "22:00 - 23:15",
-    "sc": 8.17,
-    "n": "",
+    "sc": 7.9,
+    "n": "too close to call \u2014 Irish tiebreak",
     "r": [
      {
       "a": "Maribou State (Live)",
-      "sc": 7.0
+      "sc": 8.08
      },
      {
       "a": "THUMPER",
-      "sc": 6.17
+      "sc": 7.8
      },
      {
       "a": "Moving Still",
-      "sc": 5.17
+      "sc": 5.78
      }
     ]
    },
    {
     "h": "00:00",
-    "w": "Or:la",
-    "s": "The Circle by Jameson Music",
-    "t": "00:30 - 02:00",
-    "sc": 5.67,
-    "n": "too close to call \u2014 Irish tiebreak",
+    "w": "Say She She",
+    "s": "Road To Nowhere",
+    "t": "00:00 - 01:15",
+    "sc": 6.67,
+    "n": "",
     "r": [
      {
-      "a": "Say She She",
-      "sc": 5.67
+      "a": "Or:la",
+      "sc": 6.1
      },
      {
       "a": "Cromby",
-      "sc": 5.0
+      "sc": 5.68
      },
      {
       "a": "EMA",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
    {
     "h": "01:00",
-    "w": "The Avalanches (DJ Set)",
-    "s": "Something Kind of Wonderful",
-    "t": "01:00 - 03:00",
-    "sc": 8.37,
+    "w": "Mall Grab",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 7.12,
     "n": "",
     "r": [
      {
+      "a": "The Avalanches (DJ Set)",
+      "sc": 6.78
+     },
+     {
       "a": "Joy Orbison",
-      "sc": 7.0
+      "sc": 6.78
      },
      {
-      "a": "DJ Nobu",
-      "sc": 6.83
-     },
-     {
-      "a": "Mall Grab",
-      "sc": 6.5
+      "a": "Say She She",
+      "sc": 6.67
      }
     ]
    },
    {
     "h": "02:00",
-    "w": "The Avalanches (DJ Set)",
-    "s": "Something Kind of Wonderful",
-    "t": "01:00 - 03:00",
-    "sc": 8.37,
+    "w": "Mall Grab",
+    "s": "The Temporary Bandstand",
+    "t": "01:30 - 03:30",
+    "sc": 7.12,
     "n": "",
     "r": [
      {
+      "a": "The Avalanches (DJ Set)",
+      "sc": 6.78
+     },
+     {
       "a": "Joy Orbison",
-      "sc": 7.0
+      "sc": 6.78
      },
      {
       "a": "DJ Nobu",
-      "sc": 6.83
-     },
-     {
-      "a": "Mall Grab",
-      "sc": 6.5
+      "sc": 6.67
      }
     ]
    },
@@ -2378,20 +2516,20 @@
     "w": "Mall Grab",
     "s": "The Temporary Bandstand",
     "t": "01:30 - 03:30",
-    "sc": 6.5,
-    "n": "close call",
+    "sc": 7.12,
+    "n": "",
     "r": [
      {
       "a": "Call Super",
-      "sc": 6.5
+      "sc": 6.45
      },
      {
       "a": "Jyoty",
-      "sc": 5.5
+      "sc": 6.12
      },
      {
       "a": "Yankari Afrobeat Collective",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    }
@@ -2402,7 +2540,7 @@
     "w": "Organ Freeman (Live Jazz)",
     "s": "Big Romance Dome x Altos",
     "t": "12:00 - 13:00",
-    "sc": 4.33,
+    "sc": 5.3,
     "n": "",
     "r": []
    },
@@ -2411,7 +2549,7 @@
     "w": "Shrem's Madonnathon",
     "s": "Big Romance Dome x Altos",
     "t": "13:00 - 15:00",
-    "sc": 4.33,
+    "sc": 5.3,
     "n": "",
     "r": []
    },
@@ -2420,16 +2558,16 @@
     "w": "Talks in the Tent: John Cooper Clarke",
     "s": "Something Kind of Wonderful",
     "t": "14:00 - 15:00",
-    "sc": 10.17,
+    "sc": 8.65,
     "n": "",
     "r": [
      {
       "a": "Gently Tender",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Shrem's Madonnathon",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2438,78 +2576,78 @@
     "w": "Alabaster DePlume",
     "s": "Flourish with District Music",
     "t": "15:30 - 16:15",
-    "sc": 6.5,
+    "sc": 7.1,
     "n": "",
     "r": [
      {
       "a": "Burt Bacharach by Paddy Hanna",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
    {
     "h": "16:00",
-    "w": "Barrington Levy",
-    "s": "Something Kind of Wonderful",
-    "t": "16:00 - 17:15",
-    "sc": 9.33,
+    "w": "Alabaster DePlume",
+    "s": "Flourish with District Music",
+    "t": "15:30 - 16:15",
+    "sc": 7.1,
     "n": "",
     "r": [
      {
-      "a": "Alabaster DePlume",
-      "sc": 6.5
+      "a": "Barrington Levy",
+      "sc": 6.47
      },
      {
       "a": "Getdown Services",
-      "sc": 5.0
+      "sc": 6.47
      },
      {
       "a": "Soda Blonde",
-      "sc": 4.83
+      "sc": 5.55
      }
     ]
    },
    {
     "h": "17:00",
-    "w": "Barrington Levy",
+    "w": "Kate Nash",
     "s": "Something Kind of Wonderful",
-    "t": "16:00 - 17:15",
-    "sc": 9.33,
+    "t": "17:30 - 18:30",
+    "sc": 6.97,
     "n": "",
     "r": [
      {
-      "a": "Kate Nash",
-      "sc": 6.33
+      "a": "Barrington Levy",
+      "sc": 6.47
      },
      {
       "a": "Getdown Services",
-      "sc": 5.0
+      "sc": 6.47
      },
      {
       "a": "Soda Blonde",
-      "sc": 4.83
+      "sc": 5.55
      }
     ]
    },
    {
     "h": "18:00",
-    "w": "Damien Dempsey",
-    "s": "ATN Main Stage",
-    "t": "18:00 - 19:15",
-    "sc": 7.0,
-    "n": "close call",
+    "w": "Moonchild Sanelly",
+    "s": "Road To Nowhere",
+    "t": "18:00 - 19:00",
+    "sc": 7.92,
+    "n": "",
     "r": [
      {
-      "a": "Moonchild Sanelly",
-      "sc": 6.83
+      "a": "Kate Nash",
+      "sc": 6.97
+     },
+     {
+      "a": "Damien Dempsey",
+      "sc": 6.35
      },
      {
       "a": "Prosumer",
-      "sc": 6.5
-     },
-     {
-      "a": "Kate Nash",
-      "sc": 6.33
+      "sc": 6.23
      }
     ]
    },
@@ -2518,42 +2656,42 @@
     "w": "Soichi Terada (Live)",
     "s": "IMMERSE: AVA x Smirnoff",
     "t": "19:30 - 20:30",
-    "sc": 7.83,
+    "sc": 7.5,
     "n": "",
     "r": [
      {
+      "a": "SOAK",
+      "sc": 6.52
+     },
+     {
       "a": "Damien Dempsey",
-      "sc": 7.0
+      "sc": 6.35
      },
      {
       "a": "Prosumer",
-      "sc": 6.5
-     },
-     {
-      "a": "SOAK",
-      "sc": 6.0
+      "sc": 6.23
      }
     ]
    },
    {
     "h": "20:00",
-    "w": "Soichi Terada (Live)",
-    "s": "IMMERSE: AVA x Smirnoff",
-    "t": "19:30 - 20:30",
-    "sc": 7.83,
+    "w": "Self Esteem",
+    "s": "ATN Main Stage",
+    "t": "20:15 - 21:15",
+    "sc": 8.35,
     "n": "",
     "r": [
      {
-      "a": "Self Esteem",
-      "sc": 7.33
+      "a": "Soichi Terada (Live)",
+      "sc": 7.5
      },
      {
       "a": "Kean Kavanagh",
-      "sc": 4.83
+      "sc": 5.6
      },
      {
       "a": "BIIRD",
-      "sc": 4.5
+      "sc": 5.45
      }
     ]
    },
@@ -2562,20 +2700,20 @@
     "w": "Anna von Hausswolff",
     "s": "Road To Nowhere",
     "t": "21:15 - 22:30",
-    "sc": 7.67,
-    "n": "",
+    "sc": 8.45,
+    "n": "close call",
     "r": [
      {
       "a": "Self Esteem",
-      "sc": 7.33
-     },
-     {
-      "a": "Ms Dynamite",
-      "sc": 6.5
+      "sc": 8.35
      },
      {
       "a": "Chet Faker",
-      "sc": 6.0
+      "sc": 6.17
+     },
+     {
+      "a": "Ms Dynamite",
+      "sc": 5.55
      }
     ]
    },
@@ -2584,20 +2722,20 @@
     "w": "Underworld",
     "s": "ATN Main Stage",
     "t": "22:00 - 23:15",
-    "sc": 11.03,
+    "sc": 9.53,
     "n": "",
     "r": [
      {
       "a": "Anna von Hausswolff",
-      "sc": 7.67
+      "sc": 8.45
      },
      {
       "a": "Chet Faker",
-      "sc": 6.0
+      "sc": 6.17
      },
      {
       "a": "Bazza Ranks",
-      "sc": 4.67
+      "sc": 5.45
      }
     ]
    },
@@ -2606,20 +2744,20 @@
     "w": "Underworld",
     "s": "ATN Main Stage",
     "t": "22:00 - 23:15",
-    "sc": 11.03,
-    "n": "",
+    "sc": 9.53,
+    "n": "close call",
     "r": [
      {
       "a": "Mogwai",
-      "sc": 10.17
+      "sc": 9.3
      },
      {
       "a": "Weval (Live)",
-      "sc": 5.67
+      "sc": 6.03
      },
      {
       "a": "Bazza Ranks",
-      "sc": 4.67
+      "sc": 5.45
      }
     ]
    },
@@ -2628,42 +2766,42 @@
     "w": "Mogwai",
     "s": "Something Kind of Wonderful",
     "t": "23:15 - 00:30",
-    "sc": 10.17,
+    "sc": 9.3,
     "n": "",
     "r": [
      {
-      "a": "Altern-8",
-      "sc": 8.3
-     },
-     {
       "a": "Hot Chip (DJ Set)",
-      "sc": 7.67
+      "sc": 7.07
      },
      {
       "a": "Disclosure (DJ)",
-      "sc": 6.67
+      "sc": 6.82
+     },
+     {
+      "a": "Altern-8",
+      "sc": 6.35
      }
     ]
    },
    {
     "h": "01:00",
-    "w": "Altern-8",
-    "s": "Arcadia 'Afterburner'",
-    "t": "00:00 - 02:00",
-    "sc": 8.3,
-    "n": "",
+    "w": "Hot Chip (DJ Set)",
+    "s": "The Temporary Bandstand",
+    "t": "00:00 - 01:30",
+    "sc": 7.07,
+    "n": "close call",
     "r": [
      {
-      "a": "Hot Chip (DJ Set)",
-      "sc": 7.67
-     },
-     {
       "a": "Disclosure (DJ)",
-      "sc": 6.67
+      "sc": 6.82
      },
      {
       "a": "King Kong Company",
-      "sc": 5.83
+      "sc": 6.62
+     },
+     {
+      "a": "Altern-8",
+      "sc": 6.35
      }
     ]
    },
@@ -2672,20 +2810,20 @@
     "w": "King Kong Company",
     "s": "Something Kind of Wonderful",
     "t": "01:30 - 03:00",
-    "sc": 5.83,
-    "n": "close call",
+    "sc": 6.62,
+    "n": "",
     "r": [
      {
       "a": "Eats Everything",
-      "sc": 5.83
+      "sc": 6.02
      },
      {
       "a": "The Dare (DJ Set)",
-      "sc": 5.0
+      "sc": 5.77
      },
      {
       "a": "Daniel Wang",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    },
@@ -2694,16 +2832,16 @@
     "w": "Eats Everything",
     "s": "Arcadia 'Afterburner'",
     "t": "02:00 - 04:00",
-    "sc": 5.83,
+    "sc": 6.02,
     "n": "",
     "r": [
      {
       "a": "Daniel Wang",
-      "sc": 4.33
+      "sc": 5.3
      },
      {
       "a": "Winemoms",
-      "sc": 4.33
+      "sc": 5.3
      }
     ]
    }

@@ -14,33 +14,41 @@ Tap **↺** in the top right when you have signal to pull the latest version.
 
 ## The committee
 
-The model lives in `scoring.py`. Every curated act gets a consolidated score:
+The model lives in `scoring.py`, and it is deliberately biased toward fresh
+material over legacy:
 
 ```
-base      = (best album + bench strength + recent concerts) / 3
+base      = 0.35*fresh + 0.35*recent gigs + 0.20*best album + 0.10*bench
 composite = base + legend bonus
 ```
 
-- **best album** — quality of their high-water mark
-- **bench strength** — depth across the whole catalogue
-- **recent concerts** — live form over roughly the last year, from the reviews
+- **fresh** — how current and vital their material is. A strong record in the
+  last year or two scores high; a heritage act coasting on the back catalogue
+  scores low. Joint-heaviest weight, by design.
+- **recent gigs** — live form over roughly the last year, from the reviews
   gathered in `curate_tables.py`
+- **best album** — quality of their high-water mark
+- **bench** — depth across the whole catalogue. Deliberately the lightest
+  weight: it was previously letting veterans with deep discographies outrank
+  bands playing the best shows of their lives right now.
 
-The **legend bonus** is additive and only awarded where a genuinely legendary
-concert can be named and dated. Those citations are in `LEGEND` in `scoring.py`,
-and the app shows them — Pulp's Glastonbury '95, Underworld's Olympic ceremony,
-Barrington Levy at Reggae Sunsplash, John Cooper Clarke opening for the Pistols.
-If we can't name one, the bonus is zero. No bonus is handed out on vibes.
+The **legend bonus** is additive, halved from the first version of this model so
+legacy tops a score up rather than deciding it, and only awarded where a
+genuinely legendary concert can be named and dated. Those citations are in
+`LEGEND` in `scoring.py` and the app shows them — Pulp's Glastonbury '95,
+Underworld's Olympic ceremony, Barrington Levy at Reggae Sunsplash, John Cooper
+Clarke opening for the Pistols. If we can't name one, the bonus is zero. No
+bonus is handed out on vibes.
 
 Four judges then weight the same three axes differently, as a consensus check.
 They don't set the headline number; their spread is reported alongside it:
 
-| Judge | Best album | Bench | Recent | Irish bonus |
-| --- | --- | --- | --- | --- |
-| The Archivist | 0.30 | 0.45 | 0.25 | — |
-| The Headliner | 0.45 | 0.25 | 0.30 | — |
-| The Gig-Goer | 0.20 | 0.15 | 0.65 | — |
-| The Local | 0.30 | 0.25 | 0.45 | +0.4 |
+| Judge | Fresh | Recent | Best album | Bench | Irish bonus |
+| --- | --- | --- | --- | --- | --- |
+| The Archivist | 0.15 | 0.25 | 0.30 | 0.30 | — |
+| The Headliner | 0.25 | 0.30 | 0.35 | 0.10 | — |
+| The Gig-Goer | 0.40 | 0.45 | 0.10 | 0.05 | — |
+| The Local | 0.40 | 0.35 | 0.15 | 0.10 | +0.4 |
 
 Each act carries a **confidence** figure for its recent score: `2` = cited written
 review, `1` = aggregate or audience reports, `0` = reputation only. The app shows
