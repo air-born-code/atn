@@ -57,6 +57,47 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
   border-radius:9px;padding:8px 9px}
 .legend b{color:var(--tx);font-weight:650;white-space:nowrap}
 
+/* ---------- act detail sheet ---------- */
+#actSheet{position:fixed;inset:0;z-index:90;background:var(--bg);overflow-y:auto;
+  -webkit-overflow-scrolling:touch;padding-bottom:calc(24px + var(--safeb))}
+#actSheet[hidden]{display:none}
+.dhead{padding:12px 14px 14px;border-bottom:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(255,47,116,.13),transparent);
+  padding-top:calc(12px + env(safe-area-inset-top,0px))}
+.dtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
+.dday{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--acc);font-weight:700}
+.dclose{flex:none;padding:0 13px;min-height:38px;border-radius:11px;background:var(--card2);
+  border:1px solid var(--line);font-size:13px;font-weight:650;color:var(--tx)}
+.dhead h2{font-size:23px;line-height:1.15}
+.dde{font-size:13.5px;color:var(--acc);margin-top:4px;font-weight:600}
+.dwhen{font-size:12.5px;color:var(--dim);margin-top:7px;line-height:1.5}
+.dstar{display:block;width:100%;margin-top:12px;min-height:46px;border-radius:12px;
+  background:var(--card2);border:1px solid var(--line);font-size:14px;font-weight:650;color:var(--tx)}
+.dstar.on{background:rgba(255,47,116,.2);border-color:var(--acc);color:var(--tx)}
+.dbody{padding:14px}
+.dsec{border-radius:14px;background:var(--card);border:1px solid var(--line);
+  padding:13px;margin-bottom:10px}
+.dsec h4{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim2);
+  font-weight:700;margin:0 0 7px}
+.dsec p{font-size:13.5px;color:var(--tx);line-height:1.55;margin:0}
+.dsec p b{font-weight:650}
+.dsub{font-size:11.5px !important;color:var(--dim2) !important;margin-top:8px !important;
+  line-height:1.5;border-top:1px solid var(--line);padding-top:8px}
+.dlink{display:inline-block;font-size:12.5px;font-weight:650;margin-top:8px}
+.dsec .score{border-top:none;padding-top:0;margin-top:0}
+.dsec.fest{border-left:3px solid var(--dim2)}
+.dsec.fest.built{border-left-color:#25d366}
+.dsec.fest.proven{border-left-color:#38bdf8}
+.dsec.fest.caution{border-left-color:#ffb02e}
+.dsec.fest.unknown{border-left-color:var(--dim2)}
+.dsec.fest h4{color:var(--tx);font-size:12px;letter-spacing:.04em;text-transform:none}
+.dclash{display:grid;grid-template-columns:1fr auto;gap:4px 8px;padding:8px 0;
+  border-top:1px solid var(--line);font-size:13.5px}
+.dclash:first-of-type{border-top:none}
+.dclash b{font-weight:650}
+.dcs{font-size:11px;font-weight:800;color:var(--acc);font-variant-numeric:tabular-nums}
+.dcw{grid-column:1/-1;font-size:11.5px;color:var(--dim2);margin-top:-2px}
+
 /* ---------- global search ---------- */
 #searchOverlay{position:fixed;inset:0;z-index:80;background:var(--bg);
   display:flex;flex-direction:column;padding-bottom:var(--safeb)}
@@ -191,6 +232,9 @@ nav button{max-width:165px}
 .b2{background:rgba(255,255,255,.12);color:var(--tx)}
 .b3{background:transparent;color:var(--dim2);border:1px solid var(--line)}
 .set h3{font-size:15.5px;line-height:1.3;margin:1px 0 3px;word-wrap:break-word}
+.set h3 .de{display:block;font-size:11.5px;font-weight:500;color:var(--acc);
+  margin-top:2px;letter-spacing:.01em}
+.set{cursor:pointer}
 .set .stage{font-size:12px;color:var(--dim);display:flex;align-items:center;gap:5px}
 .set .note{font-size:13px;color:var(--dim);margin-top:7px;line-height:1.5;border-top:1px solid var(--line);padding-top:7px}
 .star{flex:none;width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.05);display:grid;place-items:center;font-size:17px;align-self:flex-start;transition:transform .12s}
@@ -336,6 +380,8 @@ nav button .cnt{position:absolute;transform:translate(14px,-4px);background:var(
   </div>
   <div id="sresults"></div>
 </div>
+
+<div id="actSheet" hidden><div id="actBody"></div></div>
 
 <div id="nowbar" hidden></div>
 <main id="main"></main>

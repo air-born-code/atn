@@ -276,3 +276,174 @@ EXCLUDE = {
 STAGE_NAMES = {
     "the-big-romance-dome-x-altos": "Big Romance Dome x Altos",
 }
+
+
+# A few words on what each act actually sounds like, shown after every name.
+# Where an act isn't listed, a fallback is derived from its stage (see STAGE_DESC).
+DESC = {
+# --- Friday
+"Pulp": "Sheffield britpop", "Floating Points (Live)": "modular electronica, live",
+"Friendly Fires": "indie-dance", "Floorplan": "Detroit gospel house",
+"Kerri Chandler": "New Jersey deep house", "Gurriers": "Dublin post-punk",
+"Dry Cleaning": "London spoken-word post-punk", "Cardinals": "Cork indie rock",
+"Job Jobse": "Dutch euphoric house", "O'Flynn": "percussive melodic house",
+"Brògeal": "Scots-Irish folk-punk", "PVA": "post-punk electronics",
+"Anish Kumar": "UK breaks and bass", "Rahann": "Chicago disco and house",
+"Sunil Sharpe x Kev Freeney Presents Spineless": "hard Irish techno",
+"Jamz Supernova": "broken beat and soul", "New Jackson": "hypnotic Irish house",
+"Sam Alfred": "Irish house selector", "Trinity Orchestra": "orchestra plays pop albums",
+"Jacob Alon": "fragile Scottish folk", "Lullahush": "Irish electronic-folk",
+"Black Nylon": "dark Irish guitar rock", "Swimming Paul": "warm Irish electronics",
+"Surusinghe": "fast bass and club", "Kelly Anne Byrne 'Prince Tribute'": "two hours of Prince",
+"megaTRAD": "trad, amplified", "Trad Folkin'Raves feat Annie Craic": "trad rave",
+"The New Eves": "ritualistic art-folk", "Hank": "scrappy guitar band",
+"The Awning": "Irish indie", "Rory Sweeney (Live)": "live Irish electronics",
+"Rose Betts": "big-voiced songwriting", "Peach": "house selector",
+"Huartan": "trad with teeth", "MIKE": "hazy New York rap",
+"Sexy Tadhg": "Irish comedy chaos", "Dublin Disco All Dayer DJ's": "disco",
+# --- Saturday
+"Maruja": "Manchester jazz-punk", "Gilla Band": "Dublin noise rock",
+"W.I.T.C.H.": "Zambian psych-rock", "Hot 8 Brass Band": "New Orleans brass",
+"Ezra Collective": "London carnival jazz", "Sprints": "Dublin punk",
+"THUMPER": "Dublin noise-pop", "Maribou State (Live)": "soulful electronica, live band",
+"The Avalanches (DJ Set)": "sample-collage disco", "Mall Grab": "raw lo-fi rave",
+"Joy Orbison": "UK bass and house", "Greentea Peng": "psychedelic dub-soul",
+"Bicurious": "Irish math rock", "Call Super": "left-field club",
+"DJ Nobu": "Japanese techno", "Dan Shake": "house, disco and boogie",
+"Jyoty": "garage to bashment", "Or:la": "Derry wonky club",
+"Say She She": "NYC disco-soul", "KhakiKid": "Dublin hip hop",
+"David Kitt": "Irish indie-electronic", "Muireann Bradley": "Donegal country blues guitar",
+"Sassy 009": "Norwegian dream-pop", "The Itch": "young and loud",
+"Takuya Nakamura (Live)": "live trumpet over dub", "Seamus Fogarty": "wry Irish folktronica",
+"Yankari Afrobeat Collective": "afrobeat", "Franz Scala": "italo and cosmic disco",
+"Gaff E": "Irish club selector", "Governess": "Irish selector",
+"DJ Deece": "late-night house", "Æ MAK": "Irish art-pop",
+"Maykay": "Irish alt-rock", "Ria Rua": "electronic-punk",
+"One Leg One Eye": "trad drone", "Glasshouse presents: Bjork": "Björk, live collective",
+"Nialler9": "Irish music writer, DJ set", "Bedlam": "loud and late",
+"LOST at The Last City": "Irish rave crew", "Spray": "hard and fast",
+"EMA": "Irish techno", "Sing Along Social": "mass karaoke",
+"Sun Studio Collective": "rock'n'roll revival",
+"Acid Granny Presents Schindler's Fist": "unhinged cabaret",
+"Felispeaks": "Irish-Nigerian spoken word", "Trá Pháidín": "trad session",
+"Colleen Cosmo Murphy": "classic disco", "Moving Still": "SWANA sounds meet house",
+"Cromby": "Belfast house", "The Wild Geeze - Comedy Cabaret": "Irish comedy",
+# --- Sunday
+"Underworld": "veteran UK rave", "Disclosure (DJ)": "UK house hits",
+"Mogwai": "Scottish post-rock, very loud", "Barrington Levy": "Jamaican reggae and dancehall",
+"Anna von Hausswolff": "Swedish pipe-organ doom", "King Kong Company": "Waterford live electronic mayhem",
+"Hot Chip (DJ Set)": "indie-dance DJ set", "Altern-8": "1991 hardcore rave",
+"Soichi Terada (Live)": "joyful Japanese house", "Talks in the Tent: John Cooper Clarke": "Salford punk poet",
+"Self Esteem": "theatrical British pop", "Kate Nash": "British indie-pop",
+"Chet Faker": "electronic soul", "Soda Blonde": "Dublin indie-pop",
+"Damien Dempsey": "Dublin folk singalongs", "Eats Everything": "big-room house",
+"The Dare (DJ Set)": "sleazy electroclash", "Weval (Live)": "melodic Dutch electronica",
+"Prosumer": "warm soulful house", "Gabrielle Kwarteng": "rolling groovy house",
+"Anz b2b Jio": "rapid colourful club", "Ms Dynamite": "UK garage and dancehall",
+"Moonchild Sanelly": "South African gqom-punk", "Getdown Services": "Bristol post-punk",
+"Kean Kavanagh": "Irish alt-pop", "Alabaster DePlume": "spoken word and saxophone",
+"SOAK": "Derry songwriting", "Playback Presents: Stop Making Sense": "Talking Heads, live",
+"Bazza Ranks": "reggae and dancehall", "BIIRD": "Irish indie",
+"Freak Slug": "Manchester bedroom-pop", "Monjola": "Irish R&B",
+"Mango": "Dublin hip hop", "Róis": "experimental Irish keening",
+"Gently Tender": "loose English indie", "Sell Everything": "loud guitars",
+"Daniel Wang": "disco obsessive", "Stevie G": "Cork hip hop and soul",
+"Marcus O'Laoire": "Irish groove selector", "Grooveline": "funk and soul",
+"Burt Bacharach by Paddy Hanna": "Bacharach songbook", "Toshín": "Irish-Nigerian soul",
+"Elikya": "Congolese-Irish", "Qbanaa": "Cuban", "I Draw Slow": "Irish bluegrass",
+"Winemoms": "late-night club", "Tony Cantwell": "Irish comedy",
+"Organ Freeman (Live Jazz)": "live jazz", "Shrem's Madonnathon": "two hours of Madonna",
+"The Calvinists": "rowdy guitars", "Sloucho": "Irish producer",
+}
+
+# Fallback when an act isn't in DESC — inferred from the stage it's on.
+STAGE_DESC = {
+"ATN Main Stage": "main stage", "Something Kind of Wonderful": "big tent",
+"Road To Nowhere": "guitars and club", "Flourish with District Music": "new and emerging",
+"IMMERSE: AVA x Smirnoff": "house and techno", "Arcadia 'Afterburner'": "late-night club",
+"Ping Pong Disco": "disco and camp", "The Temporary Bandstand": "eclectic, DJ-led",
+"Global Roots: Main Stage": "global sounds", "Global Roots: Cambium": "global and club",
+"The Circle by Jameson Music": "left-field", "The Last City": "trad, rap and rave",
+"Hidden Sounds": "acoustic and songwriting", "The Well": "comedy",
+"Theatre of Food": "food talk", "Born Social by Schweppes": "daytime DJ",
+"Big Romance Dome x Altos": "disco and house",
+}
+
+
+# Festival form, specifically. A band can be superb in their own room and only
+# fine in a field — different set length, daylight, a crowd half of whom are
+# passing through. Weighted ahead of headline-show reviews when judging what
+# you'll actually get at Curraghmore.
+# artist: (verdict, note)   verdict: "built" | "proven" | "caution" | "unknown"
+FEST = {
+"Ezra Collective": ("built",
+  "A festival band before anything else — they played BBC 6 Music Festival 2025 and turn "
+  "seated rooms into dancefloors. The set is designed for exactly this."),
+"W.I.T.C.H.": ("proven",
+  "Reviewed strongly at two 2025 festivals — Wide Awake in London and Woodsist in New York — "
+  "in both cases an afternoon slot with the crowd won over quickly. Travels well."),
+"Hot 8 Brass Band": ("built",
+  "New Orleans Jazz Fest 2025, plus Glastonbury and SXSW previously. A brass band playing "
+  "covers in daylight is about as festival-proof as music gets."),
+"Underworld": ("built",
+  "Portola, Sziget and Pukkelpop across 2025. Thirty years of festival closing sets; "
+  "'Born Slippy' outdoors is the whole point."),
+"Pulp": ("built",
+  "Their Glastonbury 1995 set is the reference point for a festival headline. The 2025 shows "
+  "used two sets with an interval, so expect the festival version to be tighter and hits-first."),
+"Gurriers": ("proven",
+  "Played SXSW 2025 and the European festival circuit off the back of 'Come And See'. "
+  "The singer works the crowd from inside it, which suits a field."),
+"Mall Grab": ("proven",
+  "Vivid Sydney 2025 across two sold-out nights, opening near 140bpm. Built for big rooms "
+  "and late slots rather than intimate ones."),
+"Mogwai": ("caution",
+  "Extraordinary in a dark room where the volume does the work. In the open air, some of "
+  "the quiet-to-devastating dynamic escapes upward. Still worth it — but get close."),
+"Self Esteem": ("caution",
+  "The 2025 shows are staged like theatre, in acts, with an ensemble cast and a full "
+  "production. Some of that will not travel to a festival stage with a short changeover. "
+  "Expect a leaner, more direct version."),
+"Anna von Hausswolff": ("caution",
+  "The pipe organ is central and her best-reviewed shows are in churches and halls with "
+  "the acoustics to carry it. A tent is a harder room for this."),
+"Barrington Levy": ("caution",
+  "Reports from his 2025 run were mixed, and heritage reggae sets can lean heavily on a "
+  "backing band and a hype man. The songs are untouchable; the delivery varies night to night."),
+"Maruja": ("proven",
+  "Improvisation-led and built on intensity rather than production, which is why the live "
+  "reputation holds up anywhere. A tent suits them better than daylight."),
+"Gilla Band": ("caution",
+  "The sound is the show, and it needs a PA pushed hard in an enclosed space. Brilliant in "
+  "a tent, thinner outdoors. Road To Nowhere is the right room for it."),
+"Sprints": ("built",
+  "Short, fast, relentless songs and a frontperson who works a crowd. Exactly the shape of "
+  "set that lands at a festival."),
+"THUMPER": ("built",
+  "Two drummers and singalong hooks. Loud, immediate, no subtlety to lose in the open air."),
+"Floating Points (Live)": ("caution",
+  "The live show leans on Akiko Nakayama's reactive visuals and careful lighting — which is "
+  "why a dark tent at 00:15 is the right slot. Would lose a lot in daylight."),
+"Kerri Chandler": ("proven",
+  "Thirty years of festival and club sets. The reel-to-reel spectacle is a club thing; "
+  "expect a straight, superb DJ set here."),
+"Soichi Terada (Live)": ("built",
+  "Relentlessly joyful and visibly delighted to be there. One of the easiest sells on a "
+  "festival bill regardless of whether you know the records."),
+"Talks in the Tent: John Cooper Clarke": ("proven",
+  "Decades of festival stages including Glastonbury. Needs a crowd that will listen, so "
+  "get in early — the 14:00 slot helps."),
+"King Kong Company": ("built",
+  "A festival act by design, and this is a hometown crowd. Their whole reputation is built "
+  "on sets exactly like this one."),
+"Greentea Peng": ("proven",
+  "Toured 'TELL DEM IT'S SUNNY' hard through 2025 including festival slots. The dub end of "
+  "the set does the heavy lifting outdoors."),
+"Moonchild Sanelly": ("built",
+  "Supported Self Esteem through 2025 and repeatedly stole the reviews. Built for a tent."),
+"The Avalanches (DJ Set)": ("unknown",
+  "No recent festival set review surfaced. A DJ set rather than the live show, so it lives "
+  "or dies on the selection."),
+"Maribou State (Live)": ("proven",
+  "Full live band and a 2025 tour that sold out Alexandra Palace three times. Scales up well."),
+}

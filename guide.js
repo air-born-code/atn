@@ -441,7 +441,7 @@ function setCard(s, showNote) {
   return '<div class="set ' + (s.tr === 1 ? "t1" : "") + '" data-g="' + (s.g || "") + '">' +
     '<div class="body">' +
       '<div class="top"><span class="time">' + esc(s.t) + "</span>" + badge + "</div>" +
-      "<h3>" + esc(s.a) + "</h3>" +
+      "<h3>" + esc(s.a) + (s.de ? '<span class="de">' + esc(s.de) + "</span>" : "") + "</h3>" +
       '<div class="stage"><a class="stagelink" href="#" data-stage="' + esc(s.s) + '">' +
         esc(s.s) + " &#9906;</a></div>" +
       (showNote && s.n ? '<div class="note">' + esc(s.n) + "</div>" : "") +
@@ -773,13 +773,29 @@ document.getElementById("filters").innerHTML = GENRES.map(function (g) {
 }).join("");
 
 document.addEventListener("click", function (e) {
+  if (e.target.closest("#dclose")) return closeAct();
+
   var sl = e.target.closest(".stagelink");
   if (sl) {
     e.preventDefault();
+    closeAct();
     S.mapStage = sl.dataset.stage;
     S.mapZone = STAGE_ZONE[S.mapStage] || "";
     S.view = "map";
     return render();
+  }
+
+  var ds = e.target.closest(".dstar");
+  if (ds) {
+    var did = ds.dataset.id;
+    S.stars[did] = !S.stars[did];
+    if (!S.stars[did]) delete S.stars[did];
+    save("atn_stars", S.stars);
+    ds.classList.toggle("on", !!S.stars[did]);
+    ds.textContent = S.stars[did] ? "★ On your plan" : "☆ Add to my plan";
+    var dn = document.getElementById("cnt"), dk = Object.keys(S.stars).length;
+    dn.hidden = !dk; dn.textContent = dk;
+    return;
   }
 
   var d = e.target.closest("#days .day");
@@ -809,7 +825,92 @@ document.addEventListener("click", function (e) {
     if (S.view === "plan") render();
     return;
   }
+
+  var card = e.target.closest(".set");
+  if (card && !e.target.closest("a")) {
+    var sid = card.querySelector(".star");
+    if (sid) return openAct(sid.dataset.id);
+  }
 });
+
+/* ---------------- act detail sheet ---------------- */
+var FESTV = {
+  built:   ["Built for festivals", "A set designed for exactly this — a field, a short slot, half the crowd passing through."],
+  proven:  ["Proven at festivals", "Reviewed well on festival stages, not just in their own rooms."],
+  caution: ["Better in their own room", "Excellent live, but the show relies on something a festival stage takes away. Still go — just know what you're getting."],
+  unknown: ["Festival form unknown", "No festival set review surfaced, so this is a judgement on their headline shows only."]
+};
+
+function openAct(id) {
+  var s = null;
+  for (var i = 0; i < D.length; i++) if (idOf(D[i]) === id) { s = D[i]; break; }
+  if (!s) return;
+
+  var starred = !!S.stars[id];
+  var z = zoneOf(s.s);
+  var fv = FESTV[s.fv];
+
+  var h = '<div class="dhead">' +
+    '<div class="dtop"><span class="dday">' + esc(DAYNAME[s.d] || "") + "</span>" +
+    '<button class="dclose" id="dclose">Close</button></div>' +
+    "<h2>" + esc(s.a) + "</h2>" +
+    (s.de ? '<div class="dde">' + esc(s.de) + "</div>" : "") +
+    '<div class="dwhen">' + esc(s.t) + " &middot; " +
+    '<a href="#" class="stagelink" data-stage="' + esc(s.s) + '">' + esc(s.s) + " &#9906;</a>" +
+    (z ? " &middot; " + esc(z.n) : "") + "</div>" +
+    '<button class="dstar ' + (starred ? "on" : "") + '" data-id="' + esc(id) + '">' +
+      (starred ? "★ On your plan" : "☆ Add to my plan") + "</button>" +
+  "</div><div class=\"dbody\">";
+
+  if (s.n) h += '<div class="dsec"><h4>Why</h4><p>' + esc(s.n) + "</p></div>";
+
+  if (fv) {
+    h += '<div class="dsec fest ' + s.fv + '"><h4>' + esc(fv[0]) + "</h4>" +
+         "<p>" + esc(s.fn || fv[1]) + "</p>" +
+         '<p class="dsub">Festival form is weighted ahead of headline-show reviews here — ' +
+         "a band can be superb in their own venue and only fine in a field.</p></div>";
+  }
+
+  if (s.lv) {
+    h += '<div class="dsec"><h4>Live, last year</h4><p>' + esc(s.lv) + "</p>" +
+         (s.lu ? '<a class="dlink" href="' + s.lu + '" target="_blank" rel="noopener">' +
+                 esc(s.ls || "Read the review") + " &nearr;</a>" : "") +
+         '<p class="dsub">Evidence: ' + CONF[s.cf || 0] + "</p></div>";
+  }
+
+  if (s.lw) {
+    h += '<div class="dsec"><h4>Legendary gig</h4><p>' + esc(s.lw) +
+         " <b>" + esc(s.ln) + "</b></p></div>";
+  }
+
+  if (s.cs) {
+    h += '<div class="dsec"><h4>Committee score &mdash; ' + s.cs.toFixed(2) + "</h4>" +
+         scoreRow(s) + "</div>";
+  }
+
+  h += '<div class="dsec"><h4>Listen</h4>' + listenRow(s) + "</div>";
+
+  var same = D.filter(function (o) {
+    return o.d === s.d && o.a !== s.a && o.tr && o.st < s.en && o.en > s.st;
+  }).sort(function (a, b) { return b.cs - a.cs; }).slice(0, 4);
+  if (same.length) {
+    h += '<div class="dsec"><h4>On at the same time</h4>';
+    same.forEach(function (o) {
+      var w = walkMins(s.s, o.s);
+      h += '<div class="dclash"><b>' + esc(o.a) + "</b>" +
+        '<span class="dcs">' + (o.cs ? o.cs.toFixed(2) : "") + "</span>" +
+        '<span class="dcw">' + esc(o.t) + " &middot; " + esc(o.s) +
+        (w !== null ? " &middot; " + w + " min walk" : "") + "</span></div>";
+    });
+    h += "</div>";
+  }
+
+  h += "</div>";
+  document.getElementById("actBody").innerHTML = h;
+  document.getElementById("actSheet").hidden = false;
+}
+
+function closeAct() { document.getElementById("actSheet").hidden = true; }
 
 /* ---------------- global search, every day at once ---------------- */
 var DAYNAME = { thu: "Thursday 30 July", fri: "Friday 31 July",

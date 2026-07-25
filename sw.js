@@ -1,5 +1,5 @@
 /* Offline cache — Curraghmore has almost no signal, so everything is cached up front. */
-var CACHE = "atn26-v9";
+var CACHE = "atn26-v10";
 var ASSETS = ["./", "./index.html", "./guide.js", "./data.js", "./manifest.json", "./icon.png"];
 
 self.addEventListener("install", function (e) {

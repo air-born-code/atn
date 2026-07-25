@@ -5,7 +5,8 @@ Re-run after editing PICKS:  python3 curate.py
 """
 import json, re
 
-from curate_tables import PICKS, LIVE, SONGS, EXCLUDE, STAGE_NAMES, listen_links
+from curate_tables import (PICKS, LIVE, SONGS, EXCLUDE, STAGE_NAMES,
+                            DESC, STAGE_DESC, FEST, listen_links)
 
 DAY_KEY = {
     "Thursday 30th July": "thu",
@@ -32,7 +33,12 @@ for r in raw:
     song = SONGS.get(a, "")
     ln = listen_links(a, song)
     cs = CSCORES.get(a) or {}
+    stage = STAGE_NAMES.get(r["stage"], r["stage"])
+    fv, fn = FEST.get(a, ("", ""))
     sets.append({
+        "de": DESC.get(a) or STAGE_DESC.get(stage, ""),
+        "fv": fv,                      # festival form verdict
+        "fn": fn,                      # festival form note
         "cs": cs.get("c", 0),          # consolidated composite (base + legend bonus)
         "cb": cs.get("b", 0),          # base, the equal three-way split
         "cn": cs.get("bn", 0),         # legend bonus
@@ -46,7 +52,7 @@ for r in raw:
         "sg": song,
         "yt": ln["yt"], "sp": ln["sp"], "am": ln["am"],
         "a": a,
-        "s": STAGE_NAMES.get(r["stage"], r["stage"]),
+        "s": stage,
         "d": DAY_KEY[r["day"]],
         "t": r["time"],
         "st": r["start"],
