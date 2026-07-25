@@ -94,6 +94,14 @@ def main():
         while t < hi:
             nxt = t + 3600000
             on = [a for a in day_acts if a["start"] < nxt and a["end"] > t]
+
+            # How much of this hour each set actually covers. A set that clips the
+            # hour by ten minutes shouldn't win it — you can't go and see it.
+            for a in on:
+                a["_cover"] = (min(a["end"], nxt) - max(a["start"], t)) / 60000.0
+            solid = [a for a in on if a["_cover"] >= 30]
+            on = solid or on
+
             if on:
                 on.sort(key=lambda x: -x["composite"])
                 win = on[0]

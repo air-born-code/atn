@@ -1944,17 +1944,12 @@
   "fri": [
    {
     "h": "15:00",
-    "w": "PVA",
-    "s": "Road To Nowhere",
-    "t": "15:45 - 16:45",
-    "sc": 6.3,
+    "w": "Hank",
+    "s": "Flourish with District Music",
+    "t": "15:30 - 16:15",
+    "sc": 5.3,
     "n": "",
-    "r": [
-     {
-      "a": "Hank",
-      "sc": 5.3
-     }
-    ]
+    "r": []
    },
    {
     "h": "16:00",
@@ -1963,12 +1958,7 @@
     "t": "15:45 - 16:45",
     "sc": 6.3,
     "n": "",
-    "r": [
-     {
-      "a": "Hank",
-      "sc": 5.3
-     }
-    ]
+    "r": []
    },
    {
     "h": "17:00",
@@ -1986,28 +1976,29 @@
    },
    {
     "h": "18:00",
-    "w": "Jacob Alon",
+    "w": "Rose Betts",
+    "s": "Something Kind of Wonderful",
+    "t": "18:00 - 19:00",
+    "sc": 5.3,
+    "n": "",
+    "r": []
+   },
+   {
+    "h": "19:00",
+    "w": "Cardinals",
     "s": "Road To Nowhere",
-    "t": "17:15 - 18:15",
-    "sc": 6.55,
-    "n": "close call",
+    "t": "18:45 - 19:45",
+    "sc": 6.27,
+    "n": "",
     "r": [
      {
-      "a": "Cardinals",
-      "sc": 6.27
-     },
-     {
       "a": "Sexy Tadhg",
-      "sc": 5.3
-     },
-     {
-      "a": "Rose Betts",
       "sc": 5.3
      }
     ]
    },
    {
-    "h": "19:00",
+    "h": "20:00",
     "w": "Dry Cleaning",
     "s": "Something Kind of Wonderful",
     "t": "19:45 - 20:45",
@@ -2015,37 +2006,15 @@
     "n": "",
     "r": [
      {
-      "a": "Cardinals",
-      "sc": 6.27
-     },
-     {
-      "a": "Sexy Tadhg",
-      "sc": 5.3
-     },
-     {
-      "a": "The New Eves",
-      "sc": 5.3
-     }
-    ]
-   },
-   {
-    "h": "20:00",
-    "w": "Gurriers",
-    "s": "ATN Main Stage",
-    "t": "20:45 - 21:45",
-    "sc": 7.72,
-    "n": "too close to call \u2014 Irish tiebreak",
-    "r": [
-     {
-      "a": "Dry Cleaning",
-      "sc": 7.77
-     },
-     {
       "a": "Friendly Fires",
       "sc": 6.72
      },
      {
       "a": "The New Eves",
+      "sc": 5.3
+     },
+     {
+      "a": "Kelly Anne Byrne 'Prince Tribute'",
       "sc": 5.3
      }
     ]
@@ -2067,29 +2036,29 @@
       "sc": 6.72
      },
      {
-      "a": "Black Nylon",
+      "a": "Kelly Anne Byrne 'Prince Tribute'",
       "sc": 5.3
      }
     ]
    },
    {
     "h": "22:00",
-    "w": "Pulp",
-    "s": "ATN Main Stage",
-    "t": "22:45 - 00:15",
-    "sc": 10.12,
+    "w": "Floorplan",
+    "s": "IMMERSE: AVA x Smirnoff",
+    "t": "21:30 - 23:30",
+    "sc": 7.3,
     "n": "",
     "r": [
-     {
-      "a": "Floorplan",
-      "sc": 7.3
-     },
      {
       "a": "Br\u00f2geal",
       "sc": 5.45
      },
      {
       "a": "Black Nylon",
+      "sc": 5.3
+     },
+     {
+      "a": "Kelly Anne Byrne 'Prince Tribute'",
       "sc": 5.3
      }
     ]
@@ -2118,16 +2087,12 @@
    },
    {
     "h": "00:00",
-    "w": "Pulp",
-    "s": "ATN Main Stage",
-    "t": "22:45 - 00:15",
-    "sc": 10.12,
+    "w": "Floating Points (Live)",
+    "s": "Something Kind of Wonderful",
+    "t": "00:15 - 01:30",
+    "sc": 8.55,
     "n": "",
     "r": [
-     {
-      "a": "Floating Points (Live)",
-      "sc": 8.55
-     },
      {
       "a": "Job Jobse",
       "sc": 6.1
@@ -2135,6 +2100,10 @@
      {
       "a": "New Jackson",
       "sc": 6.03
+     },
+     {
+      "a": "O'Flynn",
+      "sc": 5.92
      }
     ]
    },
@@ -2278,15 +2247,7 @@
     "n": "close call",
     "r": [
      {
-      "a": "Sassy 009",
-      "sc": 5.3
-     },
-     {
       "a": "Maykay",
-      "sc": 5.3
-     },
-     {
-      "a": "Sun Studio Collective",
       "sc": 5.3
      }
     ]
@@ -2315,22 +2276,22 @@
    },
    {
     "h": "18:00",
-    "w": "Sprints",
-    "s": "Something Kind of Wonderful",
-    "t": "18:45 - 19:45",
-    "sc": 8.07,
-    "n": "too close to call \u2014 Irish tiebreak",
+    "w": "Hot 8 Brass Band",
+    "s": "ATN Main Stage",
+    "t": "17:30 - 18:30",
+    "sc": 8.12,
+    "n": "close call",
     "r": [
-     {
-      "a": "Hot 8 Brass Band",
-      "sc": 8.12
-     },
      {
       "a": "Greentea Peng",
       "sc": 7.92
      },
      {
-      "a": "David Keenan",
+      "a": "Glasshouse presents: Bjork",
+      "sc": 5.3
+     },
+     {
+      "a": "One Leg One Eye",
       "sc": 5.3
      }
     ]
@@ -2344,16 +2305,16 @@
     "n": "",
     "r": [
      {
-      "a": "Maruja",
-      "sc": 8.2
-     },
-     {
       "a": "Sprints",
       "sc": 8.07
      },
      {
       "a": "Greentea Peng",
       "sc": 7.92
+     },
+     {
+      "a": "Glasshouse presents: Bjork",
+      "sc": 5.3
      }
     ]
    },
@@ -2425,10 +2386,10 @@
    },
    {
     "h": "23:00",
-    "w": "Gilla Band",
-    "s": "Road To Nowhere",
-    "t": "22:00 - 23:15",
-    "sc": 7.9,
+    "w": "THUMPER",
+    "s": "The Last City",
+    "t": "22:00 - 23:30",
+    "sc": 7.8,
     "n": "too close to call \u2014 Irish tiebreak",
     "r": [
      {
@@ -2436,12 +2397,12 @@
       "sc": 8.08
      },
      {
-      "a": "THUMPER",
-      "sc": 7.8
-     },
-     {
       "a": "Moving Still",
       "sc": 5.78
+     },
+     {
+      "a": "Cromby",
+      "sc": 5.68
      }
     ]
    },
@@ -2484,7 +2445,7 @@
       "sc": 6.78
      },
      {
-      "a": "Say She She",
+      "a": "DJ Nobu",
       "sc": 6.67
      }
     ]
@@ -2587,16 +2548,12 @@
    },
    {
     "h": "16:00",
-    "w": "Alabaster DePlume",
-    "s": "Flourish with District Music",
-    "t": "15:30 - 16:15",
-    "sc": 7.1,
-    "n": "",
+    "w": "Barrington Levy",
+    "s": "Something Kind of Wonderful",
+    "t": "16:00 - 17:15",
+    "sc": 6.47,
+    "n": "close call",
     "r": [
-     {
-      "a": "Barrington Levy",
-      "sc": 6.47
-     },
      {
       "a": "Getdown Services",
       "sc": 6.47
@@ -2604,6 +2561,10 @@
      {
       "a": "Soda Blonde",
       "sc": 5.55
+     },
+     {
+      "a": "Burt Bacharach by Paddy Hanna",
+      "sc": 5.3
      }
     ]
    },
@@ -2616,16 +2577,16 @@
     "n": "",
     "r": [
      {
-      "a": "Barrington Levy",
-      "sc": 6.47
-     },
-     {
       "a": "Getdown Services",
       "sc": 6.47
      },
      {
-      "a": "Soda Blonde",
-      "sc": 5.55
+      "a": "Grooveline",
+      "sc": 5.3
+     },
+     {
+      "a": "I Draw Slow",
+      "sc": 5.3
      }
     ]
    },
@@ -2664,12 +2625,12 @@
       "sc": 6.52
      },
      {
-      "a": "Damien Dempsey",
-      "sc": 6.35
-     },
-     {
       "a": "Prosumer",
       "sc": 6.23
+     },
+     {
+      "a": "Kean Kavanagh",
+      "sc": 5.6
      }
     ]
    },
@@ -2701,12 +2662,8 @@
     "s": "Road To Nowhere",
     "t": "21:15 - 22:30",
     "sc": 8.45,
-    "n": "close call",
+    "n": "",
     "r": [
-     {
-      "a": "Self Esteem",
-      "sc": 8.35
-     },
      {
       "a": "Chet Faker",
       "sc": 6.17
@@ -2714,6 +2671,10 @@
      {
       "a": "Ms Dynamite",
       "sc": 5.55
+     },
+     {
+      "a": "Sell Everything",
+      "sc": 5.3
      }
     ]
    },
@@ -2741,16 +2702,12 @@
    },
    {
     "h": "23:00",
-    "w": "Underworld",
-    "s": "ATN Main Stage",
-    "t": "22:00 - 23:15",
-    "sc": 9.53,
-    "n": "close call",
+    "w": "Mogwai",
+    "s": "Something Kind of Wonderful",
+    "t": "23:15 - 00:30",
+    "sc": 9.3,
+    "n": "",
     "r": [
-     {
-      "a": "Mogwai",
-      "sc": 9.3
-     },
      {
       "a": "Weval (Live)",
       "sc": 6.03
@@ -2758,6 +2715,10 @@
      {
       "a": "Bazza Ranks",
       "sc": 5.45
+     },
+     {
+      "a": "Mango",
+      "sc": 5.3
      }
     ]
    },
