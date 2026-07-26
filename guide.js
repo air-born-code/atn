@@ -338,6 +338,64 @@ function scoreRow(s) {
 
 var JKEY = { "The Beatmaker": "beatmaker", "The Lifer": "lifer", "The Punk": "punk", "The Selector": "selector" };
 
+/* Inline SVG so they survive offline and the CSP. Deliberately geometric — these
+   are characters, not caricatures of anyone real. */
+var AVATARS = {
+  beatmaker: { c: "#ffb02e", svg:
+    '<circle cx="32" cy="32" r="30" fill="#2a2118"/>' +
+    '<circle cx="32" cy="30" r="14" fill="#ffb02e" opacity=".9"/>' +
+    '<rect x="20" y="26" width="24" height="6" rx="3" fill="#2a2118"/>' +
+    '<path d="M14 30a18 18 0 0 1 36 0" stroke="#ffb02e" stroke-width="4" fill="none"/>' +
+    '<rect x="8" y="28" width="8" height="14" rx="4" fill="#ffb02e"/>' +
+    '<rect x="48" y="28" width="8" height="14" rx="4" fill="#ffb02e"/>' +
+    '<g fill="#2a2118"><rect x="24" y="46" width="6" height="6" rx="1"/>' +
+    '<rect x="34" y="46" width="6" height="6" rx="1"/></g>' },
+  lifer: { c: "#ff4d4d", svg:
+    '<circle cx="32" cy="32" r="30" fill="#2b1717"/>' +
+    '<path d="M18 26c0-9 6-14 14-14s14 5 14 14v6c0 12-6 20-14 20s-14-8-14-20z" fill="#ff4d4d" opacity=".9"/>' +
+    '<rect x="16" y="22" width="32" height="5" rx="2.5" fill="#2b1717"/>' +
+    '<path d="M22 44c4 5 16 5 20 0" stroke="#2b1717" stroke-width="3" fill="none" stroke-linecap="round"/>' +
+    '<circle cx="26" cy="33" r="2.5" fill="#2b1717"/><circle cx="38" cy="33" r="2.5" fill="#2b1717"/>' },
+  punk: { c: "#ff2f74", svg:
+    '<circle cx="32" cy="32" r="30" fill="#2b1220"/>' +
+    '<circle cx="32" cy="34" r="14" fill="#ff2f74" opacity=".9"/>' +
+    '<path d="M32 4l4 14h-8zM20 10l6 11-7 2zM44 10l-6 11 7 2z" fill="#ff2f74"/>' +
+    '<circle cx="27" cy="32" r="2.5" fill="#2b1220"/><circle cx="37" cy="32" r="2.5" fill="#2b1220"/>' +
+    '<path d="M26 42h12" stroke="#2b1220" stroke-width="3" stroke-linecap="round"/>' +
+    '<circle cx="47" cy="40" r="4" fill="none" stroke="#ff2f74" stroke-width="2.5"/>' },
+  selector: { c: "#8b6dff", svg:
+    '<circle cx="32" cy="32" r="30" fill="#1e1b2e"/>' +
+    '<circle cx="32" cy="32" r="19" fill="none" stroke="#8b6dff" stroke-width="2.5" opacity=".55"/>' +
+    '<circle cx="32" cy="32" r="12" fill="#8b6dff" opacity=".9"/>' +
+    '<circle cx="32" cy="32" r="4" fill="#1e1b2e"/>' +
+    '<path d="M14 18h36" stroke="#8b6dff" stroke-width="4" stroke-linecap="round"/>' +
+    '<path d="M48 44l6 8" stroke="#8b6dff" stroke-width="3" stroke-linecap="round"/>' }
+};
+
+function avatar(key, size) {
+  var a = AVATARS[key];
+  if (!a) return "";
+  return '<svg class="av" viewBox="0 0 64 64" width="' + size + '" height="' + size +
+         '" aria-hidden="true">' + a.svg + "</svg>";
+}
+
+/* Who each judge champions and who they'd skip — the act where their score sits
+   furthest above / below the rest of the committee. Computed, not hand-written. */
+function judgeExtremes(key) {
+  var best = null, worst = null;
+  D.forEach(function (s) {
+    if (!s.tr || !s.jv || s.jv[key] == null) return;
+    var vals = [], k;
+    for (k in s.jv) vals.push(s.jv[k]);
+    if (vals.length < 2) return;
+    var others = (vals.reduce(function (a, b) { return a + b; }, 0) - s.jv[key]) / (vals.length - 1);
+    var d = s.jv[key] - others;
+    if (!best || d > best.d) best = { s: s, d: d };
+    if (!worst || d < worst.d) worst = { s: s, d: d };
+  });
+  return { best: best, worst: worst };
+}
+
 function judgeBlock() {
   var J = window.ATN_JUDGES || [];
   if (!J.length) return "";
@@ -346,7 +404,7 @@ function judgeBlock() {
           'pretending to be objective. They\'re roles, not real people.</p>';
   J.forEach(function (j) {
     var w = j.w || {};
-    h += '<div class="judge"><b>' + esc(j.name) + "</b>" +
+    h += '<div class="judge">' + avatar(JKEY[j.name], 26) + "<b>" + esc(j.name) + "</b>" +
       '<span class="jw">fresh ' + Math.round(w.fresh * 100) + "% &middot; live " +
       Math.round(w.recent * 100) + "% &middot; album " + Math.round(w.album * 100) +
       "% &middot; bench " + Math.round(w.bench * 100) + "%</span>" +
@@ -369,7 +427,8 @@ function judgeRow(s) {
   J.forEach(function (j) {
     var v = jv[JKEY[j.name]];
     if (v == null) return;
-    h += '<div class="jrow"><span class="jn">' + esc(j.name.replace("The ", "")) + "</span>" +
+    h += '<div class="jrow"><span class="jn">' + avatar(JKEY[j.name], 16) +
+      esc(j.name.replace("The ", "")) + "</span>" +
       '<span class="jbar"><i style="width:' + (v * 10) + '%"></i></span>' +
       '<span class="jvv' + (v === hi ? " hi" : v === lo ? " lo" : "") + '">' +
       v.toFixed(2) + "</span></div>";
@@ -997,8 +1056,52 @@ function renderLatest() {
   main.innerHTML = h;
 }
 
+function renderCommittee() {
+  var J = window.ATN_JUDGES || [];
+  if (!J.length) return "";
+
+  var h = '<div class="info"><h3>&#127908; Meet the committee</h3>' +
+    '<div class="zt">Four ears, four sets of priorities, all scoring the same acts. ' +
+    'They are characters, not real people &mdash; inventing verdicts and putting a ' +
+    'real musician\'s name on them would be putting words in their mouth.</div></div>';
+
+  J.forEach(function (j) {
+    var key = JKEY[j.name], w = j.w || {}, ex = judgeExtremes(key);
+    h += '<div class="jcard" style="--jc:' + (AVATARS[key] ? AVATARS[key].c : "#9d9aab") + '">' +
+      '<div class="jtop">' + avatar(key, 56) +
+        '<div class="jid"><b>' + esc(j.name) + "</b>" +
+        '<span class="jwts">album ' + Math.round(w.album * 100) + "% &middot; live " +
+        Math.round(w.recent * 100) + "% &middot; fresh " + Math.round(w.fresh * 100) +
+        "% &middot; bench " + Math.round(w.bench * 100) + "%</span></div></div>" +
+      '<p class="jblurb">' + esc(j.blurb) + "</p>";
+
+    if (ex.best) {
+      h += '<div class="jfav"><span class="jfl">Their champion</span>' +
+        '<b class="actlink" data-act="' + esc(ex.best.s.a) + '" data-day="' + esc(ex.best.s.d) +
+        '">' + esc(ex.best.s.a) + "</b>" +
+        '<span class="jfd">rates it ' + ex.best.d.toFixed(2) + " above the others</span></div>";
+    }
+    if (ex.worst) {
+      h += '<div class="jfav down"><span class="jfl">Least convinced by</span>' +
+        '<b class="actlink" data-act="' + esc(ex.worst.s.a) + '" data-day="' + esc(ex.worst.s.d) +
+        '">' + esc(ex.worst.s.a) + "</b>" +
+        '<span class="jfd">' + Math.abs(ex.worst.d).toFixed(2) + " below the others</span></div>";
+    }
+    h += "</div>";
+  });
+
+  h += '<div class="info"><div class="zt"><b>The Lifer</b> is the only one who reads the ' +
+    'festival-form table, docking acts whose show needs a room a field can\'t give it. ' +
+    '<b>The Selector</b> carries extra weight on DJ and electronic acts &mdash; that\'s the ' +
+    'half of the bill they actually know. Neither sets the headline score on their own: ' +
+    'the composite is the same four axes for everyone, and the judges are the sanity ' +
+    'check on it.</div></div>';
+
+  return h;
+}
+
 function renderInfo() {
-  var h = "";
+  var h = renderCommittee();
   ESSENTIALS.forEach(function (b) {
     h += '<div class="info"><h3>' + b.h + "</h3><dl>";
     b.d.forEach(function (r) { h += "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>"; });
