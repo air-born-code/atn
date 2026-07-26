@@ -486,6 +486,36 @@ function scoreExplainer() {
     "</div></details>";
 }
 
+/* The game plans are hand-written HTML, so rather than wrapping every mention by
+   hand we sweep the rendered DOM afterwards: any <b> whose text is exactly an act
+   playing that day becomes a link to its page. Case-insensitive, because the plans
+   shout some names (PULP, UNDERWORLD). */
+var ACT_INDEX = null;
+function actIndex() {
+  if (ACT_INDEX) return ACT_INDEX;
+  ACT_INDEX = {};
+  D.forEach(function (s) {
+    if (!s.tr) return;
+    var k = s.d + "|" + s.a.toLowerCase();
+    if (!ACT_INDEX[k]) ACT_INDEX[k] = s;
+  });
+  return ACT_INDEX;
+}
+
+function linkifyActs(root, day) {
+  if (!root) return;
+  var idx = actIndex();
+  root.querySelectorAll("b").forEach(function (b) {
+    if (b.classList.contains("actlink") || b.closest("a")) return;
+    var txt = (b.textContent || "").trim().replace(/[.,;:]$/, "");
+    var hit = idx[day + "|" + txt.toLowerCase()];
+    if (!hit) return;
+    b.classList.add("actlink");
+    b.dataset.act = hit.a;
+    b.dataset.day = day;
+  });
+}
+
 function setFor(artist, day) {
   for (var i = 0; i < D.length; i++) if (D[i].a === artist && D[i].d === day) return D[i];
   return null;
@@ -542,7 +572,8 @@ function renderHours() {
           '">' + esc(mine) + "</b>" +
         '<span class="hrw">' + (chosen ? esc(chosen.t) + " &middot; " + esc(chosen.s) : "") + "</span>" +
         (mine !== r.w
-          ? '<span class="hru">Committee had ' + esc(r.w) + " (" + r.sc.toFixed(2) + ")</span>"
+          ? '<span class="hru">Committee had <b class="actlink" data-act="' + esc(r.w) +
+            '" data-day="' + esc(S.day) + '">' + esc(r.w) + "</b> (" + r.sc.toFixed(2) + ")</span>"
           : '<span class="hru">Agrees with the committee</span>');
     } else {
       h += '<b class="actlink" data-act="' + esc(r.w) + '" data-day="' + esc(S.day) +
@@ -661,6 +692,16 @@ function renderPicks() {
     }
     h += setCard(s, true);
   });
+
+  var di = DAYS.map(function (d) { return d.k; }).indexOf(S.day);
+  h += '<div class="daypager">' +
+    (di > 0
+      ? '<button class="pbtn" data-goday="' + DAYS[di - 1].k + '">&larr; ' + DAYS[di - 1].n + "</button>"
+      : '<span class="pbtn ghost">Start of the weekend</span>') +
+    (di < DAYS.length - 1
+      ? '<button class="pbtn" data-goday="' + DAYS[di + 1].k + '">' + DAYS[di + 1].n + " &rarr;</button>"
+      : '<span class="pbtn ghost">Last day</span>') +
+    "</div>";
 
   h += '<div class="warn">Times sourced from the published lineup and Clashfinder. Stage times move &mdash; always sanity-check against the official ATN app or the stage boards on the day.</div>';
   main.innerHTML = h;
@@ -1178,18 +1219,21 @@ function renderNow() {
 
     h += '<div class="lab"><span class="pulse"></span>' +
          (picked ? "Your pick, on now" : "On now") + "</div>";
-    h += '<div class="row"><b>' + esc(lead.a) + "</b> <span>&middot; " + esc(lead.s) +
+    h += '<div class="row"><b class="actlink" data-act="' + esc(lead.a) + '" data-day="' +
+         esc(lead.d) + '">' + esc(lead.a) + "</b> <span>&middot; " + esc(lead.s) +
          " &middot; till " + esc(lead.t.split(" - ")[1]) + "</span></div>";
 
     on.filter(function (s) { return s !== lead; }).slice(0, 2).forEach(function (s) {
-      h += '<div class="row"><span>Also: ' + esc(s.a) + " &middot; " + esc(s.s) + "</span></div>";
+      h += '<div class="row"><span>Also: <b class="actlink" data-act="' + esc(s.a) +
+        '" data-day="' + esc(s.d) + '">' + esc(s.a) + "</b> &middot; " + esc(s.s) + "</span></div>";
     });
   }
 
   var next = mine.filter(function (s) { return s.st > now && s.tr === 1; })
                  .sort(function (a, b) { return a.st - b.st; })[0];
   if (next) {
-    h += '<div class="row"><span>Next big one: <b>' + esc(next.a) + "</b> &middot; " +
+    h += '<div class="row"><span>Next big one: <b class="actlink" data-act="' + esc(next.a) +
+         '" data-day="' + esc(next.d) + '">' + esc(next.a) + "</b> &middot; " +
          esc(next.t.split(" - ")[0]) + " &middot; " + esc(until(next.st - now)) + "</span></div>";
   }
 
@@ -1220,6 +1264,12 @@ function render(keepScroll) {
   else if (S.view === "plan") renderPlan();
   else renderInfo();
 
+  /* Sweep the hand-written prose so every act mentioned in a plan is tappable. */
+  if (S.view === "picks") {
+    main.querySelectorAll(".plan .lb, .plan p, .hru").forEach(function (el) {
+      linkifyActs(el, S.day);
+    });
+  }
   renderNow();
   window.scrollTo(0, keepScroll ? _y : 0);
 }
@@ -1239,6 +1289,23 @@ document.addEventListener("click", function (e) {
     e.preventDefault();
     var s2 = setFor(al.dataset.act, al.dataset.day || S.day);
     if (s2) return openAct(idOf(s2));
+  }
+
+  var gd = e.target.closest("[data-goday]");
+  if (gd) {
+    closeAct();
+    S.day = gd.dataset.goday;
+    S.view = "picks";
+    return render();
+  }
+
+  var gs = e.target.closest("[data-gostage]");
+  if (gs) {
+    closeAct();
+    S.mapStage = gs.dataset.gostage;
+    S.mapZone = STAGE_ZONE[S.mapStage] || "";
+    S.view = "map";
+    return render();
   }
 
   var hp = e.target.closest(".hrpick");
@@ -1391,13 +1458,20 @@ function openAct(id) {
     h += '<div class="dsec"><h4>On at the same time</h4>';
     same.forEach(function (o) {
       var w = walkMins(s.s, o.s);
-      h += '<div class="dclash"><b>' + esc(o.a) + "</b>" +
+      h += '<div class="dclash"><b class="actlink" data-act="' + esc(o.a) +
+        '" data-day="' + esc(o.d) + '">' + esc(o.a) + "</b>" +
         '<span class="dcs">' + (o.cs ? o.cs.toFixed(2) : "") + "</span>" +
         '<span class="dcw">' + esc(o.t) + " &middot; " + esc(o.s) +
         (w !== null ? " &middot; " + w + " min walk" : "") + "</span></div>";
     });
     h += "</div>";
   }
+
+  var dn = { fri: "Friday", sat: "Saturday", sun: "Sunday" }[s.d] || "the day";
+  h += '<div class="dnav">' +
+    '<button class="pbtn primary" data-goday="' + esc(s.d) + '">See all of ' + esc(dn) + "</button>" +
+    '<button class="pbtn" data-gostage="' + esc(s.s) + '">Stage on map</button>' +
+    "</div>";
 
   h += "</div>";
   document.getElementById("actBody").innerHTML = h;
