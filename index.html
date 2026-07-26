@@ -17,6 +17,7 @@
   --acc:#ff2f74;
   --rock:#ff4d4d; --indie:#ffb02e; --dj:#8b6dff; --global:#25d366; --trad:#38bdf8; --other:#94a3b8;
   --safeb:env(safe-area-inset-bottom,0px);
+  --safet:env(safe-area-inset-top,0px);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0}
@@ -31,7 +32,9 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 a{color:var(--acc)}
 
 /* ---------- header ---------- */
-header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+/* Installed on iPhone the web view runs edge-to-edge under the status bar, so the
+   header needs the notch inset or it sits behind the clock and battery. */
+header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:var(--safet)}
 .brand{display:flex;align-items:center;gap:10px;padding:12px 16px 8px}
 .brand h1{font-size:17px;letter-spacing:-.03em}
 .brand .sub{font-size:11px;color:var(--dim2);letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
@@ -96,7 +99,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
 #actSheet[hidden]{display:none}
 .dhead{padding:12px 14px 14px;border-bottom:1px solid var(--line);
   background:linear-gradient(160deg,rgba(255,47,116,.13),transparent);
-  padding-top:calc(12px + env(safe-area-inset-top,0px))}
+  padding-top:calc(12px + var(--safet))}
 .dtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
 .dday{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--acc);font-weight:700}
 .dclose{flex:none;padding:0 13px;min-height:38px;border-radius:11px;background:var(--card2);
@@ -136,7 +139,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,11,15,.93);backdrop-f
   display:flex;flex-direction:column;padding-bottom:var(--safeb)}
 #searchOverlay[hidden]{display:none}
 .sbar{display:flex;gap:8px;padding:12px;border-bottom:1px solid var(--line);
-  padding-top:calc(12px + env(safe-area-inset-top,0px))}
+  padding-top:calc(12px + var(--safet))}
 .sinput{flex:1;min-width:0;padding:12px 13px;border-radius:12px;background:var(--card);
   border:1px solid var(--line);color:var(--tx);font-size:16px;-webkit-appearance:none}
 .sinput::placeholder{color:var(--dim2)}
