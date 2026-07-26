@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-26T21:14:27.739574+00:00",
+ "updated": "2026-07-26T22:16:38.736594+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 7,
+ "collected": 5,
  "items": [
   {
    "headline": "Delivery Service on the songs they have on repeat ahead of their The Circle By Jameson Music All Together Now ",
@@ -46,22 +46,6 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/podcast-soak-on-finding-joy-collaborating-with-friends-and-fred-again/"
-  },
-  {
-   "headline": "ATN lineup page changed",
-   "summary": "The ATN lineup page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN lineup",
-   "url": "https://www.alltogethernow.ie/lineup"
-  },
-  {
-   "headline": "ATN info page changed",
-   "summary": "The ATN info page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN info",
-   "url": "https://www.alltogethernow.ie/information"
   },
   {
    "headline": "Clashfinder page changed",
