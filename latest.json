@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-27T07:56:20.561353+00:00",
+ "updated": "2026-07-27T11:44:17.763880+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
-  "rss:Nialler9": "ok (4 relevant of 20)",
+  "rss:Nialler9": "ok (5 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
   "rss:WLR FM": "ok (0 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
@@ -13,8 +13,24 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 4,
+ "collected": 9,
  "items": [
+  {
+   "headline": "Podcast: For Those I Love on building his own worlds for All Together Now",
+   "summary": "The Circle by Jameson Music special guest For Those I Love on club remixes, CCTV rigs and building a giant prop for All Together Now.]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/podcast-for-those-i-love-on-building-his-own-worlds-for-all-together-now/"
+  },
+  {
+   "headline": "The Last City reveals full lineup and times for All Together Now",
+   "summary": "All Together Now’s post-apocalyptic world expands into the woods for 2026, with a full lineup and schedule to…]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/the-last-city-reveals-full-lineup-and-times-for-all-together-now/"
+  },
   {
    "headline": "Delivery Service on the songs they have on repeat ahead of their The Circle By Jameson Music All Together Now ",
    "summary": "Delivery Service are a Dublin four-piece who trade in scrappy, melodic alternative rock, taking their cues from riot grrrl acts like Bikini Kill and Le Tigre and the fuzzier, more melodic side of the 90s in The Breeders and The Sundays. ]]>",
@@ -40,12 +56,36 @@
    "url": "https://nialler9.com/10-acts-to-see-at-the-circle-by-jameson-music-at-all-together-now/"
   },
   {
-   "headline": "Podcast: SOAK on finding joy, collaborating with friends and Fred Again..",
-   "summary": "The Derry artist SOAK joins me to discuss \"remodelled everything for joy, \" ahead of their The Circle by Jameson Music show at All Together Now.]]>",
-   "confidence": "reported",
-   "category": "other",
-   "source": "Nialler9",
-   "url": "https://nialler9.com/podcast-soak-on-finding-joy-collaborating-with-friends-and-fred-again/"
+   "headline": "ATN lineup page changed",
+   "summary": "The ATN lineup page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "ATN lineup",
+   "url": "https://www.alltogethernow.ie/lineup"
+  },
+  {
+   "headline": "ATN info page changed",
+   "summary": "The ATN info page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "ATN info",
+   "url": "https://www.alltogethernow.ie/information"
+  },
+  {
+   "headline": "ATN news page changed",
+   "summary": "The ATN news page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "ATN news",
+   "url": "https://www.alltogethernow.ie/atnnews"
+  },
+  {
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
