@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27T17:58:18.957148+00:00",
+ "updated": "2026-07-27T19:58:39.336693+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (5 relevant of 20)",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 9,
+ "collected": 6,
  "items": [
   {
    "headline": "Podcast: For Those I Love on building his own worlds for All Together Now",
@@ -54,30 +54,6 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/10-acts-to-see-at-the-circle-by-jameson-music-at-all-together-now/"
-  },
-  {
-   "headline": "ATN lineup page changed",
-   "summary": "The ATN lineup page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN lineup",
-   "url": "https://www.alltogethernow.ie/lineup"
-  },
-  {
-   "headline": "ATN info page changed",
-   "summary": "The ATN info page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN info",
-   "url": "https://www.alltogethernow.ie/information"
-  },
-  {
-   "headline": "ATN news page changed",
-   "summary": "The ATN news page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN news",
-   "url": "https://www.alltogethernow.ie/atnnews"
   },
   {
    "headline": "Clashfinder page changed",
