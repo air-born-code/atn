@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27T23:30:01.859853+00:00",
+ "updated": "2026-07-28T03:42:00.319826+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (5 relevant of 20)",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 5,
+ "collected": 6,
  "items": [
   {
    "headline": "Podcast: For Those I Love on building his own worlds for All Together Now",
@@ -54,6 +54,14 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/10-acts-to-see-at-the-circle-by-jameson-music-at-all-together-now/"
+  },
+  {
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
