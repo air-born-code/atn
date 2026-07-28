@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-28T09:58:51.506216+00:00",
+ "updated": "2026-07-28T12:16:24.814450+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
-  "rss:Nialler9": "ok (5 relevant of 20)",
+  "rss:Nialler9": "ok (6 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
   "rss:WLR FM": "ok (0 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
@@ -13,8 +13,16 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 9,
+ "collected": 10,
  "items": [
+  {
+   "headline": "Dance Forever brings Red Bull and Yamamori Izakaya to All Together Now",
+   "summary": "The new late-night stage lands at the festival this bank holiday weekend, pairing Yamamori’s Japanese food with a…]]>",
+   "confidence": "reported",
+   "category": "other",
+   "source": "Nialler9",
+   "url": "https://nialler9.com/dance-forever-brings-red-bull-and-yamamoris-izakaya-to-all-together-now/"
+  },
   {
    "headline": "Podcast: For Those I Love on building his own worlds for All Together Now",
    "summary": "The Circle by Jameson Music special guest For Those I Love on club remixes, CCTV rigs and building a giant prop for All Together Now.]]>",
