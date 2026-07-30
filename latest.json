@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-30T13:03:40.571007+00:00",
+ "updated": "2026-07-30T15:29:23.015254+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
-  "rss:Nialler9": "ok (7 relevant of 20)",
+  "rss:Nialler9": "ok (6 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
   "rss:WLR FM": "ok (0 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 11,
+ "collected": 10,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -62,14 +62,6 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/the-big-romance-dome-x-altos-300-capacity-dome-for-all-together-now/"
-  },
-  {
-   "headline": "10 acts to see at The Circle by Jameson Music at All Together Now",
-   "summary": "All Together Now returns to Curraghmore Estate, Co. Waterford for its seventh chapter from Thursday July 30th to…]]>",
-   "confidence": "reported",
-   "category": "other",
-   "source": "Nialler9",
-   "url": "https://nialler9.com/10-acts-to-see-at-the-circle-by-jameson-music-at-all-together-now/"
   },
   {
    "headline": "ATN lineup page changed",
