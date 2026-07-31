@@ -1,10 +1,10 @@
 {
- "updated": "2026-07-31T11:51:52.496153+00:00",
+ "updated": "2026-07-31T13:30:17.586310+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
-  "rss:WLR FM": "ok (1 relevant of 20)",
+  "rss:WLR FM": "ok (2 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
   "bluesky": "failed: HTTPError",
   "reddit": "failed (often IP-blocked): HTTPError",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 6,
+ "collected": 7,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -46,6 +46,14 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/the-last-city-reveals-full-lineup-and-times-for-all-together-now/"
+  },
+  {
+   "headline": "Will the Bank Holiday be a washout? Latest weather forecast for the long weekend revealed",
+   "summary": "Those who have plans this Bank Holiday weekend might need to bring an umbrella as the weekend comes to a close. The August Bank Holiday is just around the corner, and with events such as All Together Now taking place this weekend, many have",
+   "confidence": "reported",
+   "category": "other",
+   "source": "WLR FM",
+   "url": "https://wlrfm.com/news/will-the-bank-holiday-be-a-washout-latest-weather-forecast-for-the-long-weekend-4470570/"
   },
   {
    "headline": "Thousands descending on Curraghmore for All Together Now",
