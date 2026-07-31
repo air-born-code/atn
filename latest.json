@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-31T05:48:55.517336+00:00",
+ "updated": "2026-07-31T09:36:54.784607+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
-  "rss:Nialler9": "ok (6 relevant of 20)",
+  "rss:Nialler9": "ok (5 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
   "rss:WLR FM": "ok (0 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 7,
+ "collected": 6,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -54,14 +54,6 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/delivery-service-on-the-songs-they-have-on-repeat-ahead-of-their-the-circle-by-jameson-music-all-together-now-set/"
-  },
-  {
-   "headline": "The Big Romance Dome x Altos 300-capacity dome for All Together Now",
-   "summary": "The dome brings Colleen “Cosmo” Murphy, New Jackson and Prosumer to the festival this August bank holiday weekend,…]]>",
-   "confidence": "reported",
-   "category": "other",
-   "source": "Nialler9",
-   "url": "https://nialler9.com/the-big-romance-dome-x-altos-300-capacity-dome-for-all-together-now/"
   },
   {
    "headline": "Clashfinder page changed",
