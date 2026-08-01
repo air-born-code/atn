@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-01T09:03:49.672912+00:00",
+ "updated": "2026-08-01T10:56:47.799296+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
-  "rss:WLR FM": "ok (3 relevant of 20)",
+  "rss:WLR FM": "ok (2 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
   "bluesky": "failed: HTTPError",
   "reddit": "failed (often IP-blocked): HTTPError",
@@ -64,12 +64,12 @@
    "url": "https://wlrfm.com/news/will-the-bank-holiday-be-a-washout-latest-weather-forecast-for-the-long-weekend-4470570/"
   },
   {
-   "headline": "Thousands descending on Curraghmore for All Together Now",
-   "summary": "Thousands are descending on Curraghmore Estate in Portlaw for the seventh chapter of All Together Now. The 2026 festival features a line-up including Kneecap, Pulp and Underworld, with numerous others also performing across the August Bank ",
-   "confidence": "reported",
-   "category": "other",
-   "source": "WLR FM",
-   "url": "https://wlrfm.com/news/thousands-set-to-descend-on-curraghmore-for-all-together-now-4470640/"
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
