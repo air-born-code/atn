@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-02T05:29:11.778386+00:00",
+ "updated": "2026-08-02T09:07:09.409626+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
-  "rss:WLR FM": "ok (1 relevant of 20)",
+  "rss:WLR FM": "ok (0 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
   "bluesky": "failed: HTTPError",
   "reddit": "failed (often IP-blocked): HTTPError",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 6,
+ "collected": 5,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -46,14 +46,6 @@
    "category": "other",
    "source": "Nialler9",
    "url": "https://nialler9.com/the-last-city-reveals-full-lineup-and-times-for-all-together-now/"
-  },
-  {
-   "headline": "Heavy traffic delays reported as festivalgoers arrive for All Together Now",
-   "summary": "Motorists travelling to the All Together Now festival are being warned to expect significant delays, with lengthy queues reported on roads leading towards the site. Traffic is particularly heavy on the R680 at Bog Road, with reports suggest",
-   "confidence": "reported",
-   "category": "other",
-   "source": "WLR FM",
-   "url": "https://wlrfm.com/news/heavy-traffic-delays-reported-all-together-now-4470768/"
   },
   {
    "headline": "Clashfinder page changed",
