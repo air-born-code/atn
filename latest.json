@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02T16:55:36.764801+00:00",
+ "updated": "2026-08-02T17:59:44.023286+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
@@ -13,7 +13,7 @@
   "watch:ATN news": "ok",
   "watch:Clashfinder": "ok"
  },
- "collected": 6,
+ "collected": 7,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -62,6 +62,14 @@
    "category": "other",
    "source": "WLR FM",
    "url": "https://wlrfm.com/news/greta-thunberg-shares-peace-message-with-atn-crowds-4471400/"
+  },
+  {
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
