@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02T01:59:06.705166+00:00",
+ "updated": "2026-08-02T05:29:11.778386+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
@@ -11,9 +11,9 @@
   "watch:ATN lineup": "ok",
   "watch:ATN info": "ok",
   "watch:ATN news": "ok",
-  "watch:Clashfinder": "failed: URLError"
+  "watch:Clashfinder": "ok"
  },
- "collected": 5,
+ "collected": 6,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -54,6 +54,14 @@
    "category": "other",
    "source": "WLR FM",
    "url": "https://wlrfm.com/news/heavy-traffic-delays-reported-all-together-now-4470768/"
+  },
+  {
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
