@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02T17:59:44.023286+00:00",
+ "updated": "2026-08-02T19:22:53.759419+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
@@ -11,9 +11,9 @@
   "watch:ATN lineup": "ok",
   "watch:ATN info": "ok",
   "watch:ATN news": "ok",
-  "watch:Clashfinder": "ok"
+  "watch:Clashfinder": "failed: URLError"
  },
- "collected": 7,
+ "collected": 9,
  "items": [
   {
    "headline": "All Together Now: Essential info, site map, stage times & more",
@@ -64,12 +64,28 @@
    "url": "https://wlrfm.com/news/greta-thunberg-shares-peace-message-with-atn-crowds-4471400/"
   },
   {
-   "headline": "Clashfinder page changed",
-   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "headline": "ATN lineup page changed",
+   "summary": "The ATN lineup page changed since the last check. This is where stage-time and lineup changes show up first.",
    "confidence": "confirmed",
    "category": "schedule_change",
-   "source": "Clashfinder",
-   "url": "https://clashfinder.com/m/atn2026/"
+   "source": "ATN lineup",
+   "url": "https://www.alltogethernow.ie/lineup"
+  },
+  {
+   "headline": "ATN info page changed",
+   "summary": "The ATN info page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "ATN info",
+   "url": "https://www.alltogethernow.ie/information"
+  },
+  {
+   "headline": "ATN news page changed",
+   "summary": "The ATN news page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "ATN news",
+   "url": "https://www.alltogethernow.ie/atnnews"
   }
  ]
 }
