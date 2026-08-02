@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-02T12:05:32.015455+00:00",
+ "updated": "2026-08-02T14:07:13.627147+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
-  "rss:WLR FM": "ok (1 relevant of 20)",
+  "rss:WLR FM": "ok (2 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
   "bluesky": "failed: HTTPError",
   "reddit": "failed (often IP-blocked): HTTPError",
@@ -48,20 +48,20 @@
    "url": "https://nialler9.com/the-last-city-reveals-full-lineup-and-times-for-all-together-now/"
   },
   {
+   "headline": "Emergency services dealing with Portlaw fire",
+   "summary": "Emergency services are currently dealing with a large fire in Portlaw. It’s understood to have broken out in a corn field earlier this afternoon. It comes as thousands of festival goers are gathered at the nearby Curraghmore Estate, with ma",
+   "confidence": "reported",
+   "category": "other",
+   "source": "WLR FM",
+   "url": "https://wlrfm.com/news/emergency-services-dealing-with-portlaw-fire-4471453/"
+  },
+  {
    "headline": "Greta Thunberg shares peace message with ATN crowds",
    "summary": "Swedish activist Great Thunberg shared a peace message yesterday at All Together Now at Curraghmore. A number of performers delivered Messages of Peace at the ATN Temporary Bandstand in the early afternoon. Greta Thunberg had a sombre messa",
    "confidence": "reported",
    "category": "other",
    "source": "WLR FM",
    "url": "https://wlrfm.com/news/greta-thunberg-shares-peace-message-with-atn-crowds-4471400/"
-  },
-  {
-   "headline": "ATN info page changed",
-   "summary": "The ATN info page changed since the last check. This is where stage-time and lineup changes show up first.",
-   "confidence": "confirmed",
-   "category": "schedule_change",
-   "source": "ATN info",
-   "url": "https://www.alltogethernow.ie/information"
   },
   {
    "headline": "Clashfinder page changed",
