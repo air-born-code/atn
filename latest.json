@@ -1,10 +1,10 @@
 {
- "updated": "2026-08-03T13:38:38.039178+00:00",
+ "updated": "2026-08-03T16:21:34.521218+00:00",
  "method": "keyword fallback (no API key set)",
  "sources": {
   "rss:Nialler9": "ok (4 relevant of 20)",
   "rss:Hot Press": "ok (0 relevant of 25)",
-  "rss:WLR FM": "ok (2 relevant of 20)",
+  "rss:WLR FM": "ok (1 relevant of 20)",
   "rss:The Thin Air": "failed: HTTPError",
   "bluesky": "failed: HTTPError",
   "reddit": "failed (often IP-blocked): HTTPError",
@@ -56,12 +56,12 @@
    "url": "https://wlrfm.com/lifestyle/pics-all-together-now-2026-in-pictures-4471682/"
   },
   {
-   "headline": "Emergency services dealing with Portlaw fire",
-   "summary": "Emergency services are currently dealing with a large fire in Portlaw. It’s understood to have broken out in a corn field earlier this afternoon. It comes as thousands of festival goers are gathered at the nearby Curraghmore Estate, with ma",
-   "confidence": "reported",
-   "category": "other",
-   "source": "WLR FM",
-   "url": "https://wlrfm.com/news/emergency-services-dealing-with-portlaw-fire-4471453/"
+   "headline": "Clashfinder page changed",
+   "summary": "The Clashfinder page changed since the last check. This is where stage-time and lineup changes show up first.",
+   "confidence": "confirmed",
+   "category": "schedule_change",
+   "source": "Clashfinder",
+   "url": "https://clashfinder.com/m/atn2026/"
   }
  ]
 }
